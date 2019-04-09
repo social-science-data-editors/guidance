@@ -1,4 +1,4 @@
-# Unofficial guidance on various topics by Social Science AEA Data Editors
+# Unofficial guidance on various topics by Social Science Data Editors
 
 
 ## Guidance on creating replicable data and program archives

@@ -1,0 +1,17 @@
+% $Id: chicago-authordate-aea.sty,v 0.1 2018-10-03 18:06:54 vilhuber Exp $
+% This is a biblatex style file, meant to correct the display of DOI
+
+\ProvidesPackage{chicago-authordate-aea}[2018-10-03 v 0.1 biblatex
+bibliography style]
+
+\RequirePackage{biblatex}
+
+
+%%%% change display of DOI fields
+
+\DeclareFieldFormat{doi}{%
+   \ifhyperref
+     {\href{https://doi.org/#1}{\nolinkurl{https://doi.org/#1}}}
+     {\nolinkurl{https://doi.org/#1}}}
+
+\endinput
