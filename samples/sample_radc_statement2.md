@@ -1,3 +1,5 @@
+## Sample Statement for Restricted Access Data 2
+
 Adapted from [Fort (2016)](https://doi.org/10.1093/restud/rdw057), Supplementary data:
 ```
 To reproduce the tables and figures in the paper:

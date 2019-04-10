@@ -61,7 +61,7 @@ If a RADC has at least an archival or backup policy of sufficient length (e.g., 
       programs/02_analysis.do
 ```
 - Confirm with the RADC's administrative staff how long project files are kept as archives or in backup (often 5-10 years)
-- Add a statement to the public README.md (and to article materials). See [Sample RADC Statement 1](sample_radc_statement1.md) and [Sample RADC Statement 2](sample_radc_statement2.md).
+- Add a statement to the public README.md (and to article materials). See [Sample RADC Statement 1](samples/sample_radc_statement1.md) and [Sample RADC Statement 2](samples/sample_radc_statement2.md).
 
 ### Some examples
 - Fort (2016) [10.1093/restud/rdw057](https://doi.org/10.1093/restud/rdw057), in the supplementary materials ([local copy](copies/Fort2016-Readme.pdf))
