@@ -13,10 +13,14 @@ We will refer to a (simplified) data structure as described below. Real-life dat
 
 <div class="mermaid">
 graph TD;
-    Input data -- Cleaning programs;
-    Cleaning programs --> Analysis data;
-    Analysis data -- Analysis programs;
-    Analysis programs --> Outputs;
+    subgraph one;
+    A[Input data] ==>  B[Cleaning programs];
+    B ==> C[Analysis data];
+    C == Analysis programs ==> E[Outputs];
+    end;
+    B -.-> F["Auxiliary data<br/>(created)"];
+    F -.-> C;
+    
 </div>
 
 ```
