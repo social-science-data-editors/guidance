@@ -10,6 +10,15 @@ The following readings might be useful for structuring project, code, and data. 
 
 ## Some concepts
 We will refer to a (simplified) data structure as described below. Real-life data structures are often more complex, and the distinctions made in the simplified example should be adapted accordingly.
+
+<div class="mermaid">
+graph TD;
+    Input data -- Cleaning programs;
+    Cleaning programs --> Analysis data;
+    Analysis data -- Analysis programs;
+    Analysis programs --> Outputs;
+</div>
+
 ```
 +--------------+                                +----------------+                                +--------------------+
 |  Input data  | --- [Cleaning programs] --->   | Analysis data  |  --- [Analysis programs] --->  |      Outputs       |
