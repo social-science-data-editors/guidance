@@ -32,7 +32,7 @@ We **require** that
 - you cite the data
   - you should cite the data in your main manuscript
   - you should cite data separately in your online appendix
-- you make analysis programs available
+- you make **analysis** programs available
 - you provide a README that describes the data acquisition and how to run the analysis process
 - you make every effort to provide as much data as possible in an openly accessible fashion
 - you make every effort to support reproducibility of your analysis
@@ -40,8 +40,9 @@ We **require** that
 
 ### Suggestions
 We **strongly suggest** using some best-practices as suggested by the literature cited above:
+- to also make programs that create the analysis data ("**cleaning programs**") available
 - separation of code and data in directory structure and archive locations
-- separation of read-only input data and modified "analysis" data
+- separation of read-only input data and modified "**analysis data**"
 - a clearly defined sequence of processing (possibly through a script)
 - citation of released code
 - citation of data in the README (in addition to citing it in the article itself)
@@ -52,7 +53,6 @@ We **encourage** you
 - to deposit data early in the research process, as soon as data is collected/ cleaned/ etc. This does not mean that the data becomes public at that time, only that the data has been "locked" in a specific state. See below for data hosting.
 - to create a data publication, going into more depth about the data creation (if you created or collected your data)
 - to consider splitting out independent components of your data creation (for instance, the auxiliary data described above) as a separately (useful) data deposit
-- to also make programs that create the analysis data ("cleaning programs") available
 
 ## Citing Data and Code
 All data should be cited, as per journal guidelines:
@@ -80,8 +80,8 @@ We **strongly suggest**
 For details, see [Requested_information_code](Requested_information_code.md).
 
 ## Data and Code Hosting
-The American Economic Association has made supplementary materials available on
-its website since 2006. As the  popular and scientific web-accessible
+Journals have made supplementary materials available on
+their  websites since the early 2000s. As the  popular and scientific web-accessible
 global infrastructure has matured, other possibilities have opened up. We comment on important features to consider when depositing code and data.
 
 ### Principles
