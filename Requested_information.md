@@ -13,7 +13,7 @@ We will refer to a (simplified) data structure as described below. Real-life dat
 
 <div class="mermaid">
 graph TD;
-    subgraph one;
+    subgraph Dataflow;
     A((Input data)) ==>  B[Cleaning programs];
     B ==> C((Analysis data));
     C ==> D[Analysis programs] 
@@ -24,20 +24,7 @@ graph TD;
     
 </div>
 
-<!--
-```
-+--------------+                                +----------------+                                +--------------------+
-|  Input data  | --- [Cleaning programs] --->   | Analysis data  |  --- [Analysis programs] --->  |      Outputs       |
-|  (acquired)  |  \                    / --->   | (created)      |                                | (Table in article) |
-+--------------+   \    +----------+  /         +----------------+                                +--------------------+
-                    \-> |Auxiliary |_/
-                        |  data    |
-                        |(created) |
-                        +----------+
 
-
-```
--->
 
 ## General Rules and Guidelines
 ### Requirements
