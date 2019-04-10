@@ -14,15 +14,17 @@ We will refer to a (simplified) data structure as described below. Real-life dat
 <div class="mermaid">
 graph TD;
     subgraph one;
-    A[Input data] ==>  B[Cleaning programs];
-    B ==> C[Analysis data];
-    C == Analysis programs ==> E[Outputs];
+    A((Input data)) ==>  B[Cleaning programs];
+    B ==> C((Analysis data));
+    C ==> D[Analysis programs] 
+    D ==> E((Outputs));
     end;
-    B -.-> F["Auxiliary data<br/>(created)"];
+    B -.-> F(("Auxiliary data<br/>(created)"));
     F -.-> C;
     
 </div>
 
+<!--
 ```
 +--------------+                                +----------------+                                +--------------------+
 |  Input data  | --- [Cleaning programs] --->   | Analysis data  |  --- [Analysis programs] --->  |      Outputs       |
@@ -35,6 +37,7 @@ graph TD;
 
 
 ```
+-->
 
 ## General Rules and Guidelines
 ### Requirements
