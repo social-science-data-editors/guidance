@@ -12,3 +12,6 @@ This guidance has two audiences:
  - the replicator wanting to verify the replicability of such an archive
 
 See [Verification guidance](Verification_guidance.md) 
+
+## FAQ
+See our growing [FAQ](FAQ.md). If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).
