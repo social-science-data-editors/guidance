@@ -75,7 +75,8 @@ See [code/04_codebook_SAS](code/04_codebook_SAS.md) for an example.
 However, if you have the ability to do a more robust data description, you should. See a [self-citing example](https://www2.ncrn.cornell.edu/ced2ar-web/codebooks/synlbd/v/v2).
 
 ### Data access description
-The description of data access should provide enough information so that an uninformed user could theoretically access the data.
+The description of data access should provide enough information so that an uninformed user could theoretically access the data. The access itself should also be persistent, i.e., not rely on a transitory website or the presence of a particular person who might change jobs at any time.
+
 - This can be as simple as a download URL.
 - It might be a pointer to a directory in the replication archive.
 - This might also be the URL for a description of the application procedure (e.g. NCHS, https://www.cdc.gov/rdc/leftbrch/userestricdt.htm , or PSID https://simba.isr.umich.edu/restricted/ProcessReq.aspx), and an estimate of the monetary and time cost of the application process.
@@ -99,7 +100,7 @@ For additional guidance on licensing, see [Licensing guidance](Licensing_guidanc
 
 ### Data persistence
 Data should remain available for a sufficiently long time.
--  By depositing in the **AEA Data and Code Repository**, the data (and code) will remain available indefinitely.
+-  By depositing in the journal-based data (and code) repositories, the data (and code) will remain available indefinitely.
 -  This is also true if the data is in various other repositories
 -  This may also be true if the data cannot be shared (restricted access data).
 - Again, this may already have been defined in your DMP.
@@ -126,3 +127,7 @@ If planning to use restricted-access data (private, commmercial, confidential da
 If collecting data, consider early on the need to have just enough restrictions.
 - ICPSR, "[Recommended Informed Consent Language for Data Sharing](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html)"
 - EU's General Data Protection Regulation (GDPR), [Language on consent](https://gdpr-info.eu/art-7-gdpr/)
+
+Consider breaking your data archives into **manageable pieces**. For instance, raw data might be in a different location/repository/archive than the analysis data, even if you are providing access to both for the purpose of replication. Examples:
+
+- Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1 
