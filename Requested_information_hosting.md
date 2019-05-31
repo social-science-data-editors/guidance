@@ -31,6 +31,20 @@ A variety of (unfortunately) commonly used web-accessible locations are not acce
 - Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the [Wayback Machine](https://archive.org/) for a similar purpose);
 - Dropbox, Box.com, and similar cloud-based data and file sharing services - again, they can all be deleted at short notice, or when payment stops
 
+### Some examples
+
+> "Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion, Replication files and raw data" (Michael Clemens)
+- Hosted on Harvard Dataverse at [https://dataverse.harvard.edu/dataverse/bracero](https://dataverse.harvard.edu/dataverse/bracero)
+- Contains two datasets:
+  - Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1
+  -  Clemens, Michael, 2018, "Replication Data for: Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion", https://doi.org/10.7910/DVN/17M4ZP, Harvard Dataverse, V1
+
+> "United States Newspaper Panel, 1869-2004"
+- Hosted on ICPSR at [https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261](https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261)
+- Contains 
+  - Gentzkow, Matthew, Shapiro, Jesse M., and Sinkinson, Michael. United States Newspaper Panel, 1869-2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2014-12-10. https://doi.org/10.3886/ICPSR30261.v6
+
+
 ## Challenges in Hosting of Data and Code at Restricted-Access Data Centers
 Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.census.gov/fsrdc),  [CASD](https://www.casd.eu/), etc.) face certain challenges in the handling of data and code as described in this document:
 
