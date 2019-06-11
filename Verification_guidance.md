@@ -12,7 +12,7 @@ This document describes
   - [ ] validate the listed contents (manifest) of the data submission against the actual contents of the data submission ([see reference README](soon)). Is information missing?
   - [ ] Also cross-check against the data section of the manuscript
   - [ ] Create a list of all data sets referenced or provided
-  - [ ] Create a list of all tables, figures, and in-text numbers from the manuscript (excludes the online appendix)
+  - [ ] Create a list of all tables, figures, and in-text numbers from the manuscript (excludes the online appendix). If the author provides such a list, validate it against the manuscript.
 
 ### For each listed data source
 
