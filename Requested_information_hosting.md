@@ -39,11 +39,15 @@ A variety of (unfortunately) commonly used web-accessible locations are not acce
   - Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1
   -  Clemens, Michael, 2018, "Replication Data for: Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion", https://doi.org/10.7910/DVN/17M4ZP, Harvard Dataverse, V1
 
-> "United States Newspaper Panel, 1869-2004"
+> "United States Newspaper Panel, 1869-2004" (Gentzkow, Shapiro, Sinkinson)
 - Hosted on ICPSR at [https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261](https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261)
 - Contains 
   - Gentzkow, Matthew, Shapiro, Jesse M., and Sinkinson, Michael. United States Newspaper Panel, 1869-2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2014-12-10. https://doi.org/10.3886/ICPSR30261.v6
 
+> "Socioeconomic High-resolution Rural-Urban Geographic Dataset for India (SHRUG)" (Asher and Novosad)
+- Hosted on Harvard Dataverse at [https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DPESAK](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DPESAK)
+- Contains:
+  - Asher, Sam; Novosad, Paul, 2019, "Socioeconomic High-resolution Rural-Urban Geographic Dataset for India (SHRUG)", https://doi.org/10.7910/DVN/DPESAK, Harvard Dataverse, V1, UNF:6:Upe25NYAZwR+6VsDt5X2lQ== 
 
 ## Challenges in Hosting of Data and Code at Restricted-Access Data Centers
 Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.census.gov/fsrdc),  [CASD](https://www.casd.eu/), etc.) face certain challenges in the handling of data and code as described in this document:
