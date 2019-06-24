@@ -29,14 +29,14 @@ graph TD;
 ## General Rules and Guidelines
 ### Requirements
 We **require** that
-- you cite the data
-  - you should cite the data in your main manuscript
-  - you should cite data separately in your online appendix
 - you make **analysis** programs available
 - you provide a README that describes the data acquisition and how to run the analysis process
 - you make every effort to provide as much data as possible in an openly accessible fashion
 - you make every effort to support reproducibility of your analysis
 - you make every effort to transparently describe the creation of your analysis data
+- you cite the data
+  - you should cite the data in your main manuscript
+  - you should cite data separately in your online appendix
 
 ### Suggestions
 We **strongly suggest** using some best-practices as suggested by the literature cited above:
@@ -78,6 +78,10 @@ We **strongly suggest**
 - (optionally, but useful) a record of how long the code sequence is expected to run - it will help potential replicators to know how to long to expect the programs to run
 
 For details, see [Requested_information_code](Requested_information_code.md).
+
+## Data and Code Availability Statements
+
+Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". Sample language for such statements, either incorporated into a README, a distinct document, or a distinct section of the manuscript, is available [here](Requested_information_dcas.md).
 
 ## Data and Code Hosting
 Journals have made supplementary materials available on
