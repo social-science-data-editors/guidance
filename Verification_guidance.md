@@ -4,6 +4,7 @@ This document describes
 
 - what authors should check before providing data and code to journals
 - what verifier teams should check for in the data and code provided to them for the purpose of verification
+- how to summarize the results in a [Replication report](#examples)
 
 ## Checklist
 
@@ -46,4 +47,9 @@ This document describes
   - [ ] identify all error messages
   - [ ] identify all outputs as per the README and the list of tables/figures/in-text numbers
   - [ ] compare the output to the tables/figures/numbers in the manuscript.
-  - [ ] Write a [Replication report](https://github.com/AEADataEditor/replication-template/blob/master/REPLICATION.md)
+  - [ ] Write a [Replication report](#examples)
+
+## Examples
+Here are a few examples of report templates:
+-  AEA [Replication report](https://github.com/AEADataEditor/replication-template/blob/master/REPLICATION.md)
+- Economic Journal [soon]
