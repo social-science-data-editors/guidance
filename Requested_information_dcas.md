@@ -1,5 +1,11 @@
 # Data and Code Availability Statements - Sample text
 
+Data and Code Availability Statements (DCAS) can take on many forms. The examples below are taken from economics articles. For examples from other domains, see
+- [Springer](https://www.springernature.com/gp/authors/research-data-policy/data-availability-statements/12330880)
+- [Hindawi](https://www.hindawi.com/research.data/#statement.templates)
+
+Note that not all the examples listed above may be admissible by the journal you are submitting to.
+
 ## Example for public use data included in data archive:
 > The paper uses data obtained from IPUMS (Ruggles et al, 2017). IPUMS does not currently provide the ability to store or reference custom extracts, but allows for redistribution for the purpose of replication. The archive contains the extracted data, codebook in the folder "data/IPUMS". The data citation in the main article has the full URL. 
 
