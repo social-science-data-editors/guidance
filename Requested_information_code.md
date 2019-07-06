@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: withtoc
 title: "Requested Information for Code"
 toc: true
 ---
