@@ -1,4 +1,7 @@
-## Requested Information for Code
+---
+layout: withtoc
+title: "Requested Information for Code"
+---
 
 ### Readings
 Some scientists, including economists, have put together excellent guidance and tutorials. See

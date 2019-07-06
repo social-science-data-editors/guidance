@@ -1,4 +1,7 @@
-## Suggested Information for Data and Code Hosting
+---
+layout: withtoc
+title: Suggested Information for Data and Code Hosting
+---
 
 ### Trusted Repositories
 Journals and institutions have assessed a number of trusted repositories:
@@ -49,7 +52,7 @@ A variety of (unfortunately) commonly used web-accessible locations are not acce
 - Contains:
   - Asher, Sam; Novosad, Paul, 2019, "Socioeconomic High-resolution Rural-Urban Geographic Dataset for India (SHRUG)", https://doi.org/10.7910/DVN/DPESAK, Harvard Dataverse, V1, UNF:6:Upe25NYAZwR+6VsDt5X2lQ== 
 
-## Challenges in Hosting of Data and Code at Restricted-Access Data Centers
+### Challenges in Hosting of Data and Code at Restricted-Access Data Centers
 Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.census.gov/fsrdc),  [CASD](https://www.casd.eu/), etc.) face certain challenges in the handling of data and code as described in this document:
 
 - researchers (end-users) may not be able to provide DOI or similar persistent identifiers for some data
@@ -57,12 +60,12 @@ Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.cens
 - researchers may not be able to remove all code from the center, or such removal is subject to restrictions
 - data citation guidance may be lacking, or may not be obvious (see [Data Citation Guidance](Data_citation_guidance.md) for general guidance)
 
-### A few guidelines
+#### A few guidelines
 
 - Request as much code as the RADC  will allow the researcher to remove. Subsequently handle it equivalently to the [general code guidance](Requested_information_code.md), but make special note (placeholders, explanatory text) of any redacted information.
 - In addition, some RADC may provide the ability to deposit code internally and confidentially. Use such interal repositories, and make a note of their location in the publicly deposited code or in supplementary documents.
 
-### Self-generated repositories
+#### Self-generated repositories
 If a RADC has at least an archival or backup policy of sufficient length (e.g., 10 or more years), but does not offer a formal repository, then the following procedure allows users to find and request code and data
 - As before, request as much code as is feasible, and deposit it in a public repository (e.g., openICPSR, Dataverse, Zenodo). **Don't publish it yet.**
 - If possible at such repositories, pre-register a `DOI`
@@ -81,6 +84,6 @@ If a RADC has at least an archival or backup policy of sufficient length (e.g., 
 - Confirm with the RADC's administrative staff how long project files are kept as archives or in backup (often 5-10 years)
 - Add a statement to the public README.md (and to article materials). See [Sample RADC Statement 1](samples/sample_radc_statement1.md) and [Sample RADC Statement 2](samples/sample_radc_statement2.md).
 
-### Some examples
+#### Some examples
 - Fort (2016) [10.1093/restud/rdw057](https://doi.org/10.1093/restud/rdw057), in the supplementary materials ([local copy](copies/Fort2016-Readme.pdf))
 -  Groen, Kutzbach, and Polivka (2019, forthcoming) (link to be supplied upon publication)
