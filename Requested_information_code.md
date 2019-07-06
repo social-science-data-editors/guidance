@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Requested Information for Code"
+toc: true
+---
 ## Requested Information for Code
 
 ### Readings
