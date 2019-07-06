@@ -5,4 +5,4 @@ logo: assets/ssde-logo.jpeg
 show_downloads: false
 markdown: kramdown
 kramdown:
-  parse_block_html: true
+  parse_block_html: false
