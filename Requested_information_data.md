@@ -38,44 +38,13 @@ It doesn't need to be complicated, but should be complete. For more extensive de
 
 Other services may be available at your own institution. Some services may charge a fee, or only be available to researchers affiliated with that institution.
 
-
-
-#### Stata
-
-In Stata,the native 'codebook' command can generate such information:
-```
-// Stata
-use my_input_data
-describe
-codebook
-```
-See [code/01_codebook_fancy.md](code/01_codebook_fancy.md) for a fancier example, and [code/02_codebook_plaintext.md](code/02_codebook_plaintext.md) for the code and output from the simpler example.
-
-#### R
-
-In R, the [dataMaid](https://cran.r-project.org/web/packages/dataMaid/index.html) [[1](http://sandsynligvis.dk/2017/08/21/datamaid-your-personal-assistant-for-cleaning-up-the-data-cleaning-process/)], [[2](http://sandsynligvis.dk/articles/18/codebook.html)] can accomplish a similar task:
-```{r}
-# use the    dataMaid   package
-library(dataMaid)
-makeCodebook(my_input_data)
-```
-See [code/03_codebook_dataMaid](code/03_codebook_dataMaid.md) for an example.
-
-#### SAS
-
-In SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:
-```
-proc contents;
-proc means;
-run;
-```
-See [code/04_codebook_SAS](code/04_codebook_SAS.md) for an example.
-
-#### More elaborate methods
+We provide a [few suggestions for how to do this in Stata, R, and SAS](sample-information-data.md). 
 However, if you have the ability to do a more robust data description, you should. See a [self-citing example](https://www2.ncrn.cornell.edu/ced2ar-web/codebooks/synlbd/v/v2).
 
 ### Data access description
-The description of data access should provide enough information so that an uninformed user could theoretically access the data. The access itself should also be persistent, i.e., not rely on a transitory website or the presence of a particular person who might change jobs at any time.
+The description of data access should provide enough information so that an uninformed user could theoretically access the data. Data access descriptions are often referred to as "Data Availability Statements".
+
+The access  should  be persistent, i.e., not rely on a transitory website or the presence of a particular person who might change jobs at any time.
 
 - This can be as simple as a download URL.
 - It might be a pointer to a directory in the replication archive.
@@ -96,7 +65,7 @@ The description of data access should provide enough information so that an unin
 While non-academic data providers may not always consider reproducibility when you sign a contract with them, we have found numerous such providers which are open to at least the idea of "reproducibility checking" or replication. Examples of agreements which allow third-parties to access confidential data for the purpose of replication, 
 -  [supplementary materials](https://www.aeaweb.org/aer/data/oct2013/20110834_data.zip) to [Barseghyan et al (2013)](https://doi.org/10.1257/aer.103.6.2499).
 
-For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). For examples of commercial data, see [Commercial data](Commercial_data.md).
+For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). For examples of commercial data, see [Commercial data](Commercial_data.md). For sample "Data Access Descriptions", see the AEA's [Draft Template README](https://aeadataeditor.github.io/aea-de-guidance/template-README.html) or the [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
 
 ### Data persistence
 Data should remain available for a sufficiently long time.
@@ -130,4 +99,4 @@ If collecting data, consider early on the need to have just enough restrictions.
 
 Consider breaking your data archives into **manageable pieces**. For instance, raw data might be in a different location/repository/archive than the analysis data, even if you are providing access to both for the purpose of replication. Examples:
 
-- Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1 
+> Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1 
