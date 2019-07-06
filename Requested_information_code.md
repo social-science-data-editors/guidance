@@ -1,9 +1,8 @@
 ---
 layout: withtoc
 title: "Requested Information for Code"
-toc: true
 ---
-## Requested Information for Code
+
 new
 ### Readings
 Some scientists, including economists, have put together excellent guidance and tutorials. See
