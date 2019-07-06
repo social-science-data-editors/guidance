@@ -3,7 +3,6 @@ layout: withtoc
 title: "Requested Information for Code"
 ---
 
-new
 ### Readings
 Some scientists, including economists, have put together excellent guidance and tutorials. See
 - [Gentzkow-Shapiro Lab's RA Manual](https://github.com/gslab-econ/ra-manual/wiki/Getting-Started), in particular [Stata Style](https://github.com/gslab-econ/ra-manual/wiki/Stata)
