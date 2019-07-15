@@ -1,7 +1,11 @@
-## Frequently Asked Questions
+---
+layout: withtoc
+title: "Frequently Asked Questions"
+---
 ... although some are not frequently asked, but might nevertheless be useful. Below questions and answers in random order.
 
-### FAQ 1
+### Do I need to release my entire code history?
+
 > We work on github already. Is there anyway to make just a "release" public in github without making public the entire code history and issue tickets? 
 
 It all depends if you are comfortable with that, and if this is one paper out of multiple ones stemming from the same project.
@@ -38,7 +42,7 @@ If not, then what I suggest is to do the following
   - This is now your submission release, cleaned of all history and issues
 - Cite the DOI of your replication archive in your main text.
 
-### FAQ 2
+### Data Citation without Online Link
 > Do you have any examples of data citation for proprietary data that does not have an online link? All the examples are much more formal than the random spreadsheets [agency 1]  sent over! [agency 2] has a more formal naming system, but again, there's no persistent indicator for the datasets because they are not accessible.
 
 A known problem with no clear solution. Here's how I try to approach the problem:
