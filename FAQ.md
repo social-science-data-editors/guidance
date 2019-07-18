@@ -37,7 +37,7 @@ If not, then what I suggest is to do the following
 - Push to a new Github repo
   - (on Github, create an empty repo, then push to it)
   - (if using the Github Desktop, instead "add existing repo" to the Github Desktop, then push to Github.com)
-- Now enable this new repo for the Zenodo integration
+- Now enable this new repo for the [Zenodo integration](https://guides.github.com/activities/citable-code/)
 - Create a release
   - This is now your submission release, cleaned of all history and issues
 - Cite the DOI of your replication archive in your main text.
