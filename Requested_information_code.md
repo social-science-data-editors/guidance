@@ -18,52 +18,18 @@ In some cases, the master script might also serve as a README (for instance, "RE
 
 ### Configuration
 
-We strongly encourage the use of a single configuration file, containing all path names. 
-- Encouraged:
-```
-global basepath "C:/My Documents/Paper 15/"
-global includes "${basepath}/includes"
-global inputdata "${basepath}/inputdata"
-global tables    "${basepath}/text/tables"
-set matsize 11000
-```
+- We strongly encourage the use of a single configuration file, containing all path names. 
+- We strongly encourage the use of relative paths for including programs, data, and outputs in the main program
+- We strongly encourage listing ALL dependencies and packages needed to run. 
+  - including them in the project
+  - or listing them out in a "setup" program
+- We strongly encourage setting any seeds for random number generators
 
-We strongly encourage the use of relative paths for included programs, data, and outputs.
-- Discouraged:
-```
-include "C:\My Documents\yesterdays programs\submodule.do"
-```
-- Encouraged:
-```
-include "includes/submodule.do"
-```
-or
-```
-include "${includes}/submodule.do"
-```
+- [Sample configuration for Stata](samples/sample-stata-configuration.md)
+- [Sample configuration for R](samples/sample-R-configuration.md)
+- [Python way](samples/sample-python-configuration.md)
 
-We strongly encourage listing ALL dependencies and packages needed to run. The best way to achieve this is to have a project-specific directory for packages:
-#### Stata
-- In Stata, reset the Personal ADO directory:
-```
-sysdir set PERSONAL "$basepath/ado/personal"
-sysdir set PLUS "$basepath/ado/plus"
-```
 
-Stata will then install the new extension into that directory instead of c:\ado\plus ([source](https://www.stata.com/support/faqs/programming/personal-ado-directory/) )
-
-You can then create a single dependency file that is run before all others:
-```
-00_install.do:
-ssc install package1
-ssc install package2
-ssc install package3
-```
-#### R
-Similar functionality can be achieved in R using the `packrat` package, or by manually resetting the R library locations.
-
-#### Python
-Python uses a `dependency.txt` which can list all necessary dependencies, and can in turn be used to re-install those dependencies.
 
 ### Things not to do
 -  We strongly discourage writing comments like

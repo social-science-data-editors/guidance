@@ -67,6 +67,9 @@ Regarding the data, enough information should be provided
 
 For details, see [Requested information for data](Requested_information_data.md).
 
+### Data and Code Availability Statements
+
+Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". Sample language for such statements, either incorporated into a README, a distinct document, or a distinct section of the manuscript, is available [here](Requested_information_dcas.md).
 
 ### Programs and Code
 We **strongly suggest**
@@ -78,9 +81,7 @@ We **strongly suggest**
 
 For details, see our discussion on [Requested information for code](Requested_information_code.md).
 
-### Data and Code Availability Statements
 
-Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". Sample language for such statements, either incorporated into a README, a distinct document, or a distinct section of the manuscript, is available [here](Requested_information_dcas.md).
 
 ### Data and Code Hosting
 Journals have made supplementary materials available on
