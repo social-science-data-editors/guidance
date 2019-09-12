@@ -102,6 +102,12 @@ For further details, see our discussion on [Requested information on hosting cod
 
 ### Citing Data and Code
 All data should be cited, as per journal guidelines:
+
 - [AEA guidelines](https://www.aeaweb.org/journals/policies/sample-references)
 - [ReStud guidelines]
-For a discussion with some suggestions, see [Data_citation_guidance](Data_citation_guidance.md).
+
+For a discussion with some suggestions, see our [Data citation guidance](Data_citation_guidance.md).
+
+### Licensing questions
+
+Issues about licensing are complex, and this site touches on this topic in the [discussion of licensing](https://social-science-data-editors.github.io/guidance/Licensing_guidance.html). We encourage authors to take licensing considerations seriously.
