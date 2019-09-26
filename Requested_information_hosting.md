@@ -7,7 +7,8 @@ title: Suggested Information for Data and Code Hosting
 Journals and institutions have assessed a number of trusted repositories:
 - [CoreTrustSeal](https://www.coretrustseal.org/) has a certification process
 - [re3data.org](https://www.re3data.org/) lists research data repositories
-- [Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research](https://f1000research.com/for-authors/data-guidelines#hosting), and [PLOS](https://journals.plos.org/plosone/s/data-availability) (and soon the AEA) have lists of trusted repositories.
+- [Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research](https://f1000research.com/for-authors/data-guidelines#hosting), and [PLOS](https://journals.plos.org/plosone/s/data-availability) have lists of trusted repositories. 
+- Always check with your journal for specific restrictions or suggestions.
 - These generally include at least the following:
   -  [Dryad Digital Repository](http://datadryad.org/)
   -  [figshare](http://figshare.com/)
@@ -15,6 +16,7 @@ Journals and institutions have assessed a number of trusted repositories:
   -  [ICPSR](https://www.icpsr.umich.edu/icpsrweb/) and [OPENICPSR](https://www.openicpsr.org/openicpsr/)
   -  [Open Science Framework](http://osf.io/)
   -  [Zenodo](http://zenodo.org/)
+  - Country or region-specific repositories (that nevertheless generally accept depositors from anywhere): [GESIS](https://datorium.gesis.org/xmlui/) (Germany), [Swedish National Data Service (SND)](https://snd.gu.se/en/describe-and-deposit-data), [EASY](https://easy.dans.knaw.nl/ui/home) (Netherlands), [CSIRO](https://data.csiro.au/collections/) (Australia), etc.
 - Many universities have formal document repositories that may be able to assume such a role; talk to your (data) librarian
 - Restricted-access and secure data centers also assume the role of trusted repositories:
   - e.g. [Federal Statistical Research Data Centers](https://www.census.gov/fsrdc) for a variety of statistical microdata in the US
