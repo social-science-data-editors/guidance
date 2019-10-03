@@ -39,6 +39,7 @@ It doesn't need to be complicated, but should be complete. For more extensive de
 - [DataONE Primer on Data Management Best Practices](http://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf)
 - [Yale Institution for Social and Policy Studies](https://isps.yale.edu/research/data/deposit)
 - [Cornell Institute for Social and Economic Research](https://ciser.cornell.edu/research/results-reproduction-r-squared-service/)
+- [World Bank DIME Checklist](https://dimewiki.worldbank.org/wiki/Checklist:_Microdata_Catalog_submission)
 
 Other services may be available at your own institution. Some services may charge a fee, or only be available to researchers affiliated with that institution.
 
