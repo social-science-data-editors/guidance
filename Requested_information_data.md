@@ -70,7 +70,7 @@ The access  should  be persistent, i.e., not rely on a transitory website or the
 While non-academic data providers may not always consider reproducibility when you sign a contract with them, we have found numerous such providers which are open to at least the idea of "reproducibility checking" or replication. Examples of agreements which allow third-parties to access confidential data for the purpose of replication, 
 -  [supplementary materials](https://www.aeaweb.org/aer/data/oct2013/20110834_data.zip) to [Barseghyan et al (2013)](https://doi.org/10.1257/aer.103.6.2499).
 
-For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). For examples of commercial data, see [Commercial data](Commercial_data.md). For sample "Data Access Descriptions", see the AEA's [Draft Template README](https://aeadataeditor.github.io/aea-de-guidance/template-README.html) or the [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
+For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). For examples of commercial data, see [Commercial data](DCAS_Commercial_data.md). For sample "Data Access Descriptions", see the AEA's [Draft Template README](https://aeadataeditor.github.io/aea-de-guidance/template-README.html) or the [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
 
 ### Data persistence
 Data should remain available for a sufficiently long time.
