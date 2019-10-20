@@ -12,7 +12,7 @@ Journals and institutions have assessed a number of trusted repositories:
 - These generally include at least the following:
   -  [Dryad Digital Repository](http://datadryad.org/)
   -  [figshare](http://figshare.com/)
-  -  [Harvard Dataverse Network](http://thedata.harvard.edu/dvn/)
+  -  [Harvard Dataverse](https://dataverse.harvard.edu)
   -  [ICPSR](https://www.icpsr.umich.edu/icpsrweb/) and [OPENICPSR](https://www.openicpsr.org/openicpsr/)
   -  [Open Science Framework](http://osf.io/)
   -  [Zenodo](http://zenodo.org/)
