@@ -54,6 +54,10 @@ This may be adjusted. An alternate citation may be
 >    Inter-University Consortium for Political and Social Research, Ann Arbor, MI.
 >    ICPSR05404-v1. https://doi.org/10.3886/ICPSR05404.
 
+Citations to primary data can sometimes be hard to construct. If the data provider has a suggested citation, then you should use it. Alternatively, you can construct as per the above examples, for instance, as noted on the [AEA style guide](https://www.aeaweb.org/journals/policies/sample-references):
+
+> Bureau of Labor Statistics. 2000–2010. “Current Employment Statistics: Colorado, Total Nonfarm, Seasonally adjusted - SMS08000000000000001.” United States Department of Labor. http://data.bls.gov/cgi- bin/surveymost?sm+08 (accessed February 9, 2011).
+
 ### Tools
 No tool is perfect, but you will likely find the one that works for your particular workflow. 
 Some examples for specific software:
