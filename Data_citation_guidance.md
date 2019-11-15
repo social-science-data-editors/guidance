@@ -3,12 +3,14 @@
 Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.
 
 ### Data Citations
-Properly referencing data goes beyond just reproducibility - it is also proper scientific writing style. In the same way that we use bibliographic references to "printed" resources, we should also be using such references for data resources, to give and receive credit where credit is due. Not referencing an article or book is at best an oversight, and at worst plagiarism - and the same should apply to data objects. Numerous guides and tutorials exist:
+Properly referencing data goes beyond just reproducibility - it is also proper scientific writing style. In the same way that we use bibliographic references to "printed" resources, we should also be using such references for data resources, to give and receive credit where credit is due. Not referencing an article or book is at best an oversight, and at worst plagiarism - and the same should apply to data objects. Numerous guides and tutorials exist, some of which provide a variety of examples.
 
 - DataONE [Tutorial on Data Citation](http://www.dataone.org/sites/all/documents/L09_DataCitation.pptx) and [generic guidance](https://www.dataone.org/citing-dataone)
 - [ICPSR](https://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp)
 -  Force11's [Joint Declaration of Data Citation Principals](https://doi.org/10.25490/a97f-egyk)
 - the AEA's  [Sample References](https://www.aeaweb.org/journals/policies/sample-references)
+- [Michigan State University](http://libguides.lib.msu.edu/c.php?g=96245&p=626239)
+- [UC Santa Cruz](https://guides.library.ucsc.edu/citedata)
 
 
 ### What to cite
@@ -17,7 +19,7 @@ In a nutshell, every dataset is to be cited. This is true for the main article a
 
 ### How to cite
 
-Many journals require the Chicago style for citations and bibliographies [1](https://www.aeaweb.org/journals/policies/sample-references). However, the [Chicago Style Manual](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html)  does not provide examples for data citations, and neither does the [Citation Style Language](https://citationstyles.org/) used by applications like [Zotero](https://www.zotero.org/) and [Mendeley Desktop](https://www.mendeley.com/download-desktop/).
+Many journals in economics require the Chicago style for citations and bibliographies [1](https://www.aeaweb.org/journals/policies/sample-references). However, the [Chicago Style Manual](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html)  does not provide examples for data citations, and neither does the [Citation Style Language](https://citationstyles.org/) used by applications like [Zotero](https://www.zotero.org/) and [Mendeley Desktop](https://www.mendeley.com/download-desktop/).
 
 
 [DataONE](https://www.dataone.org/citing-dataone) suggests content and style that resemble the generic working paper or article citation style (adapted to Chicago style):
