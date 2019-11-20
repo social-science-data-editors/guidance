@@ -5,6 +5,8 @@ title: Data Availability Statements for Restricted Data
 
 On this page, we list a few commonly used *lightly* restricted data and their data availability statements or licenses, when these are not otherwise easily available.
 
+This page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or [create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new).
+
 ### IPUMS
 
 IPUMS data are subject to varying usage restrictions - please consult with IPUMS directly  (at [ipums@umn.edu](mailto:ipums@umn.edu)) should you have any doubts.
