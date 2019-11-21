@@ -13,7 +13,8 @@ This page uses a few examples, and suggested descriptions of data access for the
 Compustat data is often used in macroeconomic or industrial organization papers. Compustat is owned by S&P Global.
 
 - Data access description: Researchers can subscribe to the data. Many universities and research institutions have such a subscription. 
--  URL with more info on data access: https://www.spglobal.com/marketintelligence/en/client-segments/academia
+-  URL with more info on data access: 
+[https://www.spglobal.com/marketintelligence/en/client-segments/academia](https://www.spglobal.com/marketintelligence/en/client-segments/academia)
 - Possible Data Access Statement (no guarantees):
 > Compustat is owned by S&P Global. Researchers can subscribe to the data. Many universities and research institutions have such a subscription. More info on data access for academia can be found at https://www.spglobal.com/marketintelligence/en/client-segments/academia .
 - Ability to redistribute extracts: Unknown
