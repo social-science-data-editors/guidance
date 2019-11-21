@@ -9,7 +9,7 @@ This page uses a few examples, and suggested descriptions of data access for the
 
 > NOTE: Nothing on this page should be construed as official or legal advice. Always consult with your data provider.
 
-## Compustat®
+### Compustat®
 Compustat data is often used in macroeconomic or industrial organization papers. Compustat is owned by S&P Global.
 
 - Data access description: Researchers can subscribe to the data. Many universities and research institutions have such a subscription. 
@@ -22,7 +22,7 @@ Compustat data is often used in macroeconomic or industrial organization papers.
 - Examples in the literature:
   - To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
 
-## Nielsen 
+### Nielsen 
 
 The [Nielsen Company](http://www.nielsen.com/us/en.html) provides various datasets through the Chicago Booth's [Kilts Center for Marketing](https://www.chicagobooth.edu/research/kilts/).
 
