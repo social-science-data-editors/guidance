@@ -49,7 +49,7 @@ A known problem with no clear solution. Here's how I try to approach the problem
 
  - A citation has author, title, and a publisher, with optional other locators. (see [Chicago Manual of Style (subscription)](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec014.html) and [CMS Quick Guide on citations](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html). 
  
-Note that Chicago-style does not actually required the locator information - see the examples for "E-book" Kindle.
+Note that Chicago-style does not actually require the locator information - see the examples for "E-book" Kindle.
  
 > "Electronic content presented without formal ties to a publisher or sponsoring body has the authority equivalent to that of unpublished or self-published material in other media."
 
@@ -62,3 +62,5 @@ Thus, one can construct the citation as
 An example might thus be:
 
 > Agency 1. 2007. *Name of DataSet*. Boston: Commonwealth of Massachusetts. Multiple electronic files.
+
+For more information, see the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
