@@ -19,18 +19,22 @@ If not, then what I suggest is to do the following
    git clone (WHATEVER)
    cd whatever
    git branch "cleaned"
+   ```
 
 - now wipe out all git information:
    ```
    rm -rf .git
+   ```
 
 - create a new repo
    ```
    git init
+   ```
 
 - Add all files
    ```
    git add *
+   ```
 
  (careful with subdirs)
 
