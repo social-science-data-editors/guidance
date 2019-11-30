@@ -1,4 +1,8 @@
-## Guidance on Data Citation
+---
+layout: withtoc
+title: "Guidance on Data Citation"
+---
+
 
 Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.
 
@@ -11,7 +15,6 @@ Properly referencing data goes beyond just reproducibility - it is also proper s
 - the AEA's  [Sample References](https://www.aeaweb.org/journals/policies/sample-references)
 - [Michigan State University](http://libguides.lib.msu.edu/c.php?g=96245&p=626239)
 - [UC Santa Cruz](https://guides.library.ucsc.edu/citedata)
-
 
 
 ### What to cite
@@ -60,6 +63,11 @@ This may be adjusted. An alternate citation may be
 Citations to primary data can sometimes be hard to construct. If the data provider has a suggested citation, then you should use it. Alternatively, you can construct as per the above examples, for instance, as noted on the [AEA style guide](https://www.aeaweb.org/journals/policies/sample-references):
 
 > Bureau of Labor Statistics. 2000–2010. “Current Employment Statistics: Colorado, Total Nonfarm, Seasonally adjusted - SMS08000000000000001.” United States Department of Labor. http://data.bls.gov/cgi- bin/surveymost?sm+08 (accessed February 9, 2011).
+
+### Some additional guidance on tricky citations
+
+-  [Data citation without an online link](https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link)
+- the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
 
 ### Tools
 No tool is perfect, but you will likely find the one that works for your particular workflow. 
