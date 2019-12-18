@@ -68,3 +68,10 @@ An example might thus be:
 > Agency 1. 2007. *Name of DataSet*. Boston: Commonwealth of Massachusetts. Multiple electronic files.
 
 For more information, see the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
+
+### Data Citation with only a top-level Online Link
+
+Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. A few examples follow.
+
+#### OECD Statistics
+The top-level URL is [https://stats.oecd.org/](https://stats.oecd.org/), and never changes. However, the [User Guide](https://stats.oecd.org/Content/themes/OECD/static/help/WBOS%20User%20Guide%20(EN).PDF), page 34, shows how to share a URL for a particular query. The usual citation rules for URLs then can be applied.
