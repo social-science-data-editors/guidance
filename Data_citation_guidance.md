@@ -21,6 +21,18 @@ Properly referencing data goes beyond just reproducibility - it is also proper s
 
 In a nutshell, every dataset is to be cited. This is true for the main article as well as online appendices. In the past, use of data or code has been acknowledged in footnotes, and only rarely through bibliographic references. However,  if the dataset is used, it should appear in the bibliography. The same is true for code reused from previous papers, or provided by authors.
 
+#### Data is published
+The DOI is thus public, and all repositories will provide a suggested citation. One can also use [https://www.doi2bib.org/](https://www.doi2bib.org/) or [https://citation.crosscite.org/](https://citation.crosscite.org/) to get a citation (see below for additional tools).
+
+####  Data is not published
+This is trickier. The data does not necessarily have a title that is related to the paper. Some repositories allow authors to "reserve" a DOI (Zenodo) or to delay publication. For some repositories, the DOI, while not officially reserved, can be derived from information already available (see this FAQ for openICPSR, something similar may be possible at Dataverse).
+
+In some cases, authors may be able to delay publication, and coordinate it with the publication of the article (openICPSR, possibly Zenodo).
+
+
+### Where to cite
+In all cases, data and code should be cited in the main manuscript. They should also be  referenced in the data availability statement (some journals) or the README (other journals). 
+
 ### How to cite
 
 Many journals in economics require the Chicago style for citations and bibliographies [1](https://www.aeaweb.org/journals/policies/sample-references). However, the [Chicago Style Manual](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html)  provides few relevant examples for data citations. Applications like [Zotero](https://www.zotero.org/) and [Mendeley Desktop](https://www.mendeley.com/download-desktop/) also do not support data citations robustly, even though the underlying [Citation Style Language](https://citationstyles.org/) has had the concept of a "data" entry for several years.
@@ -69,6 +81,8 @@ Citations to primary data can sometimes be hard to construct. If the data provid
 -  [Data citation without an online link](https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link)
 - the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
 
+
+
 ### Tools
 No tool is perfect, but you will likely find the one that works for your particular workflow. 
 Some examples for specific software:
@@ -81,4 +95,5 @@ General tools:
 
 - [CrossCite DOI formatter](https://citation.crosscite.org/)
 - [Citation Machine](http://www.citationmachine.net/chicago-17-author-date/cite-a-digital/manual) - choose `Source type`=`Digital file` and put the URL and access date into the `Annotation` field.
+- [Doi2Bib](https://www.doi2bib.org/) creates a bibtex entry one can put into a Bib file (if using Bibtex) or import into Zenodo.
 
