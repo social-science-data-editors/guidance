@@ -34,7 +34,7 @@ graph TD;
     - If the data was acquired elsewhere, this should be the ORIGINAL location of the data
   - It must include the date the data was created or downloaded
   -  If possible, provide a Digital Object Identifier (DOI). You can generate a citation from the DOI using https://www.doi2bib.org/.
-  - For more detailed information, see [Data citation guidance](Data_citation_guidance.md).
+>  - For more detailed information, see [Data citation guidance](Data_citation_guidance.md).
 - Statistical characteristics of the data
 - This description of data is often called "metadata"
   - **At a minimum**, all variables that are used in the paper should be well-described (variable/column labels, value labels, summary statistics) through a codebook.
@@ -85,19 +85,27 @@ The access  should  be persistent, i.e., not rely on a transitory website or the
 - For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). 
 - For more information on Data Access Descriptions, see [Data Access Descriptions](Requested_information_dcas.md).
   
-For additional sample "Data Access Descriptions", see the AEA's [Draft Template README](https://aeadataeditor.github.io/aea-de-guidance/template-README.html) or the [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
+For additional sample "Data Access Descriptions", see 
+- the AEA's [Draft Template README](https://aeadataeditor.github.io/aea-de-guidance/template-README.html) 
+- [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
 
 ### Data persistence
 Data should remain available for a sufficiently long time.
 -  By depositing in the journal-based data (and code) repositories, the data (and code) will remain available indefinitely.
 -  This is also true if the data is in various other repositories
--  This may also be true if the data cannot be shared (restricted access data).
+-  This *may* also be true if the data cannot be shared (restricted access data).
 - Again, this may already have been defined in your DMP.
 -  A good minimum benchmark is 10 years, but this may not always be feasible with data the author does not control.
-You should describe the data persistence, or point to a data archive's policy in that matter. See [Requested_information_hosting](Requested_information_hosting.md) for more details on data repositories.
+You should describe the data persistence, or point to a data archive's policy in that matter. 
+
+> See [Requested_information_hosting](Requested_information_hosting.md) for more details on data repositories.
 
 ### What is a data provider
-A "data provider" in this sense can be a public repository where the data can be found ([ICPSR](https://www.icpsr.umich.edu/icpsrweb/)), a website that provided the data ([IPUMS](https://usa.ipums.org/usa/)), a statistical agency or private company that granted access to the data ([U.S. Census Bureau](https://www.census.gov/fsrdc), Twitter, Acme Inc.).
+A "data provider" in this sense can be 
+- a public repository where the data can be found ([ICPSR](https://www.icpsr.umich.edu/icpsrweb/)), 
+- a website that provided the data ([IPUMS](https://usa.ipums.org/usa/)), 
+- a statistical agency or private company that granted access to the data ([U.S. Census Bureau](https://www.census.gov/fsrdc), Twitter, Acme Inc.).
+
 The author may also be the data provider, for instance, because the author conducted the survey used in the article. However, in many cases, the data provider may not be a data archive (see  the page on [Requested information about hosting](Requested_information_hosting.md)).
 
 #### Practical guidance: data provider and data archives
