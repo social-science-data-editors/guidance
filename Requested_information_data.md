@@ -8,12 +8,23 @@ We request the following information from all articles:
 
 - Data Description: detailed description of all data, including input data:
   - name of data set
-  - (original and current) location of data set
+  - (original and current) location of data set - this is also called the "provenance" of the data
   - characteristics of data set: **At a minimum**, all variables that are used in the paper should be well-described (variable/column labels, value labels, summary statistics).
 - Data Access: complete description of how the data can be accessed
 - Data Persistence: how long will the data continue to exist in the form the author used it
 
 Details follow.
+
+<div class="mermaid">
+graph TD;
+    DB[(Data provider)] -. Extract .->  A
+    subgraph Dataflow;
+    A((Input data)) ==>  B[Cleaning programs];
+    B ==> D{Further analysis}
+    end;
+</div>
+
+
 
 ### Data description
 - Data citation:

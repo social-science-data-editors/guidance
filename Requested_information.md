@@ -44,12 +44,13 @@ We **require** that
 
 #### Suggestions
 We **strongly suggest** using some best-practices as suggested by the literature cited above:
-- to also make programs that create the analysis data ("**cleaning programs**") available
+- to also make programs that create the analysis data ("**cleaning programs**") available (some journals, including the AEA, make this a **requirement**)
 - separation of code and data in directory structure and archive locations
 - separation of read-only input data and modified "**analysis data**"
 - a clearly defined sequence of processing (possibly through a script)
 - citation of released code
 - citation of data in the README (in addition to citing it in the article itself)
+
 This document provides some practical guidance.
 
 #### Encourage
