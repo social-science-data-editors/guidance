@@ -17,10 +17,10 @@ Details follow.
 
 <div class="mermaid">
 graph TD;
-    DB[(Data provider)] -. Extract .->  A
+    DB[(Data provider)] -. Extract .->  A;
     subgraph Dataflow;
     A((Input data)) ==>  B[Cleaning programs];
-    B ==> D{Further analysis}
+    B ==> D{Further analysis};
     end;
 </div>
 
