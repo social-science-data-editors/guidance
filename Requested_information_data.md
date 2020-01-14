@@ -15,20 +15,24 @@ We request the following information from all articles:
 
 Details follow.
 
-<div class="mermaid">
-graph TD;
-    DB[(Data provider)] -. Extract .->  A;
-    subgraph Dataflow;
-    A((Input data)) ==>  B[Cleaning programs];
-    B ==> D{Further analysis};
-    end;
-</div>
+### Generic Diagram
 
+<div class="mermaid">
+graph LR;
+subgraph "Data Provider";
+DB[(Data source)] ;
+end;
+DB -.- E>Extract] -.-> A;
+subgraph Researcher;
+A((Input data)) --> B{Further analysis};
+end;
+</div>
 
 
 ### Data description
 - Data citation:
-  - This must include the official name of the dataset, as well as the name of the creator (including if the article's author is the creator)
+  - This must include the official name of the dataset (might be "Data source" or "Input data" in the figure above), as well as the name of the creator ("Data Provider" in the [figure above](#generic-diagram))
+    - including if the article's author is the creator
   - It must include the location of the data - download site, physical archive, etc.
     - If the data is original to the article, then this will be an integral part of the replication archive
     - If the data was acquired elsewhere, this should be the ORIGINAL location of the data
@@ -58,13 +62,18 @@ We provide a [few suggestions for how to do this in Stata, R, and SAS](sample-in
 However, if you have the ability to do a more robust data description, you should. See a [self-citing example](https://www2.ncrn.cornell.edu/ced2ar-web/codebooks/synlbd/v/v2).
 
 ### Data access description
-The description of data access should provide enough information so that an uninformed user could theoretically access the data. Data access descriptions are often referred to as "Data Availability Statements".
+The description of data access should provide enough information so that an uninformed user could theoretically access the data. Data access descriptions are often referred to as "Data Availability Statements". 
+
+> In the [flow diagram above](#generic-diagram), it is the answer to the question: Who can access "Data Source" at "Data Provider" and create an extract.
 
 The access  should  be persistent, i.e., not rely on a transitory website or the presence of a particular person who might change jobs at any time.
 
 - This can be as simple as a download URL.
 - It might be a pointer to a directory in the replication archive.
-- This might also be the URL for a description of the application procedure (e.g. NCHS, https://www.cdc.gov/rdc/leftbrch/userestricdt.htm , or PSID https://simba.isr.umich.edu/restricted/ProcessReq.aspx), and an estimate of the monetary and time cost of the application process.
+- This might also be the URL for a description of the application procedure (dataprovider.com/application_procedure.html). Real examples include
+  - NCHS, https://www.cdc.gov/rdc/leftbrch/userestricdt.htm , 
+  - PSID https://simba.isr.umich.edu/restricted/ProcessReq.aspx)
+- The access description should include  an estimate of the monetary and time cost of the application process.
 - If you provided a Data Management Plan (DMP) as part of a grant proposal, much of the information may already be present in the DMP.
 - Provide the date when the data access description was valid. For long-running projects, this may be the information when YOU accessed the data, or it may be the access information for somebody who wants to access the data TODAY.
 - Provide information on the **access conditions**:
