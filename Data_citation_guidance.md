@@ -81,6 +81,22 @@ Citations to primary data can sometimes be hard to construct. If the data provid
 -  [Data citation without an online link](https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link)
 - the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
 
+### Some Frequently Asked Questions
+
+1. When providing data citations, please be sure to check that a URL is given. However, there are some subtleties:
+   - If only a single file is downloaded from a website, the data citation should include the precise URL (https://data.com/path/to/file), not just a top-level URL (https://data.com)
+   - If a URL is giving starting with "https://doi.org", then it is a DOI. Those do not need access dates. Otherwise, a website access needs a URL (by most citation styles).
+   - Be sure to provide the DOI when both a DOI and a URL is available. A DOI is stable, a URL may not be.
+   - Always check the URL by clicking on it,         Sometimes, the URL turns out to be generic/top-level, and does not show the file the replicator should be downloading. The replicator should be able to find the file using the URL, or with the instructions in the README.
+2. Check for  a license/data use agreement. 
+   - Just because data is visible does not mean it can be redistributed. By default, it is not (copyright). 
+   - Regardless of redistribution rights, the  URL of the data use agreement should be included in the README/online appendix to fully describe data access conditions. 
+   - Ideally,  a copy of the data use agreement or license should be included in the replication archive. This can be a copy of an email authorizing you to distribute the data, or a copy of the data use agreement on the website when you downloaded the data (which might be different from the current data use agreement!)
+3. Some data use agreements may also require specific citations (of papers, of code). Verify that you are  compliant with all such requirements!
+    - The same actually applies for Stata or R packages that may be downloaded.
+    - It is R practice to cite all packages, and R makes that easy. This should be noted in the report, if not done. Citation in the README should be sufficient.
+    - In Stata, some packages have citation requirements. Check the website of the author, sometimes also the *.ado file the author downloads. For instance, many authors use "reghdfe". See https://github.com/sergiocorreia/reghdfe#citation for a citation requirement.
+
 
 
 ### Tools
