@@ -46,6 +46,14 @@ If not, then what I suggest is to do the following
   - This is now your submission release, cleaned of all history and issues
 - Cite the DOI of your replication archive in your main text.
 
+### My repo is complex - I only want to share a portion 
+
+Scenario: Author keeps several papers related to an ongoing or long-running project in a single repo, and wants to isolate code for tidy submission alongside an "offshoot paper".
+
+In this case, it has been suggested to use the `git filter-branch` approach, which is essentially a way to split off a subset of a repo into a new repo (e.g. a subdirectory paper-1). It will conveniently inherit the commit history as well (but see above if that is not desired). See guide at [https://help.github.com/en/articles/splitting-a-subfolder-out-into-a-new-repository](https://help.github.com/en/articles/splitting-a-subfolder-out-into-a-new-repository).
+
+(Thanks to @MichaelChirico for suggesting)
+
 ### Data Citation without Online Link
 > Do you have any examples of data citation for proprietary data that does not have an online link? All the examples are much more formal than the random spreadsheets [agency 1]  sent over! [agency 2] has a more formal naming system, but again, there's no persistent indicator for the datasets because they are not accessible.
 
