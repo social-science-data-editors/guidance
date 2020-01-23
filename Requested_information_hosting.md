@@ -30,11 +30,11 @@ Journals and institutions have assessed a number of trusted repositories:
   - the author is the sole arbitrar of access
   - sharing is not allowed because of personal interests (future publications, patents, etc.)
 
-#### List of Acceptable Trusted Repositories in Economics
+#### List of Additional Acceptable Trusted Repositories in Economics
 
 A list of trusted repositories that have been found to be acceptable for the purpose of archiving social and economic data can be found here:
 
-> 
+> [https://github.com/social-science-data-editors/guidance/blob/master/data/trusted-repositories.csv](https://github.com/social-science-data-editors/guidance/blob/master/data/trusted-repositories.csv)
 
 The list is maintained by the editors collaborating on this site. To suggest an addition, please issue a pull request, or email one of the editors.
 
