@@ -30,6 +30,14 @@ Journals and institutions have assessed a number of trusted repositories:
   - the author is the sole arbitrar of access
   - sharing is not allowed because of personal interests (future publications, patents, etc.)
 
+#### List of Acceptable Trusted Repositories in Economics
+
+A list of trusted repositories that have been found to be acceptable for the purpose of archiving social and economic data can be found here:
+
+> 
+
+The list is maintained by the editors collaborating on this site. To suggest an addition, please issue a pull request, or email one of the editors.
+
 ### NOT ACCEPTABLE
 A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article's supplementary materials:
 - [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](FAQ.md));
