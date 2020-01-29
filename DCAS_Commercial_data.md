@@ -39,6 +39,49 @@ Adding those paragraphs into the title page footnote has been found to be suffic
 - Ability to redistribute extracts: Unknown
 - Ability to redistribute aggregated data: Unknown
 
-- Examples in the literature:
+#### Examples in the literature:
+  - To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
+
+### S&P 500
+
+The S&P 500 is one of the most widely known stock indexes. And yet, it is subject to copyright, and restrictions on redistribution.
+
+ Many authors who use the S&P 500 numbers may have downloaded it via FRED [https://fred.stlouisfed.org/series/SP500](https://fred.stlouisfed.org/series/SP500) or through other data services (Haver Analytics, Bloomberg).The FRED website mentions that the data are 
+ 
+ > (C) S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC ("S&P").
+
+It seems to be possible to request permission to distribute the extracts, using this form, or by sending email to 
+
+Most analyses will have a longer historical time horizon than the 10 years available through FRED, but will publish with a typical lag of 15-20 months.
+
+#### Citation
+
+If obtained through FRED, the suggested citation is
+
+> S&P Dow Jones Indices LLC, *S&P 500 [SP500]*, retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, January 24, 2020. 
+
+An analogue if accessing it through, say, Haver Analytics, might be
+
+> S&P Dow Jones Indices LLC, *S&P 500*, provided via Haver Analytics, January 24, 2020. 
+
+#### Data Availability Statement
+
+> S&P 500 data is (C) S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC ("S&P"). It is thus not available as part of the replication archive. Users may access the past 10 years via FRED at [https://fred.stlouisfed.org/series/SP500](https://fred.stlouisfed.org/series/SP500), or purchase longer access via Haver Analytics ([http://www.haver.com/databaseprofiles.html#indicators](http://www.haver.com/databaseprofiles.html#indicators)). Note that reproduction of our manuscript's tables requires data from [YYYY]-[ZZZZ]. 
+
+#### Examples in the literature:
+  - To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
+
+
+### Ethnologue data
+
+> The Ethnologue database contains maps and other information on languages in the world. Subscriptions are available at https://www.ethnologue.com/pricing. Academic rebates are available. 
+
+Ethnologue have been known to provide permission to redistribute extracts for the purposes of replication. 
+
+#### Citation
+
+> Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. *Ethnologue: Languages of the World. Twenty-second edition.* Dallas, Texas: SIL International. Online version: http://www.ethnologue.com
+
+#### Examples in the literature:
   - To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
 
