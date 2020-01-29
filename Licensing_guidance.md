@@ -1,4 +1,7 @@
-## DRAFT Licensing Guidance
+---
+layout: withtoc
+title: DRAFT Licensing Guidance
+---
 
 > This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.
 
