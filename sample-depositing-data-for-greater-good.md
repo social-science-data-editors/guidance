@@ -1,4 +1,4 @@
- ---
+---
 layout: withtoc
 title: Depositing Data for the Greater Good
 ---
