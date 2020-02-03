@@ -83,3 +83,21 @@ Many databases with an online interface make it hard to find an easy-to-cite URL
 
 #### OECD Statistics
 The top-level URL is [https://stats.oecd.org/](https://stats.oecd.org/), and never changes. However, the [User Guide](https://stats.oecd.org/Content/themes/OECD/static/help/WBOS%20User%20Guide%20(EN).PDF), page 34, shows how to share a URL for a particular query. The usual citation rules for URLs then can be applied.
+
+### Stata specific: reghdfe
+
+The Stata package `reghdfe` often provides stumbling issues with reproducible code. Issues such as
+```
+parentheses unbalanced
+  - If you got the parentheses unbalanced error, note that IV/2SLS was moved to ivreghdfe
+  - Latest version: https://github.com/sergiocorreia/ivreghdfe
+  - SSC version: net describe ivreghdfe, from(http://fmwww.bc.edu/RePEc/bocode/i)
+  - Note: the older functionality can still be accessed through the old option
+```
+or the error message
+```
+class FixedEffects undefined
+```
+all have solutions. Generally, the problems stem from the original authors having an older version than the replicators. 
+- One solution is to upgrade to the latest, adjust all code to work with the newest version, and resubmit the code to the journal. 
+- Another solution is to "fix" the version used for the article, by providing as part of the replication archive the version used when the article was written. The README should then also have instructions on how to install that older version, and specify which version of Stata was used to run the code.
