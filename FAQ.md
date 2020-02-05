@@ -77,6 +77,28 @@ An example might thus be:
 
 For more information, see the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
 
+### The URL works for me. Why are you complaining that it is not robust/persistent/permanent?
+
+This may happen for both data files and documents by non-standard publishers. We explain what this means, and various ways to deal with it.
+
+A URL is simply a locator for a file on the internet. However, they are not all created equal. In particular, files on anything other than robust institutions (archives, journals, newspapers) should be considered to be *transitory*: here today, gone tomorrow. This often applies to even big companies that are not in the business of publishing with the goal of long-term preservation. It also includes URLs that obviously point to storage providers: Dropbox.com, Google Drive, AWS, Github.io, etc. 
+
+For instance, the file `https://s3.amazonaws.com/aws.upl/nwica.org/unitedstates2014.pdf` is hosted on Amazon AWS, a commercial provider, presumably by the website of NWICA (`nwica.org`). If tomorrow NWICA decides to change suppliers for their webservices, and migrates their website `nwica.org` to the site of `myhoster.com`, that URL will change. What is less likely to change is the original "landing page" from which "unitedstates2014.pdf" could be downloaded, though that can also change a few years from now. Finally, the PDF could be copied onto an institution whose business it is to preserve files, such as Zenodo, or Archive.org, where it becomes "permanently" available (or at least at much longer).
+
+#### Solutions
+
+- Third-best: Cite the original landing page, with an access date, as any other URL on the web:
+
+> NWICA. 2015. "How WIC Impacts the People of the United States of America." Accessed at https://nwica.org/documents/unitedstates2014/ on August 2, 2017. 
+
+and provide a copy of the file, if copyright and license permit. 
+
+- Second-best: Use [Archive.org's Save a Page feature](https://web.archive.org/) to make a copy of the file, and then cite the stable URL thus generated. 
+
+> NWICA. 2015. "How WIC Impacts the People of the United States of America." Accessed via Archive.org at https://web.archive.org/web/20200205043504/https://s3.amazonaws.com/aws.upl/nwica.org/unitedstates2014.pdf on February 4, 2020.
+
+- First-best: Ask the publisher to provide a stable URL. 
+
 ### Data Citation with only a top-level Online Link
 
 Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. A few examples follow.
