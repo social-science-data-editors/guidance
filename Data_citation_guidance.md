@@ -111,5 +111,5 @@ General tools:
 
 - [CrossCite DOI formatter](https://citation.crosscite.org/)
 - [Citation Machine](http://www.citationmachine.net/chicago-17-author-date/cite-a-digital/manual) - choose `Source type`=`Digital file` and put the URL and access date into the `Annotation` field.
-- [Doi2Bib](https://www.doi2bib.org/) creates a bibtex entry one can put into a Bib file (if using Bibtex) or import into Zenodo.
+- [Doi2Bib](https://www.doi2bib.org/) creates a bibtex entry one can put into a Bib file (if using Bibtex) or import into Zotero.
 
