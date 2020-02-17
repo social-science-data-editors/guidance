@@ -3,7 +3,7 @@ layout: withtoc
 title: Data Availability Statements for Restricted Data
 ---
 
-On this page, we list a few commonly used *lightly* restricted data and their data availability statements or licenses, when these are not otherwise easily available.
+On this page, we list a few commonly used *lightly* or *heavily* restricted data and their data availability statements or licenses, when these are not otherwise easily available.
 
 This page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or [create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new).
 
@@ -26,3 +26,32 @@ IPUMS data are subject to varying usage restrictions - please consult with IPUMS
 
 IPUMS USA ["Citation and Use" page](https://usa.ipums.org/usa/cite.shtml) states:
 > The licensing agreement for use of IPUMS USA data requires that users supply us with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation.
+
+### US Census Bureau and FSRDC
+
+Adapted from [Fort (2016)](https://doi.org/10.1093/restud/rdw057), Supplementary data:
+
+
+> To reproduce the tables and figures in the paper:
+> 1. All the results in the paper use confidential microdata from the U.S. Census Bureau. To gain
+access to the Census microdata, follow the directions here on how to write a proposal for access
+to the data via a Federal Statistical Research Data Center:
+https://www.census.gov/ces/rdcresearch/howtoapply.html.
+>2. You must request the following datasets in your proposal:
+>   - Longitudinal Business Database (LBD), 2002 and 2007
+>   - Foreign Trade Database – Import (IMP), 2002 and 2007
+>   - Annual Survey of Manufactures (ASM), including the Computer Network Use      Supplement (CNUS), 1999
+>   - [...]
+>   - Annual Survey of Magical Inputs (ASMI), 2002 and 2007
+>3. Reference “Technology and Production Fragmentation: Domestic versus Foreign   Sourcing” by Teresa Fort, project number br1179 in the proposal. This will give you access to   the programs and input datasets required to reproduce the results. Requesting a search of archives   with the articles DOI ("10.1093/restud/rdw057") should yield the same results. 
+>
+>   NOTE: Project-related files are available for 10 years as of 2015. 
+
+Sample citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
+
+### NBER-CES Manufacturing Database
+
+The files should be cited as "[NBER-CES Manufacturing Industry Database (1958-2011)](https://www.nber.org/nberces/)". You should also cite the earlier working paper as documentation. Please cite these in the manuscript. As per the NBER website, 
+
+> "We ask that this data not be forwarded on to others. Instead, please refer interested parties to this website."
+
