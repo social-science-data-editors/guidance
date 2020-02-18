@@ -3,7 +3,7 @@ layout: withtoc
 title: Data Availability Statements for Restricted Data
 ---
 
-On this page, we list a few commonly used *lightly* or *heavily* restricted data and their data availability statements or licenses, when these are not otherwise easily available.
+On this page, we list a few commonly used *lightly* or *heavily* restricted data and their data availability statements or licenses, when these are not otherwise easily available. Often, the only restriction is a requirement to not redistribute, and to cite. 
 
 This page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or [create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new).
 
@@ -51,7 +51,16 @@ Sample citations for Census Bureau datasets in the FSRDC can be found on [Zotero
 
 ### NBER-CES Manufacturing Database
 
+The NBER-CES Manufactuing Database does not have an explicit license. It may be in the public domain, since U.S. Government employees co-created it as part of their official duties. Nevertheless, the database should be cited, as well as the working paper associated with it.
+
 The files should be cited as "[NBER-CES Manufacturing Industry Database (1958-2011)](https://www.nber.org/nberces/)". You should also cite the earlier working paper as documentation. Please cite these in the manuscript. As per the NBER website, 
 
 > "We ask that this data not be forwarded on to others. Instead, please refer interested parties to this website."
 
+### TAXSIM
+
+[TAXSIM](https://www.nber.org/~taxsim) is maintained by Daniel Feenberg at the NBER. Those who use its output should probably cite Daniel Feenberg as the author. Note citation request on URL referenced:
+
+> > Feenberg, Daniel Richard, and Elizabeth Coutts, An Introduction to the TAXSIM Model, Journal of Policy Analysis and Management vol 12 no 1, Winter 1993, pages 189-194.
+
+> > This paper and this URL (https://www.nber.org/~taxsim) should be cited if any results from TAXSIM are circulated or published. 
