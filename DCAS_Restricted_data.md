@@ -29,7 +29,7 @@ IPUMS USA ["Citation and Use" page](https://usa.ipums.org/usa/cite.shtml) states
 
 ### US Census Bureau and FSRDC
 
-Adapted from [Fort (2016)](https://doi.org/10.1093/restud/rdw057), Supplementary data:
+Adapted from [Fort (2016)](https://doi.org/10.1093/restud/rdw057), Supplementary data (see also the [Sample RADC statement](samples/sample_radc_statement2.md))
 
 
 > To reproduce the tables and figures in the paper:
@@ -49,6 +49,11 @@ https://www.census.gov/ces/rdcresearch/howtoapply.html.
 
 Sample citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
 
+In cases where intermediate files (programs or datasets) remain within the secure environment, an authorization (a "license") might be added to the DCAS. Such an authorization by the author grants others access to and use of such files, subject to any data custodian requirements. 
+
+- [Example of a author granting license for files in secure environment](samples/sample_radc_statement1.md).
+
+
 ### NBER-CES Manufacturing Database
 
 The NBER-CES Manufactuing Database does not have an explicit license. It may be in the public domain, since U.S. Government employees co-created it as part of their official duties. Nevertheless, the database should be cited, as well as the working paper associated with it.
@@ -64,3 +69,9 @@ The files should be cited as "[NBER-CES Manufacturing Industry Database (1958-20
 > > Feenberg, Daniel Richard, and Elizabeth Coutts, An Introduction to the TAXSIM Model, Journal of Policy Analysis and Management vol 12 no 1, Winter 1993, pages 189-194.
 
 > > This paper and this URL (https://www.nber.org/~taxsim) should be cited if any results from TAXSIM are circulated or published. 
+
+### State or Provincial Data Access
+
+The following example is for Massachusetts, but similar data availability statements may be crafted for various other datasets provided by state, provincial, municipal, etc. data providers:
+
+> The data for this project are confidential, but may be obtained with Data Use Agreements with the Massachusetts Department of Elementary and Secondary Education (DESE). Researchers interested in access to the data may contact [NAME] at [EMAIL], also see www.doe.mass.edu/research/contact.html. It can take some months to negotiate data use agreements and gain access to the data. The author will assist with any reasonable replication attempts for two years following publication.
