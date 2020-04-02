@@ -25,6 +25,7 @@ graph TD;
     end;
     B -.-> F(("Auxiliary data<br/>(created)"));
     F -.-> C;
+    Z((Source)) -.-> X[Data citation] -.-> A;
     
 </div>
 
@@ -70,7 +71,9 @@ For details, see [Requested information for data](Requested_information_data.md)
 
 ### Data and Code Availability Statements
 
-Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". Sample language for such statements, either incorporated into a README, a distinct document, or a distinct section of the manuscript, is available [here](Requested_information_dcas.md).
+Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". Sample language should be incorporated into a README, a distinct document, or a distinct section of the manuscript.
+
+Some examples are listed [here](Requested_information_dcas.md).
 
 ### Programs and Code
 We **strongly suggest**
