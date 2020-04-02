@@ -47,7 +47,7 @@ https://www.census.gov/ces/rdcresearch/howtoapply.html.
 >
 >   NOTE: Project-related files are available for 10 years as of 2015. 
 
-Sample citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
+Sample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
 
 In cases where intermediate files (programs or datasets) remain within the secure environment, an authorization (a "license") might be added to the DCAS. Such an authorization by the author grants others access to and use of such files, subject to any data custodian requirements. 
 
