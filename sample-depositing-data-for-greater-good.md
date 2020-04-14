@@ -1,4 +1,4 @@
- ---
+---
 layout: withtoc
 title: Depositing Data for the Greater Good
 ---
@@ -17,6 +17,7 @@ Notes:
     - For instance, I deposited this data at [datalumos.org](https://doi.org/10.3886/E100517V2):  but my contribution is not visible. It might be possible to add your name to the "Collection Notes" or similar. Not ideal.
     - Generically, you can achieve great findability of Census Bureau data by using one of the ICPSR properties, in this case probably openICPSR (similar to, but distinct from your AEA deposit).
 - Some examples are given in [our document on data and code hosting](Requested_information_hosting.html#some-examples).
+- If you are at an ICPSR member institution, or have a forthcoming paper in the AEA journals, you may submit to [ICPSR](https://www.icpsr.umich.edu/icpsrweb/deposit/), including leveraging the expertise of their professional data curation team. 
 
 ### Deposit the data and fill out metadata
 
@@ -30,7 +31,6 @@ Notes:
 
 ### Going an additional extra mile
 -  If you wish, check with one of the data librarians at your institution to dot the is and cross the ts.
-- If your institution is a subscriber, you could also deposit at the "regular" ICPSR, in which case a data curator would work with you on this, but it will take longer. 
 
 ### Add related publication
 

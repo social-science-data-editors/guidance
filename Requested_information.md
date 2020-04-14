@@ -25,6 +25,7 @@ graph TD;
     end;
     B -.-> F(("Auxiliary data<br/>(created)"));
     F -.-> C;
+    Z((Source)) -.-> X[Data citation] -.-> A;
     
 </div>
 
@@ -68,9 +69,20 @@ Regarding the data, enough information should be provided
 
 For details, see [Requested information for data](Requested_information_data.md).
 
+### Citing Data and Code
+All data should be cited, as per journal guidelines:
+
+- [AEA guidelines](https://www.aeaweb.org/journals/policies/sample-references)
+- [ReStud guidelines]
+
+For a discussion with some suggestions, see our [Data citation guidance](Data_citation_guidance.md).
+
+
 ### Data and Code Availability Statements
 
-Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". Sample language for such statements, either incorporated into a README, a distinct document, or a distinct section of the manuscript, is available [here](Requested_information_dcas.md).
+Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". They expand on and complement [data citations](Data_citation_guidance.md). Sample language should be incorporated into a README, a distinct document, or a distinct section of the manuscript.
+
+Some examples are listed [here](Requested_information_dcas.md).
 
 ### Programs and Code
 We **strongly suggest**
@@ -100,14 +112,6 @@ A code and data repository (or "archive") should satisfy a few criteria:
 Not every web-based location is a code or data repository; on the other hand, numerous non-web based archives are legitimate locations for data to be found (e.g., National Archives).
 
 For further details, see our discussion on [Requested information on hosting code and data](Requested_information_hosting.md).
-
-### Citing Data and Code
-All data should be cited, as per journal guidelines:
-
-- [AEA guidelines](https://www.aeaweb.org/journals/policies/sample-references)
-- [ReStud guidelines]
-
-For a discussion with some suggestions, see our [Data citation guidance](Data_citation_guidance.md).
 
 ### Licensing questions
 

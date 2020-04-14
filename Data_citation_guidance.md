@@ -80,6 +80,7 @@ Citations to primary data can sometimes be hard to construct. If the data provid
 
 - [Additional guidance on Data Citations](addtl-data-citation-guidance.md).
 -  [Data citation without an online link](https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link)
+- Sample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
 
 ### Some Frequently Asked Questions
 
@@ -111,5 +112,5 @@ General tools:
 
 - [CrossCite DOI formatter](https://citation.crosscite.org/)
 - [Citation Machine](http://www.citationmachine.net/chicago-17-author-date/cite-a-digital/manual) - choose `Source type`=`Digital file` and put the URL and access date into the `Annotation` field.
-- [Doi2Bib](https://www.doi2bib.org/) creates a bibtex entry one can put into a Bib file (if using Bibtex) or import into Zenodo.
+- [Doi2Bib](https://www.doi2bib.org/) creates a bibtex entry one can put into a Bib file (if using Bibtex) or import into Zotero.
 
