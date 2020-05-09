@@ -95,18 +95,21 @@ The access  should  be persistent, i.e., not rely on a transitory website or the
 
 #### Practical guidance: data access
 
-- While non-academic data providers may not always consider reproducibility when you sign a contract with them, we have found numerous such providers which are open to at least the idea of "reproducibility checking" or replication. Examples of agreements which allow third-parties to access confidential data for the purpose of replication, 
+- While non-academic data providers may not always consider reproducibility when you sign a contract with them, we have found numerous such providers which are open to at least the idea of "reproducibility checking" or replication. Examples of agreements which allow third-parties to access confidential data for the purpose of replication,
   -  [supplementary materials](http://doi.org/10.3886/E116116V1) to [Barseghyan et al (2013)](https://doi.org/10.1257/aer.103.6.2499).
 
 - For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). 
 - For more information on Data Access Descriptions, see [Data Access Descriptions](Requested_information_dcas.md).
   
 For additional sample "Data Access Descriptions", see 
-- the AEA's [Draft Template README](https://aeadataeditor.github.io/aea-de-guidance/template-README.html) 
+
+- the [Template README](template-README.md) 
 - [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
 
 ### Data persistence
+
 Data should remain available for a sufficiently long time.
+
 -  By depositing in the journal-based data (and code) repositories, the data (and code) will remain available indefinitely.
 -  This is also true if the data is in various other repositories
 -  This *may* also be true if the data cannot be shared (restricted access data).
@@ -117,6 +120,7 @@ You should describe the data persistence, or point to a data archive's policy in
 > See [Requested_information_hosting](Requested_information_hosting.md) for more details on data repositories.
 
 ### What is a data provider
+
 A "data provider" in this sense can be 
 - a public repository where the data can be found ([ICPSR](https://www.icpsr.umich.edu/icpsrweb/)), 
 - a website that provided the data ([IPUMS](https://usa.ipums.org/usa/)), 
@@ -125,10 +129,12 @@ A "data provider" in this sense can be
 The author may also be the data provider, for instance, because the author conducted the survey used in the article. However, in many cases, the data provider may not be a data archive (see  the page on [Requested information about hosting](Requested_information_hosting.md)).
 
 #### Practical guidance: data provider and data archives
+
 If the data provider is not an archive (i.e., the data persistence is insufficient, and data might go away), you should investigate depositing the data at a data archive.
 
 
 ### Planning Ahead
+
 Many of the items above can be planned ahead of time. In fact, funding agencies require data management plans, and these are core elements of data management plans.
 - ICPSR, "[Guidelines for Effective Data Management Plans](https://www.icpsr.umich.edu/files/datamanagement/DataManagementPlans-All.pdf)"
 

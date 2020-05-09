@@ -6,13 +6,17 @@ title: Requested information for data and code replication packages
 This is a draft document. Please provide comments by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new) in this Github project.
 
 ### Readings
+
 The following readings might be useful for structuring project, code, and data. It is useful to consult these at an early stage of the project, as subsequent adjustments will be small and incremental, rather than large and disruptive.
 
 - Project Tier [https://www.projecttier.org/](https://www.projecttier.org/)
 - Wilson G. et al (2016) "Good enough practices for scientific computing" [arXiv 1609.00037](https://arxiv.org/pdf/1609.00037.pdf)
 - Gentzkow M, Shapiro JM. Code and Data for the Social Sciences: A Practitioner’s Guide; 2014. Available from: [http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf](http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf).
+- [Reif's Stata coding guide](https://reifjulian.github.io/guide/)
+
 
 ### Some concepts
+
 We will refer to a (simplified) data structure as described below. Real-life data structures are often more complex, and the distinctions made in the simplified example should be adapted accordingly.
 
 <div class="mermaid">
@@ -32,8 +36,11 @@ graph TD;
 
 
 ### General Rules and Guidelines
+
 #### Requirements
+
 We **require** that
+
 - you make **analysis** programs available
 - you provide a README that describes the data acquisition and how to run the analysis process
 - you make every effort to provide as much data as possible in an openly accessible fashion
@@ -43,8 +50,12 @@ We **require** that
   - you should cite the data in your main manuscript
   - you should cite data separately in your online appendix
 
+Some journals may require a **README** in a specific format. 
+
 #### Suggestions
+
 We **strongly suggest** using some best-practices as suggested by the literature cited above:
+
 - to also make programs that create the analysis data ("**cleaning programs**") available (some journals, including the AEA, make this a **requirement**)
 - separation of code and data in directory structure and archive locations
 - separation of read-only input data and modified "**analysis data**"
@@ -54,15 +65,21 @@ We **strongly suggest** using some best-practices as suggested by the literature
 
 This document provides some practical guidance.
 
+We strongly suggest using the [template README](template-README.md) available on this site.
+
 #### Encourage
+
 We **encourage** you
+
 - to deposit data early in the research process, as soon as data is collected/ cleaned/ etc. This does not mean that the data becomes public at that time, only that the data has been "locked" in a specific state. See below for data hosting.
 - to create a data publication, going into more depth about the data creation (if you created or collected your data)
 - to consider splitting out independent components of your data creation (for instance, the auxiliary data described above) as a separately (useful) data deposit
 
 
 ### Data
+
 Regarding the data, enough information should be provided
+
 - to accurately describe the data so that somebody who doesn't have knowledge of the data can understand its principal (and salient) characteristics (**INFORMATION**);
 - to be able to acquire the data (whether by download, by contract, by application process, etc.) (**ACCESSIBILITY**);
 - to assure the reader (and the  Data Editor) that the data is available for a sufficiently long period of time (**PERSISTENCE**).
@@ -70,6 +87,7 @@ Regarding the data, enough information should be provided
 For details, see [Requested information for data](Requested_information_data.md).
 
 ### Citing Data and Code
+
 All data should be cited, as per journal guidelines:
 
 - [AEA guidelines](https://www.aeaweb.org/journals/policies/sample-references)
@@ -85,7 +103,9 @@ Some of the information historically captured by "README" files is more formally
 Some examples are listed [here](Requested_information_dcas.md).
 
 ### Programs and Code
+
 We **strongly suggest**
+
 - a clear documentation of all code (within the code/script files themselves, and through a README)
   - it should be clear from the code (and/or the README) where to find the information contained in **each table, figure, and in-text number**.
 - provision of a master script ("master do file", "make file") and a description of how to run or invoke the master script in the README
@@ -97,11 +117,13 @@ For details, see our discussion on [Requested information for code](Requested_in
 
 
 ### Data and Code Hosting
+
 Journals have made supplementary materials available on
 their  websites since the early 2000s. As the  popular and scientific web-accessible
 global infrastructure has matured, other possibilities have opened up. We comment on important features to consider when depositing code and data.
 
 #### Principles
+
 A code and data repository (or "archive") should satisfy a few criteria:
 - be trustworthy
 - be accessible to others
