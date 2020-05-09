@@ -78,8 +78,8 @@ Citations to primary data can sometimes be hard to construct. If the data provid
 
 ### Some additional guidance on tricky citations
 
+- [Additional guidance on Data Citations](addtl-data-citation-guidance.md).
 -  [Data citation without an online link](https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link)
-- the [AEA Data Editor's guidance on Data Citations](https://aeadataeditor.github.io/aea-de-guidance/addtl-data-citation-guidance.html).
 - Sample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
 
 ### Some Frequently Asked Questions
