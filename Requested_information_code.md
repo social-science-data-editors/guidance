@@ -6,6 +6,7 @@ title: "Requested Information for Code"
 ### Readings
 Some scientists, including economists, have put together excellent guidance and tutorials. See
 
+- [Reif's Stata coding guide](https://reifjulian.github.io/guide/) and a [sample project setup](https://github.com/reifjulian/my-project) that supports reproducibility 
 - [Gentzkow-Shapiro Lab's RA Manual](https://github.com/gslab-econ/ra-manual/wiki/Getting-Started), in particular [Stata Style](https://github.com/gslab-econ/ra-manual/wiki/Stata)
 - [Basics of Reproducible Workflow](https://www.practicereproducibleresearch.org/core-chapters/3-basic.html)
 - [Good enough practices in scientific computing](https://doi.org/10.1371/journal.pcbi.1005510 "Good enough practices in scientific computing."). Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, et al. (2017) Good enough practices in scientific computing. PLOS Computational Biology 13(6): e1005510. [https://doi.org/10.1371/journal.pcbi.1005510](https://doi.org/10.1371/journal.pcbi.1005510)
