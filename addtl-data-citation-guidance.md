@@ -1,4 +1,8 @@
-# Guidance on Data Citations
+---
+layout: withtoc
+title: "Guidance on Data Citations"
+---
+
 
 One of the most vexing issues is how to cite data. This document goes through a few common scenarios not covered elsewhere.
 
