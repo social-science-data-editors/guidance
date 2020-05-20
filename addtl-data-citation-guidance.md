@@ -170,6 +170,18 @@ Similar citations can be constructed for offline databases:
 
 > Bloom, Nick. 2019. *Confidential survey data on Cameroon business processes*. Stanford Secure Access Center (file "cameroon-bloom.zip"). Stanford University.
 
+### Confidential databases
+
+Similar forms may be used for confidential databases when no DOI exists:
+
+> Internal Revenue Service. (YEAR). *Corporate Income Tax Returns [database]*. Department of Treasury, Washington DC.
+
+If multiple databases within the same secure confines are used and combined, they should be cited (within reason) separately. Guidance here may be: Can and do researchers combine various extracts in different ways? For instance, do some combine the IRS 1040 database with death records, and others merge elements from the IRS 1040 database with information returns? Then the information returns, and the 1040 file should be cited separately.
+
+If a DOI exists, the formal citation generated from that DOI should be used:
+
+> Forschungsdatenzentrum der Bundesagentur für Arbeit. 2020. “Betriebs-Historik-Panel (BHP) – Version 7518 v1.” *Institut für Arbeitsmarkt- und Berufsforschung (IAB)*. https://doi.org/10.5164/IAB.BHP7518.DE.EN.V1. 
+
 ### No formal access mechanism
 
 In some cases (not infrequently), access to data is through informal means. The [CMOS allows for citation of such information](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec053.html), without inclusion in the references. 
