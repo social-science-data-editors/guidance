@@ -102,7 +102,40 @@ and provide a copy of the file, if copyright and license permit.
 
 ### Data Citation with only a top-level Online Link
 
-Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. A few examples follow.
+Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. Here's an example: 
 
 #### OECD Statistics
 The top-level URL is [https://stats.oecd.org/](https://stats.oecd.org/), and (almost) never changes. However, the [User Guide](https://stats.oecd.org/Content/themes/OECD/static/help/WBOS%20User%20Guide%20(EN).PDF?page=34), page 34, shows how to share a URL for a particular query. The usual citation rules for URLs then can be applied.
+
+### Some econometrics papers might be accompanied by (for example) an R or Stata package (perhaps published on CRAN or SSC). What about surfacing references to associated packages more prominently?
+
+First, packages on [CRAN](https://cran.r-project.org/) and the [Statistical Software Components](https://ideas.repec.org/s/boc/bocode.html) can be cited. AEA citation guidance is currently silent on software components, but it is not wrong to cite them, and other disciplines do it regularly. [CRAN](https://cran.r-project.org/) in fact has elements of a "proper archive" (SSC does NOT). All R packages can [generate a (Bibtex) citation](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/citation.html). 
+
+Second, it is possible to submit such packages to various journals, where they are reviewed and published with DOI:
+- [R Journal](https://journal.r-project.org/)
+- [Stata Journal](https://www.stata-journal.com/)
+- [Journal of Statistical Software](https://www.jstatsoft.org/)
+
+
+### I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?
+
+Per the [PSID website](https://psidonline.isr.umich.edu/Guide/FAQ.aspx?Type=8), authors are not allowed to post extracts of their data online. The reason is that any user needs to agree to the PSID terms of use before being given access to the data. However, the PSID has provided authors with the ability to deposit their data extracts and/or [their derived data in a repository](https://www.openicpsr.org/openicpsr/psid), precisely for the purpose of allowing for sharing in compliance with their [Terms of use](http://simba.isr.umich.edu/U/CondUse.aspx). 
+
+In order to comply with the [PSID Terms of use](http://simba.isr.umich.edu/U/CondUse.aspx), you should do the following:
+
+- [ ] Create a new deposit at the [PSID repository](https://www.openicpsr.org/openicpsr/psid/deposit-instructions). Be sure to choose the PSID repository! (it can be confusing)
+  - Give the deposit the title "Supplementary data for: (TITLE OF YOUR PAPER)"
+  - Upload only the data files related to PSID
+  - Fill out as much of the additional information as you can, including the Time Period covered. 
+  - Go through the process to "Publish" this data
+  - You will obtain a DOI that looks somewhat like `https://doi.org/10.3886/E123456V1`. Copy that down.
+- Return to your AEA deposit
+- [ ] Delete your PSID files that you just uploaded to the PSID repository
+- [ ] In the "Related Publications", add the DOI you just copied down as a "related" publication
+- [ ] Update your README and any other instructions to identify the DOI for the files that a replicator must download separately in order to reproduce your results.
+- [ ] Don't forget to **cite the DOI you copied down in your manuscript!**
+- [ ] Per the [PSID website](https://psidonline.isr.umich.edu/Guide/FAQ.aspx?Type=8), you should include the following acknowledgement: 
+
+    The collection of data used in this study was partly supported by the National Institutes of Health under grant number R01 HD069609 and R01 AG040213, and the National Science Foundation under award numbers SES 1157698 and 1623684.
+
+- PSID also wants you to send copies of the manuscript to them, or add the DOI of your published article to their bibliography. Please do so, supporting them!
