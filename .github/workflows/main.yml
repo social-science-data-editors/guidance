@@ -58,8 +58,8 @@ jobs:
         message: '[noaction] Generated derived files'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: upload
-      uses: actions/upload-artifact@master
-      with:
-          name: templates
-          path: templates
+    # - name: upload
+    #   uses: actions/upload-artifact@master
+    #   with:
+    #       name: templates
+    #       path: templates
