@@ -15,6 +15,7 @@ Properly referencing data goes beyond just reproducibility - it is also proper s
 - the AEA's  [Sample References](https://www.aeaweb.org/journals/policies/sample-references)
 - [Michigan State University](http://libguides.lib.msu.edu/c.php?g=96245&p=626239)
 - [UC Santa Cruz](https://guides.library.ucsc.edu/citedata)
+- [OSF](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)
 
 
 ### What to cite
