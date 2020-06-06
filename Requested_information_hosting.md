@@ -30,7 +30,7 @@ Journals and institutions have assessed a number of trusted repositories:
   - the author is the sole arbitrar of access
   - sharing is not allowed because of personal interests (future publications, patents, etc.)
 
-### List of Additional Acceptable Trusted Repositories in Economics
+#### List of Additional Acceptable Trusted Repositories in Economics
 
 A list of trusted repositories that have been found to be acceptable for the purpose of archiving social and economic data can be found here:
 
@@ -38,7 +38,30 @@ A list of trusted repositories that have been found to be acceptable for the pur
 
 The list is maintained by the editors collaborating on this site. To suggest an addition, please issue a pull request, or email one of the editors.
 
-### NOT ACCEPTABLE
+#### Permanent Identifiers: Digital Object Identifiers (DOI) et al
+
+A sufficient, but not necessary criterion for a "trusted repository" is the assignment of permanent identifiers, such as Digital Object Identifiers (DOI). 
+
+> [https://doi.org/10.3886/ICPSR30261.v6](https://doi.org/10.3886/ICPSR30261.v6)
+
+Some repositories (often university-based) ones will also assign [handles](https://www.handle.net/):
+
+> [https://hdl.handle.net/1813/45789](https://hdl.handle.net/1813/45789) 
+
+Others assign DOI upon demand. We generally suggest requesting a DOI if possible. Examples:
+
+- On OSF, users can [request DOIs for projects](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)
+- On university repositories, request procedures [may look like this page at Cornell University](http://guides.library.cornell.edu/ecommons/persistenturls)
+
+However, care must be taken when using permanent identifiers: the URL in the address bar is (almost) never the same as the DOI or handle. All permanent identifiers are redirects: they constitute a permanent entry that points to wherever the most recent version of the object can be found:
+
+- [https://doi.org/10.3886/ICPSR30261.v6](https://doi.org/10.3886/ICPSR30261.v6) is a DOI that redirects to https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261 (as of June 2020).
+- [https://hdl.handle.net/1813/45789](https://hdl.handle.net/1813/45789) is a handle that redirects to [https://ecommons.cornell.edu/handle/1813/45789](https://ecommons.cornell.edu/handle/1813/45789)
+
+Only the first entry in each of the examples above should be used for citing, not the second.  
+
+#### NOT ACCEPTABLE
+
 A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article's supplementary materials:
 - [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](FAQ.md));
 - Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the [Wayback Machine](https://archive.org/) for a similar purpose);
