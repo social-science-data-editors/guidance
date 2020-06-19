@@ -182,9 +182,21 @@ where the data, in this case, were accessed via the "Department of Treasury," ac
 
 If multiple databases within the same secure confines are used and combined, they should be cited (within reason) separately. Guidance here may be: Can and do researchers combine various extracts in different ways? For instance, do some combine the IRS 1040 database with death records, and others merge elements from the IRS 1040 database with information returns? Then the information returns, and the 1040 file should be cited separately.
 
+#### Government registers
+
+In some cases, governments have list of their (named) registers. For instance, Statistics Denmark provides the full list of registers at [http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html](http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html). These can be used to craft data citations, for instance
+
+>    Statistics Denmark. 2020. "Døde i Danmark (DOD, Deaths in Denmark), 1970-2019 [database]", Danmarks Statistiks Forskningsservice, accessed (xxx).
+
+where the "author" is Statistics Denmark, but the "[publisher]" is the research service of Statistics Denmark. You should note the version (for instance, the current register goes through 2019, but you may have had access to an earlier version, so you should adjust accordingly). In the manuscript, you would then cite "Statistics Denmark (2020)". If available, the README can point to the codebook for each register, e.g., [https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html](https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html) for the aforementioned "DOD" register.
+
+#### Confidential data with DOI
+
 If a DOI exists, the formal citation generated from that DOI should be used:
 
 > Forschungsdatenzentrum der Bundesagentur für Arbeit. 2020. “Betriebs-Historik-Panel (BHP) – Version 7518 v1.” *Institut für Arbeitsmarkt- und Berufsforschung (IAB)*. https://doi.org/10.5164/IAB.BHP7518.DE.EN.V1. 
+
+
 
 ### No formal access mechanism
 
