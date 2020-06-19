@@ -188,7 +188,7 @@ In some cases, governments have list of their (named) registers. For instance, S
 
 >    Statistics Denmark. 2020. "Døde i Danmark (DOD, Deaths in Denmark), 1970-2019 [database]", Danmarks Statistiks Forskningsservice, accessed (xxx).
 
-where the "author" is Statistics Denmark, but the "[publisher]" is the research service of Statistics Denmark. You should note the version (for instance, the current register goes through 2019, but you may have had access to an earlier version, so you should adjust accordingly). In the manuscript, you would then cite "Statistics Denmark (2020)". If available, the README can point to the codebook for each register, e.g., [https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html](https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html) for the aforementioned "DOD" register.
+where the "author" is Statistics Denmark, but the "[publisher]" is the research service of Statistics Denmark. You should note the version (for instance, the current register goes through 2019, but you may have had access to an earlier version, so you should adjust accordingly). In the manuscript, you would then cite "Statistics Denmark (2020)". If available, the README can point to the codebook for each register, e.g., [https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html](https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html) for the aforementioned "DOD" register. An example can be found in [Fadlon and Nielsen](https://www.aeaweb.org/articles?id=10.1257/app.20170604) (forthcoming as of June 2020).
 
 #### Confidential data with DOI
 
