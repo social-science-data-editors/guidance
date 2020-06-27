@@ -91,10 +91,11 @@ with the supplemental data separately cited as
 
 The key to data citations is that the creator, the name, the location, and the date last accessed for a data source should be clear. This pertains to online data, offline data, physical data, whether it is in boxes or on tapes, or in a corporate database behind a firewall. 
 
-[ICPSR](https://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp) notes that a citation should include the following items:
+[ICPSR](https://www.icpsr.umich.edu/web/pages/datamanagement/citations.html) notes that a citation should include the following items:
 
 - Author
 - Title
+- Distributor
 - Date
 - Version
 - Persistent identifier (such as the Digital Object Identifier, Uniform Resource Name URN, or Handle System)
