@@ -139,3 +139,12 @@ In order to comply with the [PSID Terms of use](http://simba.isr.umich.edu/U/Con
     The collection of data used in this study was partly supported by the National Institutes of Health under grant number R01 HD069609 and R01 AG040213, and the National Science Foundation under award numbers SES 1157698 and 1623684.
 
 - PSID also wants you to send copies of the manuscript to them, or add the DOI of your published article to their bibliography. Please do so, supporting them!
+
+### How can I ensure that the confidential data is preserved?
+
+The ideal promise that has the highest credibility is a commitment from the provider of the confidential data to maintain the data for a number of years.
+
+A second-best solution requires that you inspect your data use agreement. Can *you* archive the data in a robust fashion
+ (using whatever tools your university has)? Some DUA allow for that, others don't. The promise then becomes that *you*/your university will guarantee persistence of the data for X years.
+
+A better variant of that is when the DUA allows you to share the data with others that have also demonstratably signed a DUA with the provider. The data provider controls the access, you (your archive) provides the data.
