@@ -5,6 +5,19 @@ title: "Some (incomplete) guidance to creating reproducible maps with GIS softwa
 
 > The following information was provided by several sources. We wish to thank Keith Jenkins (Cornell University).
 
+## Shapefiles
+
+The typical input to any GIS system is a set of files collectively referred to as "[shapefiles](https://en.wikipedia.org/wiki/Shapefile)". These are often distributed as ZIP archives, but for any given proje ct, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`. The latter is the actual data being projected onto a map (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python. The `shp` file is the information about shapes on a map ("features"). Many features can be combined, using GIS programs. 
+
+## Reproducibility principles
+
+Because the `dbf` file is data, its sources should be clearly described in reproducible workflows. How is the core non-geographic data in the `dbf` being created, where does it come from? 
+
+Map information (typically in the base `shp` file) comes from cartographic or statistical sources. For instance, some shapefiles in the US will be sourced from the U.S. Census Bureau, which uses them for various statistical activities. These sources should be clearly outlined.
+
+Any processing to combine data in preparation of creating a map, as well as the processing steps to create the map, need to be described in a reproducible workflow.
+
+
 ## Creating reproducible ArcGIS-produced maps
 
 ArcGIS has a tool called ModelBuilder, which is a graphical
