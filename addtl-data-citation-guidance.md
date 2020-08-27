@@ -6,7 +6,7 @@ title: "Guidance on Data Citations"
 
 One of the most vexing issues is how to cite data. This document goes through a few common scenarios not covered elsewhere.
 
-## What is not a data citation
+### What is not a data citation
 
 Many authors initially neglect to add data citations, or do not know how to add a data citation. Often, we see authors cite papers with supplementary data, but not databases or other data:
 
@@ -14,7 +14,7 @@ Many authors initially neglect to add data citations, or do not know how to add 
 
 (note absence of citation for NHL and Ethnologue data). In the above example, three datasets are used, but only one is cited in some fashion.
 
-### Better
+#### Better
 
 The above example can be improved as follows:
 
@@ -27,7 +27,7 @@ with the reference list having the following entries:
 > - Tremblay, Réjean, Ken Dryden, and José Theodore. 2018. "The impact of power outages on goal-keeping in the NHL", *Journal of National Hockey Leagues*, vol 32, iss. 1. 
 > - Tremblay, Réjean, Ken Dryden, and José Theodore. 2019. "Power outages during NHL games (updated)", *Canadian Hockey Dataverse*, doi:10.1234/nhl.lnh.haha 
 
-## Why data citations
+### Why data citations
 
 The [Data Citation Principles](https://doi.org/10.25490/a97f-egyk) note that (emphasis added):
 
@@ -37,7 +37,7 @@ The [Data Citation Principles](https://doi.org/10.25490/a97f-egyk) note that (em
 - Through data citations, data providers can link to articles ([sometimes automatically](https://www.crossref.org/services/event-data/)), allowing them to show the academic value of the data and continue providing the services around data creation.
 - Data citations open a new path to finding relevant science, by reaching the linked articles through data search interfaces, like [openICPSR](https://www.openicpsr.org/openicpsr/search/aea/studies), [Data-Pass](http://www.data-pass.org/), and [Google Dataset Search](https://toolbox.google.com/datasetsearch).
 
-## Generic Guidance
+### Generic Guidance
 
 The AEA follows the Chicago Manual of Style (CMOS), with several [additions on the AEA website](https://www.aeaweb.org/journals/policies/sample-references). As the [CMOS states](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec014.html), one of the criteria for a useful citation is conveying authority and permanence:
 
@@ -49,7 +49,7 @@ The AEA follows the Chicago Manual of Style (CMOS), with several [additions on t
 
 Several standard citations options may be  relevant for data citations:
 
-### Websites
+#### Websites
 
 When citing information from websites, including data downloaded from websites, use the general website citation style for data:
 
@@ -61,7 +61,7 @@ Google. 2017. “Privacy Policy.” Privacy & Terms. Last modified April 17, 201
 - Note that the [AEA suggests](https://www.aeaweb.org/journals/policies/sample-references) using footnotes for some types of websites (Newspapers, Online Encyclopedias, and Reference Works). You should use the full citation with entry in the list of references for data downloaded from websites.
 - Note that this does NOT apply when the data have a permanent URL, a DOI, or a suggested citation!
 
-### Online databases
+#### Online databases
 
 CMOS has a [recommendation for online databases](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec257.html):
 
@@ -69,7 +69,7 @@ CMOS has a [recommendation for online databases](https://www.chicagomanualofstyl
 
 which would be cited in the text as `NASA/IPAC Extragalactic Database`.
 
-### Data distributed as supplementary data
+#### Data distributed as supplementary data
 
 The [CMOS provides examples](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec187.html) of how to cite supplementary materials that are attached to a specific article:
 
@@ -87,7 +87,7 @@ with the article also cited as:
 
 > Romer, Christina D., and David H. Romer. 2010. “The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks” *American Economic Review.* no. 3 (June 2010): 763–801. https://doi.org/10.1257/aer.100.3.763.
 
-## Specific Guidance
+### Specific Guidance
 
 The key to data citations is that the creator, the name, the location, and the date last accessed for a data source should be clear. This pertains to online data, offline data, physical data, whether it is in boxes or on tapes, or in a corporate database behind a firewall. 
 
@@ -102,7 +102,7 @@ The key to data citations is that the creator, the name, the location, and the d
 
 Note that all but the URN would apply also for an offline database. Consider the citation of objects in archives: 
 
-### Producer
+#### Producer
 
 Often, the creator of a dataset is an organization. The same way that an [organization as a work's author](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec037.html) can be cited:
 
@@ -112,7 +112,7 @@ an organization can be cited as the creator of a dataset:
 
 > Standard and Poor's (S&P). 2017. *Compustat-Capital IQ*. S&P Global Market Intelligence. 
 
-### Distributor
+#### Distributor
 
 In many cases, the data are not distributed by the creator. This means the *distributor* takes on the role of a *publisher* (of a book, of data). So if using Compustat through the Wharton Research Data Services, one might cite as
 
@@ -127,7 +127,7 @@ If using the S&P 500 data, there may be multiple providers:
 with hopefully the same content. Note that often, such data is subject to copyright and redistribution restrictions (see [the page at FRED on SP500](https://fred.stlouisfed.org/series/SP500)). 
 
 
-### Dates
+#### Dates
 
 In some cases, it isn't clear when the dataset was *published*, though it may be clear what time period the dataset covers. One way to address this may be by [using the "n.d." abbreviation for the date of publication](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec050.html):
 
@@ -156,7 +156,7 @@ or
 
 (and listing of exact DOIs in an appendix table).
 
-### Offline access mechanism
+#### Offline access mechanism
 
 Many datasets are available only under license, memorandum, contract, etc., and do not have a formal online presence. This is quite similar to traditional offline archives, for instance manuscript collections. For such collections, [CMOS suggests](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec054.html):
 
@@ -171,7 +171,7 @@ Similar citations can be constructed for offline databases:
 
 > Bloom, Nick. 2019. *Confidential survey data on Cameroon business processes*. Stanford Secure Access Center (file "cameroon-bloom.zip"). Stanford University.
 
-### Confidential databases
+#### Confidential databases
 
 Similar forms may be used for confidential databases when no DOI exists:
 
@@ -183,7 +183,7 @@ where the data, in this case, were accessed via the "Department of Treasury," ac
 
 If multiple databases within the same secure confines are used and combined, they should be cited (within reason) separately. Guidance here may be: Can and do researchers combine various extracts in different ways? For instance, do some combine the IRS 1040 database with death records, and others merge elements from the IRS 1040 database with information returns? Then the information returns, and the 1040 file should be cited separately.
 
-#### Government registers
+#####  Government registers
 
 In some cases, governments have list of their (named) registers. For instance, Statistics Denmark provides the full list of registers at [http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html](http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html). These can be used to craft data citations, for instance
 
@@ -191,7 +191,7 @@ In some cases, governments have list of their (named) registers. For instance, S
 
 where the "author" is Statistics Denmark, but the "[publisher]" is the research service of Statistics Denmark. You should note the version (for instance, the current register goes through 2019, but you may have had access to an earlier version, so you should adjust accordingly). In the manuscript, you would then cite "Statistics Denmark (2020)". If available, the README can point to the codebook for each register, e.g., [https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html](https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html) for the aforementioned "DOD" register. An example can be found in [Fadlon and Nielsen](https://www.aeaweb.org/articles?id=10.1257/app.20170604) (forthcoming as of June 2020).
 
-#### Confidential data with DOI
+#####  Confidential data with DOI
 
 If a DOI exists, the formal citation generated from that DOI should be used:
 
@@ -199,7 +199,7 @@ If a DOI exists, the formal citation generated from that DOI should be used:
 
 
 
-### No formal access mechanism
+#### No formal access mechanism
 
 In some cases (not infrequently), access to data is through informal means. The [CMOS allows for citation of such information](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec053.html), without inclusion in the references. 
 
