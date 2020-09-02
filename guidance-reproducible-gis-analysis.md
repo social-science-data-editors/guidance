@@ -5,6 +5,17 @@ title: "Some (incomplete) guidance to creating reproducible maps with GIS softwa
 
 > The following information was provided by several sources. We wish to thank Keith Jenkins (Cornell University).
 
+## Some readings
+
+Focussing on R:
+
+- [Reproducible Cartography](https://riatelab.github.io/ReproducibleCartography/paper/paper.html) 
+- [Reproducible GIS analysis with R](https://staff.washington.edu/phurvitz/r_gis/)
+
+Mixing software:
+
+- [RQGIS: Integrating R with QGIS forStatistical Geocomputing](https://journal.r-project.org/archive/2017/RJ-2017-067/RJ-2017-067.pdf) (*Jannes Muenchow, Patrick Schratz and Alexander Brenning , The R Journal (2017) 9:2, pages 409-428.* )
+
 ## Shapefiles
 
 The typical input to any GIS system is a set of files collectively referred to as "[shapefiles](https://en.wikipedia.org/wiki/Shapefile)". These are often distributed as ZIP archives, but for any given proje ct, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`. The latter is the actual data being projected onto a map (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python. The `shp` file is the information about shapes on a map ("features"). Many features can be combined, using GIS programs. 
