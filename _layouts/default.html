@@ -12,6 +12,9 @@
     <![endif]-->
     <script src="{{ "/assets/js/mermaid.min.js" |  relative_url }}"></script>
     <script>mermaid.initialize({ startOnLoad: true });</script>
+  
+{% include header.html %}
+
   </head>
   <body>
     <div class="wrapper">
@@ -64,5 +67,8 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
+    <script>
+      createCitation();
+    </script>
   </body>
 </html>
