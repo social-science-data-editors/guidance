@@ -9,7 +9,7 @@ This page uses a few examples, and suggested descriptions of data access for the
 
 ### IPUMS
 
-IPUMS data are subject to varying usage restrictions - please consult with IPUMS directly  (at [ipums@umn.edu](mailto:ipums@umn.edu)) should you have any doubts.
+IPUMS data are subject to varying usage restrictions. You can find a comprehensive overview of the distribution restrictions at [https://ipums.org/about/terms](https://ipums.org/about/terms), please consult with IPUMS directly  (at [ipums@umn.edu](mailto:ipums@umn.edu)) should you have any doubts.
 
 
 [IPUMS USA Registration page](https://uma.pop.umn.edu/usa/user/new?return_url=https%3A%2F%2Fusa.ipums.org%2Fusa-action%2Fmenu) states
@@ -20,7 +20,7 @@ IPUMS data are subject to varying usage restrictions - please consult with IPUMS
 > By completing this registration, you agree to the following terms of use.
 > - Redistribution: You will not redistribute the data without permission.
 >   - You may not redistribute any data from IPUMS-USA Full Count data. 
->   - For IPUMS-USA Sample data, you may publish a subset of the data to meet journal requirements for accessing data related to a particular publication. 
+>  - For IPUMS-USA Sample data, you may publish a subset of the data to meet journal requirements for accessing data related to a particular publication. 
 > Contact us for permission for any other redistribution of IPUMS-USA Sample data; we will consider requests for free and commercial redistribution.
 > - Cite the IPUMS USA data appropriately. For information on proper citation refer to [citation and use](https://usa.ipums.org/usa/cite.shtml). Publications and research reports making use of IPUMS USA should be added to our Bibliography. 
 
