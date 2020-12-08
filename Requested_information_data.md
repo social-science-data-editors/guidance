@@ -103,7 +103,7 @@ The access  should  be persistent, i.e., not rely on a transitory website or the
   
 For additional sample "Data Access Descriptions", see 
 
-- the [Template README](template-README.md) 
+- the [Template README](/template_README/) 
 - [Journal of Applied Econometrics' Data Archive](http://qed.econ.queensu.ca/jae/).
 
 ### Data persistence

@@ -65,7 +65,7 @@ We **strongly suggest** using some best-practices as suggested by the literature
 
 This document provides some practical guidance.
 
-We strongly suggest using the [template README](template-README.md) available on this site.
+We strongly suggest using the [template README](/template_README/) available on this site.
 
 #### Encourage
 
