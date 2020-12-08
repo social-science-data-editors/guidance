@@ -3,3 +3,4 @@ title: Data and Code Guidance by Data Editors
 description: Guidance for authors wishing to create data and code supplements, and for replicators.
 logo: assets/ssde-logo.jpeg
 show_downloads: false
+keep_files: [template-README.html]
