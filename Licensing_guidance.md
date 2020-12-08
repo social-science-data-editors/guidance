@@ -6,6 +6,7 @@ title: DRAFT Licensing Guidance
 > This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.
 
 ### Default
+
 When depositing in a Code and Data Repository, a license needs to be chosen. If not chosen through the menu, a license file (typically named `LICENSE.txt` or `LICENSE.md`) needs to be provided.
 
 ### Some guidance on licensing of databases and software:
@@ -26,7 +27,8 @@ third parties) or more lenient licenses (CC0 license for own code), with a third
 
 #### Dual-license Example
 
-The AEA provides an example of a dual-license setup, suitable for use by depositors to various journals' data and code repositories (see the [LICENSE-template](https://aeadataeditors.github.io/aea-de-guidance/LICENSE-template.html)). It combines
+The AEA provides an example of a dual-license setup, suitable for use by depositors to various journals' data and code repositories (see the [LICENSE-template](https://aeadataeditor.github.io/aea-de-guidance/LICENSE-template.html)). It combines
+
 - [![License: Modified BSD](https://img.shields.io/badge/License-BSD-lightgrey.svg)](https://opensource.org/licenses/BSD-3-Clause) [Modified BSD License](https://opensource.org/licenses/BSD-3-Clause), applies to all code, scripts, programs, and SOFTWARE
 - [![License: CC BY 4.0](https://img.shields.io/badge/License%20-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/) [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/), applies to databases, images, tables, text, and any other objects
 
