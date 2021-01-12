@@ -15,10 +15,15 @@ Focussing on R:
 Mixing software:
 
 - [RQGIS: Integrating R with QGIS forStatistical Geocomputing](https://journal.r-project.org/archive/2017/RJ-2017-067/RJ-2017-067.pdf) (*Jannes Muenchow, Patrick Schratz and Alexander Brenning , The R Journal (2017) 9:2, pages 409-428.* )
+- [Use R scripts in Processing](https://docs.qgis.org/3.16/en/docs/training_manual/processing/r_intro.html) using the QGIS "Processing R Provider" plugin.
 
-## Shapefiles
+## GIS data files
 
-The typical input to any GIS system is a set of files collectively referred to as "[shapefiles](https://en.wikipedia.org/wiki/Shapefile)". These are often distributed as ZIP archives, but for any given proje ct, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`. The latter is the actual data being projected onto a map (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python. The `shp` file is the information about shapes on a map ("features"). Many features can be combined, using GIS programs. 
+One of the most commonly used geospatial data formats is a set of files collectively referred to as a "[shapefile](https://en.wikipedia.org/wiki/Shapefile)".  These are often distributed as ZIP archives, but for any given project, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`.  The `shp` file contains the vector geometries (points, lines, polygons) that appear on a map ("features").  The `dbf` is an attribute table (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python.  The `shx` file is an index that links the geometries to the corresponding attribute data.  There are several other optional sidecar files that should be retained, if present.  For example, a `.prj` file defines the projection, or coordinate system of the geometries.  Shapefiles have notable technical limitations (such as 10-character attribute names, 254-character text field values, 255 attribute limit, and 2GB file size) but the format is well-understood and widely implemented.
+
+Geospatial data also comes in many other formats.  [GeoPackage](https://www.geopackage.org/) is a modern GIS data standard that overcomes many of the shapefile limitations, and is now widely supported.  Like the shapefile, it supports vector data, but GeoPackage can also contain raster (pixel-based) data.  The most widely-used raster data format is [GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF), but large, multi-dimensional datasets are often shared in [NetCDF](https://en.wikipedia.org/wiki/NetCDF) format.
+
+Non-geospatial tabular data is often combined with geospatial data for analysis.  CSV is recommended as a well-known format.  Geospatial point data may also be shared in CSV format, with the inclusion of two fields for the X and Y coordinates.  Longitude and latitude is often used for global datasets, but there are hundreds of local coordinate systems in common use, so be sure to document the coordinate system being used.
 
 ## Reproducibility principles
 
