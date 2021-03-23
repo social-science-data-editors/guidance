@@ -59,8 +59,10 @@ When citing information from websites, including data downloaded from websites, 
 - Google. 2017. “Privacy Policy.” Privacy & Terms. Last modified April 17, 2017. https://www.google.com/policies/privacy/.
 - Yale University. n.d. “About Yale: Yale Facts.” Accessed May 1, 2017. https://www.yale.edu/about-yale/yale-facts.
 
+Note that this does NOT apply when the data have a permanent URL, a DOI, or a suggested citation!
+
 - Note that the [AEA suggests](https://www.aeaweb.org/journals/policies/sample-references) using footnotes for some types of websites (Newspapers, Online Encyclopedias, and Reference Works). You should use the full citation with entry in the list of references for data downloaded from websites.
-- Note that this does NOT apply when the data have a permanent URL, a DOI, or a suggested citation!
+
 
 #### Online databases
 
