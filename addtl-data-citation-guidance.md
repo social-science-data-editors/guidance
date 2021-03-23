@@ -230,5 +230,11 @@ In some cases (not infrequently), access to data is through informal means. The 
 We would deviate from that suggestion, ask for inclusion in the reference list, and simply suggest using *unpublished data* as the locator, similar to a URN, in the reference list:
 
 {:.citation}
-- Møller, A. P. n.d. “Data on Crocodile Sightings in Manhattan.” unpublished data. Accessed February 29, 2019.
+- Møller, A. P. n.d. “Data on Crocodile Sightings in Manhattan.” Unpublished data. Accessed February 29, 2019.
 
+#### Data provider cannot be named
+
+In some cases, the data provider (often a firm) must remain anonymous. This does not prevent citation, and the provider should be mentioned in much the same way as when there is no formal access mechanism:
+
+{:.citation}
+- Anonymous Firm. 1999. “Personnel records of windowshield installers.” Unpublished data. Accessed February 29, 2000.
