@@ -1,6 +1,14 @@
 # Unofficial guidance on various topics by Social Science Data Editors
 
 
+## README template
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4319999.svg)](https://doi.org/10.5281/zenodo.4319999)
+
+The [template README](https://social-science-data-editors.github.io/template_README/) provided on this website is in a form that follows best practices as defined by a number of data editors at social science journals. 
+
+The most recent version is available at [https://social-science-data-editors.github.io/template_README/](https://social-science-data-editors.github.io/template_README/).
+
 ## Guidance on creating replicable data and program archives
 This guidance is for the author wanting to create a replication archive.
 
