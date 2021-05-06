@@ -200,6 +200,7 @@ where the data, in this case, were accessed via the "Department of Treasury," ac
 
 {:.citation}
 - Internal Revenue Service. (YEAR). *Corporate Income Tax Returns [database]*. Federal Research Data Centers [distributor], last accessed YYYY-MM-DD.
+- National Tax Administration. 2015. "Társasági Adóalanyok Mérleg - és Eredménykimutatásai [Dataset]."  Magyar Nemzeti Bank [distributor]. Last accessed at YYYY-MM-DD.
 
 If multiple databases within the same secure confines are used and combined, they should be cited (within reason) separately. Guidance here may be: Can and do researchers combine various extracts in different ways? For instance, do some combine the IRS 1040 database with death records, and others merge elements from the IRS 1040 database with information returns? Then the information returns, and the 1040 file should be cited separately.
 
