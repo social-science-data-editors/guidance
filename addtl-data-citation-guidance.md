@@ -63,6 +63,28 @@ Note that this does NOT apply when the data have a permanent URL, a DOI, or a su
 
 - Note that the [AEA suggests](https://www.aeaweb.org/journals/policies/sample-references) using footnotes for some types of websites (Newspapers, Online Encyclopedias, and Reference Works). You should use the full citation with entry in the list of references for data downloaded from websites.
 
+#### Github
+
+Many researchers now use [Github](https://github.com) to store code or documents. How should Github repositories (or for that matter, [Gitlab](https://gitlab.com) or [Bitbucket](https://bitbucket.org)) repositories be cited?
+
+Any online repository can be deleted by its owner at any time, and in that sense, are no more or less robust than [websites], and the same rules apply:
+
+
+{:.citation}
+- Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). "A template README for social science replication packages." *Github*. https://github.com/social-science-data-editors/template_README/. Accessed 2021-07-01.
+
+However, online repositories do provide the ability to make **releases**, providing a better way to pin changes made over time. While this does not change the fundamental treatment as a website, it is a more robust reference:
+
+
+{:.citation}
+- Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). "A template README for social science replication packages." Github. Release  v1.0.0). https://github.com/social-science-data-editors/template_README/releases/tag/v1.0.0. Accessed 2021-07-01.
+	
+However, Github is currently unique among online repositories in enabling an automatic integration with [Zenodo](https://zenodo.org) for the purpose of "[making code citable](https://guides.github.com/activities/citable-code/)" (and preserving versions). This changes the citation, because Zenodo-preserved versions are no longer subject to arbitrary deletion. Once a Github website has been preserved on Zenodo, it can be cited as any document or archive with a DOI:
+
+{:.citation}
+- Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). A template README for social science replication packages (Version v1.0.0). Zenodo. http://doi.org/10.5281/zenodo.4319999
+
+Of note: while Github is unique in its automatic integration, any release of an online code repository can be manually preserved on Zenodo, then cited in the above fashion. 
 
 #### Online databases
 
