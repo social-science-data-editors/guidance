@@ -22,10 +22,12 @@ The above example can be improved as follows:
 
 with the reference list having the following entries:
 
-> - Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. *Ethnologue: Languages of the World.* Twenty-second edition. Dallas, Texas: SIL International. Online version: http://www.ethnologue.com.
-> - National Hockey League. 2018. *NHL Game Database 1917-2018*. National Hockey League Hall of Fame, Toronto, ON. Accessed February 29, 2019.
-> - Tremblay, Réjean, Ken Dryden, and José Theodore. 2018. "The impact of power outages on goal-keeping in the NHL", *Journal of National Hockey Leagues*, vol 32, iss. 1. 
-> - Tremblay, Réjean, Ken Dryden, and José Theodore. 2019. "Power outages during NHL games (updated)", *Canadian Hockey Dataverse*, doi:10.1234/nhl.lnh.haha 
+
+{:.citation}
+ - Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. *Ethnologue: Languages of the World.* Twenty-second edition. Dallas, Texas: SIL International. Online version: http://www.ethnologue.com.
+ - National Hockey League. 2018. *NHL Game Database 1917-2018*. National Hockey League Hall of Fame, Toronto, ON. Accessed February 29, 2019.
+ - Tremblay, Réjean, Ken Dryden, and José Theodore. 2018. "The impact of power outages on goal-keeping in the NHL", *Journal of National Hockey Leagues*, vol 32, iss. 1. 
+ - Tremblay, Réjean, Ken Dryden, and José Theodore. 2019. "Power outages during NHL games (updated)", *Canadian Hockey Dataverse*, doi:10.1234/nhl.lnh.haha 
 
 ### Why data citations
 
@@ -53,19 +55,43 @@ Several standard citations options may be  relevant for data citations:
 
 When citing information from websites, including data downloaded from websites, use the general website citation style for data:
 
-> 
-Google. 2017. “Privacy Policy.” Privacy & Terms. Last modified April 17, 2017. https://www.google.com/policies/privacy/.
+{:.citation}
+- Google. 2017. “Privacy Policy.” Privacy & Terms. Last modified April 17, 2017. https://www.google.com/policies/privacy/.
+- Yale University. n.d. “About Yale: Yale Facts.” Accessed May 1, 2017. https://www.yale.edu/about-yale/yale-facts.
 
-> Yale University. n.d. “About Yale: Yale Facts.” Accessed May 1, 2017. https://www.yale.edu/about-yale/yale-facts.
+Note that this does NOT apply when the data have a permanent URL, a DOI, or a suggested citation!
 
 - Note that the [AEA suggests](https://www.aeaweb.org/journals/policies/sample-references) using footnotes for some types of websites (Newspapers, Online Encyclopedias, and Reference Works). You should use the full citation with entry in the list of references for data downloaded from websites.
-- Note that this does NOT apply when the data have a permanent URL, a DOI, or a suggested citation!
+
+#### Github
+
+Many researchers now use [Github](https://github.com) to store code or documents. How should Github repositories (or for that matter, [Gitlab](https://gitlab.com) or [Bitbucket](https://bitbucket.org)) repositories be cited?
+
+Any online repository can be deleted by its owner at any time, and in that sense, are no more or less robust than [websites], and the same rules apply:
+
+
+{:.citation}
+- Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). "A template README for social science replication packages." *Github*. https://github.com/social-science-data-editors/template_README/. Accessed 2021-07-01.
+
+However, online repositories do provide the ability to make **releases**, providing a better way to pin changes made over time. While this does not change the fundamental treatment as a website, it is a more robust reference:
+
+
+{:.citation}
+- Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). "A template README for social science replication packages." Github. Release  v1.0.0). https://github.com/social-science-data-editors/template_README/releases/tag/v1.0.0. Accessed 2021-07-01.
+	
+However, Github is currently unique among online repositories in enabling an automatic integration with [Zenodo](https://zenodo.org) for the purpose of "[making code citable](https://guides.github.com/activities/citable-code/)" (and preserving versions). This changes the citation, because Zenodo-preserved versions are no longer subject to arbitrary deletion. Once a Github website has been preserved on Zenodo, it can be cited as any document or archive with a DOI:
+
+{:.citation}
+- Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). A template README for social science replication packages (Version v1.0.0). Zenodo. http://doi.org/10.5281/zenodo.4319999
+
+Of note: while Github is unique in its automatic integration, any release of an online code repository can be manually preserved on Zenodo, then cited in the above fashion. 
 
 #### Online databases
 
 CMOS has a [recommendation for online databases](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec257.html):
 
-> NASA/IPAC Extragalactic Database (object name IRAS F00400+4059; accessed April 6, 2016). http://ned.ipac.caltech.edu/.
+{:.citation}
+- NASA/IPAC Extragalactic Database (object name IRAS F00400+4059; accessed April 6, 2016). http://ned.ipac.caltech.edu/.
 
 which would be cited in the text as `NASA/IPAC Extragalactic Database`.
 
@@ -73,19 +99,23 @@ which would be cited in the text as `NASA/IPAC Extragalactic Database`.
 
 The [CMOS provides examples](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec187.html) of how to cite supplementary materials that are attached to a specific article:
 
-> Suárez-Rodríguez, M. and C. Macías Garcia. 2014. "There Is No Such a Thing as a Free Cigarette: Lining Nests with Discarded Butts Brings Short-Term Benefits, but Causes Toxic Damage." *Journal of Evolutionary Biology* 27, no. 12 (December 2014): 2719–26, https://doi.org/10.1111/jeb.12531, data deposited at Dryad Digital Repository, https://doi.org/10.5061/dryad.4t5rt.
+{:.citation}
+- Suárez-Rodríguez, M. and C. Macías Garcia. 2014. "There Is No Such a Thing as a Free Cigarette: Lining Nests with Discarded Butts Brings Short-Term Benefits, but Causes Toxic Damage." *Journal of Evolutionary Biology* 27, no. 12 (December 2014): 2719–26, https://doi.org/10.1111/jeb.12531, data deposited at Dryad Digital Repository, https://doi.org/10.5061/dryad.4t5rt.
 
 The [AEA guidance](https://www.aeaweb.org/journals/policies/sample-references) used to provide an example, in which the citation links to the article landing page:
 
-> Romer, Christina D., and David H. Romer. 2010. “The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks: Dataset.” *American Economic Review.* https://doi.org/10.1257/aer.100.3.763.
+{:.citation}
+- Romer, Christina D., and David H. Romer. 2010. “The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks: Dataset.” *American Economic Review.* https://doi.org/10.1257/aer.100.3.763.
 
 Note however that modern data citation guidance suggest that both the article and the data used by the article should be cited, and this can lead to confusion. With the 2019 move of the AEA to a data archive, the correct citation for the above supplement would be:
 
-> Romer, Christina D., and David H. Romer. 2010. "Replication data for: The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks." *American Economic Association [publisher]*, * Inter-university Consortium for Political and Social Research [distributor]*, https://doi.org/10.3886/E112357V1
+{:.citation}
+- Romer, Christina D., and David H. Romer. 2010. "Replication data for: The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks." *American Economic Association [publisher]*, * Inter-university Consortium for Political and Social Research [distributor]*, https://doi.org/10.3886/E112357V1
 
 with the article also cited as:
 
-> Romer, Christina D., and David H. Romer. 2010. “The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks” *American Economic Review.* no. 3 (June 2010): 763–801. https://doi.org/10.1257/aer.100.3.763.
+{:.citation}
+- Romer, Christina D., and David H. Romer. 2010. “The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks” *American Economic Review.* no. 3 (June 2010): 763–801. https://doi.org/10.1257/aer.100.3.763.
 
 ### Specific Guidance
 
@@ -106,23 +136,26 @@ Note that all but the URN would apply also for an offline database. Consider the
 
 Often, the creator of a dataset is an organization. The same way that an [organization as a work's author](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec037.html) can be cited:
 
-> ISO (International Organization for Standardization). 1997. *Information and Documentation—Rules for the Abbreviation of Title Words and Titles of Publications*. ISO 4:1997. Paris: ISO.
+{:.citation}
+- ISO (International Organization for Standardization). 1997. *Information and Documentation—Rules for the Abbreviation of Title Words and Titles of Publications*. ISO 4:1997. Paris: ISO.
 
 an organization can be cited as the creator of a dataset:
 
-> Standard and Poor's (S&P). 2017. *Compustat-Capital IQ*. S&P Global Market Intelligence. 
+{:.citation}
+- Standard and Poor's (S&P). 2017. *Compustat-Capital IQ*. S&P Global Market Intelligence. 
 
 #### Distributor
 
 In many cases, the data are not distributed by the creator. This means the *distributor* takes on the role of a *publisher* (of a book, of data). So if using Compustat through the Wharton Research Data Services, one might cite as
 
-> Standard and Poor's (S&P). 2017. *Compustat-Capital IQ*. Wharton Research Data Services. https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/sp-global-market-intelligence/
+{:.citation}
+- Standard and Poor's (S&P). 2017. *Compustat-Capital IQ*. Wharton Research Data Services. https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/sp-global-market-intelligence/
 
 If using the S&P 500 data, there may be multiple providers:
 
-> S&P Dow Jones Indices LLC, *S&P 500 [SP500]*, retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, January 24, 2020. 
-
-> S&P Dow Jones Indices LLC, *S&P 500*, provided via Haver Analytics Data Subscription, February 24, 2018. 
+{:.citation}
+- S&P Dow Jones Indices LLC, *S&P 500 [SP500]*, retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, January 24, 2020. 
+- S&P Dow Jones Indices LLC, *S&P 500*, provided via Haver Analytics Data Subscription, February 24, 2018. 
 
 with hopefully the same content. Note that often, such data is subject to copyright and redistribution restrictions (see [the page at FRED on SP500](https://fred.stlouisfed.org/series/SP500)). 
 
@@ -131,7 +164,10 @@ with hopefully the same content. Note that often, such data is subject to copyri
 
 In some cases, it isn't clear when the dataset was *published*, though it may be clear what time period the dataset covers. One way to address this may be by [using the "n.d." abbreviation for the date of publication](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec050.html):
 
-> Standard and Poor's (S&P). n.d. *Compustat-Capital IQ (1982-2017)*. Wharton Research Data Services. Accessed April 6, 2018. https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/sp-global-market-intelligence/
+{:.citation}
+- Standard and Poor's (S&P). n.d. *Compustat-Capital IQ (1982-2017)*. Wharton Research Data Services. Accessed April 6, 2018. https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/sp-global-market-intelligence/
+
+#### Many related datasets 
 
 A related issue may arise when the dataset is comprised of multiple years, each of which has its own DOI. For instance, when accessing [multiple years of American Community Survey data on ICPSR](https://www.icpsr.umich.edu/icpsrweb/ICPSR/search/studies?q=american+community+survey), each of which has its own DOI:
 
@@ -148,11 +184,13 @@ A related issue may arise when the dataset is comprised of multiple years, each 
 
 One approach to this is to create a composite citation, with additional information available in an online data appendix or a Data Availability Statement:
 
-> Bureau Of The Census. 2009. “American Community Survey (ACS): Public Use Microdata Sample (PUMS), 1997-2009.” *United States Department Of Commerce* [publisher].  ICPSR - Interuniversity Consortium for Political and Social Research. [distributor] DOIs listed in data appendix.
+{:.citation}
+- Bureau Of The Census. 2009. “American Community Survey (ACS): Public Use Microdata Sample (PUMS), 1997-2009.” *United States Department Of Commerce* [publisher].  ICPSR - Interuniversity Consortium for Political and Social Research. [distributor] DOIs listed in data appendix.
 
 or
 
-> Bureau Of The Census. 2009. “American Community Survey (ACS): Public Use Microdata Sample (PUMS), 1997-2009.” *United States Department Of Commerce* [publisher].  ICPSR - Interuniversity Consortium for Political and Social Research. [distributor] https://www.icpsr.umich.edu/icpsrweb/ICPSR/search/studies?q=american+community+survey (accessed November 21, 2019)
+{:.citation}
+- Bureau Of The Census. 2009. “American Community Survey (ACS): Public Use Microdata Sample (PUMS), 1997-2009.” *United States Department Of Commerce* [publisher].  ICPSR - Interuniversity Consortium for Political and Social Research. [distributor] https://www.icpsr.umich.edu/icpsrweb/ICPSR/search/studies?q=american+community+survey (accessed November 21, 2019)
 
 (and listing of exact DOIs in an appendix table).
 
@@ -160,8 +198,9 @@ or
 
 Many datasets are available only under license, memorandum, contract, etc., and do not have a formal online presence. This is quite similar to traditional offline archives, for instance manuscript collections. For such collections, [CMOS suggests](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec054.html):
 
-> Kallen, Horace. *Papers*. YIVO Institute for Jewish Research, New York.
-> [Merriam, Charles E. *Papers*. Special Collections Research Center, box 26, folder 17. University of Chicago Library.](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec229.html)
+{:.citation}
+- Kallen, Horace. *Papers*. YIVO Institute for Jewish Research, New York.
+- [Merriam, Charles E. *Papers*. Special Collections Research Center, box 26, folder 17. University of Chicago Library.](https://www.chicagomanualofstyle.org/book/ed17/part3/ch14/psec229.html)
 
 and usage in the text as
 
@@ -169,17 +208,21 @@ and usage in the text as
 
 Similar citations can be constructed for offline databases:
 
-> Bloom, Nick. 2019. *Confidential survey data on Cameroon business processes*. Stanford Secure Access Center (file "cameroon-bloom.zip"). Stanford University.
+{:.citation}
+- Bloom, Nick. 2019. *Confidential survey data on Cameroon business processes*. Stanford Secure Access Center (file "cameroon-bloom.zip"). Stanford University.
 
 #### Confidential databases
 
 Similar forms may be used for confidential databases when no DOI exists:
 
-> Internal Revenue Service. (YEAR). *Corporate Income Tax Returns [database]*. Department of Treasury, Washington DC, accessed YYYY-MM-DD.
+{:.citation}
+- Internal Revenue Service. (YEAR). *Corporate Income Tax Returns [database]*. Department of Treasury, Washington DC, accessed YYYY-MM-DD.
 
 where the data, in this case, were accessed via the "Department of Treasury," acting as a *secure* distributor (of access, not downloads). If the same data had been accessed via a secure research data center, the reference should have instead noted that access mechanism:
 
-> Internal Revenue Service. (YEAR). *Corporate Income Tax Returns [database]*. Federal Research Data Centers, last accessed YYYY-MM-DD.
+{:.citation}
+- Internal Revenue Service. (YEAR). *Corporate Income Tax Returns [database]*. Federal Research Data Centers [distributor], last accessed YYYY-MM-DD.
+- National Tax Administration. 2015. "Társasági Adóalanyok Mérleg - és Eredménykimutatásai [Dataset]."  Magyar Nemzeti Bank [distributor]. Last accessed at YYYY-MM-DD.
 
 If multiple databases within the same secure confines are used and combined, they should be cited (within reason) separately. Guidance here may be: Can and do researchers combine various extracts in different ways? For instance, do some combine the IRS 1040 database with death records, and others merge elements from the IRS 1040 database with information returns? Then the information returns, and the 1040 file should be cited separately.
 
@@ -187,7 +230,8 @@ If multiple databases within the same secure confines are used and combined, the
 
 In some cases, governments have list of their (named) registers. For instance, Statistics Denmark provides the full list of registers at [http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html](http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html). These can be used to craft data citations, for instance
 
->    Statistics Denmark. 2020. "Døde i Danmark (DOD, Deaths in Denmark), 1970-2019 [database]", Danmarks Statistiks Forskningsservice, accessed (xxx).
+{:.citation}
+- Statistics Denmark. 2020. "Døde i Danmark (DOD, Deaths in Denmark), 1970-2019 [database]", Danmarks Statistiks Forskningsservice, accessed (xxx).
 
 where the "author" is Statistics Denmark, but the "[publisher]" is the research service of Statistics Denmark. You should note the version (for instance, the current register goes through 2019, but you may have had access to an earlier version, so you should adjust accordingly). In the manuscript, you would then cite "Statistics Denmark (2020)". If available, the README can point to the codebook for each register, e.g., [https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html](https://www.dst.dk/extranet/ForskningVariabellister/DOD%20-%20D%C3%B8de%20i%20Danmark.html) for the aforementioned "DOD" register. An example can be found in [Fadlon and Nielsen](https://www.aeaweb.org/articles?id=10.1257/app.20170604) (forthcoming as of June 2020).
 
@@ -195,17 +239,25 @@ where the "author" is Statistics Denmark, but the "[publisher]" is the research 
 
 If a DOI exists, the formal citation generated from that DOI should be used:
 
-> Forschungsdatenzentrum der Bundesagentur für Arbeit. 2020. “Betriebs-Historik-Panel (BHP) – Version 7518 v1.” *Institut für Arbeitsmarkt- und Berufsforschung (IAB)*. https://doi.org/10.5164/IAB.BHP7518.DE.EN.V1. 
-
+{:.citation}
+- Forschungsdatenzentrum der Bundesagentur für Arbeit. 2020. “Betriebs-Historik-Panel (BHP) – Version 7518 v1.” *Institut für Arbeitsmarkt- und Berufsforschung (IAB)*. https://doi.org/10.5164/IAB.BHP7518.DE.EN.V1. 
 
 
 #### No formal access mechanism
 
 In some cases (not infrequently), access to data is through informal means. The [CMOS allows for citation of such information](https://www.chicagomanualofstyle.org/book/ed17/part3/ch15/psec053.html), without inclusion in the references. 
 
-> (A. P. Møller, unpublished data; C. R. Brown and M. B. Brown, unpublished data)
+{:.citation}
+- (A. P. Møller, unpublished data; C. R. Brown and M. B. Brown, unpublished data)
 
 We would deviate from that suggestion, ask for inclusion in the reference list, and simply suggest using *unpublished data* as the locator, similar to a URN, in the reference list:
 
-> Møller, A. P. n.d. “Data on Crocodile Sightings in Manhattan.” unpublished data. Accessed February 29, 2019.
+{:.citation}
+- Møller, A. P. n.d. “Data on Crocodile Sightings in Manhattan.” Unpublished data. Accessed February 29, 2019.
 
+#### Data provider cannot be named
+
+In some cases, the data provider (often a firm) must remain anonymous. This does not prevent citation, and the provider should be mentioned in much the same way as when there is no formal access mechanism:
+
+{:.citation}
+- Anonymous Firm. 1999. “Personnel records of windowshield installers.” Unpublished data. Accessed February 29, 2000.

@@ -26,3 +26,16 @@ footer {
   color: #222222;
   text-decoration: underline;
 }
+
+ul, ol {
+  margin: 0;
+}
+
+.citation {
+border-left: 1px solid #e5e5e5;
+margin: 0 0 1em 0;
+padding: 0 0 0 30px;
+text-indent: -10px;
+font-style: normal;
+list-style-type: none;
+}

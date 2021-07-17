@@ -96,7 +96,7 @@ The access  should  be persistent, i.e., not rely on a transitory website or the
 #### Practical guidance: data access
 
 - While non-academic data providers may not always consider reproducibility when you sign a contract with them, we have found numerous such providers which are open to at least the idea of "reproducibility checking" or replication. Examples of agreements which allow third-parties to access confidential data for the purpose of replication,
-  -  [supplementary materials](http://doi.org/10.3886/E116116V1) to [Barseghyan et al (2013)](https://doi.org/10.1257/aer.103.6.2499).
+  -  [supplementary materials](http://doi.org/10.3886/E116116V1)  to [Barseghyan et al (2013)](https://doi.org/10.1257/aer.103.6.2499) (in particular the [data-user-agreements.pdf](https://www.openicpsr.org/openicpsr/project/116116/version/V1/view?path=/openicpsr/116116/fcr:versions/V1/20110834_data_files/data-user-agreements.pdf&type=file)).
 
 - For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). 
 - For more information on Data Access Descriptions, see [Data Access Descriptions](Requested_information_dcas.md).
