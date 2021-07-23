@@ -18,7 +18,7 @@ Mixing software:
 
 ## Shapefiles
 
-The typical input to any GIS system is a set of files collectively referred to as "[shapefiles](https://en.wikipedia.org/wiki/Shapefile)". These are often distributed as ZIP archives, but for any given proje ct, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`. The latter is the actual data being projected onto a map (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python. The `shp` file is the information about shapes on a map ("features"). Many features can be combined, using GIS programs. 
+The typical input to any GIS system is a set of files collectively referred to as "[shapefiles](https://en.wikipedia.org/wiki/Shapefile)". These are often distributed as ZIP archives, but for any given project, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`. The latter is the actual data being projected onto a map (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python. The `shp` file is the information about shapes on a map ("features"). Many features can be combined, using GIS programs. 
 
 ## Reproducibility principles
 
