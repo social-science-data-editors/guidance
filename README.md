@@ -26,7 +26,7 @@ See [Verification guidance](Verification_guidance.md)
 
 Below is a selective list of policies from journals that actively verify compliance with policies through review of data, code, and documentation. 
 
-See [Journal Policy Pages](journal_policies.md)
+See [Journal Policy Pages](journal-policies.md)
 
 If you see a journal absent from this list, please [suggest an addition](https://github.com/social-science-data-editors/guidance/edit/master/journal-policies.md) (Github login required).
 
