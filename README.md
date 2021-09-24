@@ -28,7 +28,8 @@ Below is a selective list of policies from journals that actively verify complia
 
 See [Journal Policy Pages](journal_policies.md)
 
-If you see a journal absent from this list, please [suggest an addition]
+If you see a journal absent from this list, please [suggest an addition](https://github.com/social-science-data-editors/guidance/edit/master/journal-policies.md) (Github login required).
 
 ## FAQ
+
 See our growing [FAQ](FAQ.md). If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).
