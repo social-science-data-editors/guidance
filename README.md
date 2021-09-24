@@ -15,11 +15,20 @@ This guidance is for the author wanting to create a replication archive.
 See [Requested information](Requested_information.md) for the information the Data Editor may request from you, prior to the acceptance of your paper for publication.
 
 ## Guidance on testing replicability of code
+
 This guidance has two audiences:
  - the author wanting to verify whether her code passes muster as a replicable archive
  - the replicator wanting to verify the replicability of such an archive
 
 See [Verification guidance](Verification_guidance.md) 
+
+## Journal-specific policies
+
+Below is a selective list of policies from journals that actively verify compliance with policies through review of data, code, and documentation. 
+
+See [Journal Policy Pages](journal_policies.md)
+
+If you see a journal absent from this list, please [suggest an addition]
 
 ## FAQ
 See our growing [FAQ](FAQ.md). If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).
