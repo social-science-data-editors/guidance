@@ -75,7 +75,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     minitest (5.14.4)
-    nokogiri (1.11.7-x86_64-linux)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -85,7 +85,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rainbow (3.0.0)
     rb-fsevent (0.11.0)
@@ -142,6 +142,7 @@ DEPENDENCIES
   html-proofer (~> 3.0)
   jekyll-remote-theme
   jekyll-theme-minimal!
+  nokogiri (>= 1.12.5)
   rubocop-github (~> 0.16)
   w3c_validators (~> 1.3)
 

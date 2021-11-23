@@ -9,11 +9,14 @@ COPY Gemfile Gemfile.lock jekyll-theme-minimal.gemspec ./
 
 RUN gem install bundler
 RUN bundle config unset frozen
+RUN bundle update --bundler
+RUN bundle update
+RUN bundle lock --update
 RUN bundle install
 
 VOLUME /usr/src/app
 
 EXPOSE 4000
 
-CMD jekyll serve /_site --watch --force_polling -H 0.0.0.0 -P 4000
+CMD bundle exec jekyll serve /_site --watch --force_polling -H 0.0.0.0 -P 4000
 #CMD /bin/bash
