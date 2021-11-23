@@ -33,11 +33,23 @@ ul, ol {
 
 .citation {
 border-left: 1px solid #e5e5e5;
-margin: 0 0 1em 0;
-padding: 0 0 0 30px;
+margin: 1em 1em 1em 1em;
+padding: 5px 0 5px 30px;
 text-indent: -10px;
 font-style: normal;
 list-style-type: none;
+background-color:#f8f8f8;
 }
 
+.goodcite {
+  background-color: #c7f3e47d;
+}
+
+.mediumcite {
+  background-color: #f8ebc07d;
+}
+
+.badcite {
+  background-color: #c284887d;
+}
 /* end of customizations */

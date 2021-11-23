@@ -20,7 +20,7 @@ Many authors initially neglect to add data citations, or do not know how to add 
 The above example can be improved as follows:
 
 > We use data acquired from the NHL (NHL, 2018), dates of power outages collected by Tremblay et al (2018, 2019), augmented with information on the language and grammar skills of hockey players provided by the Ethnologue database (Eberhard et al, 2019).
-{:.goodcite}
+
 
 with the reference list having the following entries:
 
