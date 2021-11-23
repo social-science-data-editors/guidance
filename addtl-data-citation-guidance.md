@@ -20,6 +20,7 @@ Many authors initially neglect to add data citations, or do not know how to add 
 The above example can be improved as follows:
 
 > We use data acquired from the NHL (NHL, 2018), dates of power outages collected by Tremblay et al (2018, 2019), augmented with information on the language and grammar skills of hockey players provided by the Ethnologue database (Eberhard et al, 2019).
+{:.goodcite}
 
 
 with the reference list having the following entries:
@@ -78,7 +79,7 @@ Any online repository can be deleted by its owner at any time, and in that sense
 However, online repositories do provide the ability to make **releases**, providing a better way to pin changes made over time. While this does not change the fundamental treatment as a website, it is a more robust reference:
 
 
-{:.citation .goodmediumcite}
+{:.citation .goodcite}
 - Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, & Morrow, Peter. (2020). "A template README for social science replication packages." Github. Release  v1.0.0). https://github.com/social-science-data-editors/template_README/releases/tag/v1.0.0. Accessed 2021-07-01.
 	
 However, Github is currently unique among online repositories in enabling an automatic integration with [Zenodo](https://zenodo.org) for the purpose of "[making code citable](https://guides.github.com/activities/citable-code/)" (and preserving versions). This changes the citation, because Zenodo-preserved versions are no longer subject to arbitrary deletion. Once a Github website has been preserved on Zenodo, it can be cited as any document or archive with a DOI:
