@@ -120,6 +120,22 @@ with the article also cited as:
 {:.citation}
 - Romer, Christina D., and David H. Romer. 2010. “The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks” *American Economic Review.* no. 3 (June 2010): 763–801. https://doi.org/10.1257/aer.100.3.763.
 
+#### Citing the paper or the data?
+
+Several data distributors already request or require citation as per their terms of use, or as a note on their websites. Often, following traditional usage, they request citation of a published article, not of the data. For example, the widely used "Penn World Tables" request that the article that introduced this version of the Penn tables be cited:
+
+{:.citation}
+- Feenstra, Robert C, Robert Inklaar, and Marcel P Timmer. 2015."The next generation of the Penn World Table." *American Economic Review*, 105(10): 3150-82.
+
+However, they also provide a DOI that redirects to the data download page, with various versions of the tables receiving different DOIs. In particular, various of these versions were created *after* the original article (and database) were published, and are not published in the AER. 
+
+Thus, for accurate citations as well as compliance with data citation principles, **in addition** to citing the Feenstra et al (2015) article as requested by the data provider, authors should **also** correctly cite the data:
+
+
+{:.citation .goodcite}
+- Robert C. Feenstra, Robert Inklaar and Marcel P. Timmer. 2016. “Penn World Table 9.0.” *Groningen Growth and Development Centre*. [https://doi.org/10.15141/S5J01T](https://doi.org/10.15141/S5J01T). 
+
+
 ### Specific Guidance
 
 The key to data citations is that the creator, the name, the location, and the date last accessed for a data source should be clear. This pertains to online data, offline data, physical data, whether it is in boxes or on tapes, or in a corporate database behind a firewall. 
