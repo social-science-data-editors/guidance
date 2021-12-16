@@ -79,6 +79,8 @@ stand-alone Python packages like GeoPandas, Rasterio, and PySAL.
 
 There are also ways to create maps in R.
 
+- [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow
+
 ## You can help
 
 We are always looking to expand this resource. Please suggest additions and expansions of this guide through a Github [issue](https://github.com/social-science-data-editors/guidance/issues/new/choose) or pull request.
