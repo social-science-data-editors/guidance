@@ -280,3 +280,8 @@ In some cases, the data provider (often a firm) must remain anonymous. This does
 
 {:.citation .goodcite}
 - Anonymous Firm. 1999. “Personnel records of windowshield installers.” Unpublished data. Accessed February 29, 2000.
+
+
+### Try it out
+
+{% include citation-generator.html %}
