@@ -176,12 +176,9 @@ When the object does not have a DOI, it isn't really that much more complicated,
       <tr><td></td> <td><input type="button" onclick="myFunction()" value="Compute citation"></td></tr>
       </table>
     </form>
-    <p id="warning" class="warning"></p>
-    <p id="DOI"></p>
-    <table>
-    <tr><td>
-    <p id="citation" class="goodcite"></p>
-    </td></tr></table>
+<p id="warning" class="warning"></p>
+<p id="DOI"></p>
+<table><tr><td><p id="citation" class="goodcite"></p></td></tr></table>
     
 <script>
     function myFunction() {
