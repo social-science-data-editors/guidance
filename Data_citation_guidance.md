@@ -180,7 +180,7 @@ When the object does not have a DOI, it isn't really that much more complicated,
     <p id="DOI"></p>
     <table>
     <tr><td>
-    <p id="citation"></p>
+    <p id="citation" class="goodcite"></p>
     </td></tr></table>
     
     <script>
