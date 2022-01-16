@@ -7,6 +7,7 @@ title: "Guidance on Data Citation"
 Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.
 
 ### Data Citations
+
 Properly referencing data goes beyond just reproducibility - it is also proper scientific writing style. In the same way that authors use bibliographic references to "printed" resources, they should also be using such references for data resources, to give and receive credit where credit is due. Not referencing an article or book is at best an oversight, and at worst plagiarism - and the same should apply to data objects. Numerous guides and tutorials exist, some of which provide a variety of examples.
 
 - DataONE [Tutorial on Data Citation](http://www.dataone.org/sites/all/documents/L09_DataCitation.pptx) and [generic guidance](https://www.dataone.org/citing-dataone)
@@ -23,15 +24,18 @@ Properly referencing data goes beyond just reproducibility - it is also proper s
 In a nutshell, every dataset is to be cited. This is true for the main article as well as online appendices. In the past, use of data or code has been acknowledged in footnotes, and only rarely through bibliographic references. However,  if the dataset is used, it should appear in the bibliography. The same is true for code reused from previous papers, or provided by authors.
 
 #### Data is published
+
 The DOI is thus public, and all repositories will provide a suggested citation. One can also use [https://www.doi2bib.org/](https://www.doi2bib.org/) or [https://citation.crosscite.org/](https://citation.crosscite.org/) to get a citation (see below for additional tools).
 
 ####  Data is not published
+
 This is trickier. The data does not necessarily have a title that is related to the paper. Some repositories allow authors to "reserve" a DOI (Zenodo) or to delay publication. For some repositories, the DOI, while not officially reserved, can be derived from information already available (see this FAQ for openICPSR, something similar may be possible at Dataverse).
 
 In some cases, authors may be able to delay publication, and coordinate it with the publication of the article (openICPSR, possibly Zenodo).
 
 
 ### Where to cite
+
 In all cases, data and code should be cited in the main manuscript. They should also be  referenced in the data availability statement (some journals) or the README (other journals). 
 
 ### How to cite
@@ -76,6 +80,118 @@ This may be adjusted. An alternate citation may be
 Citations to primary data can sometimes be hard to construct. If the data provider has a suggested citation, then you should use it. Alternatively, you can construct as per the above examples, for instance, as noted on the [AEA style guide](https://www.aeaweb.org/journals/policies/sample-references):
 
 > Bureau of Labor Statistics. 2000–2010. “Current Employment Statistics: Colorado, Total Nonfarm, Seasonally adjusted - SMS08000000000000001.” United States Department of Labor. http://data.bls.gov/cgi- bin/surveymost?sm+08 (accessed February 9, 2011).
+
+### Data citation generator
+
+#### When the object has a DOI
+
+There are several websites that will create a (data) citation from any DOI. Give these a try:
+
+**DOI Citation Formatter** at [citation.crosscite.org/](https://citation.crosscite.org/) is supported by the DOI Registration Agencies. For instance, using `10.3886/ICPSR05404` from the above example, it generates (as of 2022-01-16):
+
+- Chicago Author-date (16th edition)
+
+{:.citation .goodcite}
+> Leiss, Amelia. 1984. “Arms Transfers to Developing Countries, 1945-1968.” ICPSR - Interuniversity Consortium for Political and Social Research. doi:10.3886/ICPSR05404. 
+
+- APA style:
+
+{:.citation .goodcite}
+> Leiss, A. (1984). Arms Transfers to Developing Countries, 1945-1968 [Data set]. ICPSR - Interuniversity Consortium for Political and Social Research. https://doi.org/10.3886/ICPSR05404 
+
+**doi2bib** at [doi2bib.org/](https://www.doi2bib.org/) will generate a BibTeX entry from a DOI (for instance from [10.3886/ICPSR05404](https://www.doi2bib.org/bib/10.3886/ICPSR05404)):
+
+```
+@misc{https://doi.org/10.3886/icpsr05404,
+  doi = {10.3886/ICPSR05404},
+  url = {http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/5404},
+  author = {Leiss,  Amelia},
+  language = {en},
+  title = {Arms Transfers to Developing Countries,  1945-1968},
+  publisher = {ICPSR - Interuniversity Consortium for Political and Social Research},
+  year = {1984}
+}
+```
+
+#### When the object does not have a DOI
+
+When the object does not have a DOI, it isn't really that much more complicated. Try our embedded citation generator:
+
+
+<form id="myForm">
+    <table>
+     <tr><td class='class_author'>Authors:</td> <td> <input type="text" placeholder="Author"      id="author">    </td></tr>
+     <tr><td class='class_title'>Title:   </td> <td> <input type="text" placeholder="Title"       id="title">     </td></tr>
+     <tr><td class='class_distributor'>Distributor:</td> <td> 
+                                                     <input type="text" placeholder="Distributor" id="Distributor"></td></tr>
+     <tr><td class='class_version'>Version:</td><td> <input type="text" placeholder="V1"          id="versionnum"> </td></tr>
+     <tr><td class='class_doi'>Persistent identifier or URL:</td><td> 
+                                                     <input type="text" placeholder="https://doi.org/123/345" id="DOI"></td></tr>
+      <tr><td class='class_date'>Date:</td>     <td> <input type="text" placeholder="2022-01-22"  id="Date">       </td></tr>
+      <tr><td>Accessed or downloaded?</td> 
+        <td> <input type="radio" id="access" name="accdown" value="access">
+             <label for="access">Accessed</label>
+             <input type="radio" id="down" name="accdown" value="down">
+             <label for="down">Downloaded</label>
+            </td>
+          </tr>
+      <tr><td></td> <td><input type="button" onclick="myFunction()" value="Compute citation"></td></tr>
+      </table>
+    </form>
+    <p id="warning" class="warning"></p>
+    <p id="DOI"></p>
+    <table>
+    <tr><td>
+    <p id="citation"></p>
+    </td></tr></table>
+    
+    <script>
+    function myFunction() {
+      var author = document.getElementById('myForm').elements[0].value;
+      var title = document.getElementById('myForm').elements[1].value;
+      var distributor = document.getElementById('myForm').elements[2].value;
+      var versionnum = document.getElementById('myForm').elements[3].value;
+      var doi = document.getElementById('myForm').elements[4].value;
+      var date = document.getElementById('myForm').elements[5].value;
+      var radios = document.getElementsByName("accdown");
+      for(var i = 0; i < radios.length; i++) {
+         if(radios[i].checked) accdown = radios[i].value;   
+        }
+      if ( author == "" || title == "" ) {
+        document.getElementById("warning").innerHTML = "Author and title are required.";
+      } else {
+        document.getElementById("warning").innerHTML = "";
+      }
+      let citationtext;
+      citationtext = "<span class='class_author' title='Authors'>" + author + "</span>";
+      citationtext = citationtext +  ', "' + "<span class='class_title' title='Title'>" +title ;
+      citationtext = citationtext + '</span> [dataset]," '; 
+      if ( distributor != "") {
+        if ( accdown == "access" ) {
+          citationtext = citationtext + "Accessed via ";
+        }
+        if ( accdown == "down" ) {
+          citationtext = citationtext + "Retrieved from ";
+        }
+        citationtext = citationtext + "<span class='class_distributor' title='Distributor'>" + distributor + "</span>";
+        citationtext = citationtext + " [distributor]";
+      }
+      if ( versionnum != "" ) {
+        citationtext = citationtext + " <span class='class_version' title='Version'>" + versionnum + "</span>,";
+      }
+      if ( doi != "" ) {
+        citationtext = citationtext + " <span class='class_doi' title='Persistent identifier'>" + doi + "</span>";
+      }
+      if ( date != "" ) {
+        citationtext = citationtext + ", <span class='class_date' title='Date'>" + date + "</span>";
+      }
+      citationtext = citationtext + ".";
+          
+      document.getElementById("citation").innerHTML = citationtext;
+      document.getElementById("DOI").innerHTML = "<b><i>Your citation will be: </i></b>";
+      
+    }
+    </script>
 
 ### Some additional guidance on tricky citations
 
