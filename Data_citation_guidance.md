@@ -183,7 +183,7 @@ When the object does not have a DOI, it isn't really that much more complicated,
     <p id="citation" class="goodcite"></p>
     </td></tr></table>
     
-    <script>
+<script>
     function myFunction() {
       var author = document.getElementById('myForm').elements[0].value;
       var title = document.getElementById('myForm').elements[1].value;
@@ -229,4 +229,4 @@ When the object does not have a DOI, it isn't really that much more complicated,
       document.getElementById("DOI").innerHTML = "<b><i>Your citation will be: </i></b>";
       
     }
-    </script>
+</script>
