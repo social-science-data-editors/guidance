@@ -14,6 +14,10 @@ In alphabetical order:
 
 - [Policy](https://www.economics.ca/cpages/cje-journal-policies)
 
+## Management Science
+
+- [Policy](https://pubsonline.informs.org/page/mnsc/datapolicy)
+
 ## Review of Economic Studies
 
 - [Policy](https://restud.github.io/data-editor/before/#data-availability-policy)
