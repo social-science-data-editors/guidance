@@ -15,6 +15,7 @@ Focussing on R:
 Mixing software:
 
 - [RQGIS: Integrating R with QGIS forStatistical Geocomputing](https://journal.r-project.org/archive/2017/RJ-2017-067/RJ-2017-067.pdf) (*Jannes Muenchow, Patrick Schratz and Alexander Brenning , The R Journal (2017) 9:2, pages 409-428.* )
+- [Use R scripts in Processing](https://docs.qgis.org/3.16/en/docs/training_manual/processing/r_intro.html) using the QGIS "Processing R Provider" plugin.
 
 ## GIS data files
 
