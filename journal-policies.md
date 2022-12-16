@@ -26,5 +26,17 @@ In alphabetical order:
 
 ## Royal Economic Society (Economic Journal and Econometric Journal)
 
+### Economic Journal
+
 - [Policy](https://academic.oup.com/ej/pages/General_Instructions#data)
 - [Guidance](https://ejdataeditor.github.io/)
+
+### Econometrics Journal
+
+- [Policy](https://res.org.uk/replication-policy)
+
+## Western Economic Association International 
+
+### Economic Inquiry
+
+- [Policy](https://weai.org/view/EI-Journal-Policies)
