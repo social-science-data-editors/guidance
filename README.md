@@ -1,5 +1,12 @@
 # Unofficial guidance on various topics by Social Science Data Editors
 
+## Data and Code Availability Standard
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7436134.svg)](https://doi.org/10.5281/zenodo.7436134)
+
+<img src="https://datacodestandard.org/assets/img/logo-800.png" height="15px" /> The [Data and Code Availability Standard (DCAS)](https://datacodestandard.org/) is a standard for sharing research code and data, endorsed by [leading journals](https://datacodestandard.org/journals) in social sciences. See [https://datacodestandard.org/](https://datacodestandard.org/) for more information.
+
+
 
 ## README template
 
