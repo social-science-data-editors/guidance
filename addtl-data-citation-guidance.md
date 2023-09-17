@@ -247,7 +247,7 @@ If multiple databases within the same secure confines are used and combined, the
 
 #####  Government registers
 
-In some cases, governments have list of their (named) registers. For instance, Statistics Denmark provides the full list of registers at [http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html](http://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html). These can be used to craft data citations, for instance
+In some cases, governments have list of their (named) registers. For instance, Statistics Denmark provides the full list of registers at [https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html](https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html). These can be used to craft data citations, for instance
 
 {:.citation .goodcite}
 - Statistics Denmark. 2020. "Døde i Danmark (DOD, Deaths in Denmark), 1970-2019 [database]", Danmarks Statistiks Forskningsservice, accessed YYYY-MM-DD.
