@@ -10,7 +10,11 @@
 
 ## README template
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4319999.svg)](https://doi.org/10.5281/zenodo.4319999)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293838.svg)](https://doi.org/10.5281/zenodo.7293838)
+
+Please cite as
+
+> Lars Vilhuber, Connolly, Marie, Koren, Miklós, Llull, Joan, and Morrow, Peter. 2022. “A Template README for Social Science Replication Packages”. Zenodo. https://doi.org/10.5281/zenodo.7293838.
 
 The [template README](https://social-science-data-editors.github.io/template_README/) provided on this website is in a form that follows best practices as defined by a number of data editors at social science journals. 
 
