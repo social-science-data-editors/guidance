@@ -4,7 +4,6 @@ layout: withtoc
 title: "Docker guidelines"
 ---
 
-
 NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singularity.
 
 ## Configuration and creation
@@ -28,6 +27,11 @@ NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singular
 - Output from the analysis code should be written to a location that is also mounted into the container (e.g., to `/project/output` in the above example.)
 - All code should be runnable without the container as well. 
 - Optionally: it is permissible, but not suggested, that the analysis code be run interactively. 
+
+## Preservation
+
+- The container should be preserved as a tar file, and archived as part of the replication package, or as a separate archive.
+- It is not sufficient, but appreciated, to provide a public container image at [OCI registries](https://opencontainers.org/), for instance, [Docker Hub](https://hub.docker.com/) or [Sylabs.io](https://cloud.sylabs.io/). Note that these registries regularly prune the available images, and may impose fees that lead to deprovisioning of containers. 
 
 ## Discouraged
 
