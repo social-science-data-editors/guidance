@@ -38,3 +38,14 @@ NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singular
 - Since it is feasible to run interactive environments, it is possible to create containers that are geared towards interactive development (Jupyter notebooks, Rstudio). The use of such environments is allowed, as long as the reproducible code does not rely on such environments. In other words, while Rstudio might display the code, and allow to interact with it, the core analysis should be reproducible without the use of Rstudio.
   - Example: `Rscript main.R`. 
   - Equivalently, Jupyter notebooks should be executed non-interactively as `jupyter nbconvert --execute --to notebook --inplace your-notebook.ipynb` or `jupyter nbconvert --execute --to webpdf --no-input your-notebook.ipynb` (requires `pip install nbconvert[webpdf]`)
+ 
+## Random notes
+
+Contributed by various people:
+
+- It could be good to add a link explaining what a "container runtime" is and an example to clarify what is requested (i.e., is it enough to mention "Docker Engine - Community 1.40"?).
+  - Need to test whether "docker -v" or 
+- The researcher might need to specify the architecture of the container so that users know what to expect. (For example if the OS/architecture of the container is Linux Debian/amd64, we've had issues running on Apple Chip machines.)
+  - `docker run --rm -ti --platform linux/arm64 ubuntu:latest` (on Intel) can work, but [reports](https://stackoverflow.com/questions/70765522/docker-amd64-warning-on-apple-m1-computer) mention some compatibility issues (not sure if typically encountered in econ work). Providing the Dockerfile is a safeguard, since images can be rebuilt on other platforms.
+- If there are exceptions to the policy of excluding code and data from the container, maybe list those (or state the procedure for determining them).
+  - This is likely handled mostly by defining "software environment" as distinct from "user code" - sometimes, that mix can be murky, though (researches provides a R package that *is* the economics replication package). 
