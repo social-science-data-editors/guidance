@@ -11,3 +11,5 @@
 *.run.xml
 *.synctex.gz
 .DS_Store
+.jekyll-cache
+_site
