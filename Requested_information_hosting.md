@@ -4,7 +4,9 @@ title: Suggested Information for Data and Code Hosting
 ---
 
 ### Trusted Repositories
+
 Journals and institutions have assessed a number of trusted repositories:
+
 - [CoreTrustSeal](https://www.coretrustseal.org/) has a certification process
 - [re3data.org](https://www.re3data.org/) lists research data repositories
 - [Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research](https://f1000research.com/for-authors/data-guidelines#hosting), and [PLOS](https://journals.plos.org/plosone/s/data-availability) have lists of trusted repositories. 
@@ -34,7 +36,8 @@ Journals and institutions have assessed a number of trusted repositories:
 
 A list of trusted repositories that have been found to be acceptable for the purpose of archiving social and economic data can be found here:
 
-> [https://github.com/social-science-data-editors/guidance/blob/master/data/trusted-repositories.csv](https://github.com/social-science-data-editors/guidance/blob/master/data/trusted-repositories.csv)
+[https://social-science-data-editors.github.io/reference/TrustedRepositories.html](https://social-science-data-editors.github.io/reference/TrustedRepositories.html)
+
 
 The list is maintained by the editors collaborating on this site. To suggest an addition, please issue a pull request, or email one of the editors.
 
@@ -63,11 +66,12 @@ Only the first entry in each of the examples above should be used for citing, no
 #### NOT ACCEPTABLE
 
 A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article's supplementary materials:
+
 - [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](FAQ.md));
 - Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the [Wayback Machine](https://archive.org/) for a similar purpose);
 - Dropbox, Box.com, and similar cloud-based data and file sharing services - again, they can all be deleted at short notice, or when payment stops
 
-### Some examples
+### Some good examples
 
 > "Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion, Replication files and raw data" (Michael Clemens)
 - Hosted on Harvard Dataverse at [https://dataverse.harvard.edu/dataverse/bracero](https://dataverse.harvard.edu/dataverse/bracero)
@@ -86,6 +90,7 @@ A variety of (unfortunately) commonly used web-accessible locations are not acce
   - Asher, Sam; Novosad, Paul, 2019, "Socioeconomic High-resolution Rural-Urban Geographic Dataset for India (SHRUG)", https://doi.org/10.7910/DVN/DPESAK, Harvard Dataverse, V1, UNF:6:Upe25NYAZwR+6VsDt5X2lQ== 
 
 ### Challenges in Hosting of Data and Code at Restricted-Access Data Centers
+
 Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.census.gov/fsrdc),  [CASD](https://www.casd.eu/), etc.) face certain challenges in the handling of data and code as described in this document:
 
 - researchers (end-users) may not be able to provide DOI or similar persistent identifiers for some data
@@ -98,7 +103,8 @@ Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.cens
 - Request as much code as the RADC  will allow the researcher to remove. Subsequently handle it equivalently to the [general code guidance](Requested_information_code.md), but make special note (placeholders, explanatory text) of any redacted information.
 - In addition, some RADC may provide the ability to deposit code internally and confidentially. Use such interal repositories, and make a note of their location in the publicly deposited code or in supplementary documents.
 
-#### Self-generated repositories
+#### Self-generated repositories (second best)
+
 If a RADC has at least an archival or backup policy of sufficient length (e.g., 10 or more years), but does not offer a formal repository, then the following procedure allows users to find and request code and data
 - As before, request as much code as is feasible, and deposit it in a public repository (e.g., openICPSR, Dataverse, Zenodo). **Don't publish it yet.**
 - If possible at such repositories, pre-register a `DOI`
