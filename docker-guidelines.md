@@ -25,7 +25,7 @@ NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singular
 - All analysis data and code should be present externally, organized so they can be mapped into the container.
 - Runtime arguments should map the externally provided analysis data and code into the container, e.g., `docker run -it --rm -v "$(pwd)":/project -w /project mydocker`. 
 - Output from the analysis code should be written to a location that is also mounted into the container (e.g., to `/project/output` in the above example.)
-- All code should be runnable without the container as well. 
+- All code should in principle, based on the documentation provided, be runnable without the container as well. 
 - Optionally: it is permissible, but not suggested, that the analysis code be run interactively. 
 
 ## Preservation
@@ -49,3 +49,40 @@ Contributed by various people:
   - `docker run --rm -ti --platform linux/arm64 ubuntu:latest` (on Intel) can work, but [reports](https://stackoverflow.com/questions/70765522/docker-amd64-warning-on-apple-m1-computer) mention some compatibility issues (not sure if typically encountered in econ work). Providing the Dockerfile is a safeguard, since images can be rebuilt on other platforms.
 - If there are exceptions to the policy of excluding code and data from the container, maybe list those (or state the procedure for determining them).
   - This is likely handled mostly by defining "software environment" as distinct from "user code" - sometimes, that mix can be murky, though (researches provides a R package that *is* the economics replication package). 
+
+## Sample Dockerfiles
+
+> simplest possible dockerfile implementing (and commenting) on the above principles
+
+### Simple file
+
+Using a base image for software, with minimal project-specific adjustments
+
+Candidates:
+
+- https://github.com/AEADataEditor/aearep-3727-docker (not ideal, incomplete, mixed Stata + R)
+- https://github.com/AEADataEditor/aearep-3290
+
+### Less-than-ideal packages/examples
+
+* License issues? expiry dates on containers?
+* matlab
+
+- https://github.com/AEADataEditor/docker-stata 
+- https://github.com/AEADataEditor/stata-project-with-stata 
+
+### Advanced docker usage
+
+* provide a ready to go container vs a container ready to install required libraires (like most recent stata packages)
+
+
+(examples?)
+
+- devcontainer: https://hub.docker.com/r/jupyter/datascience-notebook (?)
+- Chained containers for 
+
+
+### Open questions
+
+- renv and docker
+- conda and docker
