@@ -20,6 +20,14 @@ The [template README](https://social-science-data-editors.github.io/template_REA
 
 The most recent version is available at [https://social-science-data-editors.github.io/template_README/](https://social-science-data-editors.github.io/template_README/).
 
+## Discussion forum for (Data) Editors
+
+We have a (low-intensity) mailing list for data and reproducibility editors, and a more active working group that meets monthly, and maintains these resources.
+We use a mailing list for discussion.
+
+- to join general list, send email to [socsci-data-editors-l-request@cornell.edu](mailto:socsci-data-editors-l-request@cornell.edu?subject=join) with subject line "join". Approval required. You might contact any one of the working group members prior to sending the email.
+- to join the active working group, contact [Lars Vilhuber](mailto:lars.vilhuber@cornell.edu). Meetings are usually first Monday of the month, 11:00AM Eastern/17:00 Central European time.
+ 
 ## Guidance on creating replicable data and program archives for authors
 
 This guidance is for the author wanting to create a replication archive.
