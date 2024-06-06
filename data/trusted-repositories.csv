@@ -1,0 +1,4 @@
+Name,URL,Openness,Preservation policy URL,Assigns DOI,re3data entry,Recommender
+World Bank Microdata Catalog,https://microdata.worldbank.org,World Bank Employees only,https://documents1.worldbank.org/curated/en/568301468326225648/pdf/798430PP0AMS010ox0379792B00PUBLIC0.pdf,No,No,AEA Data Editor
+CodeOcean,https://codeocean.com/,All,https://help.codeocean.com/en/articles/2443989-code-ocean-s-preservation-plan,Yes,No,AEA Data Editor
+World Bank Reproducible Research Repository,https://reproducibility.worldbank.org,World Bank Employees only,https://documents1.worldbank.org/curated/en/568301468326225648/pdf/798430PP0AMS010ox0379792B00PUBLIC0.pdf,Yes,No,

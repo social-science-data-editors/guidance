@@ -1,0 +1,13 @@
+<script>
+    function createCitation() {
+      var x = document.getElementById("myCitation");
+      var date = document.getElementById("todayDate");
+      var url = document.getElementById("thisURL");
+      var year = document.getElementById("thisYear");
+      var d = new Date();
+    
+        year.innerHTML = d.getFullYear();
+        date.innerHTML = d.toISOString().split("T")[0];
+        url.innerHTML = window.location.href;
+    }
+</script>

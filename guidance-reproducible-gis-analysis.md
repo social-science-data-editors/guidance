@@ -1,0 +1,93 @@
+---
+layout: withtoc
+title: "Some (incomplete) guidance to creating reproducible maps with GIS software"
+---
+
+> The following information was provided by several sources. We wish to thank Keith Jenkins (Cornell University).
+
+## Some readings
+
+Focussing on R:
+
+- [Reproducible Cartography](https://riatelab.github.io/ReproducibleCartography/paper/paper.html) 
+- [Reproducible GIS analysis with R](https://staff.washington.edu/phurvitz/r_gis/)
+
+Mixing software:
+
+- [RQGIS: Integrating R with QGIS forStatistical Geocomputing](https://journal.r-project.org/archive/2017/RJ-2017-067/RJ-2017-067.pdf) (*Jannes Muenchow, Patrick Schratz and Alexander Brenning , The R Journal (2017) 9:2, pages 409-428.* )
+- [Use R scripts in Processing](https://docs.qgis.org/3.16/en/docs/training_manual/processing/r_intro.html) using the QGIS "Processing R Provider" plugin.
+
+## GIS data files
+
+One of the most commonly used geospatial data formats is a set of files collectively referred to as a "[shapefile](https://en.wikipedia.org/wiki/Shapefile)".  These are often distributed as ZIP archives, but for any given project, are generally within a separate directory. There are at least three *mandatory* files, ending in `shp`, `shx`, and `dbf`.  The `shp` file contains the vector geometries (points, lines, polygons) that appear on a map ("features").  The `dbf` is an attribute table (in dBase IV format), and can be created and manipulated by other programs as well, including Stata, R, and Python.  The `shx` file is an index that links the geometries to the corresponding attribute data.  There are several other optional sidecar files that should be retained, if present.  For example, a `.prj` file defines the projection, or coordinate system of the geometries.  Shapefiles have notable technical limitations (such as 10-character attribute names, 254-character text field values, 255 attribute limit, and 2GB file size) but the format is well-understood and widely implemented.
+
+Geospatial data also comes in many other formats.  [GeoPackage](https://www.geopackage.org/) is a modern GIS data standard that overcomes many of the shapefile limitations, and is now widely supported.  Like the shapefile, it supports vector data, but GeoPackage can also contain raster (pixel-based) data.  The most widely-used raster data format is [GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF), but large, multi-dimensional datasets are often shared in [NetCDF](https://en.wikipedia.org/wiki/NetCDF) format.
+
+Non-geospatial tabular data is often combined with geospatial data for analysis.  CSV is recommended as a well-known format.  Geospatial point data may also be shared in CSV format, with the inclusion of two fields for the X and Y coordinates.  Longitude and latitude is often used for global datasets, but there are hundreds of local coordinate systems in common use, so be sure to document the coordinate system being used.
+
+## Reproducibility principles
+
+Because the `dbf` file is data, its sources should be clearly described in reproducible workflows. How is the core non-geographic data in the `dbf` being created, where does it come from? 
+
+Map information (typically in the base `shp` file) comes from cartographic or statistical sources. For instance, some shapefiles in the US will be sourced from the U.S. Census Bureau, which uses them for various statistical activities. These sources should be clearly outlined.
+
+Any processing to combine data in preparation of creating a map, as well as the processing steps to create the map, need to be described in a reproducible workflow.
+
+
+## Creating reproducible ArcGIS-produced maps
+
+ArcGIS has a tool called ModelBuilder, which is a graphical
+interface that lets you create a workflow of processing tools, their
+input parameters, and their outputs.  These models can effectively
+turn a complex flow into something that looks like just another
+processing tool, so that the same model can be run on another input,
+or with different starting parameters.  There may be some variations in
+the format between ArcGIS software versions that should be
+investigated when considering their use for reproducibility.  Models
+can also be exported to a Python script, which might be better from a
+reproducibility perspective, although they will still depend on access
+to licensed ArcGIS python libraries in order to run.  It is also
+possible to write ArcPy scripts by hand.
+
+Esri's newer ArcGIS Pro (as opposed to the
+older ArcMap) has "[ArcGIS Notebooks](https://pro.arcgis.com/en/pro-app/arcpy/get-started/pro-notebooks.htm)" which are based on Jupyter.  
+However, it seems many Esri users are still using the older ArcMap.
+
+### Resources
+
+Esri Academy has many [ArcGIS tutorials and web courses](https://www.esri.com/training/catalog/search/).  Some are
+marked as free.  Some universities have site licenses.  
+
+## Creating reproducible maps using QGIS
+
+The open-source QGIS has a graphical modeler similar to the ArcGIS
+ModelBuilder, and it can also export models to Python scripts.  PyQGIS
+is similar to ArcPy, and both are closely tied to their own software
+structures and functionalities.  
+
+### Resources
+
+- [Official QGIS documentation on Graphical Modeler](https://docs.qgis.org/3.10/en/docs/user_manual/processing/modeler.html)
+- Ujaval Gandhi has developed several [QGIS-related courses](https://courses.spatialthoughts.com/), and makes
+his training materials available online, including "Python Foundation
+for Spatial Analysis", "Customizing QGIS with Python", and "Automating
+GIS Workflows with QGIS".
+- [PyQGIS Programmer's Guide](https://locatepress.com/ppg3) (2018 book)
+
+
+## Creating reproducible maps using Python
+
+There are  some great
+stand-alone Python packages like GeoPandas, Rasterio, and PySAL.
+
+## Creating reproducible maps using R
+
+There are also ways to create maps in R.
+
+- [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow
+- Excellent tutorial by [Kieran Healy](https://kieranhealy.org/) at [https://socviz.co/maps.html](https://socviz.co/maps.html#maps)
+
+## You can help
+
+We are always looking to expand this resource. Please suggest additions and expansions of this guide through a Github [issue](https://github.com/social-science-data-editors/guidance/issues/new/choose) or pull request.
+

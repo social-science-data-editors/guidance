@@ -1,0 +1,89 @@
+
+<!-- Originally created by Jérémie Cloutier-Vilhuber as a first-year Software engineering project -->
+<!-- Modified and enhanced by Lars Vilhuber -->
+<!-- (C) 2020 Jérémie Cloutier-Vilhuber -->
+<!-- Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. -->
+<!-- https://opensource.org/licenses/BSD-3-Clause -->
+
+<form id="myForm">
+    <table>
+     <tr><td class='class_author'>Authors or Producer:</td> <td> <input type="text" placeholder="Author"      id="author">    </td></tr>
+     <tr><td class='class_title'>Title:   </td> <td> <input type="text" placeholder="Title"       id="title">     </td></tr>
+     <tr><td class='class_date'>Date of publication:</td>     <td> <input type="text" placeholder="2022"  id="DatePub">       </td></tr>
+     <tr><td class='class_distributor'>Distributor:</td> <td> 
+                                                     <input type="text" placeholder="Distributor" id="Distributor"></td></tr>
+     <tr><td class='class_version'>Version:</td><td> <input type="text" placeholder="V1"          id="versionnum"> </td></tr>
+     <tr><td class='class_doi'>Persistent identifier or URL:</td><td> 
+                                                     <input type="text" placeholder="https://doi.org/123/345" id="DOI"></td></tr>
+     <tr><td class='class_date'>Date of access:</td>     <td> <input type="text" placeholder="2022-01-22"  id="DateAccess">       </td></tr>
+      <tr><td>Accessed or downloaded?</td> 
+        <td> <input type="radio" id="access" name="accdown" value="access">
+             <label for="access">Accessed</label>
+             <input type="radio" id="down" name="accdown" value="down">
+             <label for="down">Downloaded</label>
+            </td>
+          </tr>
+      <tr><td></td> <td><input type="button" onclick="myFunction()" value="Compute citation"></td></tr>
+      </table>
+    </form>
+<p id="warning" class="warning"></p>
+<p id="DOI"></p>
+<table><tr><td><p id="citation" class="goodcite"></p></td></tr></table>
+    
+<script>
+    function myFunction() {
+      var author = document.getElementById('myForm').elements[0].value;
+      var title = document.getElementById('myForm').elements[1].value;
+      var datepub = document.getElementById('myForm').elements[2].value;
+      var distributor = document.getElementById('myForm').elements[3].value;
+      var versionnum = document.getElementById('myForm').elements[4].value;
+      var doi = document.getElementById('myForm').elements[5].value;
+      var dateaccess = document.getElementById('myForm').elements[6].value;
+      var radios = document.getElementsByName("accdown");
+      for(var i = 0; i < radios.length; i++) {
+         if(radios[i].checked) accdown = radios[i].value;   
+        }
+      if ( author == "" || title == "" || datepub == "") {
+        document.getElementById("warning").innerHTML = "Author, title, and date of publication are required.";
+      } else {
+        document.getElementById("warning").innerHTML = "";
+      }
+      let citationtext;
+      citationtext = "<span class='class_author' title='Authors'>" + author + "</span>.";
+      citationtext = citationtext + " <span class='class_date' title='Date of publication'>" + datepub + "</span>.";
+      citationtext = citationtext +  ' "' + "<span class='class_title' title='Title'>" +title ;
+      citationtext = citationtext + '</span> [dataset]," '; 
+      if ( distributor != "") {
+        if ( accdown == "access" ) {
+          citationtext = citationtext + "Accessed via ";
+        }
+        if ( accdown == "down" ) {
+          citationtext = citationtext + "Retrieved from ";
+        }
+        citationtext = citationtext + "<span class='class_distributor' title='Distributor'>" + distributor + "</span>";
+        citationtext = citationtext + " [distributor]";
+      }
+      if ( versionnum != "" ) {
+        citationtext = citationtext + " <span class='class_version' title='Version'>" + versionnum + "</span>,";
+      }
+      if ( doi != "" ) {
+        citationtext = citationtext + " <span class='class_doi' title='Persistent identifier'>" + doi + "</span>";
+      }
+      if ( dateaccess != "" ) {
+        citationtext = citationtext + ", <span class='class_date' title='Date of access'>" + dateaccess + "</span>";
+      }
+      citationtext = citationtext + ".";
+          
+      document.getElementById("citation").innerHTML = citationtext;
+      document.getElementById("DOI").innerHTML = "<b><i>Your citation will be: </i></b>";
+      
+    }
+</script>

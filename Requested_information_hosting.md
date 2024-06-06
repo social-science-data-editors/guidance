@@ -1,0 +1,130 @@
+---
+layout: withtoc
+title: Suggested Information for Data and Code Hosting
+---
+
+### Trusted Repositories
+
+Journals and institutions have assessed a number of trusted repositories:
+
+- [CoreTrustSeal](https://www.coretrustseal.org/) has a certification process
+- [re3data.org](https://www.re3data.org/) lists research data repositories
+- [Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research](https://f1000research.com/for-authors/data-guidelines#hosting), and [PLOS](https://journals.plos.org/plosone/s/data-availability) have lists of trusted repositories. 
+- Always check with your journal for specific restrictions or suggestions.
+- These generally include at least the following:
+  -  [Dryad Digital Repository](http://datadryad.org/)
+  -  [figshare](http://figshare.com/)
+  -  [Harvard Dataverse](https://dataverse.harvard.edu)
+  -  [ICPSR](https://www.icpsr.umich.edu/icpsrweb/) and [OPENICPSR](https://www.openicpsr.org/openicpsr/)
+  -  [Open Science Framework](http://osf.io/)
+  -  [Zenodo](http://zenodo.org/)
+  - Country or region-specific repositories (that nevertheless generally accept depositors from anywhere): [GESIS](https://datorium.gesis.org/xmlui/) (Germany), [Swedish National Data Service (SND)](https://snd.gu.se/en/describe-and-deposit-data), [EASY](https://easy.dans.knaw.nl/ui/home) (Netherlands), [CSIRO](https://data.csiro.au/collections/) (Australia), etc.
+- Many universities have formal document repositories that may be able to assume such a role; talk to your (data) librarian
+- Restricted-access and secure data centers also assume the role of trusted repositories:
+  - e.g. [Federal Statistical Research Data Centers](https://www.census.gov/fsrdc) for a variety of statistical microdata in the US
+  - e.g. [Cornell Restricted Access Data Center (CRADC)](https://ciser.cornell.edu/data/secure-data-services/cradc/) for an example of a campus-wide secure data center and archive
+  - e.g. [Centre d’accès sécurisé aux données (CASD)](https://www.casd.eu/) for an example of a European equivalent of the FSRDCs
+  - e.g. [Health Care Cost Institute](https://www.healthcostinstitute.org/about-hcci/) for an example of an industry-based data center for research
+- Note that some data archives can also handle restrictions on data dissemination for various reasons
+  - [ICPSR](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/) can handle certain types of confidential data
+  - [Zenodo](http://about.zenodo.org/policies/) can handle license-based restricted access
+- We note that acceptable access restrictions are limited to concerns of confidentiality or third-party licensing. We do not accept (permanent) access restrictions where
+  - the author is the sole arbitrar of access
+  - sharing is not allowed because of personal interests (future publications, patents, etc.)
+
+#### List of Additional Acceptable Trusted Repositories in Economics
+
+A list of trusted repositories that have been found to be acceptable for the purpose of archiving social and economic data can be found here:
+
+[https://social-science-data-editors.github.io/reference/TrustedRepositories.html](https://social-science-data-editors.github.io/reference/TrustedRepositories.html)
+
+
+The list is maintained by the editors collaborating on this site. To suggest an addition, please issue a pull request, or email one of the editors.
+
+#### Permanent Identifiers: Digital Object Identifiers (DOI) et al
+
+A sufficient, but not necessary criterion for a "trusted repository" is the assignment of permanent identifiers, such as Digital Object Identifiers (DOI). 
+
+> [https://doi.org/10.3886/ICPSR30261.v6](https://doi.org/10.3886/ICPSR30261.v6)
+
+Some repositories (often university-based) ones will also assign [handles](https://www.handle.net/):
+
+> [https://hdl.handle.net/1813/45789](https://hdl.handle.net/1813/45789) 
+
+Others assign DOI upon demand. We generally suggest requesting a DOI if possible. Examples:
+
+- On OSF, users can [request DOIs for projects](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)
+- On university repositories, request procedures [may look like this page at Cornell University](http://guides.library.cornell.edu/ecommons/persistenturls)
+
+However, care must be taken when using permanent identifiers: the URL in the address bar is (almost) never the same as the DOI or handle. All permanent identifiers are redirects: they constitute a permanent entry that points to wherever the most recent version of the object can be found:
+
+- [https://doi.org/10.3886/ICPSR30261.v6](https://doi.org/10.3886/ICPSR30261.v6) is a DOI that redirects to https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261 (as of June 2020).
+- [https://hdl.handle.net/1813/45789](https://hdl.handle.net/1813/45789) is a handle that redirects to [https://ecommons.cornell.edu/handle/1813/45789](https://ecommons.cornell.edu/handle/1813/45789)
+
+Only the first entry in each of the examples above should be used for citing, not the second.  
+
+#### NOT ACCEPTABLE
+
+A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article's supplementary materials:
+
+- [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](FAQ.md));
+- Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the [Wayback Machine](https://archive.org/) for a similar purpose);
+- Dropbox, Box.com, and similar cloud-based data and file sharing services - again, they can all be deleted at short notice, or when payment stops
+
+### Some good examples
+
+> "Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion, Replication files and raw data" (Michael Clemens)
+- Hosted on Harvard Dataverse at [https://dataverse.harvard.edu/dataverse/bracero](https://dataverse.harvard.edu/dataverse/bracero)
+- Contains two datasets:
+  - Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1
+  -  Clemens, Michael, 2018, "Replication Data for: Immigration Restrictions as Active Labor Market Policy: Evidence from the Mexican Bracero Exclusion", https://doi.org/10.7910/DVN/17M4ZP, Harvard Dataverse, V1
+
+> "United States Newspaper Panel, 1869-2004" (Gentzkow, Shapiro, Sinkinson)
+- Hosted on ICPSR at [https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261](https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/30261)
+- Contains 
+  - Gentzkow, Matthew, Shapiro, Jesse M., and Sinkinson, Michael. United States Newspaper Panel, 1869-2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2014-12-10. https://doi.org/10.3886/ICPSR30261.v6
+
+> "Socioeconomic High-resolution Rural-Urban Geographic Dataset for India (SHRUG)" (Asher and Novosad)
+- Hosted on Harvard Dataverse at [https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DPESAK](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DPESAK)
+- Contains:
+  - Asher, Sam; Novosad, Paul, 2019, "Socioeconomic High-resolution Rural-Urban Geographic Dataset for India (SHRUG)", https://doi.org/10.7910/DVN/DPESAK, Harvard Dataverse, V1, UNF:6:Upe25NYAZwR+6VsDt5X2lQ== 
+
+### Challenges in Hosting of Data and Code at Restricted-Access Data Centers
+
+Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.census.gov/fsrdc),  [CASD](https://www.casd.eu/), etc.) face certain challenges in the handling of data and code as described in this document:
+
+- researchers (end-users) may not be able to provide DOI or similar persistent identifiers for some data
+- researchers may not be able to discern the presrvation policy for certain data sets
+- researchers may not be able to remove all code from the center, or such removal is subject to restrictions
+- data citation guidance may be lacking, or may not be obvious (see [Data Citation Guidance](Data_citation_guidance.md) for general guidance)
+
+#### A few guidelines
+
+- Request as much code as the RADC  will allow the researcher to remove. Subsequently handle it equivalently to the [general code guidance](Requested_information_code.md), but make special note (placeholders, explanatory text) of any redacted information.
+- In addition, some RADC may provide the ability to deposit code internally and confidentially. Use such interal repositories, and make a note of their location in the publicly deposited code or in supplementary documents.
+
+#### Self-generated repositories (second best)
+
+If a RADC has at least an archival or backup policy of sufficient length (e.g., 10 or more years), but does not offer a formal repository, then the following procedure allows users to find and request code and data
+- As before, request as much code as is feasible, and deposit it in a public repository (e.g., openICPSR, Dataverse, Zenodo). **Don't publish it yet.**
+- If possible at such repositories, pre-register a `DOI`
+  - At Zenodo: click the appropriation request button, and a `DOI` will be assigned, e.g., _10.5281/zenodo.`NNNNN`_.
+  - At openICPSR: projects are called `openicpsr-NNNNN`. The `DOI` is derived from the project number as _10.3886/E`NNNNN`V1_.
+  - If you already have a DOI assigned to your manuscript or (published) paper, you can _alternatively_ use that (see [10.1093/restud/rdw057](https://doi.org/10.1093/restud/rdw057) for an excellent example).
+- In the RADC, create a two-level directory with the name of the `DOI`.
+- Move both data (following guidelines outlined [here](Requested_information_code.md)) and **all** code (not just the confidential part) to subdirectories. The resulting directory structure will look something like this:
+```
+/some/path/project/10.5281/zenodo.NNNNN/:
+      data/original/rawdata.dta
+      data/derived/analysis.dta
+      programs/01_cleaning.do
+      programs/02_analysis.do
+```
+- Confirm with the RADC's administrative staff how long project files are kept as archives or in backup (often 5-10 years)
+- Add a statement to the public README.md (and to article materials). See [Sample RADC Statement 1](samples/sample_radc_statement1.md) and [Sample RADC Statement 2](samples/sample_radc_statement2.md).
+
+#### Some examples
+
+- Fort (2016) [10.1093/restud/rdw057](https://doi.org/10.1093/restud/rdw057), in the supplementary materials ([local copy](copies/Fort2016-Readme.pdf))
+-  Groen, Kutzbach, and Polivka (2019, forthcoming) (link to be supplied upon publication)
+- See also section on [Data and Code Availability Statements](Requested_information_dcas.md).

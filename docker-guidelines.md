@@ -1,0 +1,88 @@
+
+---
+layout: withtoc
+title: "Docker guidelines"
+---
+
+NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singularity.
+
+## Configuration and creation
+
+- Specify the version of Docker, of Dockerfile (if relevant), and of any export format used.
+- Same if using Apptainer, or any other container generating program.
+- Specify the container runtime used to run the container (need not be the same as what originally created the container)
+- Provide the [Dockerfile](https://docs.docker.com/engine/reference/builder/), [Apptainer container recipe](https://apptainer.org/user-docs/2.5/container_recipes.html)
+- Use publicly provided "trusted" container images as a basis. These are typically single-dimensional names (`ubuntu`, `python`) or prefaced by `library`. These are generally well-preserved and official containers. Container images may also be considered "trusted" when they are created by the maintainer team of the software (e.g., [Rocker project](https://rocker-project.org/) or [Conda-forge](https://hub.docker.com/u/condaforge)). Do not use random containers found on the internet.
+- In general, the container should handle all the key base software configuration (version of R, Python) and any auxiliary dependencies (Linux libraries necessary to compile R packages). 
+- If software in a container requires a license or API key, this should be explicitly mentioned, and the creator is responsible of ensuring that the license or API key is not included in the container as distributed.
+- In general, the actual core analysis data and code should NOT be included in the container. 
+- An `entrypoint` ([Docker](https://docs.docker.com/engine/reference/builder/#entrypoint)), `runscript` ([Apptainer](https://apptainer.org/docs/user/latest/definition_files.html#runscript)) or default command ([Docker: CMD](https://docs.docker.com/engine/reference/builder/#cmd)) should be specified sparingly. Ideally, this corresponds to the execution of the replication package's main control script, e.g., `stata-mp -b do main.do` (PROVIDE PROPER EXAMPLE WITH CMD AND ENTRYPOINT)
+
+## Running
+
+- Instructions on how to run a container using a specific container runtime (`docker`, `apptainer`, `runc`, etc.) are appreciated, but should not be conveyed as authoritative, as there are many equivalent ways of running a container.
+- Certain container hosts may have a reduced set of instructions (e.g., Azure) that do not allow all actions used by `docker` or `apptainer`. If aware, this should be pointed out.
+- All analysis data and code should be present externally, organized so they can be mapped into the container.
+- Runtime arguments should map the externally provided analysis data and code into the container, e.g., `docker run -it --rm -v "$(pwd)":/project -w /project mydocker`. 
+- Output from the analysis code should be written to a location that is also mounted into the container (e.g., to `/project/output` in the above example.)
+- All code should in principle, based on the documentation provided, be runnable without the container as well. 
+- Optionally: it is permissible, but not suggested, that the analysis code be run interactively. 
+
+## Preservation
+
+- The container should be preserved as a tar file, and archived as part of the replication package, or as a separate archive.
+- It is not sufficient, but appreciated, to provide a public container image at [OCI registries](https://opencontainers.org/), for instance, [Docker Hub](https://hub.docker.com/) or [Sylabs.io](https://cloud.sylabs.io/). Note that these registries regularly prune the available images, and may impose fees that lead to deprovisioning of containers. 
+
+## Discouraged
+
+- Since it is feasible to run interactive environments, it is possible to create containers that are geared towards interactive development (Jupyter notebooks, Rstudio). The use of such environments is allowed, as long as the reproducible code does not rely on such environments. In other words, while Rstudio might display the code, and allow to interact with it, the core analysis should be reproducible without the use of Rstudio.
+  - Example: `Rscript main.R`. 
+  - Equivalently, Jupyter notebooks should be executed non-interactively as `jupyter nbconvert --execute --to notebook --inplace your-notebook.ipynb` or `jupyter nbconvert --execute --to webpdf --no-input your-notebook.ipynb` (requires `pip install nbconvert[webpdf]`)
+ 
+## Random notes
+
+Contributed by various people:
+
+- It could be good to add a link explaining what a "container runtime" is and an example to clarify what is requested (i.e., is it enough to mention "Docker Engine - Community 1.40"?).
+  - Need to test whether "docker -v" or 
+- The researcher might need to specify the architecture of the container so that users know what to expect. (For example if the OS/architecture of the container is Linux Debian/amd64, we've had issues running on Apple Chip machines.)
+  - `docker run --rm -ti --platform linux/arm64 ubuntu:latest` (on Intel) can work, but [reports](https://stackoverflow.com/questions/70765522/docker-amd64-warning-on-apple-m1-computer) mention some compatibility issues (not sure if typically encountered in econ work). Providing the Dockerfile is a safeguard, since images can be rebuilt on other platforms.
+- If there are exceptions to the policy of excluding code and data from the container, maybe list those (or state the procedure for determining them).
+  - This is likely handled mostly by defining "software environment" as distinct from "user code" - sometimes, that mix can be murky, though (researches provides a R package that *is* the economics replication package). 
+
+## Sample Dockerfiles
+
+> simplest possible dockerfile implementing (and commenting) on the above principles
+
+### Simple file
+
+Using a base image for software, with minimal project-specific adjustments
+
+Candidates:
+
+- https://github.com/AEADataEditor/aearep-3727-docker (not ideal, incomplete, mixed Stata + R)
+- https://github.com/AEADataEditor/aearep-3290
+
+### Less-than-ideal packages/examples
+
+* License issues? expiry dates on containers?
+* matlab
+
+- https://github.com/AEADataEditor/docker-stata 
+- https://github.com/AEADataEditor/stata-project-with-stata 
+
+### Advanced docker usage
+
+* provide a ready to go container vs a container ready to install required libraires (like most recent stata packages)
+
+
+(examples?)
+
+- devcontainer: https://hub.docker.com/r/jupyter/datascience-notebook (?)
+- Chained containers for 
+
+
+### Open questions
+
+- renv and docker
+- conda and docker

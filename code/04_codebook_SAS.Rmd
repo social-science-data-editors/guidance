@@ -1,0 +1,64 @@
+---
+title: "Example codebook in SAS"
+author: "Lars Vilhuber"
+date: "October 1, 2018"
+output:
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+switch(Sys.info()[['sysname']],
+Windows= {saspath <- "C:/Program Files/SASHome/SASFoundation/9.4/sas.exe"},
+Linux  = {saspath <- system("which sas", intern=TRUE)},
+Darwin = {saspath <- "/Applications/SAS/fixme"})
+sasopts <- " -ls 75"
+packages <- c("SASmarkdown")
+
+```
+
+```{r install,echo=FALSE,message=FALSE}
+# from https://www.r-bloggers.com/loading-andor-installing-packages-programmatically/
+is_installed <- function(mypkg) is.element(mypkg, installed.packages()[,1])
+load_or_install<-function(package_names)
+{
+  for(package_name in package_names)
+  {
+    if(!is_installed(package_name))
+    {
+       install.packages(package_name,repos="http://lib.stat.cmu.edu/R/CRAN")
+    }
+    library(package_name,character.only=TRUE,quietly=TRUE,verbose=FALSE)
+  }
+}
+# calling our two functions:
+load_or_install(packages)
+knitr::opts_chunk$set(engine.path=saspath,
+                      engine.opts=sasopts, comment="")
+```
+
+## Get the auto.dta file
+```{r, engine='sashtml', engine.path=saspath, engine.opts=sasopts, comment=NA, results='asis'}
+/* this next step is a kludge */
+/* options SSLCALISTLOC="/usr/lib64/R/library/RCurl/CurlSSL/cacert.pem";
+proc http method="get" out=auto url="http://www.stata-press.com/data/r9/auto.dta";
+run;*/
+x wget -O auto.dta "http://www.stata-press.com/data/r9/auto.dta" 2>/dev/null 1>&2;
+
+
+```
+
+## Create the codebook
+```{r, engine='sashtml', engine.path=saspath, engine.opts=sasopts, comment=NA, results='asis'}
+filename auto "auto.dta";
+proc import datafile=auto out=auto dbms=dta;
+run;
+proc contents;
+proc means;
+run;
+
+```
+
+## References
+- “SAS Using R Markdown (Windows).” n.d. Accessed October 5, 2018. https://www.ssc.wisc.edu/~hemken/SASworkshops/Markdown/SASmarkdown.html.
