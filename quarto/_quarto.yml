@@ -10,11 +10,9 @@ website:
     contents:
       - section: "Guidance"
         contents:
-          - text: "Data Citation Guidance"
-            file: Data_citation_guide.qmd
-          - text: "Additional Data Citation Guidance"
-            file: addtl-data-citation-guidance.qmd
-          # - Verification_guidance.qmd
+          - Data_citation_guide.qmd
+          - addtl-data-citation-guidance.qmd
+          - Verification_guidance.md
           # - addtl-data-citation-guidance.qmd
           # - docker-guidelines.qmd
           # - guidance-reproducible-gis-analysis.qmd
@@ -53,5 +51,6 @@ format:
     theme: 
       - cosmo
       - mytheme.scss
+    css: styles.css
     toc: true
     linkcolor: black

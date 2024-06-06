@@ -1,6 +1,5 @@
 ---
 title: "Guidance on Data Citations"
-css: styles.css
 ---
 
 
