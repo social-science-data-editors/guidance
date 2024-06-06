@@ -1,1 +1,0 @@
-## Copies (with permission)
