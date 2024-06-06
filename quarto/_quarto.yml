@@ -1,0 +1,57 @@
+project:
+  type: website
+
+website:
+  title: "Social Science Data Editors Guidance"
+  favicon: ssde-logo.jpeg
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Guidance"
+        contents:
+          - text: "Data Citation Guidance"
+            file: Data_citation_guide.qmd
+          - text: "Additional Data Citation Guidance"
+            file: addtl-data-citation-guidance.qmd
+          # - Verification_guidance.qmd
+          # - addtl-data-citation-guidance.qmd
+          # - docker-guidelines.qmd
+          # - guidance-reproducible-gis-analysis.qmd
+          # - journal-policies.qmd
+          # - synthetic-fake-data-guidance.qmd
+      - section: "Requested Information"
+        contents:
+          - index.qmd
+          # - Requested_information.qmd
+          # - Requested_information_code.qmd
+          # - Requested_information_data.qmd
+          # - Requested_information_dcas.qmd
+          # - Requested_information_hosting.qmd
+      - section: "Samples"
+        contents:
+          - index.qmd
+          # - sample-depositing-data-for-greater-good.qmd
+          # - sample-information-data.qmd
+          # - sample-report.qmd
+      - section: "Templates"
+        contents:
+          - index.qmd
+          # - template-README.qmd
+          # - template_inquiry_about_DOI_by_editor.qmd
+      - section: "Other"
+        contents:
+          - index.qmd
+          # - DCAS_Commercial_data.qmd
+          # - DCAS_Restricted_data.qmd
+          # - Disclaimer.qmd
+          # - FAQ.qmd
+          # - data-editors-guild-charter.qmd
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - mytheme.scss
+    toc: true
+    linkcolor: black
