@@ -1,0 +1,1 @@
+Sitemap: https://social-science-data-editors.github.io/new-guidance/sitemap.xml
