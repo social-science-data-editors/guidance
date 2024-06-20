@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+This project is maintained by [social-science-data-editors](https://github.com/social-science-data-editors)

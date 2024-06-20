@@ -2,17 +2,49 @@ project:
   type: website
 
 website:
-  title: "Social Science Data Editors Guidance"
+  title: "{{< var ssde.web_name >}}"
   favicon: ssde-logo.png
   
   repo-url: https://github.com/social-science-data-editors/new-guidance
   repo-actions: [edit, issue]
+  page-navigation: true
+
+  page-footer: 
+    center: 
+      - text: "About"
+        href: about.qmd
+      - text: "FAQ"
+        href: FAQ.qmd
+      - text: "License"
+        href: license.qmd
+    right:
+      - icon: github
+        href: https://github.com/social-science-data-editors/new-guidance
+
+  navbar:
+      background: light
+      logo: ssde.png
+      logo-alt: "Social Science Data Editors"
+      title: false
+      collapse-below: lg
+      left:
+        - text: "Guidance"
+          href: index.qmd
+        - text: "Disclaimer"
+          href: disclaimer.qmd
+        - text: "FAQ"
+          href: FAQ.qmd
+
+      tools:
+        - icon: github
+          href: https://github.com/social-science-data-editors/new-guidance
+          text: SSDE GitHub 
 
   sidebar:
-    style: "docked"
-    search: true
-    logo: ssde.png
-    collapse-level: 2
+  - id: guidance
+    title: "Unofficial guidance by Social Science Data Editors"
+    style: "floating"
+    collapse-level: 1
     contents:
     # defaults to index.qmd page. This will be the page that opens up when you click the icon
       - index.qmd
@@ -21,7 +53,6 @@ website:
           - Data_citation_guide.qmd
           - addtl-data-citation-guidance.qmd
           - Verification_guidance.md
-          # - addtl-data-citation-guidance.qmd
           # - docker-guidelines.qmd
           # - guidance-reproducible-gis-analysis.qmd
           - journal-policies.qmd
@@ -49,6 +80,10 @@ website:
           # - Disclaimer.qmd
           - FAQ.qmd
           # - data-editors-guild-charter.qmd
+
+  - id: disclaimer
+
+              
 
 format:
   html:
