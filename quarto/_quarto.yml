@@ -14,9 +14,9 @@ website:
       - text: "About"
         href: about.qmd
       - text: "FAQ"
-        href: FAQ.qmd
+        href: Other/FAQ.qmd
       - text: "License"
-        href: license.qmd
+        href: LICENSE.qmd
     right:
       - icon: github
         href: https://github.com/social-science-data-editors/new-guidance
@@ -31,9 +31,9 @@ website:
         - text: "Guidance"
           href: index.qmd
         - text: "Disclaimer"
-          href: disclaimer.qmd
+          href: Disclaimer.qmd
         - text: "FAQ"
-          href: FAQ.qmd
+          href: Other/FAQ.qmd
 
       tools:
         - icon: github
@@ -41,56 +41,50 @@ website:
           text: SSDE GitHub 
 
   sidebar:
-  - id: guidance
-    title: "Unofficial guidance by Social Science Data Editors"
     style: "floating"
     collapse-level: 1
     contents:
-    # defaults to index.qmd page. This will be the page that opens up when you click the icon
-      - index.qmd
-      - section: "Guidance"
+    # default opens to index.qmd page.
+      - section: index.qmd
         contents:
-          - Data_citation_guide.qmd
-          - addtl-data-citation-guidance.qmd
-          - Verification_guidance.md
-          # - docker-guidelines.qmd
-          # - guidance-reproducible-gis-analysis.qmd
-          - journal-policies.qmd
-          # - synthetic-fake-data-guidance.qmd
+          - Guidance/Data_citation_guide.qmd
+          - Guidance/addtl-data-citation-guidance.qmd
+          - Guidance/Verification_guidance.qmd
+          - Guidance/docker-guidelines.qmd
+          - Guidance/guidance-reproducible-gis-analysis.qmd
+          - Guidance/journal-policies.qmd
+          - Guidance/synthetic-fake-data-guidance.qmd
       - section: "Requested Information"
         contents:
-          - Requested_information.qmd
-          # - Requested_information_code.qmd
-          # - Requested_information_data.qmd
-          # - Requested_information_dcas.qmd
-          # - Requested_information_hosting.qmd
+          - Requested-Information/Requested_information.qmd
+          - Requested-Information/Requested_information_code.qmd
+          - Requested-Information/Requested_information_data.qmd
+          - Requested-Information/Requested_information_dcas.qmd
+          - Requested-Information/Requested_information_hosting.qmd
       - section: "Samples"
         contents:
-          # - sample-depositing-data-for-greater-good.qmd
-          # - sample-information-data.qmd
-          # - sample-report.qmd
+          - Samples/sample-depositing-data-for-greater-good.qmd
+          - Samples/sample-information-data.qmd
+          - Samples/sample-report.qmd
       - section: "Templates"
         contents:
-          # - template-README.qmd
-          # - template_inquiry_about_DOI_by_editor.qmd
+          - Templates/template-README.qmd
+          - Templates/template_inquiry_about_DOI_by_editor.qmd
       - section: "Other"
         contents:
-          # - DCAS_Commercial_data.qmd
-          # - DCAS_Restricted_data.qmd
-          # - Disclaimer.qmd
-          - FAQ.qmd
-          # - data-editors-guild-charter.qmd
+          - Other/DCAS_Commercial_data.qmd
+          - Other/DCAS_Restricted_data.qmd
+          - Other/data-editors-guild-charter.qmd
 
-  - id: disclaimer
-
-              
+                
 
 format:
   html:
     theme: 
-      light: cosmo
+      light: mytheme.scss
       dark: darkly
+    code-copy: true
+    code-overflow: wrap
 
     css: styles.css
     toc: true
-    linkcolor: black

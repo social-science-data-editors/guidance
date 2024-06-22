@@ -123,13 +123,15 @@ There are several websites that will create a (data) citation from any DOI. Give
 
 - Chicago Author-date (16th edition)
 
-{:.citation .goodcite}
-> Leiss, Amelia. 1984. “Arms Transfers to Developing Countries, 1945-1968.” ICPSR - Interuniversity Consortium for Political and Social Research. doi:10.3886/ICPSR05404. 
+::: {.citation .goodcite}
+Leiss, Amelia. 1984. “Arms Transfers to Developing Countries, 1945-1968.” ICPSR - Interuniversity Consortium for Political and Social Research. doi:10.3886/ICPSR05404. 
+:::
 
 - APA style:
 
-{:.citation .goodcite}
-> Leiss, A. (1984). Arms Transfers to Developing Countries, 1945-1968 [Data set]. ICPSR - Interuniversity Consortium for Political and Social Research. https://doi.org/10.3886/ICPSR05404 
+::: {.citation .goodcite}
+Leiss, A. (1984). Arms Transfers to Developing Countries, 1945-1968 [Data set]. ICPSR - Interuniversity Consortium for Political and Social Research. https://doi.org/10.3886/ICPSR05404 
+:::
 
 **doi2bib** at [doi2bib.org/](https://www.doi2bib.org/) will generate a BibTeX entry from a DOI (for instance from [10.3886/ICPSR05404](https://www.doi2bib.org/bib/10.3886/ICPSR05404)):
 
