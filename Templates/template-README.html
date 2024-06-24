@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Social Science Data Editors Guidance - Guidance on Data Citation</title>
+<title>Social Science Data Editors Guide - Template README</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,29 +23,33 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./ssde-logo.jpeg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Templates/template_inquiry_about_DOI_by_editor.html" rel="next">
+<link href="../Samples/sample-report.html" rel="prev">
+<link href="../ssde-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -69,102 +73,182 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../ssde.png" alt="Social Science Data Editors" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Guidance</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Disclaimer.html"> 
+<span class="menu-text">Disclaimer</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Other/FAQ.html"> 
+<span class="menu-text">FAQ</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://github.com/social-science-data-editors/new-guidance" title="SSDE GitHub" class="quarto-navigation-tool px-1" aria-label="SSDE GitHub"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Data_citation_guide.html">Guidance</a></li><li class="breadcrumb-item"><a href="./Data_citation_guide.html">Guidance on Data Citation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Templates/template-README.html">Templates</a></li><li class="breadcrumb-item"><a href="../Templates/template-README.html">Template README</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Social Science Data Editors Guidance</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Guidance</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unofficial guidance on various topics by Social Science Data Editors</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Data_citation_guide.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Guidance/Data_citation_guide.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guidance on Data Citation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Guidance on Data Citations</span></a>
+  <a href="../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Guidance on Data Citations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Verification_guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Verification guidance xyz</span></a>
+  <a href="../Guidance/Verification_guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Verification Guidance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker guidelines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Some (incomplete) guidance to creating reproducible maps with GIS software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/journal-policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Selected Journal Policy Pages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/synthetic-fake-data-guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">For now, a collection of things</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Requested Information</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Here is the basics page</span></a>
+  <a href="../Requested-Information/Requested_information.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Requested information for data and code replication packages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Requested-Information/Requested_information_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Requested Information for Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Requested-Information/Requested_information_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Requested Information for Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Requested-Information/Requested_information_dcas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data and Code Availability Statements - Sample text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Requested-Information/Requested_information_hosting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Suggested Information for Data and Code Hosting</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
  <span class="menu-text">Samples</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Here is the basics page</span></a>
+  <a href="../Samples/sample-depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depositing Data for the Greater Good</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/sample-information-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample code to generate descriptive statistics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/sample-report.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">README file</span></a>
   </div>
 </li>
       </ul>
@@ -180,25 +264,43 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Here is the basics page</span></a>
+  <a href="../Templates/template-README.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Template README</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">template_inquiry_about_DOI_by_editor.html</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
  <span class="menu-text">Other</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Here is the basics page</span></a>
+  <a href="../Other/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Availability Statements for Commercial Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Other/DCAS_Restricted_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Availability Statements for Restricted Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Other/data-editors-guild-charter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Draft “Charter” for the “Data Editors Guild”</span></a>
   </div>
 </li>
       </ul>
@@ -209,26 +311,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#data-citations" id="toc-data-citations" class="nav-link active" data-scroll-target="#data-citations">Data Citations</a></li>
-  <li><a href="#what-to-cite" id="toc-what-to-cite" class="nav-link" data-scroll-target="#what-to-cite">What to cite</a></li>
-  <li><a href="#where-to-cite" id="toc-where-to-cite" class="nav-link" data-scroll-target="#where-to-cite">Where to cite</a></li>
-  <li><a href="#how-to-cite" id="toc-how-to-cite" class="nav-link" data-scroll-target="#how-to-cite">How to cite</a></li>
-  <li><a href="#some-additional-guidance-on-tricky-citations" id="toc-some-additional-guidance-on-tricky-citations" class="nav-link" data-scroll-target="#some-additional-guidance-on-tricky-citations">Some additional guidance on tricky citations</a></li>
-  <li><a href="#some-frequently-asked-questions" id="toc-some-frequently-asked-questions" class="nav-link" data-scroll-target="#some-frequently-asked-questions">Some Frequently Asked Questions</a></li>
-  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Data_citation_guide.html">Guidance</a></li><li class="breadcrumb-item"><a href="./Data_citation_guide.html">Guidance on Data Citation</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Templates/template-README.html">Templates</a></li><li class="breadcrumb-item"><a href="../Templates/template-README.html">Template README</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Guidance on Data Citation</h1>
+<h1 class="title">Template README</h1>
 </div>
 
 
@@ -245,132 +335,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.</p>
-<section id="data-citations" class="level3">
-<h3 class="anchored" data-anchor-id="data-citations">Data Citations</h3>
-<p>Properly referencing data goes beyond just reproducibility - it is also proper scientific writing style. In the same way that authors use bibliographic references to “printed” resources, they should also be using such references for data resources, to give and receive credit where credit is due. Not referencing an article or book is at best an oversight, and at worst plagiarism - and the same should apply to data objects. Numerous guides and tutorials exist, some of which provide a variety of examples.</p>
-<ul>
-<li>DataONE <a href="http://www.dataone.org/sites/all/documents/L09_DataCitation.pptx">Tutorial on Data Citation</a> and <a href="https://www.dataone.org/citing-dataone">generic guidance</a></li>
-<li><a href="https://www.icpsr.umich.edu/web/pages/datamanagement/citations.html">ICPSR</a></li>
-<li>Force11’s <a href="https://doi.org/10.25490/a97f-egyk">Joint Declaration of Data Citation Principals</a></li>
-<li>the AEA’s <a href="https://www.aeaweb.org/journals/policies/sample-references">Sample References</a></li>
-<li><a href="http://libguides.lib.msu.edu/c.php?g=96245&amp;p=626239">Michigan State University</a></li>
-<li><a href="https://guides.library.ucsc.edu/citedata">UC Santa Cruz</a></li>
-<li><a href="https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs">OSF</a></li>
-</ul>
-</section>
-<section id="what-to-cite" class="level3">
-<h3 class="anchored" data-anchor-id="what-to-cite">What to cite</h3>
-<p>In a nutshell, every dataset is to be cited. This is true for the main article as well as online appendices. In the past, use of data or code has been acknowledged in footnotes, and only rarely through bibliographic references. However, if the dataset is used, it should appear in the bibliography. The same is true for code reused from previous papers, or provided by authors.</p>
-<section id="data-is-published" class="level4">
-<h4 class="anchored" data-anchor-id="data-is-published">Data is published</h4>
-<p>The DOI is thus public, and all repositories will provide a suggested citation. One can also use <a href="https://www.doi2bib.org/">https://www.doi2bib.org/</a> or <a href="https://citation.crosscite.org/">https://citation.crosscite.org/</a> to get a citation (see below for additional tools).</p>
-</section>
-<section id="data-is-not-published" class="level4">
-<h4 class="anchored" data-anchor-id="data-is-not-published">Data is not published</h4>
-<p>This is trickier. The data does not necessarily have a title that is related to the paper. Some repositories allow authors to “reserve” a DOI (Zenodo) or to delay publication. For some repositories, the DOI, while not officially reserved, can be derived from information already available (see this FAQ for openICPSR, something similar may be possible at Dataverse).</p>
-<p>In some cases, authors may be able to delay publication, and coordinate it with the publication of the article (openICPSR, possibly Zenodo).</p>
-</section>
-</section>
-<section id="where-to-cite" class="level3">
-<h3 class="anchored" data-anchor-id="where-to-cite">Where to cite</h3>
-<p>In all cases, data and code should be cited in the main manuscript. They should also be referenced in the data availability statement (some journals) or the README (other journals).</p>
-</section>
-<section id="how-to-cite" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-cite">How to cite</h3>
-<p>Many journals in economics require the Chicago style for citations and bibliographies <a href="https://www.aeaweb.org/journals/policies/sample-references">1</a>. However, the <a href="https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html">Chicago Style Manual</a> provides few relevant examples for data citations. Applications like <a href="https://www.zotero.org/">Zotero</a> and <a href="https://www.mendeley.com/download-desktop/">Mendeley Desktop</a> also do not support data citations robustly, even though the underlying <a href="https://citationstyles.org/">Citation Style Language</a> has had the concept of a “data” entry for several years.</p>
-<p><a href="https://www.dataone.org/citing-dataone">DataONE</a> suggests content and style that resemble the generic working paper or article citation style (adapted to Chicago style):</p>
-<blockquote class="blockquote">
-<p>Westbrook JW, Kitajima K, Burleigh JG, Kress WJ, Erickson DL, Wright SJ (2011) <em>Data from: What makes a leaf tough? Patterns of correlated evolution between leaf toughness traits and demographic rates among 197 shade-tolerant woody species in a neotropical forest.</em> Dryad Digital Repository. http://dx.doi.org/10.5061/dryad.8525</p>
-</blockquote>
-<p><a href="https://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp">ICPSR</a> notes that a citation should include the following items: - Title - Author - Date - Version - Persistent identifier (such as the Digital Object Identifier, Uniform Resource Name URN, or Handle System)</p>
-<p>and provides a few examples, with some additional modifiers:</p>
-<blockquote class="blockquote">
-<p>Esther Duflo; Rohini Pande, 2006, ``Dams, Poverty, Public Goods and Malaria Incidence in India’’, http://hdl.handle.net/1902.1/IOJHHXOOLZ UNF:5:obNHHq1gtV400a4T+Xrp9g== <em>Murray Research Archive</em> [Distributor] V2 [Version]</p>
-</blockquote>
-<p>Finally, the <a href="https://www.aeaweb.org/journals/policies/sample-references">AEA style guide</a> suggests</p>
-<blockquote class="blockquote">
-<p>Leiss, Amelia. 1999. ``Arms Transfers to Developing Countries, 1945–1968.’’ Inter-University Consortium for Political and Social Research, Ann Arbor, MI. ICPSR05404-v1. doi:10.3886/ICPSR05404 (accessed February 8, 2011).</p>
-</blockquote>
-<p>This may be adjusted. An alternate citation may be</p>
-<blockquote class="blockquote">
-<p>Leiss, Amelia. 1999. ``Arms Transfers to Developing Countries, 1945–1968.’’ Inter-University Consortium for Political and Social Research, Ann Arbor, MI. ICPSR05404-v1. https://doi.org/10.3886/ICPSR05404.</p>
-</blockquote>
-<p>Citations to primary data can sometimes be hard to construct. If the data provider has a suggested citation, then you should use it. Alternatively, you can construct as per the above examples, for instance, as noted on the <a href="https://www.aeaweb.org/journals/policies/sample-references">AEA style guide</a>:</p>
-<blockquote class="blockquote">
-<p>Bureau of Labor Statistics. 2000–2010. “Current Employment Statistics: Colorado, Total Nonfarm, Seasonally adjusted - SMS08000000000000001.” United States Department of Labor. http://data.bls.gov/cgi- bin/surveymost?sm+08 (accessed February 9, 2011).</p>
-</blockquote>
-</section>
-<section id="some-additional-guidance-on-tricky-citations" class="level3">
-<h3 class="anchored" data-anchor-id="some-additional-guidance-on-tricky-citations">Some additional guidance on tricky citations</h3>
-<ul>
-<li><a href="addtl-data-citation-guidance.md">Additional guidance on Data Citations</a>.</li>
-<li><a href="https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link">Data citation without an online link</a></li>
-<li>Sample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on <a href="https://www.zotero.org/groups/2245704/fsrdc/library">Zotero.org</a> and on <a href="https://github.com/ncrncornell/cms-to-bib">Github</a>.</li>
-</ul>
-</section>
-<section id="some-frequently-asked-questions" class="level3">
-<h3 class="anchored" data-anchor-id="some-frequently-asked-questions">Some Frequently Asked Questions</h3>
-<ol type="1">
-<li>When providing data citations, please be sure to check that a URL is given. However, there are some subtleties:
-<ul>
-<li>If only a single file is downloaded from a website, the data citation should include the precise URL (https://data.com/path/to/file), not just a top-level URL (https://data.com)</li>
-<li>If a URL is giving starting with “https://doi.org”, then it is a DOI. Those do not need access dates. Otherwise, a website access needs a URL (by most citation styles).</li>
-<li>Be sure to provide the DOI when both a DOI and a URL is available. A DOI is stable, a URL may not be.</li>
-<li>Always check the URL by clicking on it, Sometimes, the URL turns out to be generic/top-level, and does not show the file the replicator should be downloading. The replicator should be able to find the file using the URL, or with the instructions in the README.</li>
-</ul></li>
-<li>Check for a license/data use agreement.
-<ul>
-<li>Just because data is visible does not mean it can be redistributed. By default, it is not (copyright).</li>
-<li>Regardless of redistribution rights, the URL of the data use agreement should be included in the README/online appendix to fully describe data access conditions.</li>
-<li>Ideally, a copy of the data use agreement or license should be included in the replication archive. This can be a copy of an email authorizing you to distribute the data, or a copy of the data use agreement on the website when you downloaded the data (which might be different from the current data use agreement!)</li>
-</ul></li>
-<li>Some data use agreements may also require specific citations (of papers, of code). Verify that you are compliant with all such requirements!
-<ul>
-<li>The same actually applies for Stata or R packages that may be downloaded.</li>
-<li>It is R practice to cite all packages, and R makes that easy. This should be noted in the report, if not done. Citation in the README should be sufficient.</li>
-<li>In Stata, some packages have citation requirements. Check the website of the author, sometimes also the *.ado file the author downloads. For instance, many authors use “reghdfe”. See https://github.com/sergiocorreia/reghdfe#citation for a citation requirement.</li>
-</ul></li>
-</ol>
-</section>
-<section id="tools" class="level3">
-<h3 class="anchored" data-anchor-id="tools">Tools</h3>
-<p>No tool is perfect, but you will likely find the one that works for your particular workflow. Some examples for specific software: - <a href="citations/guidance_data_citations.pdf">BibTeX</a> - <a href="citations/guidance_data_citations_biblatex.pdf">BibLaTeX</a> - Zotero will have native dataset functionality starting in version 5.1, for now, some guidance for entering it can be found in <a href="https://forums.zotero.org/discussion/63616/new-citation-type-research-data-dataset">forums</a>. Note that support in the citation styles is also still lacking. - <a href="https://www.mendeley.com/download-desktop/">Mendeley Desktop</a>.</p>
-<section id="tools-when-the-object-has-a-doi" class="level4">
-<h4 class="anchored" data-anchor-id="tools-when-the-object-has-a-doi">Tools when the object has a DOI</h4>
-<p>There are several websites that will create a (data) citation from any DOI. Give these a try:</p>
-<p><strong>DOI Citation Formatter</strong> at <a href="https://citation.crosscite.org/">citation.crosscite.org/</a> is supported by the DOI Registration Agencies. For instance, using <code>10.3886/ICPSR05404</code> from the above example, it generates (as of 2022-01-16):</p>
-<ul>
-<li>Chicago Author-date (16th edition)</li>
-</ul>
-<p>{:.citation .goodcite} &gt; Leiss, Amelia. 1984. “Arms Transfers to Developing Countries, 1945-1968.” ICPSR - Interuniversity Consortium for Political and Social Research. doi:10.3886/ICPSR05404.</p>
-<ul>
-<li>APA style:</li>
-</ul>
-<p>{:.citation .goodcite} &gt; Leiss, A. (1984). Arms Transfers to Developing Countries, 1945-1968 [Data set]. ICPSR - Interuniversity Consortium for Political and Social Research. https://doi.org/10.3886/ICPSR05404</p>
-<p><strong>doi2bib</strong> at <a href="https://www.doi2bib.org/">doi2bib.org/</a> will generate a BibTeX entry from a DOI (for instance from <a href="https://www.doi2bib.org/bib/10.3886/ICPSR05404">10.3886/ICPSR05404</a>):</p>
-<pre><code>@misc{https://doi.org/10.3886/icpsr05404,
-  doi = {10.3886/ICPSR05404},
-  url = {http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/5404},
-  author = {Leiss,  Amelia},
-  language = {en},
-  title = {Arms Transfers to Developing Countries,  1945-1968},
-  publisher = {ICPSR - Interuniversity Consortium for Political and Social Research},
-  year = {1984}
-}</code></pre>
-</section>
-<section id="when-the-object-does-not-have-a-doi" class="level4">
-<h4 class="anchored" data-anchor-id="when-the-object-does-not-have-a-doi">When the object does not have a DOI</h4>
-<p>When the object does not have a DOI, it isn’t really that much more complicated, but little guidance is available.</p>
-<ul>
-<li><p><a href="http://www.citationmachine.net/chicago-17-author-date/cite-a-digital/manual">Citation Machine</a> - choose <code>Source type</code>=<code>Digital file</code> and put the URL and access date into the <code>Annotation</code> field.</p></li>
-<li><p>Try our own tool:</p></li>
-</ul>
-<p>{% include citation-generator.html %}</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -393,6 +359,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -782,7 +892,55 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Samples/sample-report.html" class="pagination-link" aria-label="README file">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">README file</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="pagination-link" aria-label="template_inquiry_about_DOI_by_editor.html">
+        <span class="nav-page-text">template_inquiry_about_DOI_by_editor.html</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>This project is maintained by <a href="https://github.com/social-science-data-editors">social-science-data-editors</a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../Other/FAQ.html">
+<p>FAQ</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../LICENSE.html">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Templates/template-README.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/social-science-data-editors/new-guidance">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

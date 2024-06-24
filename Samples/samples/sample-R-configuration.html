@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Social Science Data Editors Guide - About</title>
+<title>Social Science Data Editors Guide - Sample R Configurations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./ssde-logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../ssde-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -81,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./ssde.png" alt="Social Science Data Editors" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../ssde.png" alt="Social Science Data Editors" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -92,15 +92,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Disclaimer.html"> 
+    <a class="nav-link" href="../../Disclaimer.html"> 
 <span class="menu-text">Disclaimer</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Other/FAQ.html"> 
+    <a class="nav-link" href="../../Other/FAQ.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
@@ -117,14 +117,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#single-configuration-file-with-relative-paths" id="toc-single-configuration-file-with-relative-paths" class="nav-link active" data-scroll-target="#single-configuration-file-with-relative-paths">Single configuration file with relative paths</a></li>
+  <li><a href="#use-of-relative-paths-in-main-program-for-inclusions" id="toc-use-of-relative-paths-in-main-program-for-inclusions" class="nav-link" data-scroll-target="#use-of-relative-paths-in-main-program-for-inclusions">Use of relative paths in main program for inclusions</a></li>
+  <li><a href="#installing-packages-in-a-project-specific-directory" id="toc-installing-packages-in-a-project-specific-directory" class="nav-link" data-scroll-target="#installing-packages-in-a-project-specific-directory">Installing packages in a project-specific directory</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Samples/samples/sample-R-configuration.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Sample R Configurations</h1>
 </div>
 
 
@@ -141,9 +149,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project is maintained by <a href="https://github.com/social-science-data-editors">social-science-data-editors</a></p>
+<section id="single-configuration-file-with-relative-paths" class="level3">
+<h3 class="anchored" data-anchor-id="single-configuration-file-with-relative-paths">Single configuration file with relative paths</h3>
+<ul>
+<li>Encouraged:</li>
+</ul>
+<pre><code># Use of file.path() for platform neutrality
+basepath &lt;- file.path("My Documents","Paper 15")
+# alternatively, if using Git
+basepath =  rprojroot::find_root(rprojroot::is_git_root)
+
+includes &lt;- file.path(basepath,"includes")
+inputdata &lt;- file.path(basepath,"inputdata")
+tables &lt;- file.path(basepath,"text/tables")
+matsize &lt;- 11000</code></pre>
+</section>
+<section id="use-of-relative-paths-in-main-program-for-inclusions" class="level3">
+<h3 class="anchored" data-anchor-id="use-of-relative-paths-in-main-program-for-inclusions">Use of relative paths in main program for inclusions</h3>
+<p>Discouraged:</p>
+<pre><code>source("C:\My Documents\yesterdays programs\submodule.do")</code></pre>
+<ul>
+<li>Encouraged:</li>
+</ul>
+<pre><code>source(file.path(includes,"submodule.R"))</code></pre>
+<p>or</p>
+<pre><code>source(file.path("includes","submodule.R")</code></pre>
+</section>
+<section id="installing-packages-in-a-project-specific-directory" class="level3">
+<h3 class="anchored" data-anchor-id="installing-packages-in-a-project-specific-directory">Installing packages in a project-specific directory</h3>
+<ul>
+<li>using the <code>packrat</code> package</li>
+<li>using <code>containerit</code> package</li>
+<li>manually resetting the R library locations in the config file, then installing packages</li>
+</ul>
+<pre><code># Install packages locally
+.libPaths( c( includes , .libPaths() ) )</code></pre>
+<p>You can then create a single dependency file that is run before all others:</p>
+<pre><code>00_install.R:
+# run this only when updating the packages 
+# all packages necessary to run the main.R have 
+# been included in this replication package 
+include "config.R"
+install.packages('rddensity', lib=libpath, destdir=libpath)
+install.packages('rdrobust', lib=libpath, destdir=libpath) 
+install.packages('gridExtra', lib=libpath, destdir=libpath)
+install.packages('ggplot2', lib=libpath, destdir=libpath)</code></pre>
+<p>and in your main program</p>
+<pre><code>basepath =  rprojroot::find_root(rprojroot::is_git_root)
+source(file.path(basepath,"config.R"))
+library(rdrobust)
+library(rddensity)
+library(gridExtra)
+library(ggplot2)</code></pre>
+<p>will always work, because it no longer requires download, and fixes the version of the packages used.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -708,22 +769,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="../../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./Other/FAQ.html">
+    <a class="nav-link" href="../../Other/FAQ.html">
 <p>FAQ</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./LICENSE.html">
+    <a class="nav-link" href="../../LICENSE.html">
 <p>License</p>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/about.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Samples/samples/sample-R-configuration.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
