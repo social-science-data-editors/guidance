@@ -1,5 +1,6 @@
 ssde:
   web_name: Social Science Data Editors Guide
-
 linkers:
-  
+  gitlink:
+    text: "social-science-data-editors" 
+    url: "https://github.com/social-science-data-editors"

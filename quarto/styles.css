@@ -14,3 +14,10 @@
 .badcite {
   color: red;
 }
+
+.navbar {
+  background-color: #E6E6FA;
+  /* This is a light purple color */
+  border-bottom: 0.5px solid #9573b4;
+  /* Adds a purple line at the bottom */
+}

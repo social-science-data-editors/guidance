@@ -3,13 +3,14 @@ project:
 
 website:
   title: "{{< var ssde.web_name >}}"
-  favicon: ssde-logo.png
+  favicon: ssde-logo.png 
   
   repo-url: https://github.com/social-science-data-editors/new-guidance
   repo-actions: [edit, issue]
   page-navigation: true
 
   page-footer: 
+    left: "This project is maintained by [{{< var linkers.gitlink.text >}}]({{< var linkers.gitlink.url >}})"
     center: 
       - text: "About"
         href: about.qmd
@@ -41,42 +42,44 @@ website:
           text: SSDE GitHub 
 
   sidebar:
-    style: "floating"
-    collapse-level: 1
-    contents:
-    # default opens to index.qmd page.
-      - section: index.qmd
-        contents:
-          - Guidance/Data_citation_guide.qmd
-          - Guidance/addtl-data-citation-guidance.qmd
-          - Guidance/Verification_guidance.qmd
-          - Guidance/docker-guidelines.qmd
-          - Guidance/guidance-reproducible-gis-analysis.qmd
-          - Guidance/journal-policies.qmd
-          - Guidance/synthetic-fake-data-guidance.qmd
-      - section: "Requested Information"
-        contents:
-          - Requested-Information/Requested_information.qmd
-          - Requested-Information/Requested_information_code.qmd
-          - Requested-Information/Requested_information_data.qmd
-          - Requested-Information/Requested_information_dcas.qmd
-          - Requested-Information/Requested_information_hosting.qmd
-      - section: "Samples"
-        contents:
-          - Samples/sample-depositing-data-for-greater-good.qmd
-          - Samples/sample-information-data.qmd
-          - Samples/sample-report.qmd
-      - section: "Templates"
-        contents:
-          - Templates/template-README.qmd
-          - Templates/template_inquiry_about_DOI_by_editor.qmd
-      - section: "Other"
-        contents:
-          - Other/DCAS_Commercial_data.qmd
-          - Other/DCAS_Restricted_data.qmd
-          - Other/data-editors-guild-charter.qmd
+    - id: main-sidebar
+      title: "navigate"
+      style: "floating"
+      collapse-level: 1
+      contents:
+      # default opens to index.qmd page.
+        - section: index.qmd
+          contents:
+            - Guidance/Data_citation_guide.qmd
+            - Guidance/addtl-data-citation-guidance.qmd
+            - Guidance/Verification_guidance.qmd
+            - Guidance/docker-guidelines.qmd
+            - Guidance/guidance-reproducible-gis-analysis.qmd
+            - Guidance/journal-policies.qmd
+            - Guidance/synthetic-fake-data-guidance.qmd
+        - section: "Requested Information"
+          contents:
+            - Requested-Information/Requested_information.qmd
+            - Requested-Information/Requested_information_code.qmd
+            - Requested-Information/Requested_information_data.qmd
+            - Requested-Information/Requested_information_dcas.qmd
+            - Requested-Information/Requested_information_hosting.qmd
+        - section: "Samples"
+          contents:
+            - Samples/sample-depositing-data-for-greater-good.qmd
+            - Samples/sample-information-data.qmd
+            - Samples/sample-report.qmd
+        - section: "Templates"
+          contents:
+            - Templates/template-README.qmd
+            - Templates/template_inquiry_about_DOI_by_editor.qmd
+        - section: "Other"
+          contents:
+            - Other/DCAS_Commercial_data.qmd
+            - Other/DCAS_Restricted_data.qmd
+            - Other/data-editors-guild-charter.qmd
 
-                
+                  
 
 format:
   html:
