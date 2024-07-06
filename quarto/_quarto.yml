@@ -35,6 +35,13 @@ website:
           href: Disclaimer.qmd
         - text: "FAQ"
           href: Other/FAQ.qmd
+      right:
+        - text: "Other pages"
+          menu: 
+            - text: "DCAS"
+              href: https://datacodestandard.org/
+            - text: "Template README"
+              href: https://social-science-data-editors.github.io/template_README/
 
       tools:
         - icon: github
