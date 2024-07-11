@@ -28,9 +28,9 @@ In some cases, the master script might also serve as a README (for instance, "RE
   - or listing them out in a "setup" program
 - We strongly encourage setting any seeds for random number generators
 
-- [Sample configuration for Stata](samples/sample-stata-configuration.md)
-- [Sample configuration for R](samples/sample-R-configuration.md)
-- [Python way](samples/sample-python-configuration.md)
+- [Sample configuration for Stata](../Samples/samples/sample-stata-configuration.md)
+- [Sample configuration for R](../Samples/samples/sample-R-configuration.md)
+- [Python way](../Samples/samples/sample-python-configuration.md)
 
 
 

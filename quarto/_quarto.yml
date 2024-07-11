@@ -86,8 +86,6 @@ website:
             - Other/DCAS_Restricted_data.qmd
             - Other/data-editors-guild-charter.qmd
 
-                  
-
 format:
   html:
     theme: 
@@ -98,3 +96,5 @@ format:
 
     css: styles.css
     toc: true
+    toc-indent: 4em
+    toc-depth: 4

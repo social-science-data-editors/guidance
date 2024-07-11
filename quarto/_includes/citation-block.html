@@ -1,0 +1,9 @@
+<div class="citation">
+  Social Science Data Editors. {{< var ssde.year>}}. "{{< meta title>}}". *{{< var ssde.web_name>}}*. Accessed at <span
+          id="currentURL"></span> on <span id="currentDate"></span>.
+        <script>
+          document.getElementById('currentURL').textContent = window.location.href;
+          var options = { year: 'numeric', month: 'long', day: 'numeric' };
+          document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-GB', options);
+        </script>
+</div>

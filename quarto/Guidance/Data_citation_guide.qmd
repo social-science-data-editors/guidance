@@ -109,8 +109,8 @@ Citations to primary data can sometimes be hard to construct. If the data provid
 
 No tool is perfect, but you will likely find the one that works for your particular workflow. 
 Some examples for specific software:
-- [BibTeX](citations/guidance_data_citations.pdf)
-- [BibLaTeX](citations/guidance_data_citations_biblatex.pdf)
+- [BibTeX](../../citations/guidance_data_citations.pdf)
+- [BibLaTeX](../../citations/guidance_data_citations_biblatex.pdf)
 - Zotero will have native dataset functionality starting in version 5.1, for now, some guidance for entering it can be found in [forums](https://forums.zotero.org/discussion/63616/new-citation-type-research-data-dataset). Note that support in the citation styles is also still lacking.
 - [Mendeley Desktop](https://www.mendeley.com/download-desktop/).
 
@@ -155,4 +155,4 @@ When the object does not have a DOI, it isn't really that much more complicated,
 
 - Try our own tool:
 
-{% include citation-generator.html %}
+{{< include ../_includes/citation-generator.html >}}

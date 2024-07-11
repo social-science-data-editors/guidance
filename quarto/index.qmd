@@ -15,4 +15,4 @@ Other materials, sometimes referenced within this guidance, can be found elsewhe
 
 ## FAQ
 
-See our growing [FAQ](FAQ.qmd). If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).
+See our growing [FAQ](Other/FAQ.qmd). If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).

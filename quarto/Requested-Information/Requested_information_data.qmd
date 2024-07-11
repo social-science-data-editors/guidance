@@ -39,9 +39,9 @@ end;
   - It must include the **date** the data was created or downloaded
   -  If possible, provide a Digital Object Identifier (DOI). 
      - You can generate a citation from the DOI using [https://www.doi2bib.org/](https://www.doi2bib.org/).
-     - For information on how and where to deposit data in places that generate a DOI, see our [Data and Hosting guidance](Requested_information_hosting.md)
+     - For information on how and where to deposit data in places that generate a DOI, see our [Data and Hosting guidance](Requested_information_hosting.qmd)
 
->  - For more detailed information, see [Data citation guidance](Data_citation_guidance.md).
+>  - For more detailed information, see [Data citation guidance](../Data_citation_guidance.qmd).
 
 - Statistical characteristics of the data
 - This description of data is often called "metadata"
@@ -65,7 +65,7 @@ It doesn't need to be complicated, but should be complete. For more extensive de
 
 Other services may be available at your own institution. Some services may charge a fee, or only be available to researchers affiliated with that institution.
 
-We provide a [few suggestions for how to do this in Stata, R, and SAS](sample-information-data.md). 
+We provide a [few suggestions for how to do this in Stata, R, and SAS](../Samples/sample-information-data.qmd). 
 However, if you have the ability to do a more robust data description, you should. See a [self-citing example](https://www2.ncrn.cornell.edu/ced2ar-web/codebooks/synlbd/v/v2).
 
 ### Data access description
@@ -98,8 +98,8 @@ The access  should  be persistent, i.e., not rely on a transitory website or the
 - While non-academic data providers may not always consider reproducibility when you sign a contract with them, we have found numerous such providers which are open to at least the idea of "reproducibility checking" or replication. Examples of agreements which allow third-parties to access confidential data for the purpose of replication,
   -  [supplementary materials](http://doi.org/10.3886/E116116V1)  to [Barseghyan et al (2013)](https://doi.org/10.1257/aer.103.6.2499) (in particular the [data-user-agreements.pdf](https://www.openicpsr.org/openicpsr/project/116116/version/V1/view?path=/openicpsr/116116/fcr:versions/V1/20110834_data_files/data-user-agreements.pdf&type=file)).
 
-- For additional guidance on licensing, see [Licensing guidance](Licensing_guidance.md). 
-- For more information on Data Access Descriptions, see [Data Access Descriptions](Requested_information_dcas.md).
+- For additional guidance on licensing, see [Licensing guidance](../Licensing_guidance.qmd). 
+- For more information on Data Access Descriptions, see [Data Access Descriptions](Requested_information_dcas.qmd).
   
 For additional sample "Data Access Descriptions", see 
 
@@ -117,7 +117,7 @@ Data should remain available for a sufficiently long time.
 -  A good minimum benchmark is 10 years, but this may not always be feasible with data the author does not control.
 You should describe the data persistence, or point to a data archive's policy in that matter. 
 
-> See [Requested_information_hosting](Requested_information_hosting.md) for more details on data repositories.
+> See [Requested_information_hosting](Requested_information_hosting.qmd) for more details on data repositories.
 
 ### What is a data provider
 
@@ -126,7 +126,7 @@ A "data provider" in this sense can be
 - a website that provided the data ([IPUMS](https://usa.ipums.org/usa/)), 
 - a statistical agency or private company that granted access to the data ([U.S. Census Bureau](https://www.census.gov/fsrdc), Twitter, Acme Inc.).
 
-The author may also be the data provider, for instance, because the author conducted the survey used in the article. However, in many cases, the data provider may not be a data archive (see  the page on [Requested information about hosting](Requested_information_hosting.md)).
+The author may also be the data provider, for instance, because the author conducted the survey used in the article. However, in many cases, the data provider may not be a data archive (see  the page on [Requested information about hosting](Requested_information_hosting.qmd)).
 
 #### Practical guidance: data provider and data archives
 

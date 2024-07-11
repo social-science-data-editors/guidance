@@ -1,5 +1,6 @@
 ssde:
   web_name: Social Science Data Editors Guidance
+  year: 2024
 linkers:
   gitlink:
     text: "social-science-data-editors" 

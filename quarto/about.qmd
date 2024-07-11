@@ -3,3 +3,13 @@ title: "About"
 ---
 
 This project is maintained by [social-science-data-editors](https://github.com/social-science-data-editors)
+
+### Get Involved
+
+If you're interested in contributing to our project or have suggestions for improvement, please visit our [GitHub repository](https://github.com/social-science-data-editors/new-guidance). 
+
+### Citation Information
+
+If you find our resources helpful in your work, please cite them using the following format:
+
+{{< include _includes/citation-block.html >}}

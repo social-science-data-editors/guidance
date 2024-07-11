@@ -67,7 +67,7 @@ Only the first entry in each of the examples above should be used for citing, no
 
 A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article's supplementary materials:
 
-- [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](FAQ.md));
+- [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](../Other/FAQ.qmd));
 - Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the [Wayback Machine](https://archive.org/) for a similar purpose);
 - Dropbox, Box.com, and similar cloud-based data and file sharing services - again, they can all be deleted at short notice, or when payment stops
 
@@ -96,11 +96,11 @@ Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.cens
 - researchers (end-users) may not be able to provide DOI or similar persistent identifiers for some data
 - researchers may not be able to discern the presrvation policy for certain data sets
 - researchers may not be able to remove all code from the center, or such removal is subject to restrictions
-- data citation guidance may be lacking, or may not be obvious (see [Data Citation Guidance](Data_citation_guidance.md) for general guidance)
+- data citation guidance may be lacking, or may not be obvious (see [Data Citation Guidance](../Data_citation_guidance.qmd) for general guidance)
 
 #### A few guidelines
 
-- Request as much code as the RADC  will allow the researcher to remove. Subsequently handle it equivalently to the [general code guidance](Requested_information_code.md), but make special note (placeholders, explanatory text) of any redacted information.
+- Request as much code as the RADC  will allow the researcher to remove. Subsequently handle it equivalently to the [general code guidance](Requested_information_code.qmd), but make special note (placeholders, explanatory text) of any redacted information.
 - In addition, some RADC may provide the ability to deposit code internally and confidentially. Use such interal repositories, and make a note of their location in the publicly deposited code or in supplementary documents.
 
 #### Self-generated repositories (second best)
@@ -112,7 +112,7 @@ If a RADC has at least an archival or backup policy of sufficient length (e.g., 
   - At openICPSR: projects are called `openicpsr-NNNNN`. The `DOI` is derived from the project number as _10.3886/E`NNNNN`V1_.
   - If you already have a DOI assigned to your manuscript or (published) paper, you can _alternatively_ use that (see [10.1093/restud/rdw057](https://doi.org/10.1093/restud/rdw057) for an excellent example).
 - In the RADC, create a two-level directory with the name of the `DOI`.
-- Move both data (following guidelines outlined [here](Requested_information_code.md)) and **all** code (not just the confidential part) to subdirectories. The resulting directory structure will look something like this:
+- Move both data (following guidelines outlined [here](Requested_information_code.qmd)) and **all** code (not just the confidential part) to subdirectories. The resulting directory structure will look something like this:
 ```
 /some/path/project/10.5281/zenodo.NNNNN/:
       data/original/rawdata.dta
@@ -121,10 +121,10 @@ If a RADC has at least an archival or backup policy of sufficient length (e.g., 
       programs/02_analysis.do
 ```
 - Confirm with the RADC's administrative staff how long project files are kept as archives or in backup (often 5-10 years)
-- Add a statement to the public README.md (and to article materials). See [Sample RADC Statement 1](samples/sample_radc_statement1.md) and [Sample RADC Statement 2](samples/sample_radc_statement2.md).
+- Add a statement to the public README.md (and to article materials). See [Sample RADC Statement 1](../Samples/samples/sample_radc_statement1.md) and [Sample RADC Statement 2](../Samples/samples/sample_radc_statement2.md).
 
 #### Some examples
 
 - Fort (2016) [10.1093/restud/rdw057](https://doi.org/10.1093/restud/rdw057), in the supplementary materials ([local copy](copies/Fort2016-Readme.pdf))
 -  Groen, Kutzbach, and Polivka (2019, forthcoming) (link to be supplied upon publication)
-- See also section on [Data and Code Availability Statements](Requested_information_dcas.md).
+- See also section on [Data and Code Availability Statements](Requested_information_dcas.qmd).

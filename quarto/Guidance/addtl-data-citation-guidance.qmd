@@ -369,4 +369,4 @@ Anonymous Firm. 1999. “Personnel records of windowshield installers.” Unpubl
 
 ### Try it out
 
-{% include citation-generator.html %}
+{{< include ../_includes/citation-generator.html >}}
