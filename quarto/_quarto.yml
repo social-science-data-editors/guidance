@@ -7,10 +7,10 @@ website:
 
   # temporary
   announcement: 
-    icon: person-digging
+    icon: cone-striped
     dismissable: true
     content: "We are in the process of restructuring this website. Please bear with us, and report any issues."
-    type: primary
+    type: warning
     position: above-navbar
   
   repo-url: https://github.com/social-science-data-editors/new-guidance
@@ -20,21 +20,20 @@ website:
   page-footer: 
     left: "This project is maintained by [{{< var linkers.gitlink.text >}}]({{< var linkers.gitlink.url >}})"
     center: 
-      - text: "About"
-        href: about.qmd
+      - href: about.qmd
         icon: info-circle
-      - text: "FAQ"
-        href: Other/FAQ.qmd
+        text: "<i class='bi bi-info-circle' role='img'></i> About"
+      - href: Other/FAQ.qmd
         icon: question-circle
-      - text: "License"
-        href: LICENSE.qmd
+        text: "<i class='bi bi-question-circle' role='img'></i> FAQ"
+      - href: LICENSE.qmd
         icon: license
-      - text: Homepage
-        href: https://social-science-data-editors.github.io/
+        text: "<i class='bi bi-cc-circle' role='img'></i> License"
+      - href: https://social-science-data-editors.github.io/
         icon: home
+        text: "<i class='bi bi-house-fill' role='img'></i> Homepage"
     right:
       - icon: github
-        text: Github
         href: https://github.com/social-science-data-editors/new-guidance
 
   navbar:

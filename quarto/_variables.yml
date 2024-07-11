@@ -3,5 +3,5 @@ ssde:
   year: 2024
 linkers:
   gitlink:
-    text: "social-science-data-editors" 
+    text: "Social Science Data Editors" 
     url: "https://github.com/social-science-data-editors"
