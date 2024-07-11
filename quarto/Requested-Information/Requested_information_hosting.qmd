@@ -96,7 +96,7 @@ Users of restricted-access data centers (RADC, such as [FSRDCs](https://www.cens
 - researchers (end-users) may not be able to provide DOI or similar persistent identifiers for some data
 - researchers may not be able to discern the presrvation policy for certain data sets
 - researchers may not be able to remove all code from the center, or such removal is subject to restrictions
-- data citation guidance may be lacking, or may not be obvious (see [Data Citation Guidance](../Data_citation_guidance.qmd) for general guidance)
+- data citation guidance may be lacking, or may not be obvious (see [Data Citation Guidance](../Guidance/Data_citation_guide.qmd) for general guidance)
 
 #### A few guidelines
 

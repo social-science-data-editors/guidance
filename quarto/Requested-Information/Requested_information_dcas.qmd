@@ -10,7 +10,7 @@ Data and Code Availability Statements (DCAS) can take on many forms. The example
 - [Springer](https://www.springernature.com/gp/authors/research-data-policy/data-availability-statements/12330880)
 - [Hindawi](https://www.hindawi.com/research.data/#statement.templates)
 
-DCAS expand on and complement [data citations](../Data_citation_guidance.qmd).
+DCAS expand on and complement [data citations](../Guidance/Data_citation_guide.qmd).
 
 Note that not all the examples listed above may be admissible by the journal you are submitting to. 
 

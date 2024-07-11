@@ -17,7 +17,7 @@ where it can be accessed, etc.
 
 The data do not seem to be cited. 
 
-SUGGESTION: Please add a data citation to the references, see [Data Citation Guidance](../Data_citation_guidance.qmd) for guidance.
+SUGGESTION: Please add a data citation to the references, see [Data Citation Guidance](../Guidance/Data_citation_guide.qmd) for guidance.
 
 SUGGESTION: Please add information on how and where both the more public data and the raw data can be accessed.
 
