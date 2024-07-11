@@ -366,7 +366,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sample-code-to-generate-descriptive-statistics" id="toc-sample-code-to-generate-descriptive-statistics" class="nav-link active" data-scroll-target="#sample-code-to-generate-descriptive-statistics">Sample code to generate descriptive statistics</a></li>
+  <li><a href="#sample-code-to-generate-descriptive-statistics" id="toc-sample-code-to-generate-descriptive-statistics" class="nav-link active" data-scroll-target="#sample-code-to-generate-descriptive-statistics">Sample code to generate descriptive statistics</a>
+  <ul>
+  <li><a href="#stata" id="toc-stata" class="nav-link" data-scroll-target="#stata">Stata</a></li>
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
+  <li><a href="#sas" id="toc-sas" class="nav-link" data-scroll-target="#sas">SAS</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Samples/sample-information-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -385,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> my_input_data</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">describe</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">codebook</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>See <a href="code/01_codebook_fancy.md">code/01_codebook_fancy.md</a> for a fancier example, and <a href="code/02_codebook_plaintext.md">code/02_codebook_plaintext.md</a> for the code and output from the simpler example.</p>
+<p>See <a href="../../code/01_codebook_fancy.md">code/01_codebook_fancy.md</a> for a fancier example, and <a href="../../code/02_codebook_plaintext.md">code/02_codebook_plaintext.md</a> for the code and output from the simpler example.</p>
 </section>
 <section id="r" class="level4">
 <h4 class="anchored" data-anchor-id="r">R</h4>
@@ -393,7 +398,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use the    dataMaid   package</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataMaid)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">makeCodebook</span>(my_input_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>See <a href="code/03_codebook_dataMaid.md">code/03_codebook_dataMaid</a> for an example.</p>
+<p>See <a href="../../code/03_codebook_dataMaid.md">code/03_codebook_dataMaid</a> for an example.</p>
 </section>
 <section id="sas" class="level4">
 <h4 class="anchored" data-anchor-id="sas">SAS</h4>
@@ -401,7 +406,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre class="sas"><code>proc contents;
 proc means;
 run;</code></pre>
-<p>See <a href="code/04_codebook_SAS.md">code/04_codebook_SAS</a> for an example.</p>
+<p>See <a href="../../code/04_codebook_SAS.md">code/04_codebook_SAS</a> for an example.</p>
 
 
 </section>

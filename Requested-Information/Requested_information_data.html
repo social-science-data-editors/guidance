@@ -334,10 +334,19 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#generic-diagram" id="toc-generic-diagram" class="nav-link" data-scroll-target="#generic-diagram">Generic Diagram</a></li>
-  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data description</a></li>
-  <li><a href="#data-access-description" id="toc-data-access-description" class="nav-link" data-scroll-target="#data-access-description">Data access description</a></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data description</a>
+  <ul>
+  <li><a href="#practical-guidance-data-description" id="toc-practical-guidance-data-description" class="nav-link" data-scroll-target="#practical-guidance-data-description">Practical guidance: Data description</a></li>
+  </ul></li>
+  <li><a href="#data-access-description" id="toc-data-access-description" class="nav-link" data-scroll-target="#data-access-description">Data access description</a>
+  <ul>
+  <li><a href="#practical-guidance-data-access" id="toc-practical-guidance-data-access" class="nav-link" data-scroll-target="#practical-guidance-data-access">Practical guidance: data access</a></li>
+  </ul></li>
   <li><a href="#data-persistence" id="toc-data-persistence" class="nav-link" data-scroll-target="#data-persistence">Data persistence</a></li>
-  <li><a href="#what-is-a-data-provider" id="toc-what-is-a-data-provider" class="nav-link" data-scroll-target="#what-is-a-data-provider">What is a data provider</a></li>
+  <li><a href="#what-is-a-data-provider" id="toc-what-is-a-data-provider" class="nav-link" data-scroll-target="#what-is-a-data-provider">What is a data provider</a>
+  <ul>
+  <li><a href="#practical-guidance-data-provider-and-data-archives" id="toc-practical-guidance-data-provider-and-data-archives" class="nav-link" data-scroll-target="#practical-guidance-data-provider-and-data-archives">Practical guidance: data provider and data archives</a></li>
+  </ul></li>
   <li><a href="#planning-ahead" id="toc-planning-ahead" class="nav-link" data-scroll-target="#planning-ahead">Planning Ahead</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Requested-Information/Requested_information_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -403,13 +412,13 @@ ul.task-list li input[type="checkbox"] {
 <li>If possible, provide a Digital Object Identifier (DOI).
 <ul>
 <li>You can generate a citation from the DOI using <a href="https://www.doi2bib.org/">https://www.doi2bib.org/</a>.</li>
-<li>For information on how and where to deposit data in places that generate a DOI, see our <a href="Requested_information_hosting.md">Data and Hosting guidance</a></li>
+<li>For information on how and where to deposit data in places that generate a DOI, see our <a href="../Requested-Information/Requested_information_hosting.html">Data and Hosting guidance</a></li>
 </ul></li>
 </ul></li>
 </ul>
 <blockquote class="blockquote">
 <ul>
-<li>For more detailed information, see <a href="Data_citation_guidance.md">Data citation guidance</a>.</li>
+<li>For more detailed information, see <a href="../Guidance/Data_citation_guide.html">Data citation guidance</a>.</li>
 </ul>
 </blockquote>
 <ul>
@@ -432,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="practical-guidance-data-description">Practical guidance: Data description</h4>
 <p>It doesn’t need to be complicated, but should be complete. For more extensive descriptions, best practices, and possible support, see - ICSPR, “<a href="https://www.icpsr.umich.edu/icpsrweb/content/deposit/guide/chapter3quant.html">Guide to Social Science Data Preparation and Archiving: Phase 3: Data Collection and File Creation</a>” - <a href="http://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf">DataONE Primer on Data Management Best Practices</a> - <a href="https://isps.yale.edu/research/data/deposit">Yale Institution for Social and Policy Studies</a> - <a href="https://ciser.cornell.edu/research/results-reproduction-r-squared-service/">Cornell Institute for Social and Economic Research</a> - <a href="https://dimewiki.worldbank.org/wiki/Checklist:_Microdata_Catalog_submission">World Bank DIME Checklist</a></p>
 <p>Other services may be available at your own institution. Some services may charge a fee, or only be available to researchers affiliated with that institution.</p>
-<p>We provide a <a href="sample-information-data.md">few suggestions for how to do this in Stata, R, and SAS</a>. However, if you have the ability to do a more robust data description, you should. See a <a href="https://www2.ncrn.cornell.edu/ced2ar-web/codebooks/synlbd/v/v2">self-citing example</a>.</p>
+<p>We provide a <a href="../Samples/sample-information-data.html">few suggestions for how to do this in Stata, R, and SAS</a>. However, if you have the ability to do a more robust data description, you should. See a <a href="https://www2.ncrn.cornell.edu/ced2ar-web/codebooks/synlbd/v/v2">self-citing example</a>.</p>
 </section>
 </section>
 <section id="data-access-description" class="level3">
@@ -471,8 +480,8 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><a href="http://doi.org/10.3886/E116116V1">supplementary materials</a> to <a href="https://doi.org/10.1257/aer.103.6.2499">Barseghyan et al (2013)</a> (in particular the <a href="https://www.openicpsr.org/openicpsr/project/116116/version/V1/view?path=/openicpsr/116116/fcr:versions/V1/20110834_data_files/data-user-agreements.pdf&amp;type=file">data-user-agreements.pdf</a>).</li>
 </ul></li>
-<li>For additional guidance on licensing, see <a href="Licensing_guidance.md">Licensing guidance</a>.</li>
-<li>For more information on Data Access Descriptions, see <a href="Requested_information_dcas.md">Data Access Descriptions</a>.</li>
+<li>For additional guidance on licensing, see <a href="../Guidance/Licensing_guidance.html">Licensing guidance</a>.</li>
+<li>For more information on Data Access Descriptions, see <a href="../Requested-Information/Requested_information_dcas.html">Data Access Descriptions</a>.</li>
 </ul>
 <p>For additional sample “Data Access Descriptions”, see</p>
 <ul>
@@ -492,13 +501,13 @@ ul.task-list li input[type="checkbox"] {
 <li>A good minimum benchmark is 10 years, but this may not always be feasible with data the author does not control. You should describe the data persistence, or point to a data archive’s policy in that matter.</li>
 </ul>
 <blockquote class="blockquote">
-<p>See <a href="Requested_information_hosting.md">Requested_information_hosting</a> for more details on data repositories.</p>
+<p>See <a href="../Requested-Information/Requested_information_hosting.html">Requested_information_hosting</a> for more details on data repositories.</p>
 </blockquote>
 </section>
 <section id="what-is-a-data-provider" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-a-data-provider">What is a data provider</h3>
 <p>A “data provider” in this sense can be - a public repository where the data can be found (<a href="https://www.icpsr.umich.edu/icpsrweb/">ICPSR</a>), - a website that provided the data (<a href="https://usa.ipums.org/usa/">IPUMS</a>), - a statistical agency or private company that granted access to the data (<a href="https://www.census.gov/fsrdc">U.S. Census Bureau</a>, Twitter, Acme Inc.).</p>
-<p>The author may also be the data provider, for instance, because the author conducted the survey used in the article. However, in many cases, the data provider may not be a data archive (see the page on <a href="Requested_information_hosting.md">Requested information about hosting</a>).</p>
+<p>The author may also be the data provider, for instance, because the author conducted the survey used in the article. However, in many cases, the data provider may not be a data archive (see the page on <a href="../Requested-Information/Requested_information_hosting.html">Requested information about hosting</a>).</p>
 <section id="practical-guidance-data-provider-and-data-archives" class="level4">
 <h4 class="anchored" data-anchor-id="practical-guidance-data-provider-and-data-archives">Practical guidance: data provider and data archives</h4>
 <p>If the data provider is not an archive (i.e., the data persistence is insufficient, and data might go away), you should investigate depositing the data at a data archive.</p>

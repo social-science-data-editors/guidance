@@ -1,23 +1,123 @@
 /* css styles */
 .citation {
   margin-bottom: 1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+blockquote {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.citation a,
+blockquote a {
+  word-break: break-all;
 }
 
 .goodcite {
-  color: green;
+  background-color: #c7f3e47d;
 }
 
 .mediumcite {
-  color: orange;
+  background-color: #f8ebc07d;
 }
 
 .badcite {
-  color: red;
+  background-color: #c284887d;
+}
+
+.class_author {
+  color: #eb7826
+}
+
+.class_title {
+  color: #71ae45
+}
+
+.class_distributor {
+  color: #5a9dd6
+}
+
+.class_version {
+  color: #be8d00
+}
+
+.class_doi {
+  color: #bd0000
+}
+
+.class_date {
+  color: #febc00
+}
+
+.warning {
+  background-color: #f5b3b8;
 }
 
 .navbar {
   background-color: #E6E6FA;
-  /* This is a light purple color */
-  border-bottom: 0.5px solid #9573b4;
-  /* Adds a purple line at the bottom */
+  /* Light purple color */
+  border-bottom: 0.75px solid #9573b4;
+  /* Purple line at the bottom */
+}
+
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+  max-height: none;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.quarto-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.column-page,
+.column-body {
+  flex: 1;
+  min-width: 0;
+  padding: 0 30px;
+}
+
+.sidebar {
+  width: 250px;
+  padding-right: 20px;
+}
+
+.sidebar-margin {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.column-page p,
+.column-body p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1200px) {
+  .quarto-container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .sidebar-margin {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+  }
 }

@@ -332,9 +332,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#trusted-repositories" id="toc-trusted-repositories" class="nav-link active" data-scroll-target="#trusted-repositories">Trusted Repositories</a></li>
+  <li><a href="#trusted-repositories" id="toc-trusted-repositories" class="nav-link active" data-scroll-target="#trusted-repositories">Trusted Repositories</a>
+  <ul>
+  <li><a href="#list-of-additional-acceptable-trusted-repositories-in-economics" id="toc-list-of-additional-acceptable-trusted-repositories-in-economics" class="nav-link" data-scroll-target="#list-of-additional-acceptable-trusted-repositories-in-economics">List of Additional Acceptable Trusted Repositories in Economics</a></li>
+  <li><a href="#permanent-identifiers-digital-object-identifiers-doi-et-al" id="toc-permanent-identifiers-digital-object-identifiers-doi-et-al" class="nav-link" data-scroll-target="#permanent-identifiers-digital-object-identifiers-doi-et-al">Permanent Identifiers: Digital Object Identifiers (DOI) et al</a></li>
+  <li><a href="#not-acceptable" id="toc-not-acceptable" class="nav-link" data-scroll-target="#not-acceptable">NOT ACCEPTABLE</a></li>
+  </ul></li>
   <li><a href="#some-good-examples" id="toc-some-good-examples" class="nav-link" data-scroll-target="#some-good-examples">Some good examples</a></li>
-  <li><a href="#challenges-in-hosting-of-data-and-code-at-restricted-access-data-centers" id="toc-challenges-in-hosting-of-data-and-code-at-restricted-access-data-centers" class="nav-link" data-scroll-target="#challenges-in-hosting-of-data-and-code-at-restricted-access-data-centers">Challenges in Hosting of Data and Code at Restricted-Access Data Centers</a></li>
+  <li><a href="#challenges-in-hosting-of-data-and-code-at-restricted-access-data-centers" id="toc-challenges-in-hosting-of-data-and-code-at-restricted-access-data-centers" class="nav-link" data-scroll-target="#challenges-in-hosting-of-data-and-code-at-restricted-access-data-centers">Challenges in Hosting of Data and Code at Restricted-Access Data Centers</a>
+  <ul>
+  <li><a href="#a-few-guidelines" id="toc-a-few-guidelines" class="nav-link" data-scroll-target="#a-few-guidelines">A few guidelines</a></li>
+  <li><a href="#self-generated-repositories-second-best" id="toc-self-generated-repositories-second-best" class="nav-link" data-scroll-target="#self-generated-repositories-second-best">Self-generated repositories (second best)</a></li>
+  <li><a href="#some-examples" id="toc-some-examples" class="nav-link" data-scroll-target="#some-examples">Some examples</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Requested-Information/Requested_information_hosting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -429,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="not-acceptable">NOT ACCEPTABLE</h4>
 <p>A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article’s supplementary materials:</p>
 <ul>
-<li><a href="https://github.com">Github</a>, <a href="https://gitlab.com">Gitlab</a>, etc. because a project’s owner can delete a git repository at any time (but see <a href="https://guides.github.com/activities/citable-code/">this page</a> on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the <a href="FAQ.md">FAQ</a>);</li>
+<li><a href="https://github.com">Github</a>, <a href="https://gitlab.com">Gitlab</a>, etc. because a project’s owner can delete a git repository at any time (but see <a href="https://guides.github.com/activities/citable-code/">this page</a> on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the <a href="../Other/FAQ.html">FAQ</a>);</li>
 <li>Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the <a href="https://archive.org/">Wayback Machine</a> for a similar purpose);</li>
 <li>Dropbox, Box.com, and similar cloud-based data and file sharing services - again, they can all be deleted at short notice, or when payment stops</li>
 </ul>
@@ -454,18 +464,18 @@ ul.task-list li input[type="checkbox"] {
 <li>researchers (end-users) may not be able to provide DOI or similar persistent identifiers for some data</li>
 <li>researchers may not be able to discern the presrvation policy for certain data sets</li>
 <li>researchers may not be able to remove all code from the center, or such removal is subject to restrictions</li>
-<li>data citation guidance may be lacking, or may not be obvious (see <a href="Data_citation_guidance.md">Data Citation Guidance</a> for general guidance)</li>
+<li>data citation guidance may be lacking, or may not be obvious (see <a href="../Guidance/Data_citation_guide.html">Data Citation Guidance</a> for general guidance)</li>
 </ul>
 <section id="a-few-guidelines" class="level4">
 <h4 class="anchored" data-anchor-id="a-few-guidelines">A few guidelines</h4>
 <ul>
-<li>Request as much code as the RADC will allow the researcher to remove. Subsequently handle it equivalently to the <a href="Requested_information_code.md">general code guidance</a>, but make special note (placeholders, explanatory text) of any redacted information.</li>
+<li>Request as much code as the RADC will allow the researcher to remove. Subsequently handle it equivalently to the <a href="../Requested-Information/Requested_information_code.html">general code guidance</a>, but make special note (placeholders, explanatory text) of any redacted information.</li>
 <li>In addition, some RADC may provide the ability to deposit code internally and confidentially. Use such interal repositories, and make a note of their location in the publicly deposited code or in supplementary documents.</li>
 </ul>
 </section>
 <section id="self-generated-repositories-second-best" class="level4">
 <h4 class="anchored" data-anchor-id="self-generated-repositories-second-best">Self-generated repositories (second best)</h4>
-<p>If a RADC has at least an archival or backup policy of sufficient length (e.g., 10 or more years), but does not offer a formal repository, then the following procedure allows users to find and request code and data - As before, request as much code as is feasible, and deposit it in a public repository (e.g., openICPSR, Dataverse, Zenodo). <strong>Don’t publish it yet.</strong> - If possible at such repositories, pre-register a <code>DOI</code> - At Zenodo: click the appropriation request button, and a <code>DOI</code> will be assigned, e.g., <em>10.5281/zenodo.<code>NNNNN</code></em>. - At openICPSR: projects are called <code>openicpsr-NNNNN</code>. The <code>DOI</code> is derived from the project number as <em>10.3886/E<code>NNNNN</code>V1</em>. - If you already have a DOI assigned to your manuscript or (published) paper, you can <em>alternatively</em> use that (see <a href="https://doi.org/10.1093/restud/rdw057">10.1093/restud/rdw057</a> for an excellent example). - In the RADC, create a two-level directory with the name of the <code>DOI</code>. - Move both data (following guidelines outlined <a href="Requested_information_code.md">here</a>) and <strong>all</strong> code (not just the confidential part) to subdirectories. The resulting directory structure will look something like this:</p>
+<p>If a RADC has at least an archival or backup policy of sufficient length (e.g., 10 or more years), but does not offer a formal repository, then the following procedure allows users to find and request code and data - As before, request as much code as is feasible, and deposit it in a public repository (e.g., openICPSR, Dataverse, Zenodo). <strong>Don’t publish it yet.</strong> - If possible at such repositories, pre-register a <code>DOI</code> - At Zenodo: click the appropriation request button, and a <code>DOI</code> will be assigned, e.g., <em>10.5281/zenodo.<code>NNNNN</code></em>. - At openICPSR: projects are called <code>openicpsr-NNNNN</code>. The <code>DOI</code> is derived from the project number as <em>10.3886/E<code>NNNNN</code>V1</em>. - If you already have a DOI assigned to your manuscript or (published) paper, you can <em>alternatively</em> use that (see <a href="https://doi.org/10.1093/restud/rdw057">10.1093/restud/rdw057</a> for an excellent example). - In the RADC, create a two-level directory with the name of the <code>DOI</code>. - Move both data (following guidelines outlined <a href="../Requested-Information/Requested_information_code.html">here</a>) and <strong>all</strong> code (not just the confidential part) to subdirectories. The resulting directory structure will look something like this:</p>
 <pre><code>/some/path/project/10.5281/zenodo.NNNNN/:
       data/original/rawdata.dta
       data/derived/analysis.dta
@@ -473,7 +483,7 @@ ul.task-list li input[type="checkbox"] {
       programs/02_analysis.do</code></pre>
 <ul>
 <li>Confirm with the RADC’s administrative staff how long project files are kept as archives or in backup (often 5-10 years)</li>
-<li>Add a statement to the public README.md (and to article materials). See <a href="samples/sample_radc_statement1.md">Sample RADC Statement 1</a> and <a href="samples/sample_radc_statement2.md">Sample RADC Statement 2</a>.</li>
+<li>Add a statement to the public README.md (and to article materials). See <a href="../Samples/samples/sample_radc_statement1.html">Sample RADC Statement 1</a> and <a href="../Samples/samples/sample_radc_statement2.html">Sample RADC Statement 2</a>.</li>
 </ul>
 </section>
 <section id="some-examples" class="level4">
@@ -481,7 +491,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Fort (2016) <a href="https://doi.org/10.1093/restud/rdw057">10.1093/restud/rdw057</a>, in the supplementary materials (<a href="copies/Fort2016-Readme.pdf">local copy</a>)</li>
 <li>Groen, Kutzbach, and Polivka (2019, forthcoming) (link to be supplied upon publication)</li>
-<li>See also section on <a href="Requested_information_dcas.md">Data and Code Availability Statements</a>.</li>
+<li>See also section on <a href="../Requested-Information/Requested_information_dcas.html">Data and Code Availability Statements</a>.</li>
 </ul>
 
 
