@@ -1,7 +1,17 @@
 ---
 title: Template README
-layout: redirect
-redirect: https://social-science-data-editors.github.io/template_README/
+format: html
 ---
 
-
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting to Template README</title>
+    <meta http-equiv="refresh" content="0; URL=https://social-science-data-editors.github.io/template_README/">
+    <link rel="canonical" href="https://social-science-data-editors.github.io/template_README/">
+  </head>
+  <body>
+    <p>If you are not redirected automatically, follow this <a href="https://social-science-data-editors.github.io/template_README/">link to the Template README</a>.</p>
+  </body>
+</html>
