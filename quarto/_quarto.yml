@@ -14,10 +14,16 @@ website:
     center: 
       - text: "About"
         href: about.qmd
+        icon: info-circle
       - text: "FAQ"
         href: Other/FAQ.qmd
+        icon: question-circle
       - text: "License"
         href: LICENSE.qmd
+        icon: license
+      - text: Homepage
+        href: https://social-science-data-editors.github.io/
+        icon: home
     right:
       - icon: github
         href: https://github.com/social-science-data-editors/new-guidance
@@ -38,6 +44,8 @@ website:
       right:
         - text: "Other pages"
           menu: 
+            - text: Homepage
+              href: https://social-science-data-editors.github.io/
             - text: "DCAS"
               href: https://datacodestandard.org/
             - text: "Template README"
