@@ -4,6 +4,14 @@ project:
 website:
   title: "{{< var ssde.web_name >}}"
   favicon: ssde-logo.png 
+
+  # temporary
+  announcement: 
+    icon: person-digging
+    dismissable: true
+    content: "We are in the process of restructuring this website. Please bear with us, and report any issues."
+    type: primary
+    position: above-navbar
   
   repo-url: https://github.com/social-science-data-editors/new-guidance
   repo-actions: [edit, issue]
@@ -26,6 +34,7 @@ website:
         icon: home
     right:
       - icon: github
+        text: Github
         href: https://github.com/social-science-data-editors/new-guidance
 
   navbar:
@@ -51,10 +60,10 @@ website:
             - text: "Template README"
               href: https://social-science-data-editors.github.io/template_README/
 
-      tools:
-        - icon: github
-          href: https://github.com/social-science-data-editors/new-guidance
-          text: SSDE GitHub 
+      # tools:
+      #   - icon: github
+      #     href: https://github.com/social-science-data-editors/new-guidance
+      #     text: SSDE GitHub 
 
   sidebar:
     - id: main-sidebar
@@ -98,7 +107,7 @@ format:
   html:
     theme: 
       light: mytheme.scss
-      dark: darkly
+      # dark: darkly
     code-copy: true
     code-overflow: wrap
 
