@@ -1,0 +1,48 @@
+```
+ssde_web_root/
+├── _includes
+│   └── citation-block.html
+│   └── citation-generator.html
+├── Guidance/
+│   └── addtl-data-citation-guidance.qmd
+│   └── Data_citation_guidance.qmd
+│   └── docker-guidelines.qmd
+│   └── guidance-reproducible-gis-analysis.qmd
+│   └── journal-policies.qmd
+│   └── Licensing_guidance.qmd
+│   └── synthetic-fake-data-guidance.qmd
+│   └── Verification_guidance.qmd
+├── Other/
+│   └── DCAS_Commercial_data.qmd       
+│   └── FAQ.qmd
+│   └── DCAS_Restricted_data.qmd       
+│   └── data-editors-guild-charter.qmd
+├── Requested-Information/
+│   └── Requested_information.qmd
+│   └── Requested_information_data.qmd    
+│   └── Requested_information_hosting.qmd
+│   └── Requested_information_code.qmd    
+│   └── Requested_information_dcas.qmd
+├── Samples/
+│   └── samples/
+│       └── sample-R-configuration.md                  
+│       └── sample-stata-configuration.md
+│       └── sample-python-configuration.md             
+│       └── sample_radc_statement1.md
+│       └── sample-request-for-publication-provider.md 
+│       └── sample_radc_statement2.md
+│   └── sample-depositing-data-for-greater-good.qmd 
+│   └── sample-report.qmd
+│   └── sample-information-data.qmd
+├── Templates/
+│   └── template-README.qmd                      
+│   └── template_inquiry_about_DOI_by_editor.qmd
+├── _quarto.yml
+├── _variables.yml
+├── index.qmd
+├── about.qmd
+├── Disclaimer.qmd
+├── index.qmd
+├── LICENSE-CCO.qmd
+├── LICENSE.qmd
+```
