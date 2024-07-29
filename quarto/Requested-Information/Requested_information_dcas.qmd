@@ -15,7 +15,7 @@ DCAS expand on and complement [data citations](../Guidance/Data_citation_guide.q
 Note that not all the examples listed above may be admissible by the journal you are submitting to. 
 
 
-This site provides a [template README](/template_README/) that incorporates the DCAS into the README, as is the style for many journals in economics. 
+This site provides a [template README](../Templates/template-README.qmd) that incorporates the DCAS into the README, as is the style for many journals in economics. 
 
 ### Examples
 

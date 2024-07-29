@@ -65,7 +65,7 @@ We **strongly suggest** using some best-practices as suggested by the literature
 
 This document provides some practical guidance.
 
-We strongly suggest using the [template README](/template_README/) available on this site.
+We strongly suggest using the [template README](../Templates/template-README.qmd) available on this site.
 
 #### Encourage
 
@@ -98,7 +98,7 @@ For a discussion with some suggestions, see our [Data citation guidance](../Guid
 
 ### Data and Code Availability Statements
 
-Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". They expand on and complement [data citations](../Guidance/Data_citation_guide). Sample language should be incorporated into a README, a distinct document, or a distinct section of the manuscript.
+Some of the information historically captured by "README" files is more formally captured by newer "Data (and Code) Availability Statements". They expand on and complement [data citations](../Guidance/Data_citation_guide.qmd). Sample language should be incorporated into a README, a distinct document, or a distinct section of the manuscript.
 
 Some examples are listed [here](Requested_information_dcas.qmd).
 

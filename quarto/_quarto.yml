@@ -80,6 +80,7 @@ website:
             - Guidance/guidance-reproducible-gis-analysis.qmd
             - Guidance/journal-policies.qmd
             - Guidance/synthetic-fake-data-guidance.qmd
+            - Guidance/Licensing_guidance.qmd
         - section: "Requested Information"
           contents:
             - Requested-Information/Requested_information.qmd

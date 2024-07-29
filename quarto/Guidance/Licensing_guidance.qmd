@@ -1,6 +1,8 @@
 ---
 layout: withtoc
 title:  Licensing Guidance
+aliases:
+  - /license-cc0.html
 ---
 
 > This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.
@@ -44,7 +46,7 @@ but explicit naming of files or directories could also be applied.
 > which allows reuse with attribution.
 
 > Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public
-> domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
+> domain dedication ([`LICENSE-CC0.md`]({{< ref "/license-cc0.html" >}})).
 > All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
 
 
