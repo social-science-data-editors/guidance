@@ -87,6 +87,13 @@ There are also ways to create maps in R.
 - [Geocomputation with R](https://geocompr.robinlovelace.net/) by Robin Lovelace, Jakub Nowosad, Jannes Muenchow
 - Excellent tutorial by [Kieran Healy](https://kieranhealy.org/) at [https://socviz.co/maps.html](https://socviz.co/maps.html#maps)
 
+## Creating reproducible maps in Stata
+
+- [Add-on package `spmap`](https://www.stata.com/support/faqs/graphics/spmap-and-maps/)
+- [Blog post on creating maps at World Bank](https://blogs.worldbank.org/en/impactevaluations/making-visually-appealing-maps-stata-guest-post-asjad-naqvi)
+- [Add-on package `maptile`](https://michaelstepner.com/maptile/)
+
+
 ## You can help
 
 We are always looking to expand this resource. Please suggest additions and expansions of this guide through a Github [issue](https://github.com/social-science-data-editors/guidance/issues/new/choose) or pull request.
