@@ -1,6 +1,8 @@
 ---
 layout: withtoc
 title: Requested Information for Data
+aliases:
+  - /Requested_information_data.html
 ---
 
 ### Overview

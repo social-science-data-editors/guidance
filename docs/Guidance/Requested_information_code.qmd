@@ -1,6 +1,8 @@
 ---
 layout: withtoc
 title: "Requested Information for Code"
+aliases:
+  - /Requested_information_code.html
 ---
 
 ### Readings

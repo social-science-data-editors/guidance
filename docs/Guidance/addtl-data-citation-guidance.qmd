@@ -4,7 +4,6 @@ aliases:
   - /addtl-data-citation-guidance.html
 ---
 
-
 One of the most vexing issues is how to cite data. This document goes through a few common scenarios not covered elsewhere.
 
 ### What is not a data citation

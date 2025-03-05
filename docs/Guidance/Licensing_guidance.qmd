@@ -1,8 +1,8 @@
 ---
 layout: withtoc
-title:  Licensing Guidance
+title: Licensing Guidance
 aliases:
-  - /license-cc0.html
+  - /Licensing_guidance.html
 ---
 
 > This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.

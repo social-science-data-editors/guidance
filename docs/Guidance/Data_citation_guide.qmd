@@ -1,5 +1,7 @@
 ---
 title: "Guidance on Data Citation"
+aliases:
+  - /Data_citation_guide.html
 ---
 
 Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.

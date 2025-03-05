@@ -1,7 +1,8 @@
-
 ---
 layout: withtoc
 title: "Docker guidelines"
+aliases:
+  - /docker-guidelines.html
 ---
 
 NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singularity.

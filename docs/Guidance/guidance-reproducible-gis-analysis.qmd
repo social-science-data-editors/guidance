@@ -1,6 +1,8 @@
 ---
 layout: withtoc
 title: "Some (incomplete) guidance to creating reproducible maps with GIS software"
+aliases:
+  - /guidance-reproducible-gis-analysis.html
 ---
 
 > The following information was provided by several sources. We wish to thank Keith Jenkins (Cornell University).

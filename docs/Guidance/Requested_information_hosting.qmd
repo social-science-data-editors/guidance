@@ -1,6 +1,8 @@
 ---
 layout: withtoc
 title: Suggested Information for Data and Code Hosting
+aliases:
+  - /Requested_information_hosting.html
 ---
 
 ### Trusted Repositories
