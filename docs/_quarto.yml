@@ -71,18 +71,10 @@ website:
     # default opens to index page.
       - index
       - journal-policies            
-      - section: Guidance/Requested_information
-        contents:
-          - Guidance/Requested_information_code
-          - Guidance/Requested_information_data
-          - Guidance/Data_citation_guide
-          - Guidance/addtl-data-citation-guidance
-          - Guidance/guidance-reproducible-gis-analysis
-          - Guidance/docker-guidelines
-          - Guidance/Licensing_guidance
-          - Guidance/Requested_information_dcas
-          - Guidance/Requested_information_hosting
-      - section: Verification/Verification_guidance
+      - section: "Guidance"
+        contents: Guidance
+      - section: "Verification"
+        contents: Verification
       - section: "Samples"
         contents:
           - Samples/sample-depositing-data-for-greater-good
