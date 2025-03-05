@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-76d76d4bc11613dbf7e83372923ea9af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -354,6 +354,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#creating-reproducible-maps-using-python" id="toc-creating-reproducible-maps-using-python" class="nav-link" data-scroll-target="#creating-reproducible-maps-using-python">Creating reproducible maps using Python</a></li>
   <li><a href="#creating-reproducible-maps-using-r" id="toc-creating-reproducible-maps-using-r" class="nav-link" data-scroll-target="#creating-reproducible-maps-using-r">Creating reproducible maps using R</a></li>
+  <li><a href="#creating-reproducible-maps-in-stata" id="toc-creating-reproducible-maps-in-stata" class="nav-link" data-scroll-target="#creating-reproducible-maps-in-stata">Creating reproducible maps in Stata</a></li>
   <li><a href="#you-can-help" id="toc-you-can-help" class="nav-link" data-scroll-target="#you-can-help">You can help</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Guidance/guidance-reproducible-gis-analysis.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -440,6 +441,14 @@ However, it seems many Esri users are still using the older ArcMap.</p>
 <ul>
 <li><a href="https://geocompr.robinlovelace.net/">Geocomputation with R</a> by Robin Lovelace, Jakub Nowosad, Jannes Muenchow</li>
 <li>Excellent tutorial by <a href="https://kieranhealy.org/">Kieran Healy</a> at <a href="https://socviz.co/maps.html#maps">https://socviz.co/maps.html</a></li>
+</ul>
+</section>
+<section id="creating-reproducible-maps-in-stata" class="level2">
+<h2 class="anchored" data-anchor-id="creating-reproducible-maps-in-stata">Creating reproducible maps in Stata</h2>
+<ul>
+<li><a href="https://www.stata.com/support/faqs/graphics/spmap-and-maps/">Add-on package <code>spmap</code></a></li>
+<li><a href="https://blogs.worldbank.org/en/impactevaluations/making-visually-appealing-maps-stata-guest-post-asjad-naqvi">Blog post on creating maps at World Bank</a></li>
+<li><a href="https://michaelstepner.com/maptile/">Add-on package <code>maptile</code></a></li>
 </ul>
 </section>
 <section id="you-can-help" class="level2">
@@ -532,8 +541,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -644,7 +651,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
