@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Verification Guidance – Social Science Data Editors Guidance</title>
+<title>For Authors – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../journal-policies.html" rel="next">
-<link href="../Guidance/Requested_information_hosting.html" rel="prev">
 <link href="../ssde-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -138,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Verification/Verification_guidance.html">Verification</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">For Authors</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -229,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Verification/Verification_guidance.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Verification/Verification_guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Verification</span></a>
   </div>
 </li>
@@ -301,26 +299,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#review-the-readme-file" id="toc-review-the-readme-file" class="nav-link" data-scroll-target="#review-the-readme-file">Review the README file</a></li>
-  <li><a href="#for-each-listed-data-source" id="toc-for-each-listed-data-source" class="nav-link" data-scroll-target="#for-each-listed-data-source">For each listed data source</a></li>
-  <li><a href="#for-each-listed-table-figure-in-text-number" id="toc-for-each-listed-table-figure-in-text-number" class="nav-link" data-scroll-target="#for-each-listed-table-figure-in-text-number">For each listed table, figure, in-text number</a></li>
-  <li><a href="#conduct-a-code-verification-if-data-is-available" id="toc-conduct-a-code-verification-if-data-is-available" class="nav-link" data-scroll-target="#conduct-a-code-verification-if-data-is-available">Conduct a code verification, if data is available</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Verification/Verification_guidance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Verification Guidance</h1>
+<h1 class="title">For Authors</h1>
 </div>
 
 
@@ -337,83 +324,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>This document describes</p>
-<ul>
-<li>what authors should check before providing data and code to journals</li>
-<li>what verifier teams should check for in the data and code provided to them for the purpose of verification</li>
-<li>how to summarize the results in a <a href="#examples">Replication report</a></li>
-</ul>
-<p>It can be used as a checklist.</p>
-</section>
-<section id="review-the-readme-file" class="level3">
-<h3 class="anchored" data-anchor-id="review-the-readme-file">Review the README file</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">validate the listed contents (manifest) of the data submission against the actual contents of the data submission (<a href="soon">see reference README</a>). Is information missing?</label></li>
-<li><label><input type="checkbox">Also cross-check against the data section of the manuscript</label></li>
-<li><label><input type="checkbox">Create a list of all data sets referenced or provided</label></li>
-<li><label><input type="checkbox">Create a list of all tables, figures, and in-text numbers from the manuscript (excludes the online appendix). If the author provides such a list, validate it against the manuscript.</label></li>
-</ul>
-</section>
-<section id="for-each-listed-data-source" class="level3">
-<h3 class="anchored" data-anchor-id="for-each-listed-data-source">For each listed data source</h3>
-<ul>
-<li>verify information about the data
-<ul class="task-list">
-<li><label><input type="checkbox">identify that the data set has a clear name</label></li>
-<li><label><input type="checkbox">verify <a href="../Guidance/Requested_information_data.html">licensing and access information</a>. Is the original data accessible to researchers other than the author (license)? Does the author have the rights to redistribute the data (if not holder of the copyright)? For data generated by the author, is a license provided?</label></li>
-<li><label><input type="checkbox">Is the data cited in the manuscript? In the README?</label></li>
-</ul></li>
-<li>verify information in the data
-<ul class="task-list">
-<li><label><input type="checkbox">are all variables labeled (Stata) or is information on each variable provided (codebook)?</label></li>
-<li><label><input type="checkbox">if the data are not provided (confidential data), are summary statistics on the data provided (in the manuscript, as part of the archive)?</label></li>
-<li><label><input type="checkbox">if the data ARE provided, are there any potentially sensitive data on the dataset? (Example software: <a href="https://github.com/J-PAL/PII-Scan">R version</a> and <a href="https://github.com/J-PAL/stata_PII_scan">Stata version</a> provided by J-PAL)</label>
-<ul>
-<li>Some of the following may be OK if adequately described in the README and/or the manuscript data section</li>
-<li><label><input type="checkbox">No names of people</label></li>
-<li><label><input type="checkbox">No social security numbers, credit card numbers, etc.</label></li>
-<li><label><input type="checkbox">No addresses or precise geo-locations (GPS numbers)</label></li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="for-each-listed-table-figure-in-text-number" class="level3">
-<h3 class="anchored" data-anchor-id="for-each-listed-table-figure-in-text-number">For each listed table, figure, in-text number</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">can you identify the piece of code responsible for generating that number or figure</label></li>
-<li><label><input type="checkbox">does the code produce an identifiable output that contains those numbers or figures?</label></li>
-</ul>
-</section>
-<section id="conduct-a-code-verification-if-data-is-available" class="level3">
-<h3 class="anchored" data-anchor-id="conduct-a-code-verification-if-data-is-available">Conduct a code verification, if data is available</h3>
-<ul class="task-list">
-<li><label><input type="checkbox">create a directory containing only the programs and data provided</label></li>
-<li><label><input type="checkbox">Follow instructions from README or the code to</label>
-<ul>
-<li><label><input type="checkbox">Download all additional data not provided within the replication archive</label></li>
-<li><label><input type="checkbox">if not already contained within the existing code, it may be useful to create a config file (<a href="https://gist.github.com/larsvilhuber/6bcf4ff820285a1f1b9cfff2c81ca02b">sample Stata config file</a>), and call it from all to-be-run programs</label></li>
-<li>(Stata only) Reset the <code>PERSONAL</code>, <code>PLUS</code> and <code>SITE</code> locations that Stata uses to search for ado files (this is automatically done by the <a href="https://gist.github.com/larsvilhuber/6bcf4ff820285a1f1b9cfff2c81ca02b">sample Stata config file</a>)</li>
-<li><label><input type="checkbox">install all identified requirements</label></li>
-</ul></li>
-<li><label><input type="checkbox">run all code as per instructions in the README or the code</label></li>
-<li><label><input type="checkbox">identify all error messages</label></li>
-<li><label><input type="checkbox">identify all outputs as per the README and the list of tables/figures/in-text numbers</label></li>
-<li><label><input type="checkbox">compare the output to the tables/figures/numbers in the manuscript.</label></li>
-<li><label><input type="checkbox">Write a <a href="#examples">Replication report</a></label></li>
-</ul>
-</section>
-<section id="examples" class="level3">
-<h3 class="anchored" data-anchor-id="examples">Examples</h3>
-<p>Here are a few examples of report templates:</p>
-<ul>
-<li>AEA <a href="https://github.com/AEADataEditor/replication-template/blob/master/REPLICATION.md">Replication report</a></li>
-<li>Economic Journal [soon]</li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -833,18 +745,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../Guidance/Requested_information_hosting.html" class="pagination-link" aria-label="Suggested Information for Data and Code Hosting">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Suggested Information for Data and Code Hosting</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../journal-policies.html" class="pagination-link" aria-label="Journal Policies">
-        <span class="nav-page-text">Journal Policies</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -874,7 +774,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Verification/Verification_guidance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/new-guidance/edit/main/Guidance/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/new-guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
