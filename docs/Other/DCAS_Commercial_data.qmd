@@ -16,7 +16,9 @@ Compustat data is often used in macroeconomic or industrial organization papers.
 -  URL with more info on data access: 
 [https://www.spglobal.com/marketintelligence/en/client-segments/academia](https://www.spglobal.com/marketintelligence/en/client-segments/academia)
 - Possible Data Access Statement (no guarantees):
+
 > Compustat is owned by S&P Global. Researchers can subscribe to the data. Many universities and research institutions have such a subscription. More info on data access for academia can be found at https://www.spglobal.com/marketintelligence/en/client-segments/academia .
+
 - Ability to redistribute extracts: Unknown
 - Ability to redistribute aggregated data: Unknown
 - Examples in the literature:
@@ -48,7 +50,7 @@ The S&P 500 is one of the most widely known stock indexes. And yet, it is subjec
 
  Many authors who use the S&P 500 numbers may have downloaded it via FRED [https://fred.stlouisfed.org/series/SP500](https://fred.stlouisfed.org/series/SP500) or through other data services (Haver Analytics, Bloomberg).The FRED website mentions that the data are 
  
- > (C) S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC ("S&P").
+ > &copy; S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC ("S&P").
 
 It seems to be possible to request permission to distribute the extracts, using this form, or by sending email to 
 
@@ -69,7 +71,8 @@ An analogue if accessing it through, say, Haver Analytics, might be
 > S&P 500 data is (C) S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC ("S&P"). It is thus not available as part of the replication archive. Users may access the past 10 years via FRED at [https://fred.stlouisfed.org/series/SP500](https://fred.stlouisfed.org/series/SP500), or purchase longer access via Haver Analytics ([http://www.haver.com/databaseprofiles.html#indicators](http://www.haver.com/databaseprofiles.html#indicators)). Note that reproduction of our manuscript's tables requires data from [YYYY]-[ZZZZ]. 
 
 #### Examples in the literature:
-  - To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
+
+- To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
 
 
 ### Ethnologue data
@@ -83,5 +86,6 @@ Ethnologue have been known to provide permission to redistribute extracts for th
 > Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. *Ethnologue: Languages of the World. Twenty-second edition.* Dallas, Texas: SIL International. Online version: http://www.ethnologue.com
 
 #### Examples in the literature:
-  - To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
+
+- To come ([create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new))
 

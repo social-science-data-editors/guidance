@@ -21,11 +21,19 @@ Properly referencing data goes beyond just reproducibility - it is also proper s
 
 In a nutshell, every dataset is to be cited. This is true for the main article as well as online appendices. In the past, use of data or code has been acknowledged in footnotes, and only rarely through bibliographic references. However,  if the dataset is used, it should appear in the bibliography. The same is true for code reused from previous papers, or provided by authors.
 
-#### Data is published
+### What not to cite
+
+It has been long-standing convention in economics to cite a paper describing the data, but not the data themselves. This is inconsistent with other citation practices, in addition to not being compliant with the Data Citation Principles. In principle, it is simple:
+
+> If you use the data, you cite the data. If you reference the document, you cite the document. But you don't cite the document when using the data.
+
+It is worthwhile to point out that we don't cite the book **review** when wanting to reference what an author said in a **book**. We cite the book directly. This is the literature analog to data citations.
+
+#### Data are published
 
 The DOI is thus public, and all repositories will provide a suggested citation. One can also use [https://www.doi2bib.org/](https://www.doi2bib.org/) or [https://citation.crosscite.org/](https://citation.crosscite.org/) to get a citation (see below for additional tools).
 
-####  Data is not published
+####  Data are not published
 
 This is trickier. The data does not necessarily have a title that is related to the paper. Some repositories allow authors to "reserve" a DOI (Zenodo) or to delay publication. For some repositories, the DOI, while not officially reserved, can be derived from information already available (see this FAQ for openICPSR, something similar may be possible at Dataverse).
 

@@ -91,7 +91,8 @@ website:
           - Samples/sample-report.qmd
       - section: "Templates"
         contents:
-          - Templates/template-README.qmd
+          - text: "Template README"
+            href: https://social-science-data-editors.github.io/template_README/
           - Templates/template_inquiry_about_DOI_by_editor.qmd
       - text: "Journal Policies"
         href: journal-policies.qmd            

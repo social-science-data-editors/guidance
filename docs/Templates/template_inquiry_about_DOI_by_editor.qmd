@@ -13,11 +13,13 @@ of such information are persistent URLs or Digital Object Identifiers (DOI), des
 
 One of our authors has used your data, and we are inquiring about any such information you could provide either to us or to 
 authors upon request. We are looking for
- - DOI for specific datasets or files
- - URLs or DOI pointing to licenses (or, if the files are license-free, a statement to that effect)
- - URLs or DOI pointing to terms of use - the conditions under which researchers may use and possibly republish the data 
-    (this may be the same as the license)
- - URLs, DOI, or information regarding how long you will maintain the datasets you make available
+
+- DOI for specific datasets or files
+- URLs or DOI pointing to licenses (or, if the files are license-free, a statement to that effect)
+- URLs or DOI pointing to terms of use - the conditions under which researchers may use and possibly republish the data 
+   (this may be the same as the license)
+- URLs, DOI, or information regarding how long you will maintain the datasets you make available
+
 If you have such information available, we would be grateful if you could point us in the right direction. If you do not yet have 
 such information, any plans you might have would be of interest to us. 
  
