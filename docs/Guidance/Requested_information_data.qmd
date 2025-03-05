@@ -17,7 +17,7 @@ Details follow.
 
 ### Generic Diagram
 
-```mermaid
+```{mermaid}
 graph LR;
 subgraph "Data Provider";
 DB[(Data source)] ;
