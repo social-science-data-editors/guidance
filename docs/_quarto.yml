@@ -71,9 +71,8 @@ website:
     # default opens to index page.
       - text: Guidance
         href: index.qmd
-      - section: "For Authors"
+      - section: Guidance/Requested_information.qmd
         contents:
-          - Guidance/Requested_information.qmd
           - Guidance/Data_citation_guide.qmd
           - Guidance/addtl-data-citation-guidance.qmd
           - Guidance/Requested_information_code.qmd

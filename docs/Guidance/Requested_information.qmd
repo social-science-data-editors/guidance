@@ -1,6 +1,6 @@
 ---
 layout: withtoc
-title: Guidance on Replication Packages
+title: For Authors
 ---
 
 This is a draft document. Please provide comments by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new) in this Github project.
