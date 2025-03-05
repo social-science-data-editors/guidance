@@ -15,6 +15,7 @@ website:
   
   repo-url: https://github.com/social-science-data-editors/guidance
   repo-actions: [edit, issue]
+  repo-subdir: "docs"
   page-navigation: true
 
   page-footer: 
