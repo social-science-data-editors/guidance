@@ -13,7 +13,7 @@ website:
     type: warning
     position: above-navbar
   
-  repo-url: https://github.com/social-science-data-editors/new-guidance
+  repo-url: https://github.com/social-science-data-editors/guidance
   repo-actions: [edit, issue]
   page-navigation: true
 
@@ -34,7 +34,7 @@ website:
         text: "<i class='bi bi-house-fill' role='img'></i> Homepage"
     right:
       - icon: github
-        href: https://github.com/social-science-data-editors/new-guidance
+        href: https://github.com/social-science-data-editors/guidance
 
   navbar:
       background: dark
