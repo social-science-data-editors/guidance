@@ -20,13 +20,13 @@ website:
   page-footer: 
     left: "This project is maintained by [{{< var linkers.gitlink.text >}}]({{< var linkers.gitlink.url >}})"
     center: 
-      - href: about.qmd
+      - href: about
         icon: info-circle
         text: "<i class='bi bi-info-circle' role='img'></i> About"
-      - href: Other/FAQ.qmd
+      - href: Other/FAQ
         icon: question-circle
         text: "<i class='bi bi-question-circle' role='img'></i> FAQ"
-      - href: LICENSE.qmd
+      - href: LICENSE
         icon: license
         text: "<i class='bi bi-cc-circle' role='img'></i> License"
       - href: https://social-science-data-editors.github.io/
@@ -44,11 +44,11 @@ website:
       collapse-below: lg
       left:
         - text: "Guidance"
-          href: index.qmd
+          href: index
         - text: "Disclaimer"
-          href: Disclaimer.qmd
+          href: Disclaimer
         - text: "FAQ"
-          href: Other/FAQ.qmd
+          href: Other/FAQ
       right:
         - text: "Other pages"
           menu: 
@@ -70,38 +70,36 @@ website:
       style: "floating"
       collapse-level: 1
       contents:
-      # default opens to index.qmd page.
-        - section: index.qmd
+      # default opens to index page.
+        - section: index
           contents:
-            - Guidance/Data_citation_guide.qmd
-            - Guidance/addtl-data-citation-guidance.qmd
-            - Guidance/Verification_guidance.qmd
-            - Guidance/docker-guidelines.qmd
-            - Guidance/guidance-reproducible-gis-analysis.qmd
-            - Guidance/journal-policies.qmd
-            - Guidance/synthetic-fake-data-guidance.qmd
-            - Guidance/Licensing_guidance.qmd
-        - section: "Requested Information"
+            - journal-policies            
+        - section: Guidance/Requested_information
           contents:
-            - Requested-Information/Requested_information.qmd
-            - Requested-Information/Requested_information_code.qmd
-            - Requested-Information/Requested_information_data.qmd
-            - Requested-Information/Requested_information_dcas.qmd
-            - Requested-Information/Requested_information_hosting.qmd
+            - Guidance/Requested_information_code
+            - Guidance/Requested_information_data
+            - Guidance/Data_citation_guide
+            - Guidance/addtl-data-citation-guidance
+            - Guidance/guidance-reproducible-gis-analysis
+            - Guidance/docker-guidelines
+            - Guidance/Licensing_guidance
+            - Guidance/Requested_information_dcas
+            - Guidance/Requested_information_hosting
+        - section: Verification/Verification_guidance
         - section: "Samples"
           contents:
-            - Samples/sample-depositing-data-for-greater-good.qmd
-            - Samples/sample-information-data.qmd
-            - Samples/sample-report.qmd
+            - Samples/sample-depositing-data-for-greater-good
+            - Samples/sample-information-data
+            - Samples/sample-report
         - section: "Templates"
           contents:
-            - Templates/template-README.qmd
-            - Templates/template_inquiry_about_DOI_by_editor.qmd
+            - Templates/template-README
+            - Templates/template_inquiry_about_DOI_by_editor
         - section: "Other"
           contents:
-            - Other/DCAS_Commercial_data.qmd
-            - Other/DCAS_Restricted_data.qmd
-            - Other/data-editors-guild-charter.qmd
+            - Other/DCAS_Commercial_data
+            - Other/DCAS_Restricted_data
+            - Other/data-editors-guild-charter
 
 format:
   html:

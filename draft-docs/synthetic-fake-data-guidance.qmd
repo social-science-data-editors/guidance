@@ -1,0 +1,7 @@
+# For now, a collection of things
+
+https://rviews.rstudio.com/2020/09/09/fake-data-with-r/
+
+https://synthpop.org.uk/
+
+More?
