@@ -4,7 +4,12 @@
     "href": "Other/DCAS_Restricted_data.html",
     "title": "Data Availability Statements for Restricted Data",
     "section": "",
-    "text": "On this page, we list a few commonly used lightly or heavily restricted data and their data availability statements or licenses, when these are not otherwise easily available. Often, the only restriction is a requirement to not redistribute, and to cite.\nThis page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or create a pull request.\n\nIPUMS\nIPUMS data are subject to varying usage restrictions. You can find a comprehensive overview of the distribution restrictions at https://ipums.org/about/terms, please consult with IPUMS directly (at ipums@umn.edu) should you have any doubts.\nIPUMS USA Registration page states &gt; IPUMS USA data are available free of charge. Before using the data, researchers must complete this registration and agree to abide by the usage license specified below. […] &gt; &gt; IPUMS USA Usage License &gt; &gt; By completing this registration, you agree to the following terms of use. &gt; - Redistribution: You will not redistribute the data without permission. &gt; - You may not redistribute any data from IPUMS-USA Full Count data. &gt; - For IPUMS-USA Sample data, you may publish a subset of the data to meet journal requirements for accessing data related to a particular publication. &gt; Contact us for permission for any other redistribution of IPUMS-USA Sample data; we will consider requests for free and commercial redistribution. &gt; - Cite the IPUMS USA data appropriately. For information on proper citation refer to citation and use. Publications and research reports making use of IPUMS USA should be added to our Bibliography.\nIPUMS USA “Citation and Use” page states: &gt; The licensing agreement for use of IPUMS USA data requires that users supply us with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation.\n\n\nUS Census Bureau and FSRDC\nAdapted from Fort (2016), Supplementary data (see also the Sample RADC statement)\n\nTo reproduce the tables and figures in the paper: 1. All the results in the paper use confidential microdata from the U.S. Census Bureau. To gain access to the Census microdata, follow the directions here on how to write a proposal for access to the data via a Federal Statistical Research Data Center: https://www.census.gov/ces/rdcresearch/howtoapply.html. 2. You must request the following datasets in your proposal: - Longitudinal Business Database (LBD), 2002 and 2007 - Foreign Trade Database – Import (IMP), 2002 and 2007 - Annual Survey of Manufactures (ASM), including the Computer Network Use Supplement (CNUS), 1999 - […] - Annual Survey of Magical Inputs (ASMI), 2002 and 2007 3. Reference “Technology and Production Fragmentation: Domestic versus Foreign Sourcing” by Teresa Fort, project number br1179 in the proposal. This will give you access to the programs and input datasets required to reproduce the results. Requesting a search of archives with the articles DOI (“10.1093/restud/rdw057”) should yield the same results.\nNOTE: Project-related files are available for 10 years as of 2015.\n\nSample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on Zotero.org and on Github.\nIn cases where intermediate files (programs or datasets) remain within the secure environment, an authorization (a “license”) might be added to the DCAS. Such an authorization by the author grants others access to and use of such files, subject to any data custodian requirements.\n\nExample of a author granting license for files in secure environment.\n\n\n\nNBER-CES Manufacturing Database\nThe NBER-CES Manufactuing Database does not have an explicit license. It may be in the public domain, since U.S. Government employees co-created it as part of their official duties. Nevertheless, the database should be cited, as well as the working paper associated with it.\nThe files should be cited as “NBER-CES Manufacturing Industry Database (1958-2011)”. You should also cite the earlier working paper as documentation. Please cite these in the manuscript. As per the NBER website,\n\n“We ask that this data not be forwarded on to others. Instead, please refer interested parties to this website.”\n\n\n\nTAXSIM\nTAXSIM is maintained by Daniel Feenberg at the NBER. Those who use its output should probably cite Daniel Feenberg as the author. Note citation request on URL referenced:\n\n\nFeenberg, Daniel Richard, and Elizabeth Coutts, An Introduction to the TAXSIM Model, Journal of Policy Analysis and Management vol 12 no 1, Winter 1993, pages 189-194.\n\n\n\n\nThis paper and this URL (https://www.nber.org/~taxsim) should be cited if any results from TAXSIM are circulated or published.\n\n\n\n\nState or Provincial Data Access\nThe following example is for Massachusetts, but similar data availability statements may be crafted for various other datasets provided by state, provincial, municipal, etc. data providers:\n\nThe data for this project are confidential, but may be obtained with Data Use Agreements with the Massachusetts Department of Elementary and Secondary Education (DESE). Researchers interested in access to the data may contact [NAME] at [EMAIL], also see www.doe.mass.edu/research/contact.html. It can take some months to negotiate data use agreements and gain access to the data. The author will assist with any reasonable replication attempts for two years following publication."
+    "text": "On this page, we list a few commonly used lightly or heavily restricted data and their data availability statements or licenses, when these are not otherwise easily available. Often, the only restriction is a requirement to not redistribute, and to cite.\nThis page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or create a pull request.\n\nIPUMS\nIPUMS data are subject to varying usage restrictions. You can find a comprehensive overview of the distribution restrictions at https://ipums.org/about/terms, please consult with IPUMS directly (at ipums@umn.edu) should you have any doubts.\nIPUMS USA Registration page states &gt; IPUMS USA data are available free of charge. Before using the data, researchers must complete this registration and agree to abide by the usage license specified below. […] &gt; &gt; IPUMS USA Usage License &gt; &gt; By completing this registration, you agree to the following terms of use. &gt; - Redistribution: You will not redistribute the data without permission. &gt; - You may not redistribute any data from IPUMS-USA Full Count data. &gt; - For IPUMS-USA Sample data, you may publish a subset of the data to meet journal requirements for accessing data related to a particular publication. &gt; Contact us for permission for any other redistribution of IPUMS-USA Sample data; we will consider requests for free and commercial redistribution. &gt; - Cite the IPUMS USA data appropriately. For information on proper citation refer to citation and use. Publications and research reports making use of IPUMS USA should be added to our Bibliography.\nIPUMS USA “Citation and Use” page states: &gt; The licensing agreement for use of IPUMS USA data requires that users supply us with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation.\n\n\nUS Census Bureau and FSRDC\nAdapted from Fort (2016), Supplementary data (see also the Sample RADC statement)\n\nTo reproduce the tables and figures in the paper: 1. All the results in the paper use confidential microdata from the U.S. Census Bureau. To gain access to the Census microdata, follow the directions here on how to write a proposal for access to the data via a Federal Statistical Research Data Center: https://www.census.gov/ces/rdcresearch/howtoapply.html. 2. You must request the following datasets in your proposal: - Longitudinal Business Database (LBD), 2002 and 2007 - Foreign Trade Database – Import (IMP), 2002 and 2007 - Annual Survey of Manufactures (ASM), including the Computer Network Use Supplement (CNUS), 1999 - […] - Annual Survey of Magical Inputs (ASMI), 2002 and 2007 3. Reference “Technology and Production Fragmentation: Domestic versus Foreign Sourcing” by Teresa Fort, project number br1179 in the proposal. This will give you access to the programs and input datasets required to reproduce the results. Requesting a search of archives with the articles DOI (“10.1093/restud/rdw057”) should yield the same results.\nNOTE: Project-related files are available for 10 years as of 2015.\n\nSample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on Zotero.org and on Github.\nIn cases where intermediate files (programs or datasets) remain within the secure environment, an authorization (a “license”) might be added to the DCAS. Such an authorization by the author grants others access to and use of such files, subject to any data custodian requirements.\n\nExample of a author granting license for files in secure environment.\n\n\n\nNBER-CES Manufacturing Database\nThe NBER-CES Manufactuing Database does not have an explicit license. It may be in the public domain, since U.S. Government employees co-created it as part of their official duties. Nevertheless, the database should be cited, as well as the working paper associated with it.\nThe files should be cited as “NBER-CES Manufacturing Industry Database (1958-2011)”. You should also cite the earlier working paper as documentation. Please cite these in the manuscript. As per the NBER website,\n\n“We ask that this data not be forwarded on to others. Instead, please refer interested parties to this website.”\n\n\n\nTAXSIM\nTAXSIM is maintained by Daniel Feenberg at the NBER. Those who use its output should probably cite Daniel Feenberg as the author. Note citation request on URL referenced:\n\n\nFeenberg, Daniel Richard, and Elizabeth Coutts, An Introduction to the TAXSIM Model, Journal of Policy Analysis and Management vol 12 no 1, Winter 1993, pages 189-194.\n\n\n\n\nThis paper and this URL (https://www.nber.org/~taxsim) should be cited if any results from TAXSIM are circulated or published.\n\n\n\n\nState or Provincial Data Access\nThe following example is for Massachusetts, but similar data availability statements may be crafted for various other datasets provided by state, provincial, municipal, etc. data providers:\n\nThe data for this project are confidential, but may be obtained with Data Use Agreements with the Massachusetts Department of Elementary and Secondary Education (DESE). Researchers interested in access to the data may contact [NAME] at [EMAIL], also see www.doe.mass.edu/research/contact.html. It can take some months to negotiate data use agreements and gain access to the data. The author will assist with any reasonable replication attempts for two years following publication.",
+    "crumbs": [
+      "Guidance",
+      "Other",
+      "Data Availability Statements for Restricted Data"
+    ]
   },
   {
     "objectID": "Other/FAQ.html",
@@ -18,7 +23,12 @@
     "href": "Templates/template_inquiry_about_DOI_by_editor.html",
     "title": "Template Inquiry about DOI",
     "section": "",
-    "text": "(This template can be used by the Data Editor to contact data providers)\nDear [name],\nthe American Economic Association has a data and code availability policy that applies to researchers who submit articles for publication to our journals. Inter alia, this policy requests that authors provide accurate and persistent information about how other researchers can find and access data, whether that data be created by the authors or by third parties. Elements of such information are persistent URLs or Digital Object Identifiers (DOI), description of access conditions, and terms of use.\nOne of our authors has used your data, and we are inquiring about any such information you could provide either to us or to authors upon request. We are looking for - DOI for specific datasets or files - URLs or DOI pointing to licenses (or, if the files are license-free, a statement to that effect) - URLs or DOI pointing to terms of use - the conditions under which researchers may use and possibly republish the data (this may be the same as the license) - URLs, DOI, or information regarding how long you will maintain the datasets you make available If you have such information available, we would be grateful if you could point us in the right direction. If you do not yet have such information, any plans you might have would be of interest to us.\nThis is a new initiative at the AEA, and we understand that historically, much of what we are looking for above was not part of standard practice in our research community. We are trying to improve the overall transparency and thus reproducible of economics, and this is part of that effort.\nI would be available to discuss this further with you and your institution.\nSincerely,\nData Editor of the American Economic Association"
+    "text": "(This template can be used by the Data Editor to contact data providers)\nDear [name],\nthe American Economic Association has a data and code availability policy that applies to researchers who submit articles for publication to our journals. Inter alia, this policy requests that authors provide accurate and persistent information about how other researchers can find and access data, whether that data be created by the authors or by third parties. Elements of such information are persistent URLs or Digital Object Identifiers (DOI), description of access conditions, and terms of use.\nOne of our authors has used your data, and we are inquiring about any such information you could provide either to us or to authors upon request. We are looking for - DOI for specific datasets or files - URLs or DOI pointing to licenses (or, if the files are license-free, a statement to that effect) - URLs or DOI pointing to terms of use - the conditions under which researchers may use and possibly republish the data (this may be the same as the license) - URLs, DOI, or information regarding how long you will maintain the datasets you make available If you have such information available, we would be grateful if you could point us in the right direction. If you do not yet have such information, any plans you might have would be of interest to us.\nThis is a new initiative at the AEA, and we understand that historically, much of what we are looking for above was not part of standard practice in our research community. We are trying to improve the overall transparency and thus reproducible of economics, and this is part of that effort.\nI would be available to discuss this further with you and your institution.\nSincerely,\nData Editor of the American Economic Association",
+    "crumbs": [
+      "Guidance",
+      "Templates",
+      "Template Inquiry about DOI"
+    ]
   },
   {
     "objectID": "LICENSE.html",
@@ -213,84 +223,144 @@
     "href": "Samples/sample-depositing-data-for-greater-good.html",
     "title": "Depositing Data for the Greater Good",
     "section": "",
-    "text": "Sometimes, it is worthwhile to not convolute a particular useful dataset within a replication package. Pulling it out, depositing it in its own right, is easy, and yields much greater findability through search engines such as ICPSR or Google Dataset Search.\nThe approach is relatively simple.\n\nChoose a repository\nChoose any one of the open trusted repositories (see our document on data and code hosting). You want to maximize findability, but also credit.\nNotes:\n\nFor US government data, datalumos.org is a site that “rescues” data, but it obfuscates a bit the contribution of the author.\n\nFor instance, I deposited this data at datalumos.org: but my contribution is not visible. It might be possible to add your name to the “Collection Notes” or similar. Not ideal.\nGenerically, you can achieve great findability of Census Bureau data by using one of the ICPSR properties, in this case probably openICPSR (similar to, but distinct from your AEA deposit).\n\nSome examples are given in our document on data and code hosting.\nIf you are at an ICPSR member institution, or have a forthcoming paper in the AEA journals, you may submit to ICPSR, including leveraging the expertise of their professional data curation team.\n\n\n\nDeposit the data and fill out metadata\n\nFill out the title and other things.\n\nChoose a title that emulates the title for the official (digital-first). For instance, if you were to deposit historical files for the U.S. Economic Census, you would emulate Census Bureau publications, either per year (1987 Economic Census) or collected (Historical Economic Census).\n\nBe sure to add yourself as the “Principal Investigator”\nFill out as much as you can about the metadata.\nFor “Collection Notes”, describe accurately where the files come from, and what you did to them to make them usable.\nIf you still have them, also upload the original formats, in addition to any converted files.\n\n\n\nGoing an additional extra mile\n\nIf you wish, check with one of the data librarians at your institution to dot the is and cross the ts.\n\n\n\nAdd related publication\nIf the chosen repository allows to do this, add your own publication (which uses and/or documents the data) as a related publication.\n\n\nHit publish. Get DOI.\n\n\nCite DOI\nCite the data (via the DOI) in your article (Author, 2020: Historical Widget data for the United States, https://doi.org/1.2/3….)"
+    "text": "Sometimes, it is worthwhile to not convolute a particular useful dataset within a replication package. Pulling it out, depositing it in its own right, is easy, and yields much greater findability through search engines such as ICPSR or Google Dataset Search.\nThe approach is relatively simple.\n\nChoose a repository\nChoose any one of the open trusted repositories (see our document on data and code hosting). You want to maximize findability, but also credit.\nNotes:\n\nFor US government data, datalumos.org is a site that “rescues” data, but it obfuscates a bit the contribution of the author.\n\nFor instance, I deposited this data at datalumos.org: but my contribution is not visible. It might be possible to add your name to the “Collection Notes” or similar. Not ideal.\nGenerically, you can achieve great findability of Census Bureau data by using one of the ICPSR properties, in this case probably openICPSR (similar to, but distinct from your AEA deposit).\n\nSome examples are given in our document on data and code hosting.\nIf you are at an ICPSR member institution, or have a forthcoming paper in the AEA journals, you may submit to ICPSR, including leveraging the expertise of their professional data curation team.\n\n\n\nDeposit the data and fill out metadata\n\nFill out the title and other things.\n\nChoose a title that emulates the title for the official (digital-first). For instance, if you were to deposit historical files for the U.S. Economic Census, you would emulate Census Bureau publications, either per year (1987 Economic Census) or collected (Historical Economic Census).\n\nBe sure to add yourself as the “Principal Investigator”\nFill out as much as you can about the metadata.\nFor “Collection Notes”, describe accurately where the files come from, and what you did to them to make them usable.\nIf you still have them, also upload the original formats, in addition to any converted files.\n\n\n\nGoing an additional extra mile\n\nIf you wish, check with one of the data librarians at your institution to dot the is and cross the ts.\n\n\n\nAdd related publication\nIf the chosen repository allows to do this, add your own publication (which uses and/or documents the data) as a related publication.\n\n\nHit publish. Get DOI.\n\n\nCite DOI\nCite the data (via the DOI) in your article (Author, 2020: Historical Widget data for the United States, https://doi.org/1.2/3….)",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "Depositing Data for the Greater Good"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html",
     "href": "Samples/sample-report.html",
     "title": "README file",
     "section": "",
-    "text": "Key: [ISSUE-N] Replication report for [AUTHORS] “[TITLE]”"
+    "text": "Key: [ISSUE-N] Replication report for [AUTHORS] “[TITLE]”",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#general-notes",
     "href": "Samples/sample-report.html#general-notes",
     "title": "README file",
     "section": "General notes",
-    "text": "General notes\nNumerous changes to path names were necessary in the individual programs in order to be able to run the code and produce output.\nSUGGESTION: It may be helpful to set up a configuration file and include it at the top of the master programs.\nPrograms to generate Figures A11-A13 were not provided. Note that this is required by journal’s Data Availability Policy.\nSUGGESTION: Please add the missing programs."
+    "text": "General notes\nNumerous changes to path names were necessary in the individual programs in order to be able to run the code and produce output.\nSUGGESTION: It may be helpful to set up a configuration file and include it at the top of the master programs.\nPrograms to generate Figures A11-A13 were not provided. Note that this is required by journal’s Data Availability Policy.\nSUGGESTION: Please add the missing programs.",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#installation-of-dependencies",
     "href": "Samples/sample-report.html#installation-of-dependencies",
     "title": "README file",
     "section": "Installation of Dependencies",
-    "text": "Installation of Dependencies\nIn addition to the installations mentioned in the ReadMe, I also had to install other software for the following programs to run:\n\ntable5.do required me to install the command “estout”\nfigure1_2.do required me to install the command “coefplot”\nmaster_appendix_tables required me to install the command “ftools”\n\nThese installations would be helpful to either include in the code or make note of in the Readme\nSUGGESTION: Provide a single “setup” program that installs all identified dependencies."
+    "text": "Installation of Dependencies\nIn addition to the installations mentioned in the ReadMe, I also had to install other software for the following programs to run:\n\ntable5.do required me to install the command “estout”\nfigure1_2.do required me to install the command “coefplot”\nmaster_appendix_tables required me to install the command “ftools”\n\nThese installations would be helpful to either include in the code or make note of in the Readme\nSUGGESTION: Provide a single “setup” program that installs all identified dependencies.",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#configuration",
     "href": "Samples/sample-report.html#configuration",
     "title": "README file",
     "section": "Configuration:",
-    "text": "Configuration:\n\ntable3.do required me to set matsize 11000; this could be helpful to either change in the code or note in the Readme"
+    "text": "Configuration:\n\ntable3.do required me to set matsize 11000; this could be helpful to either change in the code or note in the Readme",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#problems-encountered",
     "href": "Samples/sample-report.html#problems-encountered",
     "title": "README file",
     "section": "Problems encountered",
-    "text": "Problems encountered\nPrograms that Failed to Run: - There was an issue with appendix_table11.do that stopped it from running to completion: 1. The matsize was too small, so I wrote “set matsize 11000” 2. The code threw the error “child_age not found” on line 204, preventing the program from running to completion"
+    "text": "Problems encountered\nPrograms that Failed to Run: - There was an issue with appendix_table11.do that stopped it from running to completion: 1. The matsize was too small, so I wrote “set matsize 11000” 2. The code threw the error “child_age not found” on line 204, preventing the program from running to completion",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#article-figures",
     "href": "Samples/sample-report.html#article-figures",
     "title": "README file",
     "section": "Article Figures",
-    "text": "Article Figures\n\nFigure 1: created by master_figures.do and figure1_2.do, figures look the same\nFigure 2: created by master_figures.do and figure1_2.do, figures look the same\nFigure 3: created by master_figures and figure3.do, figures look the same"
+    "text": "Article Figures\n\nFigure 1: created by master_figures.do and figure1_2.do, figures look the same\nFigure 2: created by master_figures.do and figure1_2.do, figures look the same\nFigure 3: created by master_figures and figure3.do, figures look the same",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#appendix-figures",
     "href": "Samples/sample-report.html#appendix-figures",
     "title": "README file",
     "section": "Appendix Figures",
-    "text": "Appendix Figures\n\nFigure A2: created by master_appendix_figures.do and appendix_figure2.do, figures look the same\nFigure A3: created by master_appendix_figures.do and appendix_figure3.do, figures look the same\nFigure A4: no program provided\nFigures A11-A13: no programs provided because of restricted data"
+    "text": "Appendix Figures\n\nFigure A2: created by master_appendix_figures.do and appendix_figure2.do, figures look the same\nFigure A3: created by master_appendix_figures.do and appendix_figure3.do, figures look the same\nFigure A4: no program provided\nFigures A11-A13: no programs provided because of restricted data",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#article-tables",
     "href": "Samples/sample-report.html#article-tables",
     "title": "README file",
     "section": "Article Tables",
-    "text": "Article Tables\n\nTable 1: created by master_tables.do and table1.do, visual inspection of numbers made, all numbers match\nTable 2: created by master_tables.do and table9.do, visual inspection of numbers made: Discrepancies: Column 2, Row 1 of article: The standard error generated by the code is 0.046, while the article has a standard error of 0.763"
+    "text": "Article Tables\n\nTable 1: created by master_tables.do and table1.do, visual inspection of numbers made, all numbers match\nTable 2: created by master_tables.do and table9.do, visual inspection of numbers made: Discrepancies: Column 2, Row 1 of article: The standard error generated by the code is 0.046, while the article has a standard error of 0.763",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-report.html#appendix-tables",
     "href": "Samples/sample-report.html#appendix-tables",
     "title": "README file",
     "section": "Appendix Tables",
-    "text": "Appendix Tables\n\nTable A1: created by master_appendix_tables.do and appendix_table1.do, visual inspection of numbers made: Discrepancies: Column 4, Row 20 of article: The value generated by the code is 0.338, while the article has a value of 0.388\nTable A2: created by master_appendix_tables.do and appendix_table2.do, visual inspection of numbers made: Discrepancies: Column 2, Row 4 of article: The standard error generated by the code is 0.067, the article has a standard error of 0.090 Column 4, Row 4 of article: The standard error generated by the code is 0.086, the article has a standard error of 0.115 Column 6, Row 4 of article: The standard error generated by the code is 0.063, the article has a standard error of 0.085 Column 2, Row 6 of article: The standard error generated by the code is 0.224, the article has a standard error of 0.300 Column 4, Row 6 of article: The standard error generated by the code is 0.214, the article has a standard error of 0.288 [10 more lines with discrepancies]"
+    "text": "Appendix Tables\n\nTable A1: created by master_appendix_tables.do and appendix_table1.do, visual inspection of numbers made: Discrepancies: Column 4, Row 20 of article: The value generated by the code is 0.338, while the article has a value of 0.388\nTable A2: created by master_appendix_tables.do and appendix_table2.do, visual inspection of numbers made: Discrepancies: Column 2, Row 4 of article: The standard error generated by the code is 0.067, the article has a standard error of 0.090 Column 4, Row 4 of article: The standard error generated by the code is 0.086, the article has a standard error of 0.115 Column 6, Row 4 of article: The standard error generated by the code is 0.063, the article has a standard error of 0.085 Column 2, Row 6 of article: The standard error generated by the code is 0.224, the article has a standard error of 0.300 Column 4, Row 6 of article: The standard error generated by the code is 0.214, the article has a standard error of 0.288 [10 more lines with discrepancies]",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "README file"
+    ]
   },
   {
     "objectID": "Samples/sample-information-data.html",
     "href": "Samples/sample-information-data.html",
     "title": "{{< var ssde.web_name >}}",
     "section": "",
-    "text": "In Stata,the native ‘codebook’ command can generate such information:\n// Stata\nuse my_input_data\ndescribe\ncodebook\nSee code/01_codebook_fancy.md for a fancier example, and code/02_codebook_plaintext.md for the code and output from the simpler example.\n\n\n\nIn R, the dataMaid [1], [2] can accomplish a similar task:\n# use the    dataMaid   package\nlibrary(dataMaid)\nmakeCodebook(my_input_data)\nSee code/03_codebook_dataMaid for an example.\n\n\n\nIn SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:\nproc contents;\nproc means;\nrun;\nSee code/04_codebook_SAS for an example."
+    "text": "In Stata,the native ‘codebook’ command can generate such information:\n// Stata\nuse my_input_data\ndescribe\ncodebook\nSee code/01_codebook_fancy.md for a fancier example, and code/02_codebook_plaintext.md for the code and output from the simpler example.\n\n\n\nIn R, the dataMaid [1], [2] can accomplish a similar task:\n# use the    dataMaid   package\nlibrary(dataMaid)\nmakeCodebook(my_input_data)\nSee code/03_codebook_dataMaid for an example.\n\n\n\nIn SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:\nproc contents;\nproc means;\nrun;\nSee code/04_codebook_SAS for an example.",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "Sample code to generate descriptive statistics"
+    ]
   },
   {
     "objectID": "Samples/sample-information-data.html#sample-code-to-generate-descriptive-statistics",
     "href": "Samples/sample-information-data.html#sample-code-to-generate-descriptive-statistics",
     "title": "{{< var ssde.web_name >}}",
     "section": "",
-    "text": "In Stata,the native ‘codebook’ command can generate such information:\n// Stata\nuse my_input_data\ndescribe\ncodebook\nSee code/01_codebook_fancy.md for a fancier example, and code/02_codebook_plaintext.md for the code and output from the simpler example.\n\n\n\nIn R, the dataMaid [1], [2] can accomplish a similar task:\n# use the    dataMaid   package\nlibrary(dataMaid)\nmakeCodebook(my_input_data)\nSee code/03_codebook_dataMaid for an example.\n\n\n\nIn SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:\nproc contents;\nproc means;\nrun;\nSee code/04_codebook_SAS for an example."
+    "text": "In Stata,the native ‘codebook’ command can generate such information:\n// Stata\nuse my_input_data\ndescribe\ncodebook\nSee code/01_codebook_fancy.md for a fancier example, and code/02_codebook_plaintext.md for the code and output from the simpler example.\n\n\n\nIn R, the dataMaid [1], [2] can accomplish a similar task:\n# use the    dataMaid   package\nlibrary(dataMaid)\nmakeCodebook(my_input_data)\nSee code/03_codebook_dataMaid for an example.\n\n\n\nIn SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:\nproc contents;\nproc means;\nrun;\nSee code/04_codebook_SAS for an example.",
+    "crumbs": [
+      "Guidance",
+      "Samples",
+      "Sample code to generate descriptive statistics"
+    ]
   },
   {
     "objectID": "Samples/samples/sample-request-for-publication-provider.html",
@@ -623,34 +693,59 @@
     "href": "Templates/template-README.html",
     "title": "Template README",
     "section": "",
-    "text": "&lt;!DOCTYPE html&gt;\n\n\n\n\nRedirecting to Template README\n\n\n\n\n\n\nIf you are not redirected automatically, follow this link to the Template README."
+    "text": "&lt;!DOCTYPE html&gt;\n\n\n\n\nRedirecting to Template README\n\n\n\n\n\n\nIf you are not redirected automatically, follow this link to the Template README.",
+    "crumbs": [
+      "Guidance",
+      "Templates",
+      "Template README"
+    ]
   },
   {
     "objectID": "Other/data-editors-guild-charter.html",
     "href": "Other/data-editors-guild-charter.html",
     "title": "Draft “Charter” for the “Data Editors Guild”",
     "section": "",
-    "text": "Multiple journals are appointing data editors, with varying scope of activity and work. This working group (“the guild”) is a loose association of such data editors, which will discuss and collaborate on\n\nfeasible requirements for reproducibility at journals\ncoordination of standards across journals\ncommon guidance to authors on how to comply with those standards\n\nThe guild is open to any current or past data editor, managing editor, or editor responsible for data and computational topics of journals and associations. The group may invite others as appropriate."
+    "text": "Multiple journals are appointing data editors, with varying scope of activity and work. This working group (“the guild”) is a loose association of such data editors, which will discuss and collaborate on\n\nfeasible requirements for reproducibility at journals\ncoordination of standards across journals\ncommon guidance to authors on how to comply with those standards\n\nThe guild is open to any current or past data editor, managing editor, or editor responsible for data and computational topics of journals and associations. The group may invite others as appropriate.",
+    "crumbs": [
+      "Guidance",
+      "Other",
+      "Draft \"Charter\" for the \"Data Editors Guild\""
+    ]
   },
   {
     "objectID": "Other/data-editors-guild-charter.html#documentation-on-the-web",
     "href": "Other/data-editors-guild-charter.html#documentation-on-the-web",
     "title": "Draft “Charter” for the “Data Editors Guild”",
     "section": "Documentation on the Web",
-    "text": "Documentation on the Web\n\nAEA\nRestud\nEconometric Journal"
+    "text": "Documentation on the Web\n\nAEA\nRestud\nEconometric Journal",
+    "crumbs": [
+      "Guidance",
+      "Other",
+      "Draft \"Charter\" for the \"Data Editors Guild\""
+    ]
   },
   {
     "objectID": "Other/data-editors-guild-charter.html#make-this-document-formal",
     "href": "Other/data-editors-guild-charter.html#make-this-document-formal",
     "title": "Draft “Charter” for the “Data Editors Guild”",
     "section": "Make this document formal",
-    "text": "Make this document formal\n\nAt this point, this document is a draft. It needs to be made formal."
+    "text": "Make this document formal\n\nAt this point, this document is a draft. It needs to be made formal.",
+    "crumbs": [
+      "Guidance",
+      "Other",
+      "Draft \"Charter\" for the \"Data Editors Guild\""
+    ]
   },
   {
     "objectID": "Other/DCAS_Commercial_data.html",
     "href": "Other/DCAS_Commercial_data.html",
     "title": "Data Availability Statements for Commercial Data",
     "section": "",
-    "text": "Many economics papers use data from individual private companies, as well as from commercial data aggregators. Generally, these data cannot be redistributed by the author of a paper. Usage rights must be acquired from the original provider. This is not dissimilar from restricted data from statistical agencies, though there is significantly more variation in access procedures and cost.\nThis page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or create a pull request.\n\nNOTE: Nothing on this page should be construed as official or legal advice. Always consult with your data provider.\n\n\nCompustat®\nCompustat data is often used in macroeconomic or industrial organization papers. Compustat is owned by S&P Global.\n\nData access description: Researchers can subscribe to the data. Many universities and research institutions have such a subscription.\nURL with more info on data access: https://www.spglobal.com/marketintelligence/en/client-segments/academia\nPossible Data Access Statement (no guarantees): &gt; Compustat is owned by S&P Global. Researchers can subscribe to the data. Many universities and research institutions have such a subscription. More info on data access for academia can be found at https://www.spglobal.com/marketintelligence/en/client-segments/academia .\nAbility to redistribute extracts: Unknown\nAbility to redistribute aggregated data: Unknown\nExamples in the literature:\n\nTo come (create a pull request)\n\n\n\n\nNielsen\nThe Nielsen Company provides various datasets through the Chicago Booth’s Kilts Center for Marketing.\n\nData access description: Researchers can subscribe to the data through the Kilts Center. There is a cost.\nAs per the Kilts Center’s policies (https://www.chicagobooth.edu/research/kilts/datasets/nielsen/policies), presentations, papers, and publications must include the following citation:\n\n\n“Researcher(s) own analyses calculated (or derived) based in part on data from The Nielsen Company (US), LLC and marketing databases provided through the Nielsen Datasets at the Kilts Center for Marketing Data Center at The University of Chicago Booth School of Business.”\n\n\n“The conclusions drawn from the Nielsen data are those of the researcher(s) and do not reflect the views of Nielsen. Nielsen is not responsible for, had no role in, and was not involved in analyzing and preparing the results reported herein.”\n\nAdding those paragraphs into the title page footnote has been found to be sufficient in past papers (see Kilts Center SSRN).\n\nAbility to redistribute extracts: Unknown\nAbility to redistribute aggregated data: Unknown\n\n\nExamples in the literature:\n\nTo come (create a pull request)\n\n\n\n\nS&P 500\nThe S&P 500 is one of the most widely known stock indexes. And yet, it is subject to copyright, and restrictions on redistribution.\nMany authors who use the S&P 500 numbers may have downloaded it via FRED https://fred.stlouisfed.org/series/SP500 or through other data services (Haver Analytics, Bloomberg).The FRED website mentions that the data are\n\n\nS&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC (“S&P”).\n\n\nIt seems to be possible to request permission to distribute the extracts, using this form, or by sending email to\nMost analyses will have a longer historical time horizon than the 10 years available through FRED, but will publish with a typical lag of 15-20 months.\n\nCitation\nIf obtained through FRED, the suggested citation is\n\nS&P Dow Jones Indices LLC, S&P 500 [SP500], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, January 24, 2020.\n\nAn analogue if accessing it through, say, Haver Analytics, might be\n\nS&P Dow Jones Indices LLC, S&P 500, provided via Haver Analytics, January 24, 2020.\n\n\n\nData Availability Statement\n\nS&P 500 data is (C) S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC (“S&P”). It is thus not available as part of the replication archive. Users may access the past 10 years via FRED at https://fred.stlouisfed.org/series/SP500, or purchase longer access via Haver Analytics (http://www.haver.com/databaseprofiles.html#indicators). Note that reproduction of our manuscript’s tables requires data from [YYYY]-[ZZZZ].\n\n\n\nExamples in the literature:\n\nTo come (create a pull request)\n\n\n\n\nEthnologue data\n\nThe Ethnologue database contains maps and other information on languages in the world. Subscriptions are available at https://www.ethnologue.com/pricing. Academic rebates are available.\n\nEthnologue have been known to provide permission to redistribute extracts for the purposes of replication.\n\nCitation\n\nEberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. Ethnologue: Languages of the World. Twenty-second edition. Dallas, Texas: SIL International. Online version: http://www.ethnologue.com\n\n\n\nExamples in the literature:\n\nTo come (create a pull request)"
+    "text": "Many economics papers use data from individual private companies, as well as from commercial data aggregators. Generally, these data cannot be redistributed by the author of a paper. Usage rights must be acquired from the original provider. This is not dissimilar from restricted data from statistical agencies, though there is significantly more variation in access procedures and cost.\nThis page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or create a pull request.\n\nNOTE: Nothing on this page should be construed as official or legal advice. Always consult with your data provider.\n\n\nCompustat®\nCompustat data is often used in macroeconomic or industrial organization papers. Compustat is owned by S&P Global.\n\nData access description: Researchers can subscribe to the data. Many universities and research institutions have such a subscription.\nURL with more info on data access: https://www.spglobal.com/marketintelligence/en/client-segments/academia\nPossible Data Access Statement (no guarantees): &gt; Compustat is owned by S&P Global. Researchers can subscribe to the data. Many universities and research institutions have such a subscription. More info on data access for academia can be found at https://www.spglobal.com/marketintelligence/en/client-segments/academia .\nAbility to redistribute extracts: Unknown\nAbility to redistribute aggregated data: Unknown\nExamples in the literature:\n\nTo come (create a pull request)\n\n\n\n\nNielsen\nThe Nielsen Company provides various datasets through the Chicago Booth’s Kilts Center for Marketing.\n\nData access description: Researchers can subscribe to the data through the Kilts Center. There is a cost.\nAs per the Kilts Center’s policies (https://www.chicagobooth.edu/research/kilts/datasets/nielsen/policies), presentations, papers, and publications must include the following citation:\n\n\n“Researcher(s) own analyses calculated (or derived) based in part on data from The Nielsen Company (US), LLC and marketing databases provided through the Nielsen Datasets at the Kilts Center for Marketing Data Center at The University of Chicago Booth School of Business.”\n\n\n“The conclusions drawn from the Nielsen data are those of the researcher(s) and do not reflect the views of Nielsen. Nielsen is not responsible for, had no role in, and was not involved in analyzing and preparing the results reported herein.”\n\nAdding those paragraphs into the title page footnote has been found to be sufficient in past papers (see Kilts Center SSRN).\n\nAbility to redistribute extracts: Unknown\nAbility to redistribute aggregated data: Unknown\n\n\nExamples in the literature:\n\nTo come (create a pull request)\n\n\n\n\nS&P 500\nThe S&P 500 is one of the most widely known stock indexes. And yet, it is subject to copyright, and restrictions on redistribution.\nMany authors who use the S&P 500 numbers may have downloaded it via FRED https://fred.stlouisfed.org/series/SP500 or through other data services (Haver Analytics, Bloomberg).The FRED website mentions that the data are\n\n\nS&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC (“S&P”).\n\n\nIt seems to be possible to request permission to distribute the extracts, using this form, or by sending email to\nMost analyses will have a longer historical time horizon than the 10 years available through FRED, but will publish with a typical lag of 15-20 months.\n\nCitation\nIf obtained through FRED, the suggested citation is\n\nS&P Dow Jones Indices LLC, S&P 500 [SP500], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, January 24, 2020.\n\nAn analogue if accessing it through, say, Haver Analytics, might be\n\nS&P Dow Jones Indices LLC, S&P 500, provided via Haver Analytics, January 24, 2020.\n\n\n\nData Availability Statement\n\nS&P 500 data is (C) S&P Dow Jones Indices LLC. Reproduction of S&P 500 in any form is prohibited except with the prior written permission of S&P Dow Jones Indices LLC (“S&P”). It is thus not available as part of the replication archive. Users may access the past 10 years via FRED at https://fred.stlouisfed.org/series/SP500, or purchase longer access via Haver Analytics (http://www.haver.com/databaseprofiles.html#indicators). Note that reproduction of our manuscript’s tables requires data from [YYYY]-[ZZZZ].\n\n\n\nExamples in the literature:\n\nTo come (create a pull request)\n\n\n\n\nEthnologue data\n\nThe Ethnologue database contains maps and other information on languages in the world. Subscriptions are available at https://www.ethnologue.com/pricing. Academic rebates are available.\n\nEthnologue have been known to provide permission to redistribute extracts for the purposes of replication.\n\nCitation\n\nEberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. Ethnologue: Languages of the World. Twenty-second edition. Dallas, Texas: SIL International. Online version: http://www.ethnologue.com\n\n\n\nExamples in the literature:\n\nTo come (create a pull request)",
+    "crumbs": [
+      "Guidance",
+      "Other",
+      "Data Availability Statements for Commercial Data"
+    ]
   }
 ]
