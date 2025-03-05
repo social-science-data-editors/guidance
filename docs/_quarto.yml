@@ -69,7 +69,8 @@ website:
     collapse-level: 1
     contents:
     # default opens to index page.
-      - index
+      - text: Guidance
+        href: index.qmd
       - auto: Guidance
       - text: Verification
         href: Verification/Verification_guidance.qmd
