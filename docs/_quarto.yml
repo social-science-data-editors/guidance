@@ -76,20 +76,20 @@ website:
         href: Verification/Verification_guidance.qmd
       - section: "Samples"
         contents:
-          - Samples/sample-depositing-data-for-greater-good
-          - Samples/sample-information-data
-          - Samples/sample-report
+          - Samples/sample-depositing-data-for-greater-good.qmd
+          - Samples/sample-information-data.qmd
+          - Samples/sample-report.qmd
       - section: "Templates"
         contents:
-          - Templates/template-README
-          - Templates/template_inquiry_about_DOI_by_editor
+          - Templates/template-README.qmd
+          - Templates/template_inquiry_about_DOI_by_editor.qmd
       - text: "Journal Policies"
         href: journal-policies.qmd            
       - section: "Other"
         contents:
-          - Other/DCAS_Commercial_data
-          - Other/DCAS_Restricted_data
-          - Other/data-editors-guild-charter
+          - Other/DCAS_Commercial_data.qmd
+          - Other/DCAS_Restricted_data.qmd
+          - Other/data-editors-guild-charter.qmd
 
 format:
   html:
