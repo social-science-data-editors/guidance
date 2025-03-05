@@ -17,7 +17,7 @@ Details follow.
 
 ### Generic Diagram
 
-<div class="mermaid">
+```mermaid
 graph LR;
 subgraph "Data Provider";
 DB[(Data source)] ;
@@ -26,8 +26,7 @@ DB -.- E>Extract] -.-> A;
 subgraph Researcher;
 A((Input data)) --> B{Further analysis};
 end;
-</div>
-
+```
 
 ### Data description
 - Data citation:
@@ -149,4 +148,4 @@ If collecting data, consider early on the need to have just enough restrictions.
 
 Consider breaking your data archives into **manageable pieces**. For instance, raw data might be in a different location/repository/archive than the analysis data, even if you are providing access to both for the purpose of replication. Examples:
 
-> Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1 
+> Clemens, Michael, 2017, "Raw scanned PDFs of primary sources for workers, wages, and crops", https://doi.org/10.7910/DVN/DJHVHB, Harvard Dataverse, V1

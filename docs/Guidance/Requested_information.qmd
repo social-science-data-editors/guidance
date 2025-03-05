@@ -21,7 +21,7 @@ The following readings might be useful for structuring project, code, and data. 
 We will refer to a (simplified) data structure as described below. Real-life data structures are often more complex, and the distinctions made in the simplified example should be adapted accordingly.
 
 
-```mermaid
+```{mermaid}
 graph TD;
     subgraph Dataflow;
     A((Input data)) ==>  B[Cleaning programs];
