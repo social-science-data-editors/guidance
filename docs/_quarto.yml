@@ -66,44 +66,37 @@ website:
 
   sidebar:
     style: "floating"
-    collapse-level: 2
-    contents: auto
-    
-    # - title: "navigate"
-    #   search: true
-    #   style: "floating"
-    #   collapse-level: 1
-    #   contents:
-    #   # default opens to index page.
-    #     - section: index
-    #       contents:
-    #         - journal-policies            
-    #     - section: Guidance/Requested_information
-    #       contents:
-    #         - Guidance/Requested_information_code
-    #         - Guidance/Requested_information_data
-    #         - Guidance/Data_citation_guide
-    #         - Guidance/addtl-data-citation-guidance
-    #         - Guidance/guidance-reproducible-gis-analysis
-    #         - Guidance/docker-guidelines
-    #         - Guidance/Licensing_guidance
-    #         - Guidance/Requested_information_dcas
-    #         - Guidance/Requested_information_hosting
-    #     - section: Verification/Verification_guidance
-    #     - section: "Samples"
-    #       contents:
-    #         - Samples/sample-depositing-data-for-greater-good
-    #         - Samples/sample-information-data
-    #         - Samples/sample-report
-    #     - section: "Templates"
-    #       contents:
-    #         - Templates/template-README
-    #         - Templates/template_inquiry_about_DOI_by_editor
-    #     - section: "Other"
-    #       contents:
-    #         - Other/DCAS_Commercial_data
-    #         - Other/DCAS_Restricted_data
-    #         - Other/data-editors-guild-charter
+    collapse-level: 1
+    contents:
+    # default opens to index page.
+      - index
+      - journal-policies            
+      - section: Guidance/Requested_information
+        contents:
+          - Guidance/Requested_information_code
+          - Guidance/Requested_information_data
+          - Guidance/Data_citation_guide
+          - Guidance/addtl-data-citation-guidance
+          - Guidance/guidance-reproducible-gis-analysis
+          - Guidance/docker-guidelines
+          - Guidance/Licensing_guidance
+          - Guidance/Requested_information_dcas
+          - Guidance/Requested_information_hosting
+      - section: Verification/Verification_guidance
+      - section: "Samples"
+        contents:
+          - Samples/sample-depositing-data-for-greater-good
+          - Samples/sample-information-data
+          - Samples/sample-report
+      - section: "Templates"
+        contents:
+          - Templates/template-README
+          - Templates/template_inquiry_about_DOI_by_editor
+      - section: "Other"
+        contents:
+          - Other/DCAS_Commercial_data
+          - Other/DCAS_Restricted_data
+          - Other/data-editors-guild-charter
 
 format:
   html:
