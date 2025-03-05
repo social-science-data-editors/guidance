@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -376,8 +379,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="generic-diagram" class="level3">
 <h3 class="anchored" data-anchor-id="generic-diagram">Generic Diagram</h3>
-<div class="mermaid">
-<p>graph LR; subgraph “Data Provider”; DB[(Data source)] ; end; DB -.- E&gt;Extract] -.-&gt; A; subgraph Researcher; A((Input data)) –&gt; B{Further analysis}; end;</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR;
+subgraph "Data Provider";
+DB[(Data source)] ;
+end;
+DB -.- E&gt;Extract] -.-&gt; A;
+subgraph Researcher;
+A((Input data)) --&gt; B{Further analysis};
+end;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
 </div>
 </section>
 <section id="data-description" class="level3">

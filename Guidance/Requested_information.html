@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -375,7 +378,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="some-concepts" class="level3">
 <h3 class="anchored" data-anchor-id="some-concepts">Some concepts</h3>
 <p>We will refer to a (simplified) data structure as described below. Real-life data structures are often more complex, and the distinctions made in the simplified example should be adapted accordingly.</p>
-<pre class="mermaid"><code>graph TD;
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD;
     subgraph Dataflow;
     A((Input data)) ==&gt;  B[Cleaning programs];
     B ==&gt; C((Analysis data));
@@ -385,7 +393,13 @@ ul.task-list li input[type="checkbox"] {
     B -.-&gt; F(("Auxiliary data&lt;br/&gt;(created)"));
     F -.-&gt; C;
     Z((Source)) -.-&gt; X[Data citation] -.-&gt; A;
-    </code></pre>
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="general-rules-and-guidelines" class="level3">
 <h3 class="anchored" data-anchor-id="general-rules-and-guidelines">General Rules and Guidelines</h3>
