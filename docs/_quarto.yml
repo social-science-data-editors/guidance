@@ -37,7 +37,7 @@ website:
         href: https://github.com/social-science-data-editors/new-guidance
 
   navbar:
-      background: light
+      background: dark
       logo: ssde.png
       logo-alt: "Social Science Data Editors"
       title: false
@@ -65,8 +65,8 @@ website:
       #     text: SSDE GitHub 
 
   sidebar:
-    - id: main-sidebar
-      title: "navigate"
+    - title: "navigate"
+      search: true
       style: "floating"
       collapse-level: 1
       contents:

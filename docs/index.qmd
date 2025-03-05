@@ -1,4 +1,5 @@
 ---
+layout: withtoc
 title: "Unofficial guidance on various topics by Social Science Data Editors"
 ---
 
