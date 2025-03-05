@@ -13,6 +13,7 @@ The following readings might be useful for structuring project, code, and data. 
 - Wilson G. et al (2016) "Good enough practices for scientific computing" [arXiv 1609.00037](https://arxiv.org/pdf/1609.00037.pdf)
 - Gentzkow M, Shapiro JM. Code and Data for the Social Sciences: A Practitioner’s Guide; 2014. Available from: [http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf](http://web.stanford.edu/~gentzkow/research/CodeAndData.pdf).
 - [Reif's Stata coding guide](https://reifjulian.github.io/guide/)
+- [DIME Analytics Data Handbook](https://worldbank.github.io/dime-data-handbook/)
 
 
 ### Some concepts
