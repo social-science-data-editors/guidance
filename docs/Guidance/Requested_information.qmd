@@ -1,6 +1,8 @@
 ---
 layout: withtoc
 title: For Authors
+aliases:
+  - /Requested_information.html
 ---
 
 This is a draft document. Please provide comments by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new) in this Github project.

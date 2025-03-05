@@ -1,5 +1,7 @@
 ---
 title: "Additional Guidance on Data Citations"
+aliases:
+  - /addtl-data-citation-guidance.html
 ---
 
 
