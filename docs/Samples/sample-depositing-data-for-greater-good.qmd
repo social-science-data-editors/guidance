@@ -9,7 +9,7 @@ Sometimes, it is worthwhile to not convolute a particular useful dataset within 
 
 ###    Choose a repository 
 
-Choose any one of the open trusted repositories (see [our document on data and code hosting](../Requested-Information/Requested_information_hosting.qmd)). You want to maximize findability, but also credit.
+Choose any one of the open trusted repositories (see [our document on data and code hosting](../Guidance/Requested_information_hosting.qmd)). You want to maximize findability, but also credit.
 
 Notes:
 
