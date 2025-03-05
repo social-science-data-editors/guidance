@@ -70,11 +70,9 @@ website:
     contents:
     # default opens to index page.
       - index
-      - journal-policies            
-      - section: "Guidance"
-        contents: Guidance
-      - section: "Verification"
-        contents: Verification
+      - auto: Guidance
+      - text: Verification
+        href: Verification/Verification_guidance.qmd
       - section: "Samples"
         contents:
           - Samples/sample-depositing-data-for-greater-good
@@ -84,6 +82,8 @@ website:
         contents:
           - Templates/template-README
           - Templates/template_inquiry_about_DOI_by_editor
+      - text: "Journal Policies"
+        href: journal-policies.qmd            
       - section: "Other"
         contents:
           - Other/DCAS_Commercial_data
