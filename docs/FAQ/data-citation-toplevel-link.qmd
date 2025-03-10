@@ -1,0 +1,7 @@
+---
+title: "Data Citation with only a top-level Online Link"
+---
+Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. Here's an example: 
+
+#### OECD Statistics
+The top-level URL is [https://stats.oecd.org/](https://stats.oecd.org/), and (almost) never changes. However, the [User Guide](https://stats.oecd.org/Content/themes/OECD/static/help/WBOS%20User%20Guide%20(EN).PDF?page=34), page 34, shows how to share a URL for a particular query. The usual citation rules for URLs then can be applied.

@@ -1,0 +1,5 @@
+---
+layout: withtoc
+title: "Frequently Asked Questions"
+---
+... although some are not frequently asked, but might nevertheless be useful. Below questions and answers in random order.

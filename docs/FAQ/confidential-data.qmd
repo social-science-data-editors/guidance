@@ -1,0 +1,32 @@
+---
+title: "I use confidential data. I am allowed to provide the data to the Data Editor for the purpose of replication, but you are not allowed to publish the data. How do I proceed?"
+---
+First, all sharing - whether privately with us, or publicly through the data publication process - should be in compliance with all IRB rules, data use agreements, etc. We will never ask you to share data that you do not have the right to share with us or anybody else.
+
+Second, there is a difference between sharing with us, and publishing the data. We can accept private data sharing for the purpose of replication, conduct our reproducibility checks, and delete the data provided. You are in control of the publication of any data (though it has happened that we have had to point out to authors that they do not, in fact, have the rights to publish data that they were going to publish). 
+
+Third, the inability to publish the data does not absolve you from creating an archive of the data as it was used for the article. This archive, for private/confidential/proprietary data, should remain private - on your own systems, or appropriate university archives. But it must exist, so that you can reliably answer queries from authors in future years.
+
+How should you proceed? 
+
+The best way to think of this is as a set of layers. Your working directory **WD**, from which you derived the tables and figures in the paper, is composed of confidential data **CD**, non-confidential data **NCD**, and programs/code **P** (and possibly temporary files **TF**). So **WD** = **CD** + **NCD** + **P** + **TF**. For the purpose of replication archives, you should create **two** archives:
+
+- *A.zip* : contains **NCD** and **P**
+- *B.zip* : contains **CD**
+
+You should then test: create an empty directory, unpack the two archives, and verify that they are sufficient:
+
+> (unzip *A.zip*) + (unzip *B.zip*) == **NCD** + **P** + **CD** == **WD** - **TF**
+
+You should then import *A.zip* into the openICPSR archive, and ensure that *B.zip* is properly and securely archived, in compliance with all rules that you are subject to. 
+
+You can provide *B.zip* to us for the purpose of replication, but *B.zip* would not be published.
+
+### How can I ensure that the confidential data is preserved?
+
+The ideal promise that has the highest credibility is a commitment from the provider of the confidential data to maintain the data for a number of years.
+
+A second-best solution requires that you inspect your data use agreement. Can *you* archive the data in a robust fashion
+ (using whatever tools your university has)? Some DUA allow for that, others don't. The promise then becomes that *you*/your university will guarantee persistence of the data for X years.
+
+A better variant of that is when the DUA allows you to share the data with others that have also demonstratably signed a DUA with the provider. The data provider controls the access, you (your archive) provides the data.

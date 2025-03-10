@@ -69,7 +69,7 @@ Only the first entry in each of the examples above should be used for citing, no
 
 A variety of (unfortunately) commonly used web-accessible locations are not acceptable as data repositories for the purpose of an article's supplementary materials:
 
-- [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](../Other/FAQ.qmd));
+- [Github](https://github.com), [Gitlab](https://gitlab.com), etc. because a project's owner can delete a git repository at any time (but see [this page](https://guides.github.com/activities/citable-code/) on how to leverage Zenodo to enable proper archiving of code and software) (see also questions in the [FAQ](../FAQ/));
 - Google pages, university and personal faculty web pages - they can all be deleted by the owner or by the employer (the university) without regards to archival characteristics of its contents (but talk to your university library - they may have a way to facilitate archiving of web pages - and investigate the [Wayback Machine](https://archive.org/) for a similar purpose);
 - Dropbox, Box.com, and similar cloud-based data and file sharing services - again, they can all be deleted at short notice, or when payment stops
 

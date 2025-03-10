@@ -1,0 +1,9 @@
+---
+title: "Some econometrics papers might be accompanied by (for example) an R or Stata package..."
+---
+First, packages on [CRAN](https://cran.r-project.org/) and the [Statistical Software Components](https://ideas.repec.org/s/boc/bocode.html) can be cited. AEA citation guidance is currently silent on software components, but it is not wrong to cite them, and other disciplines do it regularly. [CRAN](https://cran.r-project.org/) in fact has elements of a "proper archive" (SSC does NOT). All R packages can [generate a (Bibtex) citation](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/citation.html). 
+
+Second, it is possible to submit such packages to various journals, where they are reviewed and published with DOI:
+- [R Journal](https://journal.r-project.org/)
+- [Stata Journal](https://www.stata-journal.com/)
+- [Journal of Statistical Software](https://www.jstatsoft.org/)
