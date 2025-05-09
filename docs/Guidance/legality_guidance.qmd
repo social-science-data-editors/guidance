@@ -1,0 +1,59 @@
+---
+layout: withtoc
+title: Data Legality Guidance
+subtitle: Am I allowed to use Web-scraped data?
+aliases:
+  - /Legality_guidance.html
+---
+
+
+::: {.callout-warning}
+
+# We don't provide legal counselling
+
+This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.
+
+:::
+
+## Are there Legal Restrictions to my use of Data?
+
+In short, yes. You as the author are _personally_ responsible for any use or misuse of data in your research. There are cases where a dataset was acquired illegally by a researcher (e.g. via a data leak like the [Panama Papers](https://en.wikipedia.org/wiki/Panama_Papers)), and where journals may refuse to publish the derived results. Some journals have a dedicated policy, setting out the terms under which exceptions to the legality requirement would be made (see for instance the [AEA Data Legality policy](https://www.aeaweb.org/journals/data/data-legality-policy), which would accept illegaly acquired data if the societal value of publication is perceived as large).
+
+## How Could I use data _Illegally_?
+
+Quite simply put, if a data provider distributes data under certain conditions specified in license agreement, as pointed out in our dedicated section on [Licensing](Licensing_guidance.qmd), and an author violates those conditions, then use of the data is illegal. Therefore, in cases where an explicit license exists, checking whether data usage is legally sound is often straightforward. Most offical or public data providers (U. Michigan with `PSID` or U. Minnesota with `IPUMS` etc) would publish data under some kind of license, which the researcher agrees to.
+
+The more complicated cases arise if an entity's primary purpose is not that of a providing data for research purposes as in the case of the above mentioned institutions, but where the distribution of data is a side product of some other activity. Online marketplaces like LinkedIn, ebay or Airbnb come to mind as one example, where the actual business case may be the enabling of transactions, but where along the way data is produced, which may be accessible on the web for rearchers. 
+
+::: {.callout-tip}
+# No license does not mean no conditions
+
+The absence of an explicit license on a website does not imply that any form of usage of collected data is allowed.
+
+:::
+
+
+## Scraping Data from Websites
+
+Unfortunately the legal situation surrounding the legality of collecting data from websites is complex. There is variation across jurisdictions as to which kind - if any - of webscraping activity is considered legal. What is more, it is not even straightforward to establish which country's law to apply in cross-border web scraping activity. 
+
+### Legal Precedent under US Law
+
+According to [wikipedia](https://en.wikipedia.org/wiki/Web_scraping), Webscraping can in principle conflict with three ways with US law:
+
+1. Copyright infringement: it may not be allowed to copy the information displayed on the website.
+2. Violation of the "Computer Fraud and Abuse Act", which prohibits access to a list of so-called _protected computers_, e.g. governmental systems of banking system computers.
+3. "Trespass to Chattel": Basically the disturbing of private property in the sense that webscraping would use valuable resources on a webserver.
+
+This being said, the legal precedent in the US (as of 2023) is that webscraping of websites whose terms and conditions do not explicitly rule out the activity is considered legal.
+
+### EU Law
+
+The situation in the EU is evolving as well. Precedent in some countries allows web scraping (Denmark 2006), while in others ([CNIL France 2020](https://www.cnil.fr/fr/la-reutilisation-des-donnees-publiquement-accessibles-en-ligne-des-fins-de-demarchage-commercial)) the ownership of data which is publicly accessible on the web belongs still with to the individual which generated the data. Hence, not all potential uses of this data may be allowed.
+
+
+## Legal Advice
+
+We **strongly** recommend authors to obtain legal advice from their institution or legal experts in their country of residence.
+
+
