@@ -3,7 +3,10 @@ layout: withtoc
 title: "Unofficial guidance on various topics by Social Science Data Editors"
 listing:
   id: pages-listing
-  categories: true
+  categories: cloud
+  type: grid
+  fields: [title, reading-time]
+  filter-ui: [title]
   contents:
     - "Guidance/*.qmd"
     - "Verification/*.qmd"
