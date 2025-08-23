@@ -1,5 +1,9 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!Samples/code/*.Rmd"
 
 website:
   title: "{{< var ssde.web_name >}}"
