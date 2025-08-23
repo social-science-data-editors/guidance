@@ -2,6 +2,7 @@
 layout: withtoc
 title: For Authors
 aliases:
+  - /Guidance/Requested_information.html
   - /Requested_information.html
 ---
 
