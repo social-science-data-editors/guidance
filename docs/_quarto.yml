@@ -81,7 +81,7 @@ website:
         href: Verification/Verification_guidance.qmd
       - auto: Samples
       - auto: Templates
-      - section: "FAQ"
+      - text: FAQ
         href: FAQ/index.qmd
       - text: "Journal Policies"
         href: journal-policies.qmd            
