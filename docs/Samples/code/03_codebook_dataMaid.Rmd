@@ -1,6 +1,7 @@
 ---
 title: "Example codebook in R"
-execute: false
+execute:
+  eval: false
 author: "Lars Vilhuber"
 date: "October 1, 2018"
 output: 
