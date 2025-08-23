@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lars Vilhuber">
+<meta name="description" content="Sample Stata configuration, including how to install packages persistently.">
 
-<title>The URL works for me. Why are you complaining that it is not robust/persistent/permanent? – Social Science Data Editors Guidance</title>
+<title>Sample Stata Configurations – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../journal-policies.html" rel="next">
-<link href="../FAQ/psid-data.html" rel="prev">
+<link href="../Samples/code/01_codebook.html" rel="next">
+<link href="../Samples/sample-R-configuration.html" rel="prev">
 <link href="../ssde-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -139,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../FAQ/index.html">FAQ</a></li><li class="breadcrumb-item"><a href="../FAQ/index.html">Frequently Asked Questions</a></li><li class="breadcrumb-item"><a href="../FAQ/url-robustness.html">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../Samples/sample-stata-configuration.html">Sample Stata Configurations</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -244,11 +246,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../Samples/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Samples</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Samples/sample_radc_statement1.html" class="sidebar-item-text sidebar-link">
@@ -281,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample-stata-configuration.html" class="sidebar-item-text sidebar-link">
+  <a href="../Samples/sample-stata-configuration.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Sample Stata Configurations</span></a>
   </div>
 </li>
@@ -361,20 +363,20 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../FAQ/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../FAQ/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Frequently Asked Questions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../FAQ/confidential-data.html" class="sidebar-item-text sidebar-link">
@@ -425,7 +427,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/url-robustness.html" class="sidebar-item-text sidebar-link active">
+  <a href="../FAQ/url-robustness.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</span></a>
   </div>
 </li>
@@ -475,22 +477,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#solutions" id="toc-solutions" class="nav-link active" data-scroll-target="#solutions">Solutions</a></li>
+  <li><a href="#single-configuration-file-with-relative-paths" id="toc-single-configuration-file-with-relative-paths" class="nav-link active" data-scroll-target="#single-configuration-file-with-relative-paths">Single configuration file with relative paths</a></li>
+  <li><a href="#use-of-relative-paths-in-main-program-for-inclusions" id="toc-use-of-relative-paths-in-main-program-for-inclusions" class="nav-link" data-scroll-target="#use-of-relative-paths-in-main-program-for-inclusions">Use of relative paths in main program for inclusions</a></li>
+  <li><a href="#installing-packages-in-a-project-specific-directory" id="toc-installing-packages-in-a-project-specific-directory" class="nav-link" data-scroll-target="#installing-packages-in-a-project-specific-directory">Installing packages in a project-specific directory</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/FAQ/url-robustness.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/sample-stata-configuration.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../FAQ/index.html">FAQ</a></li><li class="breadcrumb-item"><a href="../FAQ/index.html">Frequently Asked Questions</a></li><li class="breadcrumb-item"><a href="../FAQ/url-robustness.html">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../Samples/sample-stata-configuration.html">Sample Stata Configurations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</h1>
+<h1 class="title">Sample Stata Configurations</h1>
 </div>
 
+<div>
+  <div class="description">
+    Sample Stata configuration, including how to install packages persistently.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Vilhuber </p>
+          </div>
+  </div>
     
   
     
@@ -501,27 +516,74 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This may happen for both data files and documents by non-standard publishers. We explain what this means, and various ways to deal with it.</p>
-<p>A URL is simply a locator for a file on the internet. However, they are not all created equal. In particular, files on sites from anything other than robust institutions (archives, journals, newspapers) should be considered to be <em>transitory</em>: here today, gone tomorrow. This often applies to even big companies that are not in the business of publishing with the goal of long-term preservation. It also includes URLs that obviously point to storage providers: Dropbox.com, Google Drive, AWS, Github.io, etc.</p>
-<p>For instance, the file <code>https://s3.amazonaws.com/aws.upl/nwica.org/unitedstates2014.pdf</code> is hosted on Amazon AWS, a commercial provider, presumably by the website of NWICA (<code>nwica.org</code>). If tomorrow NWICA decides to change suppliers for their webservices, and migrates their website <code>nwica.org</code> to the site of <code>myhoster.com</code>, that URL will change. What is less likely to change is the original “landing page” from which “unitedstates2014.pdf” could be downloaded, though that can also change a few years from now. For preservation, the PDF could be copied onto an institution whose business it is to preserve files, such as Zenodo, or Archive.org, where it becomes “permanently” available (or at least at much longer).</p>
-<section id="solutions" class="level4">
-<h4 class="anchored" data-anchor-id="solutions">Solutions</h4>
+<section id="single-configuration-file-with-relative-paths" class="level3">
+<h3 class="anchored" data-anchor-id="single-configuration-file-with-relative-paths">Single configuration file with relative paths</h3>
 <ul>
-<li>Third-best: Cite the original landing page, with an access date, as any other URL on the web:</li>
+<li>Encouraged:</li>
 </ul>
-<blockquote class="blockquote">
-<p>NWICA. 2015. “How WIC Impacts the People of the United States of America.” Accessed at https://nwica.org/documents/unitedstates2014/ on August 2, 2017.</p>
-</blockquote>
-<p>and provide a copy of the file, if copyright and license permit.</p>
+<pre><code>global basepath "C:/My Documents/Paper 15/"
+global includes "${basepath}/includes"
+global inputdata "${basepath}/inputdata"
+global tables    "${basepath}/text/tables"
+set matsize 11000</code></pre>
+</section>
+<section id="use-of-relative-paths-in-main-program-for-inclusions" class="level3">
+<h3 class="anchored" data-anchor-id="use-of-relative-paths-in-main-program-for-inclusions">Use of relative paths in main program for inclusions</h3>
+<p>Discouraged:</p>
+<pre><code>include "C:\My Documents\yesterdays programs\submodule.do"</code></pre>
 <ul>
-<li>Second-best: Use <a href="https://web.archive.org/">Archive.org’s Save a Page feature</a> to make a copy of the file, and then cite the stable URL thus generated.</li>
+<li>Encouraged:</li>
 </ul>
-<blockquote class="blockquote">
-<p>NWICA. 2015. “How WIC Impacts the People of the United States of America.” Accessed via Archive.org at https://web.archive.org/web/20200205043504/https://s3.amazonaws.com/aws.upl/nwica.org/unitedstates2014.pdf on February 4, 2020.</p>
-</blockquote>
-<ul>
-<li>First-best: Ask the publisher to provide a stable URL.</li>
-</ul>
+<pre><code>include "includes/submodule.do"</code></pre>
+<p>or</p>
+<pre><code>include "${includes}/submodule.do"</code></pre>
+</section>
+<section id="installing-packages-in-a-project-specific-directory" class="level3">
+<h3 class="anchored" data-anchor-id="installing-packages-in-a-project-specific-directory">Installing packages in a project-specific directory</h3>
+<p>Reset the “PERSONAL” ado directory. In the config file, include</p>
+<pre><code>sysdir set PERSONAL "$basepath/ado/personal"
+sysdir set PLUS "$basepath/ado/plus"</code></pre>
+<p>Stata will then install the new extension into that directory instead of c:(<a href="https://www.stata.com/support/faqs/programming/personal-ado-directory/">source</a> )</p>
+<p>You can then create a single dependency file that is run before all others:</p>
+<pre><code>00_install.do:
+/* run this only when updating the packages       */
+/* all packages necessary to run the main.do have */
+/* been included in this replication package      */
+/* It will not overwrite existing packages!       */
+
+include "config.do"
+cap ssc install package1
+cap ssc install package2
+cap ssc install package3</code></pre>
+<p>or even better, <a href="https://github.com/gslab-econ/template/blob/master/config/config_stata.do">from here</a>:</p>
+<pre><code>00_install.do:
+/* run this only when updating the packages */
+/* all packages necessary to run the main.do have */
+/* been included in this replication package */
+include "config.do"
+/* Source: https://github.com/gslab-econ/template/blob/master/config/config_stata.do */
+program main
+    * *** Add required packages from SSC to this list ***
+    local ssc_packages ""
+    * *** Add required packages from SSC to this list ***
+
+    if !missing("`ssc_packages'") {
+        foreach pkg in "`ssc_packages'" {
+            dis "Installing `pkg'"
+            quietly ssc install `pkg', replace
+        }
+    }
+
+    * Install packages using net
+    quietly net from "https://somewhere.on.inter.net/repo/supercode/"
+    quietly cap ado uninstall magic
+    quietly net install magic
+end
+main</code></pre>
+<p>and in your main program</p>
+<pre><code>include "config.do"
+package1 lhs rhs, param(param1)</code></pre>
+<p>will always work, because it no longer requires download, and fixes the version of the packages used.</p>
 
 
 </section>
@@ -928,13 +990,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../FAQ/psid-data.html" class="pagination-link" aria-label="I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?</span>
+      <a href="../Samples/sample-R-configuration.html" class="pagination-link" aria-label="Sample R Configurations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sample R Configurations</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../journal-policies.html" class="pagination-link" aria-label="Journal Policies">
-        <span class="nav-page-text">Journal Policies</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Samples/code/01_codebook.html" class="pagination-link" aria-label="Codebook example for STATA">
+        <span class="nav-page-text">Codebook example for STATA</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -967,7 +1029,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/FAQ/url-robustness.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/sample-stata-configuration.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

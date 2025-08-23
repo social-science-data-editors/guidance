@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lars Vilhuber">
+<meta name="dcterms.date" content="2018-10-01">
 
-<title>Sample R Configurations – Social Science Data Editors Guidance</title>
+<title>Example codebook in R – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,6 +67,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../Samples/code/04_codebook_SAS.html" rel="next">
+<link href="../../Samples/code/02_codebook_plaintext.html" rel="prev">
 <link href="../../ssde-logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -37,10 +76,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d70ab701c3fba700817d215ecb35365d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c3d163ba37830b31eb791c9d36f43ab5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -137,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Sample R Configurations</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../../Samples/code/01_codebook.html">Code</a></li><li class="breadcrumb-item"><a href="../../Samples/code/03_codebook_dataMaid.html">Example codebook in R</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -157,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Guidance/Requested_information.html" class="sidebar-item-text sidebar-link">
+            <a href="../../Guidance/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">For Authors</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -166,14 +205,38 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Guidance on Data Citations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../Guidance/Data_citation_guide.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guidance on Data Citation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Additional Guidance on Data Citations</span></a>
+  <a href="../../Guidance/depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depositing Data for the Greater Good</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Docker guidelines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Some (incomplete) guidance to creating reproducible maps with GIS software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Guidance/Licensing_guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Licensing Guidance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -202,20 +265,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Licensing_guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Licensing Guidance</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Docker guidelines</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Some (incomplete) guidance to creating reproducible maps with GIS software</span></a>
+  <a href="../../Guidance/synthetic-fake-data-guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guidance on Synthetic and Fake Data</span></a>
   </div>
 </li>
       </ul>
@@ -228,49 +279,117 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a href="../../Samples/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Samples</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Samples/sample-depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Depositing Data for the Greater Good</span></a>
+  <a href="../../Samples/sample_radc_statement1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Statement for Restricted Access Data 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Samples/sample-information-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample_radc_statement2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Statement for Restricted Access Data 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/sample-codebooks-for-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample code to generate descriptive statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">Samples/sample-report.qmd</span>
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/sample-python-configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Python Way</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/sample-R-configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample R Configurations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/sample-stata-configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Stata Configurations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Code</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/code/01_codebook.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook example for STATA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/code/01_codebook_fancy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook example for STATA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/code/02_codebook_plaintext.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook example for STATA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/code/03_codebook_dataMaid.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Example codebook in R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Samples/code/04_codebook_SAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example codebook in SAS</span></a>
+  </div>
+</li>
+      </ul>
   </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a href="../../Templates/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Templates</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://social-science-data-editors.github.io/template_README/" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Template README</span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Templates/template_inquiry_about_DOI_by_editor.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Template Inquiry about DOI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Templates/template_request_for_publication_provider.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample letter to request data for publication and/or sharing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../Templates/template-README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Template README</span></a>
   </div>
 </li>
       </ul>
@@ -279,20 +398,20 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frequently Asked Questions</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequently Asked Questions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../FAQ/confidential-data.html" class="sidebar-item-text sidebar-link">
@@ -359,13 +478,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
  <span class="menu-text">Other</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../Other/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
@@ -393,25 +512,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#single-configuration-file-with-relative-paths" id="toc-single-configuration-file-with-relative-paths" class="nav-link active" data-scroll-target="#single-configuration-file-with-relative-paths">Single configuration file with relative paths</a></li>
-  <li><a href="#use-of-relative-paths-in-main-program-for-inclusions" id="toc-use-of-relative-paths-in-main-program-for-inclusions" class="nav-link" data-scroll-target="#use-of-relative-paths-in-main-program-for-inclusions">Use of relative paths in main program for inclusions</a></li>
-  <li><a href="#installing-packages-in-a-project-specific-directory" id="toc-installing-packages-in-a-project-specific-directory" class="nav-link" data-scroll-target="#installing-packages-in-a-project-specific-directory">Installing packages in a project-specific directory</a></li>
+  <li><a href="#pretty-example" id="toc-pretty-example" class="nav-link active" data-scroll-target="#pretty-example">Pretty example</a>
+  <ul>
+  <li><a href="#installing-datamaid" id="toc-installing-datamaid" class="nav-link" data-scroll-target="#installing-datamaid">Installing dataMaid</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/samples/sample-R-configuration.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/code/03_codebook_dataMaid.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../../Samples/code/01_codebook.html">Code</a></li><li class="breadcrumb-item"><a href="../../Samples/code/03_codebook_dataMaid.html">Example codebook in R</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Sample R Configurations</h1>
+<h1 class="title">Example codebook in R</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Vilhuber </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 1, 2018</p>
+    </div>
+  </div>
   
     
   </div>
@@ -421,61 +554,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="single-configuration-file-with-relative-paths" class="level3">
-<h3 class="anchored" data-anchor-id="single-configuration-file-with-relative-paths">Single configuration file with relative paths</h3>
-<ul>
-<li>Encouraged:</li>
-</ul>
-<pre><code># Use of file.path() for platform neutrality
-basepath &lt;- file.path("My Documents","Paper 15")
-# alternatively, if using Git
-basepath =  rprojroot::find_root(rprojroot::is_git_root)
-
-includes &lt;- file.path(basepath,"includes")
-inputdata &lt;- file.path(basepath,"inputdata")
-tables &lt;- file.path(basepath,"text/tables")
-matsize &lt;- 11000</code></pre>
+<section id="pretty-example" class="level2">
+<h2 class="anchored" data-anchor-id="pretty-example">Pretty example</h2>
+<p>There are a variety of ways one can describe data in R, but one of the more convenient ways is to use the <a href="https://cran.r-project.org/web/packages/dataMaid/index.html"><code>dataMaid</code></a> package on CRAN.</p>
+<section id="installing-datamaid" class="level3">
+<h3 class="anchored" data-anchor-id="installing-datamaid">Installing dataMaid</h3>
+<p><code>dataMaid</code> is on CRAN, so we install it from there.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># from https://www.r-bloggers.com/loading-andor-installing-packages-programmatically/</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>is_installed <span class="ot">&lt;-</span> <span class="cf">function</span>(mypkg) <span class="fu">is.element</span>(mypkg, <span class="fu">installed.packages</span>()[,<span class="dv">1</span>])</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>load_or_install<span class="ot">&lt;-</span><span class="cf">function</span>(package_names)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(package_name <span class="cf">in</span> package_names)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(<span class="sc">!</span><span class="fu">is_installed</span>(package_name))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>       <span class="fu">install.packages</span>(package_name,<span class="at">repos=</span><span class="st">"http://lib.stat.cmu.edu/R/CRAN"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">library</span>(package_name,<span class="at">character.only=</span><span class="cn">TRUE</span>,<span class="at">quietly=</span><span class="cn">TRUE</span>,<span class="at">verbose=</span><span class="cn">FALSE</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># calling our two functions:</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">load_or_install</span>(packages)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then we can easily load it, and use the <code>makeCodebook()</code> command.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(foreign)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># we use the same dataset as for the Stata example</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>autos <span class="ot">&lt;-</span> <span class="fu">read.dta</span>(<span class="st">"http://www.stata-press.com/data/r9/auto.dta"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataMaid)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">makeDataReport</span>(autos,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">replace=</span><span class="cn">TRUE</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">openResult =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">codebook =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">file=</span><span class="st">"codebook_autos.Rmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The codebook will be called <a href="codebook_autos.pdf">codebook_autos.pdf</a>, but the intermediate RMarkdown file <a href="codebook_autos.Rmd">codebook_autos.Rmd</a> can also be tweaked.</p>
 </section>
-<section id="use-of-relative-paths-in-main-program-for-inclusions" class="level3">
-<h3 class="anchored" data-anchor-id="use-of-relative-paths-in-main-program-for-inclusions">Use of relative paths in main program for inclusions</h3>
-<p>Discouraged:</p>
-<pre><code>source("C:\My Documents\yesterdays programs\submodule.do")</code></pre>
-<ul>
-<li>Encouraged:</li>
-</ul>
-<pre><code>source(file.path(includes,"submodule.R"))</code></pre>
-<p>or</p>
-<pre><code>source(file.path("includes","submodule.R")</code></pre>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">citation</span>(<span class="at">package=</span><span class="st">"dataMaid"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To cite package ‘dataMaid’ in publications use:</p>
+<p>Anne Helby Petersen and Claus Thorn Ekstrøm (2018). dataMaid: A Suite of Checks for Identification of Potential Errors in a Data Frame as Part of the Data Screening Process. R package version 1.1.2. https://CRAN.R-project.org/package=dataMaid</p>
+<p>A BibTeX entry for LaTeX users is</p>
+<p><span class="citation" data-cites="Manual">@Manual</span>{, title = {dataMaid: A Suite of Checks for Identification of Potential Errors in a Data Frame as Part of the Data Screening Process}, author = {Anne Helby Petersen and Claus Thorn Ekstrøm}, year = {2018}, note = {R package version 1.1.2}, url = {https://CRAN.R-project.org/package=dataMaid}, }</p>
+
+
 </section>
-<section id="installing-packages-in-a-project-specific-directory" class="level3">
-<h3 class="anchored" data-anchor-id="installing-packages-in-a-project-specific-directory">Installing packages in a project-specific directory</h3>
-<ul>
-<li>using the <code>packrat</code> package</li>
-<li>using <code>containerit</code> package</li>
-<li>manually resetting the R library locations in the config file, then installing packages</li>
-</ul>
-<pre><code># Install packages locally
-.libPaths( c( includes , .libPaths() ) )</code></pre>
-<p>You can then create a single dependency file that is run before all others:</p>
-<pre><code>00_install.R:
-# run this only when updating the packages 
-# all packages necessary to run the main.R have 
-# been included in this replication package 
-include "config.R"
-install.packages('rddensity', lib=libpath, destdir=libpath)
-install.packages('rdrobust', lib=libpath, destdir=libpath) 
-install.packages('gridExtra', lib=libpath, destdir=libpath)
-install.packages('ggplot2', lib=libpath, destdir=libpath)</code></pre>
-<p>and in your main program</p>
-<pre><code>basepath =  rprojroot::find_root(rprojroot::is_git_root)
-source(file.path(basepath,"config.R"))
-library(rdrobust)
-library(rddensity)
-library(gridExtra)
-library(ggplot2)</code></pre>
-<p>will always work, because it no longer requires download, and fixes the version of the packages used.</p>
-
-
 </section>
 
 </main> <!-- /main -->
@@ -878,6 +999,18 @@ library(ggplot2)</code></pre>
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../Samples/code/02_codebook_plaintext.html" class="pagination-link" aria-label="Codebook example for STATA">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Codebook example for STATA</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../Samples/code/04_codebook_SAS.html" class="pagination-link" aria-label="Example codebook in SAS">
+        <span class="nav-page-text">Example codebook in SAS</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -907,7 +1040,7 @@ library(ggplot2)</code></pre>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/samples/sample-R-configuration.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/code/03_codebook_dataMaid.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

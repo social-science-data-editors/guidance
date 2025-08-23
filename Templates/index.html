@@ -2,12 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lars Vilhuber">
+<meta name="dcterms.date" content="2025-08-01">
 
-<title>sample-request-for-publication-provider – {{&lt; var ssde.web_name &gt;}}</title>
+<title>Templates – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../ssde-logo.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d70ab701c3fba700817d215ecb35365d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Templates/template_inquiry_about_DOI_by_editor.html" rel="next">
+<link href="../Samples/code/04_codebook_SAS.html" rel="prev">
+<link href="../ssde-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c3d163ba37830b31eb791c9d36f43ab5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,9 +74,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -83,8 +147,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../ssde.png" alt="Social Science Data Editors" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../ssde.png" alt="Social Science Data Editors" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -94,15 +158,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index"> 
+    <a class="nav-link" href="../index"> 
 <span class="menu-text">Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Disclaimer"> 
+    <a class="nav-link" href="../Disclaimer"> 
 <span class="menu-text">Disclaimer</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../FAQ"> 
+    <a class="nav-link" href="../FAQ"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
@@ -137,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Templates/index.html">Templates</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -151,13 +215,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guidance</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../Guidance/Requested_information.html" class="sidebar-item-text sidebar-link">
+            <a href="../Guidance/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">For Authors</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -166,69 +230,81 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Data_citation_guide.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Guidance on Data Citation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Additional Guidance on Data Citations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Requested_information_code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Requested Information for Code</span></a>
+  <a href="../Guidance/Data_citation_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guidance on Data Citation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Requested_information_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Requested Information for Data</span></a>
+  <a href="../Guidance/depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Depositing Data for the Greater Good</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Requested_information_dcas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data and Code Availability Statements - Sample text</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Requested_information_hosting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Suggested Information for Data and Code Hosting</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Guidance/Licensing_guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Licensing Guidance</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
+  <a href="../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Docker guidelines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Some (incomplete) guidance to creating reproducible maps with GIS software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/Licensing_guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Licensing Guidance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/Requested_information_code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Requested Information for Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/Requested_information_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Requested Information for Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/Requested_information_dcas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data and Code Availability Statements - Sample text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/Requested_information_hosting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Suggested Information for Data and Code Hosting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Guidance/synthetic-fake-data-guidance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guidance on Synthetic and Fake Data</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Verification/Verification_guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../Verification/Verification_guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Verification</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a href="../Samples/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Samples</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -237,113 +313,181 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Samples/sample-depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Depositing Data for the Greater Good</span></a>
+  <a href="../Samples/sample_radc_statement1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Statement for Restricted Access Data 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Samples/sample-information-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../Samples/sample_radc_statement2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Statement for Restricted Access Data 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/sample-codebooks-for-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample code to generate descriptive statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">Samples/sample-report.qmd</span>
-  </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/sample-python-configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Python Way</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/sample-R-configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample R Configurations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/sample-stata-configuration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Stata Configurations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Templates</span></a>
+ <span class="menu-text">Code</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://social-science-data-editors.github.io/template_README/" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Template README</span></a>
+  <a href="../Samples/code/01_codebook.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook example for STATA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Templates/template_inquiry_about_DOI_by_editor.html" class="sidebar-item-text sidebar-link">
+  <a href="../Samples/code/01_codebook_fancy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook example for STATA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/code/02_codebook_plaintext.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codebook example for STATA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/code/03_codebook_dataMaid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example codebook in R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Samples/code/04_codebook_SAS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example codebook in SAS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../Templates/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Templates</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Template Inquiry about DOI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Templates/template_request_for_publication_provider.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample letter to request data for publication and/or sharing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Templates/template-README.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Template README</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../FAQ/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frequently Asked Questions</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../FAQ/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequently Asked Questions</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/confidential-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/confidential-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">I use confidential data. I am allowed to provide the data to the Data Editor for the purpose of replication, but you are not allowed to publish the data. How do I proceed?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/data-citation-toplevel-link.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/data-citation-toplevel-link.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Citation with only a top-level Online Link</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/data-citation-without-online-link.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/data-citation-without-online-link.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Citation without Online Link</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/do-i-need-to-release-code-history.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/do-i-need-to-release-code-history.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Do I need to release my entire code history?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/econometrics-packages.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/econometrics-packages.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Some econometrics papers might be accompanied by (for example) an R or Stata package…</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/ensure-confidential-preservation.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/ensure-confidential-preservation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">How can I ensure that the confidential data is preserved?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/my-repo-is-complex.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/my-repo-is-complex.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">My repo is complex - I only want to share a portion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/psid-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/psid-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../FAQ/url-robustness.html" class="sidebar-item-text sidebar-link">
+  <a href="../FAQ/url-robustness.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</span></a>
   </div>
 </li>
@@ -353,28 +497,28 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../journal-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../journal-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Journal Policies</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
  <span class="menu-text">Other</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Other/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../Other/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Availability Statements for Commercial Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Other/DCAS_Restricted_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../Other/DCAS_Restricted_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Availability Statements for Restricted Data</span></a>
   </div>
 </li>
@@ -388,43 +532,124 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#sample-letter-to-request-data-for-publication-andor-sharing" id="toc-sample-letter-to-request-data-for-publication-andor-sharing" class="nav-link active" data-scroll-target="#sample-letter-to-request-data-for-publication-andor-sharing">Sample letter to request data for publication and/or sharing</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/samples/sample-request-for-publication-provider.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Templates</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Vilhuber </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This section contains template emails for various purposes.</p>
 
 
 
 
-<section id="sample-letter-to-request-data-for-publication-andor-sharing" class="level1">
-<h1>Sample letter to request data for publication and/or sharing</h1>
-<p>Dear <account rep="">,</account></p>
-<p>I hope you can help me with this or, if not, direct me to the appropriate person at <publisher provider=""> who can.</publisher></p>
-<p>I[, along with two collaborators,] have used the [PROPRIETARY DATA] in an academic study that has been accepted for publication by the [JOURNAL], a publication of the [PUBLISHER]. The exact series we used are referenced below. The data were purchased from <publisher> on <purchase date="">.</purchase></publisher></p>
-<p>The [JOURNAL/PUBLISHER] has a data and code availability policy, requiring that authors deposit all accessible data in an open trusted repository. The [JOURNAL]’s Data Editor has requested the following information:</p>
-<ul>
-<li>Can the data extract we used (specifically, [NAME DATA ELEMENTS HERE]) be published as part of the [JOURNAL]’s Repository at [URL FOR REPOSITORY] with an open license?</li>
-<li>If not, can the data extract be published as a restricted data set (example, see <a href="https://www.openicpsr.org/openicpsr/faqs">openICPSR FAQ</a>). [Example:] Access would be restricted to academics, and can include prohibition of subsequent downloads.</li>
-<li>If the data have already been archived and preserved at a data archive with a CoreTrustSeal or equivalent certification, can you provide us with the DOI for such data?</li>
-</ul>
-<p>Independent of the above distribution requests,</p>
-<ul>
-<li>are we allowed to share the data with the [JOURNAL]’s Data Editor for reproducibility checks, without subsequent publication. The Data Editor will use the data to assess the computational reproducibility of the paper, and subsequently destroy the data.</li>
-</ul>
-<p>Thank you in advance for your attention to this matter.</p>
-<p>[AUTHOR]</p>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1755979305132" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="thumbnail"><a href="../Templates/template-README.html" class="no-external">
 
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 
-</section>
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../Templates/template-README.html" class="no-external">Template README</a>
+</h3>
+<div class="delink listing-description"><a href="../Templates/template-README.html" class="no-external">
 
-</main> <!-- /main -->
+If you are not redirected automatically, follow this link to the Template README.
+
+</a></div>
+</div>
+<div class="metadata">
+<a href="../Templates/template-README.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1755979305132" data-listing-reading-time-sort="2" data-listing-word-count-sort="296">
+<div class="thumbnail"><a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="no-external">Template Inquiry about DOI</a>
+</h3>
+<div class="delink listing-description"><a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="no-external">
+(This template can be used by the Data Editor to contact data providers)
+</a></div>
+</div>
+<div class="metadata">
+<a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1755979305132" data-listing-reading-time-sort="2" data-listing-word-count-sort="249">
+<div class="thumbnail"><a href="../Templates/template_request_for_publication_provider.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../Templates/template_request_for_publication_provider.html" class="no-external">Sample letter to request data for publication and/or sharing</a>
+</h3>
+<div class="delink listing-description"><a href="../Templates/template_request_for_publication_provider.html" class="no-external">
+Dear <account rep="">,</account>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../Templates/template_request_for_publication_provider.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -824,6 +1049,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Samples/code/04_codebook_SAS.html" class="pagination-link" aria-label="Example codebook in SAS">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Example codebook in SAS</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="pagination-link" aria-label="Template Inquiry about DOI">
+        <span class="nav-page-text">Template Inquiry about DOI</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -833,17 +1070,17 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../about">
+    <a class="nav-link" href="../about">
 <p><i class="bi bi-info-circle" role="img"></i> About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../FAQ">
+    <a class="nav-link" href="../FAQ">
 <p><i class="bi bi-question-circle" role="img"></i> FAQ</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../LICENSE">
+    <a class="nav-link" href="../LICENSE">
 <p><i class="bi bi-cc-circle" role="img"></i> License</p>
 </a>
   </li>  
@@ -853,7 +1090,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/samples/sample-request-for-publication-provider.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Templates/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

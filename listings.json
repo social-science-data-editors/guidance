@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/Templates/index.html",
+    "items": [
+      "/Templates/template-README.html",
+      "/Templates/template_inquiry_about_DOI_by_editor.html",
+      "/Templates/template_request_for_publication_provider.html"
+    ]
+  },
+  {
+    "listing": "/Samples/index.html",
+    "items": [
+      "/Samples/code/03_codebook_dataMaid.html",
+      "/Samples/code/04_codebook_SAS.html",
+      "/Samples/sample-R-configuration.html",
+      "/Samples/sample-codebooks-for-data.html",
+      "/Samples/sample-python-configuration.html",
+      "/Samples/sample-stata-configuration.html",
+      "/Samples/sample_radc_statement1.html",
+      "/Samples/sample_radc_statement2.html",
+      "/Samples/code/01_codebook.html",
+      "/Samples/code/01_codebook_fancy.html",
+      "/Samples/code/02_codebook_plaintext.html"
+    ]
+  }
+]

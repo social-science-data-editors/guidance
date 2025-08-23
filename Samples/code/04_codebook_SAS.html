@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lars Vilhuber">
+<meta name="dcterms.date" content="2018-10-01">
 
-<title>The URL works for me. Why are you complaining that it is not robust/persistent/permanent? – Social Science Data Editors Guidance</title>
+<title>Example codebook in SAS – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../journal-policies.html" rel="next">
-<link href="../FAQ/psid-data.html" rel="prev">
-<link href="../ssde-logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c3d163ba37830b31eb791c9d36f43ab5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../Templates/index.html" rel="next">
+<link href="../../Samples/code/03_codebook_dataMaid.html" rel="prev">
+<link href="../../ssde-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c3d163ba37830b31eb791c9d36f43ab5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -85,8 +87,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../ssde.png" alt="Social Science Data Editors" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../ssde.png" alt="Social Science Data Editors" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -96,15 +98,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index"> 
+    <a class="nav-link" href="../../index"> 
 <span class="menu-text">Guidance</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Disclaimer"> 
+    <a class="nav-link" href="../../Disclaimer"> 
 <span class="menu-text">Disclaimer</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../FAQ"> 
+    <a class="nav-link" href="../../FAQ"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
 </ul>
@@ -139,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../FAQ/index.html">FAQ</a></li><li class="breadcrumb-item"><a href="../FAQ/index.html">Frequently Asked Questions</a></li><li class="breadcrumb-item"><a href="../FAQ/url-robustness.html">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../../Samples/code/01_codebook.html">Code</a></li><li class="breadcrumb-item"><a href="../../Samples/code/04_codebook_SAS.html">Example codebook in SAS</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -153,13 +155,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guidance</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../Guidance/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../Guidance/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">For Authors</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -168,67 +170,67 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/addtl-data-citation-guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Additional Guidance on Data Citations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Data_citation_guide.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/Data_citation_guide.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guidance on Data Citation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/depositing-data-for-greater-good.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Depositing Data for the Greater Good</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/docker-guidelines.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Docker guidelines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/guidance-reproducible-gis-analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Some (incomplete) guidance to creating reproducible maps with GIS software</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Licensing_guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/Licensing_guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Licensing Guidance</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Requested_information_code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/Requested_information_code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Requested Information for Code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Requested_information_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/Requested_information_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Requested Information for Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Requested_information_dcas.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/Requested_information_dcas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data and Code Availability Statements - Sample text</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Requested_information_hosting.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/Requested_information_hosting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Suggested Information for Data and Code Hosting</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/synthetic-fake-data-guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Guidance/synthetic-fake-data-guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guidance on Synthetic and Fake Data</span></a>
   </div>
 </li>
@@ -236,91 +238,91 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Verification/Verification_guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Verification/Verification_guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Verification</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../Samples/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../Samples/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Samples</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample_radc_statement1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample_radc_statement1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample Statement for Restricted Access Data 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample_radc_statement2.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample_radc_statement2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample Statement for Restricted Access Data 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample-codebooks-for-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample-codebooks-for-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample code to generate descriptive statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample-python-configuration.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample-python-configuration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Python Way</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample-R-configuration.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample-R-configuration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample R Configurations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample-stata-configuration.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/sample-stata-configuration.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample Stata Configurations</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Code</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/code/01_codebook.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/code/01_codebook.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Codebook example for STATA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/code/01_codebook_fancy.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/code/01_codebook_fancy.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Codebook example for STATA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/code/02_codebook_plaintext.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/code/02_codebook_plaintext.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Codebook example for STATA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/code/03_codebook_dataMaid.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/code/03_codebook_dataMaid.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Example codebook in R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/code/04_codebook_SAS.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Samples/code/04_codebook_SAS.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Example codebook in SAS</span></a>
   </div>
 </li>
@@ -330,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../Templates/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../Templates/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Templates</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -339,19 +341,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Templates/template_inquiry_about_DOI_by_editor.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Templates/template_inquiry_about_DOI_by_editor.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Template Inquiry about DOI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Templates/template_request_for_publication_provider.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Templates/template_request_for_publication_provider.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample letter to request data for publication and/or sharing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Templates/template-README.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Templates/template-README.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Template README</span></a>
   </div>
 </li>
@@ -359,73 +361,73 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../FAQ/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../FAQ/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../FAQ/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Frequently Asked Questions</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/confidential-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/confidential-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">I use confidential data. I am allowed to provide the data to the Data Editor for the purpose of replication, but you are not allowed to publish the data. How do I proceed?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/data-citation-toplevel-link.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/data-citation-toplevel-link.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Citation with only a top-level Online Link</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/data-citation-without-online-link.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/data-citation-without-online-link.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Citation without Online Link</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/do-i-need-to-release-code-history.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/do-i-need-to-release-code-history.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Do I need to release my entire code history?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/econometrics-packages.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/econometrics-packages.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Some econometrics papers might be accompanied by (for example) an R or Stata package…</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/ensure-confidential-preservation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/ensure-confidential-preservation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">How can I ensure that the confidential data is preserved?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/my-repo-is-complex.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/my-repo-is-complex.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">My repo is complex - I only want to share a portion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/psid-data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../FAQ/psid-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../FAQ/url-robustness.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../FAQ/url-robustness.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</span></a>
   </div>
 </li>
@@ -435,7 +437,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../journal-policies.html" class="sidebar-item-text sidebar-link">
+  <a href="../../journal-policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Journal Policies</span></a>
   </div>
 </li>
@@ -450,13 +452,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Other/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Other/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Availability Statements for Commercial Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Other/DCAS_Restricted_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../Other/DCAS_Restricted_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Availability Statements for Restricted Data</span></a>
   </div>
 </li>
@@ -475,23 +477,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#solutions" id="toc-solutions" class="nav-link active" data-scroll-target="#solutions">Solutions</a></li>
+  <li><a href="#get-the-auto.dta-file" id="toc-get-the-auto.dta-file" class="nav-link active" data-scroll-target="#get-the-auto.dta-file">Get the auto.dta file</a></li>
+  <li><a href="#create-the-codebook" id="toc-create-the-codebook" class="nav-link" data-scroll-target="#create-the-codebook">Create the codebook</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/FAQ/url-robustness.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/code/04_codebook_SAS.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../FAQ/index.html">FAQ</a></li><li class="breadcrumb-item"><a href="../FAQ/index.html">Frequently Asked Questions</a></li><li class="breadcrumb-item"><a href="../FAQ/url-robustness.html">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../../Samples/code/01_codebook.html">Code</a></li><li class="breadcrumb-item"><a href="../../Samples/code/04_codebook_SAS.html">Example codebook in SAS</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">The URL works for me. Why are you complaining that it is not robust/persistent/permanent?</h1>
+<h1 class="title">Example codebook in SAS</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Vilhuber </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 1, 2018</p>
+    </div>
+  </div>
   
     
   </div>
@@ -501,32 +516,1100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This may happen for both data files and documents by non-standard publishers. We explain what this means, and various ways to deal with it.</p>
-<p>A URL is simply a locator for a file on the internet. However, they are not all created equal. In particular, files on sites from anything other than robust institutions (archives, journals, newspapers) should be considered to be <em>transitory</em>: here today, gone tomorrow. This often applies to even big companies that are not in the business of publishing with the goal of long-term preservation. It also includes URLs that obviously point to storage providers: Dropbox.com, Google Drive, AWS, Github.io, etc.</p>
-<p>For instance, the file <code>https://s3.amazonaws.com/aws.upl/nwica.org/unitedstates2014.pdf</code> is hosted on Amazon AWS, a commercial provider, presumably by the website of NWICA (<code>nwica.org</code>). If tomorrow NWICA decides to change suppliers for their webservices, and migrates their website <code>nwica.org</code> to the site of <code>myhoster.com</code>, that URL will change. What is less likely to change is the original “landing page” from which “unitedstates2014.pdf” could be downloaded, though that can also change a few years from now. For preservation, the PDF could be copied onto an institution whose business it is to preserve files, such as Zenodo, or Archive.org, where it becomes “permanently” available (or at least at much longer).</p>
-<section id="solutions" class="level4">
-<h4 class="anchored" data-anchor-id="solutions">Solutions</h4>
-<ul>
-<li>Third-best: Cite the original landing page, with an access date, as any other URL on the web:</li>
-</ul>
-<blockquote class="blockquote">
-<p>NWICA. 2015. “How WIC Impacts the People of the United States of America.” Accessed at https://nwica.org/documents/unitedstates2014/ on August 2, 2017.</p>
-</blockquote>
-<p>and provide a copy of the file, if copyright and license permit.</p>
-<ul>
-<li>Second-best: Use <a href="https://web.archive.org/">Archive.org’s Save a Page feature</a> to make a copy of the file, and then cite the stable URL thus generated.</li>
-</ul>
-<blockquote class="blockquote">
-<p>NWICA. 2015. “How WIC Impacts the People of the United States of America.” Accessed via Archive.org at https://web.archive.org/web/20200205043504/https://s3.amazonaws.com/aws.upl/nwica.org/unitedstates2014.pdf on February 4, 2020.</p>
-</blockquote>
-<ul>
-<li>First-best: Ask the publisher to provide a stable URL.</li>
-</ul>
+<section id="get-the-auto.dta-file" class="level2">
+<h2 class="anchored" data-anchor-id="get-the-auto.dta-file">Get the auto.dta file</h2>
+<pre class="sashtml"><code>/* this next step is a kludge */
+/* options SSLCALISTLOC="/usr/lib64/R/library/RCurl/CurlSSL/cacert.pem";
+proc http method="get" out=auto url="http://www.stata-press.com/data/r9/auto.dta";
+run;*/
+x wget -O auto.dta "http://www.stata-press.com/data/r9/auto.dta" 2&gt;/dev/null 1&gt;&amp;2;
+</code></pre>
+</section>
+<section id="create-the-codebook" class="level2">
+<h2 class="anchored" data-anchor-id="create-the-codebook">Create the codebook</h2>
+<pre class="sashtml"><code>filename auto "auto.dta";
+proc import datafile=auto out=auto dbms=dta;
+run;
+proc contents;
+proc means;
+run;
+</code></pre>
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<!-- closes branch div -->
+<!-- closes align="left" and its parent div -->
+<div data-align="left">
+<!--BEGINTABLE-->
+<table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" summary="Procedure Contents: Attributes">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">
+Data Set Name
+</th>
+<td class="l data">
+WORK.AUTO
+</td>
+<th class="l rowheader" scope="row">
+Observations
+</th>
+<td class="l data">
+74
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Member Type
+</th>
+<td class="l data">
+DATA
+</td>
+<th class="l rowheader" scope="row">
+Variables
+</th>
+<td class="l data">
+12
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Engine
+</th>
+<td class="l data">
+V9
+</td>
+<th class="l rowheader" scope="row">
+Indexes
+</th>
+<td class="l data">
+0
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Created
+</th>
+<td class="l data">
+10/05/2018 10:28:11
+</td>
+<th class="l rowheader" scope="row">
+Observation Length
+</th>
+<td class="l data">
+112
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Last Modified
+</th>
+<td class="l data">
+10/05/2018 10:28:11
+</td>
+<th class="l rowheader" scope="row">
+Deleted Observations
+</th>
+<td class="l data">
+0
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Protection
+</th>
+<td class="l data">
+</td>
+<th class="l rowheader" scope="row">
+Compressed
+</th>
+<td class="l data">
+NO
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Data Set Type
+</th>
+<td class="l data">
+</td>
+<th class="l rowheader" scope="row">
+Sorted
+</th>
+<td class="l data">
+NO
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Label
+</th>
+<td class="l data">
+</td>
+<th class="l rowheader" scope="row">
+</th>
+<td class="l data">
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Data Representation
+</th>
+<td class="l data">
+SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64
+</td>
+<th class="l rowheader" scope="row">
+</th>
+<td class="l data">
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Encoding
+</th>
+<td class="l data">
+latin1 Western (ISO)
+</td>
+<th class="l rowheader" scope="row">
+</th>
+<td class="l data">
+</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE-->
+</div>
+</div>
+<br> <!-- closes align="left" and its parent div --> <!-- closes branch div --> <a name="IDX1"></a>
+<div>
+<div data-align="left">
+<!--BEGINTABLE-->
+<table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" summary="Procedure Contents: Engine/Host Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">
+Engine/Host Dependent Information
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">
+Data Set Page Size
+</th>
+<td class="l data">
+65536
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Number of Data Set Pages
+</th>
+<td class="l data">
+1
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+First Data Page
+</th>
+<td class="l data">
+1
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Max Obs per Page
+</th>
+<td class="l data">
+584
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Obs in First Data Page
+</th>
+<td class="l data">
+74
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Number of Data Set Repairs
+</th>
+<td class="l data">
+0
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Filename
+</th>
+<td class="l data">
+/tmp/SAS_workDAA600001F1E_zotique2/auto.sas7bdat
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Release Created
+</th>
+<td class="l data">
+9.0401M0
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Host Created
+</th>
+<td class="l data">
+Linux
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Inode Number
+</th>
+<td class="l data">
+1963626
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Access Permission
+</th>
+<td class="l data">
+rw-r–r–
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+Owner Name
+</th>
+<td class="l data">
+vilhuber
+</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">
+File Size (bytes)
+</th>
+<td class="l data">
+131072
+</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE-->
+</div>
+</div>
+<br> <!-- closes align="left" and its parent div --> <!-- closes branch div --> <a name="IDX2"></a>
+<div>
+<div data-align="left">
+<!--BEGINTABLE-->
+<table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" summary="Procedure Contents: Variables">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">
+Alphabetic List of Variables and Attributes
+</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">
+#
+</th>
+<th class="l b header" scope="col">
+Variable
+</th>
+<th class="l b header" scope="col">
+Type
+</th>
+<th class="r b header" scope="col">
+Len
+</th>
+<th class="l b header" scope="col">
+Format
+</th>
+<th class="l b header" scope="col">
+Informat
+</th>
+<th class="l b header" scope="col">
+Label
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">
+10
+</th>
+<td class="l data">
+displacement
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Displacement (cu. in.)
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+12
+</th>
+<td class="l data">
+foreign
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+FOREIGN.
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Car type
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+11
+</th>
+<td class="l data">
+gear_ratio
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+6.2
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Gear Ratio
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+5
+</th>
+<td class="l data">
+headroom
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+6.1
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Headroom (in.)
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+8
+</th>
+<td class="l data">
+length
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Length (in.)
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+1
+</th>
+<td class="l data">
+make
+</td>
+<td class="l data">
+Char
+</td>
+<td class="r data">
+18
+</td>
+<td class="l data">
+$18.
+</td>
+<td class="l data">
+$18.
+</td>
+<td class="l data">
+Make and Model
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+3
+</th>
+<td class="l data">
+mpg
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Mileage (mpg)
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+2
+</th>
+<td class="l data">
+price
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Price
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+4
+</th>
+<td class="l data">
+rep78
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Repair Record 1978
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+6
+</th>
+<td class="l data">
+trunk
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Trunk space (cu. ft.)
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+9
+</th>
+<td class="l data">
+turn
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Turn Circle (ft.)
+</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">
+7
+</th>
+<td class="l data">
+weight
+</td>
+<td class="l data">
+Num
+</td>
+<td class="r data">
+8
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+</td>
+<td class="l data">
+Weight (lbs.)
+</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE-->
+</div>
+</div>
+<br> <!-- closes align="left" and its parent div --> <!-- closes branch div -->
+</div>
+<div class="branch">
+<p style="page-break-after: always;">
+<br>
+</p>
+<hr size="3">
+<a name="IDX3"></a>
+<div>
+<div data-align="left">
+<!--BEGINTABLE-->
+<table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">
+Variable
+</th>
+<th class="l b header" scope="col">
+Label
+</th>
+<th class="r b header" scope="col">
+N
+</th>
+<th class="r b header" scope="col">
+Mean
+</th>
+<th class="r b header" scope="col">
+Std Dev
+</th>
+<th class="r b header" scope="col">
+Minimum
+</th>
+<th class="r b header" scope="col">
+Maximum
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<th class="l data top_stacked_value">
+price
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+mpg
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+rep78
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+headroom
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+trunk
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+weight
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+length
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+turn
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+displacement
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+gear_ratio
+</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">
+foreign
+</th>
+</tr>
+</tbody></table>
+</th>
+<th class="l stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<th class="l data top_stacked_value">
+Price
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Mileage (mpg)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Repair Record 1978
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Headroom (in.)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Trunk space (cu. ft.)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Weight (lbs.)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Length (in.)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Turn Circle (ft.)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Displacement (cu. in.)
+</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">
+Gear Ratio
+</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">
+Car type
+</th>
+</tr>
+</tbody></table>
+</th>
+<td class="r stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<td class="r data top_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+69
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+74
+</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">
+74
+</td>
+</tr>
+</tbody></table>
+</td>
+<td class="r stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<td class="r data top_stacked_value">
+6165.26
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+21.2972973
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+3.4057971
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+2.9932432
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+13.7567568
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+3019.46
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+187.9324324
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+39.6486486
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+197.2972973
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+3.0148649
+</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">
+0.2972973
+</td>
+</tr>
+</tbody></table>
+</td>
+<td class="r stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<td class="r data top_stacked_value">
+2949.50
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+5.7855032
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+0.9899323
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+0.8459948
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+4.2774042
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+777.1935671
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+22.2663399
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+4.3993537
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+91.8372190
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+0.4562871
+</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">
+0.4601885
+</td>
+</tr>
+</tbody></table>
+</td>
+<td class="r stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<td class="r data top_stacked_value">
+3291.00
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+12.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+1.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+1.5000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+5.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+1760.00
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+142.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+31.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+79.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+2.1900001
+</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">
+0
+</td>
+</tr>
+</tbody></table>
+</td>
+<td class="r stacked_cell data">
+<table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tbody><tr>
+<td class="r data top_stacked_value">
+15906.00
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+41.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+5.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+5.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+23.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+4840.00
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+233.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+51.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+425.0000000
+</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">
+3.8900001
+</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">
+1.0000000
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE-->
+</div>
+</div>
+<br> <!-- closes align="left" and its parent div --> <!-- closes branch div -->
+</div>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>“SAS Using R Markdown (Windows).” n.d. Accessed October 5, 2018. https://www.ssc.wisc.edu/~hemken/SASworkshops/Markdown/SASmarkdown.html.</p>
 
 
 </section>
+</section></main></div>
 
-</main> <!-- /main -->
+
+
+
+
+
+
+
+
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -928,17 +2011,17 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../FAQ/psid-data.html" class="pagination-link" aria-label="I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">I have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?</span>
+      <a href="../../Samples/code/03_codebook_dataMaid.html" class="pagination-link" aria-label="Example codebook in R">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Example codebook in R</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../journal-policies.html" class="pagination-link" aria-label="Journal Policies">
-        <span class="nav-page-text">Journal Policies</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../Templates/index.html" class="pagination-link" aria-label="Templates">
+        <span class="nav-page-text">Templates</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -947,17 +2030,17 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../about">
+    <a class="nav-link" href="../../about">
 <p><i class="bi bi-info-circle" role="img"></i> About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../FAQ">
+    <a class="nav-link" href="../../FAQ">
 <p><i class="bi bi-question-circle" role="img"></i> FAQ</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../LICENSE">
+    <a class="nav-link" href="../../LICENSE">
 <p><i class="bi bi-cc-circle" role="img"></i> License</p>
 </a>
   </li>  
@@ -967,7 +2050,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/FAQ/url-robustness.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/code/04_codebook_SAS.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
