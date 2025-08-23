@@ -14,6 +14,8 @@ listing:
 
 These pages provide guidance to authors on creating replicable data and program archives. The data and reproducibility editors from multiple journals who have helped to create this guidance have cumulatively reviewed several thousand replication packages since 2018. 
 
+> You can navigate this site by searching (top right), by keywords (cloud to the right),  or by [starting with the guidance for authors](Guidance).
+
 
 ::: {#pages-listing}
 :::

@@ -1,6 +1,6 @@
 ---
 layout: withtoc
-title: For Authors
+title: Start here if you are an author
 aliases:
   - /Guidance/Requested_information.html
   - /Requested_information.html
