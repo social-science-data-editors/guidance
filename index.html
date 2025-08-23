@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <link href="./Guidance/index.html" rel="next">
 <link href="./ssde-logo.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pages-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pages-listing'] = new List('listing-pages-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -484,7 +544,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="YWNjZXNz">access <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YXBwdGFpbmVy">apptainer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXJjR0lT">ArcGIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YXZhaWxhYmlsaXR5">availability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmlnJTIwZGF0YQ==">big data <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Y2l0YXRpb25z">citations <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Y29kZSUyMGF2YWlsYWJpbGl0eQ==">code availability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29uZmlkZW50aWFs">confidential <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZGF0YQ==">data <span class="quarto-category-count">(8)</span></div><div class="category" data-category="ZGF0YSUyMGF2YWlsYWJpbGl0eQ==">data availability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YSUyMGNpdGF0aW9u">data citation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZGF0YSUyMGRlc2NyaXB0aW9u">data description <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YSUyMHByaXZhY3k=">data privacy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YSUyMHByb3ZpZGVy">data provider <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RENBUw==">DCAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVwb3NpdA==">deposit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGVwb3NpdHM=">deposits <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9ja2Vy">docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RE9J">DOI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RXVyb3Bl">Europe <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXhhbXBsZXM=">examples <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZmFrZSUyMGRhdGE=">fake data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R0lT">GIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z29vZCUyMHByYWN0aWNlcw==">good practices <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aG9zdGluZw==">hosting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGlicmFyaWVz">libraries <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGljZW5zZXM=">licenses <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGljZW5zaW5n">licensing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFwcw==">maps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0YWRhdGE=">metadata <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGFja2FnZXM=">packages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJlc2VydmF0aW9u">preservation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UUdJUw==">QGIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cmVwb3NpdG9yaWVz">repositories <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2luZ3VsYXJpdHk=">singularity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29mdHdhcmU=">software <span class="quarto-category-count">(4)</span></div><div class="category" data-category="c3BhdGlhbA==">spatial <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGE=">Stata <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3ludGhldGljJTIwZGF0YQ==">synthetic data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VVNB">USA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dmVyc2lvbmluZw==">versioning <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -508,6 +568,442 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>These pages provide guidance to authors on creating replicable data and program archives. The data and reproducibility editors from multiple journals who have helped to create this guidance have cumulatively reviewed several thousand replication packages since 2018.</p>
+<div id="listing-pages-listing" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Y2l0YXRpb25zJTJDZGF0YSUyMGNpdGF0aW9uJTJDZGF0YSUyQ2NvbmZpZGVudGlhbCUyQ2JpZyUyMGRhdGE=" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="13" data-listing-word-count-sort="2534">
+<div class="thumbnail"><a href="./Guidance/addtl-data-citation-guidance.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/addtl-data-citation-guidance.html" class="no-external">Additional Guidance on Data Citations</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2l0YXRpb25z'); return false;">citations</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGNpdGF0aW9u'); return false;">data citation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29uZmlkZW50aWFs'); return false;">confidential</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmlnJTIwZGF0YQ=='); return false;">big data</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/addtl-data-citation-guidance.html" class="no-external">
+One of the most vexing issues is how to cite data. This document goes through a few common scenarios not covered elsewhere.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/addtl-data-citation-guidance.html" class="no-external">
+<div class="listing-author">
+Lars Vilhuber
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RENBUyUyQ2RhdGElMjBhdmFpbGFiaWxpdHklMkNjb2RlJTIwYXZhaWxhYmlsaXR5JTJDZGF0YSUyQ2NvZGUlMkNjaXRhdGlvbnMlMkNleGFtcGxlcw==" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="5" data-listing-word-count-sort="844">
+<div class="thumbnail"><a href="./Guidance/Requested_information_dcas.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/Requested_information_dcas.html" class="no-external">Data and Code Availability Statements - Sample text</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RENBUw=='); return false;">DCAS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGF2YWlsYWJpbGl0eQ=='); return false;">data availability</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZSUyMGF2YWlsYWJpbGl0eQ=='); return false;">code availability</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2l0YXRpb25z'); return false;">citations</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhhbXBsZXM='); return false;">examples</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/Requested_information_dcas.html" class="no-external">
+Data and Code Availability Statements (DCAS) can take on many forms. The examples below are taken from economics articles. For examples from other domains, see
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/Requested_information_dcas.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="ZGVwb3NpdHMlMkNwcmVzZXJ2YXRpb24lMkNET0klMkNkYXRhJTJDYmlnJTIwZGF0YQ==" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
+<div class="thumbnail"><a href="./Guidance/depositing-data-for-greater-good.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/depositing-data-for-greater-good.html" class="no-external">Depositing Data for the Greater Good</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGVwb3NpdHM='); return false;">deposits</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJlc2VydmF0aW9u'); return false;">preservation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RE9J'); return false;">DOI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmlnJTIwZGF0YQ=='); return false;">big data</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/depositing-data-for-greater-good.html" class="no-external">
+<p>Sometimes, it is worthwhile to separately deposit the data that is created as part of a broader research project, rather than include it in a single replication package. This document walks you through that.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/depositing-data-for-greater-good.html" class="no-external">
+<div class="listing-author">
+Lars Vilhuber
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="c29mdHdhcmUlMkNkb2NrZXIlMkNjb2RlJTJDc2luZ3VsYXJpdHklMkNhcHB0YWluZXIlMkNSJTJDUHl0aG9uJTJDU3RhdGE=" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="5" data-listing-word-count-sort="849">
+<div class="thumbnail"><a href="./Guidance/docker-guidelines.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/docker-guidelines.html" class="no-external">Docker guidelines</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ja2Vy'); return false;">docker</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2luZ3VsYXJpdHk='); return false;">singularity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXBwdGFpbmVy'); return false;">apptainer</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGE='); return false;">Stata</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/docker-guidelines.html" class="no-external">
+NOTE: Apptainer is used throughout, but as of 2023-10, is equivalent to Singularity.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/docker-guidelines.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="5" data-listing-word-count-sort="916">
+<div class="thumbnail"><a href="./Guidance/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/index.html" class="no-external">For Authors</a>
+</h3>
+<div class="delink listing-description"><a href="./Guidance/index.html" class="no-external">
+This is a draft document. Please provide comments by creating a new issue in this Github project.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Y2l0YXRpb25zJTJDZGF0YSUyMGNpdGF0aW9uJTJDZGF0YQ==" data-listing-file-modified-sort="1755980520387" data-listing-reading-time-sort="8" data-listing-word-count-sort="1525">
+<div class="thumbnail"><a href="./Guidance/Data_citation_guide.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/Data_citation_guide.html" class="no-external">Guidance on Data Citation</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2l0YXRpb25z'); return false;">citations</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGNpdGF0aW9u'); return false;">data citation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/Data_citation_guide.html" class="no-external">
+Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/Data_citation_guide.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="c3ludGhldGljJTIwZGF0YSUyQ2Zha2UlMjBkYXRhJTJDZGF0YSUyMHByaXZhY3klMkNkYXRhJTJDYmlnJTIwZGF0YSUyQ2NvbmZpZGVudGlhbA==" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
+<div class="thumbnail"><a href="./Guidance/synthetic-fake-data-guidance.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/synthetic-fake-data-guidance.html" class="no-external">Guidance on Synthetic and Fake Data</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3ludGhldGljJTIwZGF0YQ=='); return false;">synthetic data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFrZSUyMGRhdGE='); return false;">fake data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMHByaXZhY3k='); return false;">data privacy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmlnJTIwZGF0YQ=='); return false;">big data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29uZmlkZW50aWFs'); return false;">confidential</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/synthetic-fake-data-guidance.html" class="no-external">
+<p>Some journals require that fake or synthetic data be provided in order to verify basic functionality of the code. This page provides some guidance on how to do this.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/synthetic-fake-data-guidance.html" class="no-external">
+<div class="listing-author">
+Joan Llull, Farasat Bokhari, Lars Vilhuber
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="bGljZW5zZXMlMkNsaWNlbnNpbmclMkNjb2RlJTJDZGF0YSUyQ3NvZnR3YXJl" data-listing-file-modified-sort="1755980520387" data-listing-reading-time-sort="3" data-listing-word-count-sort="499">
+<div class="thumbnail"><a href="./Guidance/Licensing_guidance.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/Licensing_guidance.html" class="no-external">Licensing Guidance</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGljZW5zZXM='); return false;">licenses</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGljZW5zaW5n'); return false;">licensing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/Licensing_guidance.html" class="no-external">
+This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/Licensing_guidance.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="Y29kZSUyQ3NvZnR3YXJlJTJDZ29vZCUyMHByYWN0aWNlcyUyQ3ZlcnNpb25pbmclMkNwYWNrYWdlcyUyQ2xpYnJhcmllcw==" data-listing-file-modified-sort="1755980520387" data-listing-reading-time-sort="4" data-listing-word-count-sort="770">
+<div class="thumbnail"><a href="./Guidance/Requested_information_code.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/Requested_information_code.html" class="no-external">Requested Information for Code</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z29vZCUyMHByYWN0aWNlcw=='); return false;">good practices</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('dmVyc2lvbmluZw=='); return false;">versioning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGFja2FnZXM='); return false;">packages</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bGlicmFyaWVz'); return false;">libraries</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/Requested_information_code.html" class="no-external">
+Some scientists, including economists, have put together excellent guidance and tutorials. See
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/Requested_information_code.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="ZGF0YSUyQ21ldGFkYXRhJTJDZGF0YSUyMGRlc2NyaXB0aW9uJTJDYWNjZXNzJTJDYXZhaWxhYmlsaXR5JTJDZGF0YSUyMHByb3ZpZGVy" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="8" data-listing-word-count-sort="1444">
+<div class="thumbnail"><a href="./Guidance/Requested_information_data.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/Requested_information_data.html" class="no-external">Requested Information for Data</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWV0YWRhdGE='); return false;">metadata</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGRlc2NyaXB0aW9u'); return false;">data description</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWNjZXNz'); return false;">access</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXZhaWxhYmlsaXR5'); return false;">availability</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMHByb3ZpZGVy'); return false;">data provider</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/Requested_information_data.html" class="no-external">
+We request the following information from all articles:
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/Requested_information_data.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="R0lTJTJDbWFwcyUyQ3NwYXRpYWwlMkNSJTJDUHl0aG9uJTJDU3RhdGElMkNBcmNHSVMlMkNRR0lTJTJDY29kZSUyQ3NvZnR3YXJl" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="5" data-listing-word-count-sort="814">
+<div class="thumbnail"><a href="./Guidance/guidance-reproducible-gis-analysis.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/guidance-reproducible-gis-analysis.html" class="no-external">Some (incomplete) guidance to creating reproducible maps with GIS software</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFwcw=='); return false;">maps</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3BhdGlhbA=='); return false;">spatial</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGE='); return false;">Stata</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXJjR0lT'); return false;">ArcGIS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/guidance-reproducible-gis-analysis.html" class="no-external">
+The following information was provided by several sources. We wish to thank Keith Jenkins (Cornell University).
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/guidance-reproducible-gis-analysis.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="ZGF0YSUyQ2NvZGUlMkNob3N0aW5nJTJDcmVwb3NpdG9yaWVzJTJDRE9JJTJDcHJlc2VydmF0aW9uJTJDZGVwb3NpdCUyQ2NvbmZpZGVudGlhbCUyQ1VTQSUyQ0V1cm9wZQ==" data-listing-file-modified-sort="1755980520388" data-listing-reading-time-sort="7" data-listing-word-count-sort="1269">
+<div class="thumbnail"><a href="./Guidance/Requested_information_hosting.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Guidance/Requested_information_hosting.html" class="no-external">Suggested Information for Data and Code Hosting</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YQ=='); return false;">data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aG9zdGluZw=='); return false;">hosting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVwb3NpdG9yaWVz'); return false;">repositories</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RE9J'); return false;">DOI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJlc2VydmF0aW9u'); return false;">preservation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGVwb3NpdA=='); return false;">deposit</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29uZmlkZW50aWFs'); return false;">confidential</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VVNB'); return false;">USA</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXVyb3Bl'); return false;">Europe</div>
+
+</div>
+<div class="delink listing-description"><a href="./Guidance/Requested_information_hosting.html" class="no-external">
+Journals and institutions have assessed a number of trusted repositories:
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Guidance/Requested_information_hosting.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-listing-file-modified-sort="1755980520396" data-listing-reading-time-sort="3" data-listing-word-count-sort="580">
+<div class="thumbnail"><a href="./Verification/Verification_guidance.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Verification/Verification_guidance.html" class="no-external">Verification Guidance</a>
+</h3>
+<div class="delink listing-description"><a href="./Verification/Verification_guidance.html" class="no-external">
+<p>A generic checklist for verification by authors before submission.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Verification/Verification_guidance.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 <section id="other-information" class="level2">
 <h2 class="anchored" data-anchor-id="other-information">Other Information</h2>
 <p>Other materials, sometimes referenced within this guidance, can be found elsewhere on this website (see also the top menu on the right):</p>
@@ -520,6 +1016,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="faq" class="level2">
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 <p>See our growing <a href="FAQ">FAQ</a>. If you have questions or answers to add, please notify us by creating a <a href="https://github.com/social-science-data-editors/guidance/issues/new">new issue</a>.</p>
+
 
 
 </section>

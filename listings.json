@@ -1,5 +1,23 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/Guidance/addtl-data-citation-guidance.html",
+      "/Guidance/Requested_information_dcas.html",
+      "/Guidance/depositing-data-for-greater-good.html",
+      "/Guidance/docker-guidelines.html",
+      "/Guidance/index.html",
+      "/Guidance/Data_citation_guide.html",
+      "/Guidance/synthetic-fake-data-guidance.html",
+      "/Guidance/Licensing_guidance.html",
+      "/Guidance/Requested_information_code.html",
+      "/Guidance/Requested_information_data.html",
+      "/Guidance/guidance-reproducible-gis-analysis.html",
+      "/Guidance/Requested_information_hosting.html",
+      "/Verification/Verification_guidance.html"
+    ]
+  },
+  {
     "listing": "/Templates/index.html",
     "items": [
       "/Templates/template-README.html",
