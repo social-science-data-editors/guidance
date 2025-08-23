@@ -12,6 +12,8 @@
     "items": [
       "/Samples/code/03_codebook_dataMaid.html",
       "/Samples/code/04_codebook_SAS.html",
+      "/Samples/DCAS_Commercial_data.html",
+      "/Samples/DCAS_Restricted_data.html",
       "/Samples/sample-R-configuration.html",
       "/Samples/sample-codebooks-for-data.html",
       "/Samples/sample-python-configuration.html",
