@@ -1,0 +1,128 @@
+---
+title: Sample code to generate descriptive statistics
+author: Various
+description: Various code snippets to generate descriptive statistics of a dataset, especially when data cannot be included for licensing or confidentiality reasons.
+---
+
+## Generating codebooks
+
+### Stata
+
+In Stata,the native 'codebook' command can generate such information:
+```Stata
+// Stata
+use my_input_data
+describe
+codebook
+```
+See [code/01_codebook_fancy.md](code/01_codebook_fancy.md) for a fancier example, and [code/02_codebook_plaintext.md](code/02_codebook_plaintext.md) for the code and output from the simpler example.
+
+### R
+
+In R, the [dataMaid](https://cran.r-project.org/web/packages/dataMaid/index.html) [[1](http://sandsynligvis.dk/2017/08/21/datamaid-your-personal-assistant-for-cleaning-up-the-data-cleaning-process/)], [[2](http://sandsynligvis.dk/articles/18/codebook.html)] can accomplish a similar task:
+```r
+# use the    dataMaid   package
+library(dataMaid)
+makeCodebook(my_input_data)
+```
+See [code/03_codebook_dataMaid](code/03_codebook_dataMaid.md) for an example.
+
+### SAS
+
+In SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:
+
+```SAS
+proc contents;
+proc means;
+run;
+```
+See [code/04_codebook_SAS](code/04_codebook_SAS.md) for an example.
+
+## Creationg "zero-obs" datasets
+
+Alternatively, you can just provide an empty file that replicates the structure (schema) of your data. Often, this can be achieved by simply setting the number of observations to zero.
+
+### Stata
+
+```Stata
+// Stata
+use my_input_data
+keep if 0
+save zero_input_data, replace
+```
+
+Example:
+
+```stata
+. sysuse auto
+(1978 automobile data)
+
+. keep if 0
+(74 observations deleted)
+
+. desc
+
+Contains data from /usr/local/stata/ado/base/a/auto.dta
+ Observations:             0                  1978 automobile data
+    Variables:            12                  13 Apr 2024 17:45
+                                              (_dta has notes)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+make            str18   %-18s                 Make and model
+price           int     %8.0gc                Price
+mpg             int     %8.0g                 Mileage (mpg)
+rep78           int     %8.0g                 Repair record 1978
+headroom        float   %6.1f                 Headroom (in.)
+trunk           int     %8.0g                 Trunk space (cu. ft.)
+weight          int     %8.0gc                Weight (lbs.)
+length          int     %8.0g                 Length (in.)
+turn            int     %8.0g                 Turn circle (ft.)
+displacement    int     %8.0g                 Displacement (cu. in.)
+gear_ratio      float   %6.2f                 Gear ratio
+foreign         byte    %8.0g      origin     Car origin
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sorted by: foreign
+     Note: Dataset has changed since last saved.
+```
+
+### R 
+
+```r
+# Read the RDS file into an R object
+my_data <- readRDS("path/to/my_input_data.rds")
+# Create a new, empty data frame with the same structure
+zero_obs_df <- my_data[FALSE, ]
+# To verify, check the dimensions
+dim(zero_obs_df)
+# [1] 0 X
+# Save the empty data frame to a new RDS file
+saveRDS(zero_obs_df, "path/to/zero_input_data.rds")
+```
+
+Alternatively, using the `dplyr` package:
+```r
+library(dplyr)
+my_data <- readRDS("path/to/my_input_data.rds")
+zero_obs_df <- slice(my_data, 0)
+saveRDS(zero_obs_df, "path/to/zero_input_data.rds")
+```
+
+### SAS
+
+```sas
+data zero_input_data;
+    set my_input_data (obs=0)
+run;
+```
+
+or
+
+```sas
+
+proc sql;
+  create table zero_input_table like my_input_table;
+quit;
+```
+

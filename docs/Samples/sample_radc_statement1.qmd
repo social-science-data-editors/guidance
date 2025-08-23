@@ -1,4 +1,10 @@
-## Sample Statement for Restricted Access Data 1
+---
+title: Sample Statement for Restricted Access Data 1
+author: Lars Vilhuber
+description: "This text can be used to describe data that are restricted access, and stored in a secure data facility."
+categories: [sample, FSRDC, Census Bureau]
+---
+
 Adapted from  [Vilhuber and McKinney (2014)](https://ideas.repec.org/p/cen/wpaper/14-26.html) and [Vilhuber (2018)](https://ideas.repec.org/p/cen/wpaper/18-27r.html):
 
 ```

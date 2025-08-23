@@ -1,0 +1,12 @@
+---
+title: "Samples"
+author: 
+  - "Lars Vilhuber"
+date: "2025-08-01"
+listing: 
+  sort: "date"
+  type: default
+  sort-ui: [title, date]
+---
+
+This section contains various examples and sample code. For template emails for various purposes, see [Templates](../Templates/index.qmd).

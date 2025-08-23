@@ -1,6 +1,7 @@
 ---
-layout: withtoc
 title: "Sample Stata Configurations"
+author: Lars Vilhuber
+description: "Sample Stata configuration, including how to install packages persistently."
 ---
 
 ### Single configuration file with relative paths
@@ -39,17 +40,23 @@ sysdir set PLUS "$basepath/ado/plus"
 Stata will then install the new extension into that directory instead of c:\ado\plus ([source](https://www.stata.com/support/faqs/programming/personal-ado-directory/) )
 
 You can then create a single dependency file that is run before all others:
+
 ```
 00_install.do:
-/* run this only when updating the packages */
+/* run this only when updating the packages       */
 /* all packages necessary to run the main.do have */
-/* been included in this replication package */
+/* been included in this replication package      */
+/* It will not overwrite existing packages!       */
+
 include "config.do"
-ssc install package1
-ssc install package2
-ssc install package3
+cap ssc install package1
+cap ssc install package2
+cap ssc install package3
 ```
+
+
 or even better, [from here](https://github.com/gslab-econ/template/blob/master/config/config_stata.do):
+
 ```
 00_install.do:
 /* run this only when updating the packages */

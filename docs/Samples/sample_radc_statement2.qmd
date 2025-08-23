@@ -1,4 +1,9 @@
-## Sample Statement for Restricted Access Data 2
+---
+title: Sample Statement for Restricted Access Data 2
+author: Lars Vilhuber
+description: "This text can be used to describe data that are restricted access, and stored in a secure data facility."
+categories: [sample, FSRDC, Census Bureau]
+---
 
 Below is a sample statement that can be used for data accessible through restricted-access environments. The example is given for a  [specific paper](https://doi.org/10.1093/restud/rdw057), but should be adaptable to most projects:
 

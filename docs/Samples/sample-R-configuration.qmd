@@ -1,6 +1,7 @@
 ---
-layout: withtoc
 title: "Sample R Configurations"
+author: Lars Vilhuber
+description: "Sample R configuration, including how to install packages persistently."
 ---
 
 ### Single configuration file with relative paths
@@ -35,9 +36,9 @@ source(file.path("includes","submodule.R")
 
 ### Installing packages in a project-specific directory
 
-- using the `packrat` package
-- using `containerit` package
-- using `renv` package
+- using the [`packrat` package](https://rstudio.github.io/packrat/)
+- using [`containerit` package](https://o2r.info/containerit/)
+- using [`renv` package](https://rstudio.github.io/renv/index.html) 
 - manually resetting the R library locations in the config file, then installing packages
 ```
 # Install packages locally
@@ -65,4 +66,14 @@ library(rddensity)
 library(gridExtra)
 library(ggplot2)
 ```
-will always work, because it no longer requires download, and fixes the version of the packages used.
+will always work, because it no longer requires download, and fixes the version of the packages used. 
+
+### Installing specific package versions
+
+Using `remotes` package:
+
+```
+remotes::install_version("rdrobust", version = "2023.10.1", lib=libpath)
+remotes::install_version("rddensity", version = "2023.10.1", lib=libpath)
+remotes::install_version("gridExtra", version = "2.3", lib=libpath)
+```

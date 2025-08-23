@@ -1,6 +1,8 @@
 ---
-layout: withtoc
 title: "The Python Way"
+author: 
+    - "Lars Vilhuber"
+description: "Some (tentative) best practices for Python projects"
 ---
 
 ### Single configuration file with relative paths
@@ -32,4 +34,10 @@ A working environment can "freeze" the dependencies by running
 ```
 pip freeze > requirements.txt
 ```
-which needs to be edited down (maybe).
+which needs to be edited to include only the main dependencies, not the cascading other dependencies, to avoid too much platform-specificity.
+
+### Virtual environments
+
+Python virtual environments can be used to create isolated environments for different projects, ensuring that each project has its own dependencies and versions. This is particularly useful when working on multiple projects that may require different versions of the same package.
+
+> See [LDI Replication Lab Manual](https://labordynamicsinstitute.github.io/ldilab-manual/96-30-running-python-jupyter.html#best-practice-to-reproduce-a-python-paper-python-environments) for an example.
