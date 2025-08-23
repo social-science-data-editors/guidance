@@ -37,6 +37,7 @@ source(file.path("includes","submodule.R")
 
 - using the `packrat` package
 - using `containerit` package
+- using `renv` package
 - manually resetting the R library locations in the config file, then installing packages
 ```
 # Install packages locally
