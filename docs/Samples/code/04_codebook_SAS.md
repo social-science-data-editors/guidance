@@ -38,6 +38,8 @@ run;
 <div class="branch">
 <a name="IDX"></a>
 <div>
+<!-- closes branch div -->
+<!-- closes align="left" and its parent div -->
 <div align="left">
 <!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" summary="Procedure Contents: Attributes">
 <colgroup>
@@ -112,6 +114,8 @@ run;
 <!--ENDTABLE--></div>
 </div>
 <br>
+<!-- closes align="left" and its parent div -->
+<!-- closes branch div -->
 <a name="IDX1"></a>
 <div>
 <div align="left">
@@ -183,6 +187,8 @@ run;
 <!--ENDTABLE--></div>
 </div>
 <br>
+<!-- closes align="left" and its parent div -->
+<!-- closes branch div -->
 <a name="IDX2"></a>
 <div>
 <div align="left">
@@ -326,6 +332,8 @@ run;
 <!--ENDTABLE--></div>
 </div>
 <br>
+<!-- closes align="left" and its parent div -->
+<!-- closes branch div -->
 </div>
 <div class="branch">
 <p style="page-break-after: always;"><br/></p><hr size="3"/>
@@ -608,7 +616,9 @@ run;
 <!--ENDTABLE--></div>
 </div>
 <br>
+<!-- closes align="left" and its parent div -->
+<!-- closes branch div -->
 </div>
 
 ## References
-- “SAS Using R Markdown (Windows).” n.d. Accessed October 5, 2018. https://www.ssc.wisc.edu/~hemken/SASworkshops/Markdown/SASmarkdown.html.
+ “SAS Using R Markdown (Windows).” n.d. Accessed October 5, 2018. https://www.ssc.wisc.edu/~hemken/SASworkshops/Markdown/SASmarkdown.html.
