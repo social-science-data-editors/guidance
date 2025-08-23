@@ -2,14 +2,22 @@
 layout: withtoc
 title: "Unofficial guidance on various topics by Social Science Data Editors"
 listing:
-  id: pages-listing
-  categories: cloud
-  type: grid
-  fields: [title, reading-time]
-  filter-ui: [title]
-  contents:
-    - "Guidance/*.qmd"
-    - "Verification/*.qmd"
+  - id: pages-listing
+    categories: cloud
+    type: grid
+    fields: [title, reading-time]
+    filter-ui: [title]
+    contents:
+      - "Guidance/*.qmd"
+      - "Verification/*.qmd"
+  - id: faq-listing
+    categories: cloud
+    type: grid
+    fields: [title, reading-time]
+    filter-ui: [title]
+    max-items: 10
+    contents:
+      - "FAQ/*.qmd"
 ---
 
 These pages provide guidance to authors on creating replicable data and program archives. The data and reproducibility editors from multiple journals who have helped to create this guidance have cumulatively reviewed several thousand replication packages since 2018. 
@@ -33,3 +41,8 @@ Other materials, sometimes referenced within this guidance, can be found elsewhe
 ## FAQ
 
 See our growing [FAQ](FAQ). If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).
+
+
+::: {#faq-listing}
+:::
+

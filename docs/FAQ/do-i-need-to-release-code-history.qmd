@@ -1,6 +1,10 @@
 ---
 title: "Do I need to release my entire code history?"
+author: 
+  - "Lars Vilhuber"
+categories: [code, FAQ, github, zenodo, release, DOI]
 ---
+
 > We work on github already. Is there anyway to make just a "release" public in github without making public the entire code history and issue tickets?
 
 It all depends if you are comfortable with that, and if this is one paper out of multiple ones stemming from the same project.
@@ -10,26 +14,30 @@ If not, then what I suggest is to do the following
 - clean up the repo (possibly in a branch)
 - on Github, there is no way to fork to your own space, and a fork would carry the entire history anyway. So this assumes manual interaction (I'm going to assume you use the command line for this, this works in git-bash, or bash on Linux/OSX).
 - create a new clone of your (now cleaned) repo, and switch to the clean branch
-   ```
-   git clone (WHATEVER)
-   cd whatever
-   git branch "cleaned"
-   ```
+
+```
+git clone (WHATEVER)
+cd whatever
+git branch "cleaned"
+```
 
 - now wipe out all git information:
-   ```
-   rm -rf .git
-   ```
+
+```
+rm -rf .git
+```
 
 - create a new repo
-   ```
-   git init
-   ```
+
+```
+git init
+```
 
 - Add all files
-   ```
-   git add *
-   ```
+
+```
+git add *
+```
 
  (careful with subdirs)
 

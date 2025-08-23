@@ -1,6 +1,10 @@
 ---
 title: "The URL works for me. Why are you complaining that it is not robust/persistent/permanent?"
+author: 
+  - "Lars Vilhuber"
+categories: [data, FAQ, preservation, URL, repositories, Internet archive]
 ---
+
 This may happen for both data files and documents by non-standard publishers. We explain what this means, and various ways to deal with it.
 
 A URL is simply a locator for a file on the internet. However, they are not all created equal. In particular, files on sites from anything other than robust institutions (archives, journals, newspapers) should be considered to be *transitory*: here today, gone tomorrow. This often applies to even big companies that are not in the business of publishing with the goal of long-term preservation. It also includes URLs that obviously point to storage providers: Dropbox.com, Google Drive, AWS, Github.io, etc. 

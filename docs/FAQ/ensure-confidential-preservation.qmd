@@ -1,8 +1,15 @@
 ---
 title: "How can I ensure that the confidential data is preserved?"
+author: 
+  - "Lars Vilhuber"
+categories: [confidential, data preservation, FAQ]
 ---
 The ideal promise that has the highest credibility is a commitment from the provider of the confidential data to maintain the data for a number of years.
 
 A second-best solution requires that you inspect your data use agreement. Can *you* archive the data in a robust fashion (using whatever tools your university has)? Some DUA allow for that, others don't. The promise then becomes that *you*/your university will guarantee persistence of the data for X years.
 
 A better variant of that is when the DUA allows you to share the data with others that have also demonstratably signed a DUA with the provider. The data provider controls the access, you (your archive) provides the data.
+
+See also
+
+- [Suggested Information for Data and Code Hosting](../Guidance/Requested_information_hosting.qmd) and examples mentioned therein.

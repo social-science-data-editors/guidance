@@ -1,5 +1,8 @@
 ---
 title: "I use confidential data. I am allowed to provide the data to the Data Editor for the purpose of replication, but you are not allowed to publish the data. How do I proceed?"
+author: 
+  - "Lars Vilhuber"
+categories: [confidential, data, big data, FAQ]
 ---
 First, all sharing - whether privately with us, or publicly through the data publication process - should be in compliance with all IRB rules, data use agreements, etc. We will never ask you to share data that you do not have the right to share with us or anybody else.
 
