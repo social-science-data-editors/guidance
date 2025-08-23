@@ -3,6 +3,7 @@ layout: withtoc
 title: Licensing Guidance
 aliases:
   - /Licensing_guidance.html
+categories: [licenses, licensing, code, data, software]
 ---
 
 > This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.

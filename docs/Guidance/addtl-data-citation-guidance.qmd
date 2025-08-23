@@ -3,6 +3,7 @@ title: "Additional Guidance on Data Citations"
 author: Lars Vilhuber
 aliases:
   - /addtl-data-citation-guidance.html
+categories: [citations, data citation, data, confidential, big data]
 ---
 
 One of the most vexing issues is how to cite data. This document goes through a few common scenarios not covered elsewhere.

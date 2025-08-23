@@ -5,6 +5,7 @@ author:
     - Farasat Bokhari
     - Lars Vilhuber
 description: "Some journals require that fake or synthetic data be provided in order to verify basic functionality of the code. This page provides some guidance on how to do this."
+categories: [synthetic data, fake data, data privacy, data, big data, confidential]
 ---
 
 Some journals require that fake or synthetic data be provided in order to verify basic functionality of the code. This page provides some guidance on how to do this.

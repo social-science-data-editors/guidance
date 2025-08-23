@@ -1,9 +1,20 @@
 ---
 layout: withtoc
 title: "Unofficial guidance on various topics by Social Science Data Editors"
+listing:
+  id: pages-listing
+  categories: true
+  contents:
+    - "Guidance/*.qmd"
+    - "Verification/*.qmd"
 ---
 
 These pages provide guidance to authors on creating replicable data and program archives. The data and reproducibility editors from multiple journals who have helped to create this guidance have cumulatively reviewed several thousand replication packages since 2018. 
+
+
+::: {#pages-listing}
+:::
+
 
 ## Other Information
 

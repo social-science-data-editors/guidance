@@ -3,6 +3,7 @@ layout: withtoc
 title: Data and Code Availability Statements - Sample text
 aliases:
   - /Requested_information_dcas.html
+categories: [DCAS, data availability, code availability, data, code, citations, examples]
 ---
 
 ### What are Data and Code Availability Statements (DCAS)

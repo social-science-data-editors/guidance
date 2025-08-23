@@ -1,6 +1,6 @@
 ---
-layout: withtoc
 title:  Verification Guidance
+description: "A generic checklist for verification by authors before submission."
 ---
 
 ### Overview
@@ -12,6 +12,8 @@ This document describes
 - how to summarize the results in a [Replication report](#examples)
 
 It can be used as a checklist.
+
+> Always check with the journal for any journal-specific checklist or requirements. 
 
 ### Review the README file
 

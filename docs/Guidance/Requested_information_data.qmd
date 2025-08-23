@@ -3,6 +3,7 @@ layout: withtoc
 title: Requested Information for Data
 aliases:
   - /Requested_information_data.html
+categories: [data, metadata, data description, access,  availability, data provider]
 ---
 
 ### Overview

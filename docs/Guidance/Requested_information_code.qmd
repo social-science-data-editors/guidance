@@ -3,6 +3,7 @@ layout: withtoc
 title: "Requested Information for Code"
 aliases:
   - /Requested_information_code.html
+categories: [code, software, good practices, versioning, packages, libraries]
 ---
 
 ### Readings
@@ -95,7 +96,8 @@ You should be precise about the relevant packages. Ideally specify a specific ve
   - Redirect the `adopath` to a project-specific directory.
 - R:
   - you could fix things by installing specific versions, see [Installing older versions of packages](https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages).
-  - use of [MRAN snapshot](https://mran.microsoft.com/documents/rro/reproducibility)
+  - <strike>use of [MRAN snapshot](https://mran.microsoft.com/documents/rro/reproducibility)</strike> (now defunct as of 2023-07-01)
+  - use of [Posit Package Manager](https://packagemanager.posit.co/) (free for public use, for now still active...)
   - use of `packrat` packages (much local storage)
 
 
