@@ -193,7 +193,7 @@
     "href": "index.html#faq",
     "title": "Unofficial guidance on various topics by Social Science Data Editors",
     "section": "FAQ",
-    "text": "FAQ\nSee our growing FAQ. If you have questions or answers to add, please notify us by creating a new issue.",
+    "text": "FAQ\nSee our growing FAQ. If you have questions or answers to add, please notify us by creating a new issue.\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nData Citation with only a top-level Online Link\n\n1 min\n\n\n\n\n\n\n\n\nData Citation without Online Link\n\n2 min\n\n\n\n\n\n\n\n\nDo I need to release my entire code history?\n\n2 min\n\n\n\n\n\n\n\n\nFrequently Asked Questions\n\n1 min\n\n\n\n\n\n\n\n\nHow can I ensure that the confidential data is preserved?\n\n1 min\n\n\n\n\n\n\n\n\nI have been told by the Data Editor to remove PSID data from my submitted materials. What do I do?\n\n2 min\n\n\n\n\n\n\n\n\nI use confidential data. I am allowed to provide the data to the Data Editor for the purpose of replication, but you are not allowed to publish the data. How do I proceed?\n\n3 min\n\n\n\n\n\n\n\n\nMy repo is complex - I only want to share a portion\n\n1 min\n\n\n\n\n\n\n\n\nSome econometrics papers might be accompanied by (for example) an R or Stata package…\n\n1 min\n\n\n\n\n\n\n\n\nThe URL works for me. Why are you complaining that it is not robust/persistent/permanent?\n\n2 min\n\n\n\n\nNo matching items",
     "crumbs": [
       "Guidance"
     ]
@@ -510,28 +510,42 @@
     "href": "FAQ/my-repo-is-complex.html",
     "title": "My repo is complex - I only want to share a portion",
     "section": "",
-    "text": "Scenario: Author keeps several papers related to an ongoing or long-running project in a single repo, and wants to isolate code for tidy submission alongside an “offshoot paper”.\nIn this case, it has been suggested to use the git filter-branch approach, which is essentially a way to split off a subset of a repo into a new repo (e.g. a subdirectory paper-1). It will conveniently inherit the commit history as well (but see above if that is not desired). See guide at https://help.github.com/en/articles/splitting-a-subfolder-out-into-a-new-repository.\n(Thanks to @MichaelChirico for suggesting)"
+    "text": "Scenario: Author keeps several papers related to an ongoing or long-running project in a single repo, and wants to isolate code for tidy submission alongside an “offshoot paper”.\n\nIn this case, it has been suggested to use the git filter-branch approach, which is essentially a way to split off a subset of a repo into a new repo (e.g. a subdirectory paper-1). It will conveniently inherit the commit history as well (but see this other answer if that is not desired). See guide at https://help.github.com/en/articles/splitting-a-subfolder-out-into-a-new-repository.\n(Thanks to @MichaelChirico for suggesting)"
   },
   {
     "objectID": "FAQ/ensure-confidential-preservation.html",
     "href": "FAQ/ensure-confidential-preservation.html",
     "title": "How can I ensure that the confidential data is preserved?",
     "section": "",
-    "text": "The ideal promise that has the highest credibility is a commitment from the provider of the confidential data to maintain the data for a number of years.\nA second-best solution requires that you inspect your data use agreement. Can you archive the data in a robust fashion (using whatever tools your university has)? Some DUA allow for that, others don’t. The promise then becomes that you/your university will guarantee persistence of the data for X years.\nA better variant of that is when the DUA allows you to share the data with others that have also demonstratably signed a DUA with the provider. The data provider controls the access, you (your archive) provides the data."
+    "text": "The ideal promise that has the highest credibility is a commitment from the provider of the confidential data to maintain the data for a number of years.\nA second-best solution requires that you inspect your data use agreement. Can you archive the data in a robust fashion (using whatever tools your university has)? Some DUA allow for that, others don’t. The promise then becomes that you/your university will guarantee persistence of the data for X years.\nA better variant of that is when the DUA allows you to share the data with others that have also demonstratably signed a DUA with the provider. The data provider controls the access, you (your archive) provides the data.\nSee also\n\nSuggested Information for Data and Code Hosting and examples mentioned therein."
   },
   {
     "objectID": "FAQ/do-i-need-to-release-code-history.html",
     "href": "FAQ/do-i-need-to-release-code-history.html",
     "title": "Do I need to release my entire code history?",
     "section": "",
-    "text": "We work on github already. Is there anyway to make just a “release” public in github without making public the entire code history and issue tickets?\n\nIt all depends if you are comfortable with that, and if this is one paper out of multiple ones stemming from the same project.\nIf not, then what I suggest is to do the following\n\nclean up the repo (possibly in a branch)\non Github, there is no way to fork to your own space, and a fork would carry the entire history anyway. So this assumes manual interaction (I’m going to assume you use the command line for this, this works in git-bash, or bash on Linux/OSX).\ncreate a new clone of your (now cleaned) repo, and switch to the clean branch git clone (WHATEVER)  cd whatever  git branch \"cleaned\"\nnow wipe out all git information: rm -rf .git\ncreate a new repo git init\nAdd all files git add *\n\n(careful with subdirs)\n\nPush to a new Github repo\n\n(on Github, create an empty repo, then push to it)\n(if using the Github Desktop, instead “add existing repo” to the Github Desktop, then push to Github.com)\n\nNow enable this new repo for the Zenodo integration\nCreate a release\n\nThis is now your submission release, cleaned of all history and issues\n\nCite the DOI of your replication archive in your main text."
+    "text": "We work on github already. Is there anyway to make just a “release” public in github without making public the entire code history and issue tickets?\n\nIt all depends if you are comfortable with that, and if this is one paper out of multiple ones stemming from the same project.\nIf not, then what I suggest is to do the following\n\nclean up the repo (possibly in a branch)\non Github, there is no way to fork to your own space, and a fork would carry the entire history anyway. So this assumes manual interaction (I’m going to assume you use the command line for this, this works in git-bash, or bash on Linux/OSX).\ncreate a new clone of your (now cleaned) repo, and switch to the clean branch\n\ngit clone (WHATEVER)\ncd whatever\ngit branch \"cleaned\"\n\nnow wipe out all git information:\n\nrm -rf .git\n\ncreate a new repo\n\ngit init\n\nAdd all files\n\ngit add *\n(careful with subdirs)\n\nPush to a new Github repo\n\n(on Github, create an empty repo, then push to it)\n(if using the Github Desktop, instead “add existing repo” to the Github Desktop, then push to Github.com)\n\nNow enable this new repo for the Zenodo integration\nCreate a release\n\nThis is now your submission release, cleaned of all history and issues\n\nCite the DOI of your replication archive in your main text."
   },
   {
     "objectID": "FAQ/data-citation-toplevel-link.html",
     "href": "FAQ/data-citation-toplevel-link.html",
     "title": "Data Citation with only a top-level Online Link",
     "section": "",
-    "text": "Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. Here’s an example:\n\nOECD Statistics\nThe top-level URL is https://stats.oecd.org/, and (almost) never changes. However, the User Guide, page 34, shows how to share a URL for a particular query. The usual citation rules for URLs then can be applied."
+    "text": "Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. Here’s an example:"
+  },
+  {
+    "objectID": "FAQ/data-citation-toplevel-link.html#oecd-statistics",
+    "href": "FAQ/data-citation-toplevel-link.html#oecd-statistics",
+    "title": "Data Citation with only a top-level Online Link",
+    "section": "OECD Statistics",
+    "text": "OECD Statistics\nThe top-level URL is https://stats.oecd.org/, and (almost) never changes. However, the User Guide, page 34, shows how to share a URL for a particular query. The usual citation rules for URLs then can be applied."
+  },
+  {
+    "objectID": "FAQ/data-citation-toplevel-link.html#data.census.gov",
+    "href": "FAQ/data-citation-toplevel-link.html#data.census.gov",
+    "title": "Data Citation with only a top-level Online Link",
+    "section": "Data.census.gov",
+    "text": "Data.census.gov\nThe top-level URL is https://data.census.gov/. There are several million tables behind the website. However, for any given table and view, one can click on the “More Tools” at the top right, and get a citation. This will point to the exact table you are viewing.\nExample:\n\nU.S. Census Bureau, U.S. Department of Commerce. “Households and Families.” American Community Survey, ACS 1-Year Estimates Subject Tables, Table S1101, https://data.census.gov/table/ACSST1Y2023.S1101?q=same-gender+household. Accessed on 23 Aug 2025."
   },
   {
     "objectID": "Disclaimer.html",
@@ -559,7 +573,7 @@
     "href": "FAQ/econometrics-packages.html",
     "title": "Some econometrics papers might be accompanied by (for example) an R or Stata package…",
     "section": "",
-    "text": "First, packages on CRAN and the Statistical Software Components can be cited. AEA citation guidance is currently silent on software components, but it is not wrong to cite them, and other disciplines do it regularly. CRAN in fact has elements of a “proper archive” (SSC does NOT). All R packages can generate a (Bibtex) citation.\nSecond, it is possible to submit such packages to various journals, where they are reviewed and published with DOI: - R Journal - Stata Journal - Journal of Statistical Software"
+    "text": "First, packages on CRAN and the Statistical Software Components can be cited. AEA citation guidance is currently silent on software components, but it is not wrong to cite them, and other disciplines do it regularly. The Canadian Journal of Economics requires software citations.\nCRAN in fact has elements of a “proper archive” (SSC does NOT). All R packages can generate a (Bibtex) citation.\nSecond, it is possible to submit such packages to various journals, where they are reviewed and published with DOI: - R Journal - Stata Journal - Journal of Statistical Software"
   },
   {
     "objectID": "FAQ/index.html",

@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lars Vilhuber">
 
 <title>Do I need to release my entire code history? – Social Science Data Editors Guidance</title>
 <style>
@@ -391,12 +392,26 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Do I need to release my entire code history?</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">code</div>
+    <div class="quarto-category">FAQ</div>
+    <div class="quarto-category">github</div>
+    <div class="quarto-category">zenodo</div>
+    <div class="quarto-category">release</div>
+    <div class="quarto-category">DOI</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lars Vilhuber </p>
+          </div>
+  </div>
     
   
     
@@ -413,13 +428,25 @@ ul.task-list li input[type="checkbox"] {
 <p>It all depends if you are comfortable with that, and if this is one paper out of multiple ones stemming from the same project.</p>
 <p>If not, then what I suggest is to do the following</p>
 <ul>
-<li><p>clean up the repo (possibly in a branch)</p></li>
-<li><p>on Github, there is no way to fork to your own space, and a fork would carry the entire history anyway. So this assumes manual interaction (I’m going to assume you use the command line for this, this works in git-bash, or bash on Linux/OSX).</p></li>
-<li><p>create a new clone of your (now cleaned) repo, and switch to the clean branch <code>git clone (WHATEVER)  cd whatever  git branch "cleaned"</code></p></li>
-<li><p>now wipe out all git information: <code>rm -rf .git</code></p></li>
-<li><p>create a new repo <code>git init</code></p></li>
-<li><p>Add all files <code>git add *</code></p></li>
+<li>clean up the repo (possibly in a branch)</li>
+<li>on Github, there is no way to fork to your own space, and a fork would carry the entire history anyway. So this assumes manual interaction (I’m going to assume you use the command line for this, this works in git-bash, or bash on Linux/OSX).</li>
+<li>create a new clone of your (now cleaned) repo, and switch to the clean branch</li>
 </ul>
+<pre><code>git clone (WHATEVER)
+cd whatever
+git branch "cleaned"</code></pre>
+<ul>
+<li>now wipe out all git information:</li>
+</ul>
+<pre><code>rm -rf .git</code></pre>
+<ul>
+<li>create a new repo</li>
+</ul>
+<pre><code>git init</code></pre>
+<ul>
+<li>Add all files</li>
+</ul>
+<pre><code>git add *</code></pre>
 <p>(careful with subdirs)</p>
 <ul>
 <li>Push to a new Github repo

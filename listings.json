@@ -14,7 +14,17 @@
       "/Guidance/guidance-reproducible-gis-analysis.html",
       "/Guidance/index.html",
       "/Guidance/Requested_information_hosting.html",
-      "/Verification/Verification_guidance.html"
+      "/Verification/Verification_guidance.html",
+      "/FAQ/data-citation-toplevel-link.html",
+      "/FAQ/data-citation-without-online-link.html",
+      "/FAQ/do-i-need-to-release-code-history.html",
+      "/FAQ/index.html",
+      "/FAQ/ensure-confidential-preservation.html",
+      "/FAQ/psid-data.html",
+      "/FAQ/confidential-data.html",
+      "/FAQ/my-repo-is-complex.html",
+      "/FAQ/econometrics-packages.html",
+      "/FAQ/url-robustness.html"
     ]
   },
   {
