@@ -1,5 +1,6 @@
 ---
 title: "Additional Guidance on Data Citations"
+author: Lars Vilhuber
 aliases:
   - /addtl-data-citation-guidance.html
 ---

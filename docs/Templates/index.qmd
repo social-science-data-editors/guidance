@@ -1,0 +1,12 @@
+---
+title: "Templates"
+author: 
+  - "Lars Vilhuber"
+date: "2025-08-01"
+listing: 
+  sort: "date"
+  type: default
+  sort-ui: [title, date]
+---
+
+This section contains   template emails for various purposes.

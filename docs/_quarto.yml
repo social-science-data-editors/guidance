@@ -72,29 +72,11 @@ website:
     # default opens to index page.
       - text: Guidance
         href: index.qmd
-      - section: Guidance/Requested_information.qmd
-        contents:
-          - Guidance/Data_citation_guide.qmd
-          - Guidance/addtl-data-citation-guidance.qmd
-          - Guidance/Requested_information_code.qmd
-          - Guidance/Requested_information_data.qmd
-          - Guidance/Requested_information_dcas.qmd
-          - Guidance/Requested_information_hosting.qmd
-          - Guidance/Licensing_guidance.qmd
-          - Guidance/docker-guidelines.qmd
-          - Guidance/guidance-reproducible-gis-analysis.qmd
+      - auto: Guidance
       - text: Verification
         href: Verification/Verification_guidance.qmd
-      - section: "Samples"
-        contents:
-          - Samples/sample-depositing-data-for-greater-good.qmd
-          - Samples/sample-information-data.qmd
-          - Samples/sample-report.qmd
-      - section: "Templates"
-        contents:
-          - text: "Template README"
-            href: https://social-science-data-editors.github.io/template_README/
-          - Templates/template_inquiry_about_DOI_by_editor.qmd
+      - auto: Samples
+      - auto: Templates
       - section: "FAQ"
         contents: FAQ
       - text: "Journal Policies"
