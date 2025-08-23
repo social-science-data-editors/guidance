@@ -1,6 +1,7 @@
 ---
-layout: withtoc
 title: Data Availability Statements for Commercial Data
+author: "Lars Vilhuber"
+description: "Many economics papers use data from individual private companies, as well as from commercial data aggregators. Generally, these data cannot be redistributed by the author of a paper. Usage rights must be acquired from the original provider. This is not dissimilar from restricted data from statistical agencies, though there is significantly more variation in access procedures and cost."
 ---
 
 Many economics papers use data from individual private companies, as well as from commercial data aggregators. Generally, these data cannot be redistributed by the author of a paper. Usage rights must be acquired from the original provider. This is not dissimilar from restricted data from statistical agencies, though there is significantly more variation in access procedures and cost.

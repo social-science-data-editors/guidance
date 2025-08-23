@@ -80,5 +80,5 @@ In all cases, IPUMS requires citation.
 
 Further examples can be found 
 
-- [for commercial data](../Other/DCAS_Commercial_data.qmd)
-- [for various restricted data](../Other/DCAS_Restricted_data.qmd)
+- [for commercial data](../Samples/DCAS_Commercial_data.qmd)
+- [for various restricted data](../Samples/DCAS_Restricted_data.qmd)
