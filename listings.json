@@ -6,13 +6,13 @@
       "/Guidance/Requested_information_dcas.html",
       "/Guidance/depositing-data-for-greater-good.html",
       "/Guidance/docker-guidelines.html",
-      "/Guidance/index.html",
       "/Guidance/Data_citation_guide.html",
       "/Guidance/synthetic-fake-data-guidance.html",
       "/Guidance/Licensing_guidance.html",
       "/Guidance/Requested_information_code.html",
       "/Guidance/Requested_information_data.html",
       "/Guidance/guidance-reproducible-gis-analysis.html",
+      "/Guidance/index.html",
       "/Guidance/Requested_information_hosting.html",
       "/Verification/Verification_guidance.html"
     ]
@@ -23,6 +23,20 @@
       "/Templates/template-README.html",
       "/Templates/template_inquiry_about_DOI_by_editor.html",
       "/Templates/template_request_for_publication_provider.html"
+    ]
+  },
+  {
+    "listing": "/FAQ/index.html",
+    "items": [
+      "/FAQ/data-citation-toplevel-link.html",
+      "/FAQ/data-citation-without-online-link.html",
+      "/FAQ/do-i-need-to-release-code-history.html",
+      "/FAQ/ensure-confidential-preservation.html",
+      "/FAQ/psid-data.html",
+      "/FAQ/confidential-data.html",
+      "/FAQ/my-repo-is-complex.html",
+      "/FAQ/econometrics-packages.html",
+      "/FAQ/url-robustness.html"
     ]
   },
   {
