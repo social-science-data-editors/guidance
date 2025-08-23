@@ -82,14 +82,9 @@ website:
       - auto: Samples
       - auto: Templates
       - section: "FAQ"
-        contents: FAQ
+        href: FAQ/index.qmd
       - text: "Journal Policies"
         href: journal-policies.qmd            
-      - section: "Other"
-        contents:
-          - Other/DCAS_Commercial_data.qmd
-          - Other/DCAS_Restricted_data.qmd
-          - Other/data-editors-guild-charter.qmd
 
 format:
   html:

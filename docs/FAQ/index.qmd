@@ -1,5 +1,10 @@
 ---
-layout: withtoc
 title: "Frequently Asked Questions"
+listing:
+  id: pages-listing
+  categories: cloud
+  type: grid
+  fields: [title, reading-time]
+  filter-ui: [title]
 ---
 ... although some are not frequently asked, but might nevertheless be useful. Below questions and answers in random order.
