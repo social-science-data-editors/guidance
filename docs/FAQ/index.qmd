@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 aliases:
- - FAQ.html
+ - /FAQ.html
 listing:
   id: pages-listing
   categories: cloud
