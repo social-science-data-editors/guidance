@@ -5,6 +5,7 @@ author:
 categories: [confidential, data, big data, FAQ]
 aliases:
   - "/FAQ.html#confidential-data"
+  - "/FAQ.html#i-use-confidential-data-i-am-allowed-to-provide-the-data-to-the-data-editor-for-the-purpose-of-replication-but-you-are-not-allowed-to-publish-the-data-how-do-i-proceed"
 ---
 First, all sharing - whether privately with us, or publicly through the data publication process - should be in compliance with all IRB rules, data use agreements, etc. We will never ask you to share data that you do not have the right to share with us or anybody else.
 
