@@ -3,6 +3,8 @@ title: "Some econometrics papers might be accompanied by (for example) an R or S
 author: 
   - "Lars Vilhuber"
 categories: [FAQ, software, R, Stata, package, library, CRAN, SSC]
+aliases:
+  - "FAQ.html#econometrics-packages"
 ---
 First, packages on [CRAN](https://cran.r-project.org/) and the [Statistical Software Components](https://ideas.repec.org/s/boc/bocode.html) can be cited. AEA citation guidance is currently silent on software components, but it is not wrong to cite them, and other disciplines do it regularly. The Canadian Journal of Economics requires software citations. 
 

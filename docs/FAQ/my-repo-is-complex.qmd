@@ -3,6 +3,8 @@ title: "My repo is complex - I only want to share a portion"
 author: 
   - "Lars Vilhuber"
 categories: [repositories, git, FAQ]
+aliases:
+  - "FAQ.html#my-repo-is-complex"
 ---
 
 > Scenario: Author keeps several papers related to an ongoing or long-running project in a single repo, and wants to isolate code for tidy submission alongside an "offshoot paper".

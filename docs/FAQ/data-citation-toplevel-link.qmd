@@ -3,6 +3,8 @@ title: "Data Citation with only a top-level Online Link"
 author: 
   - "Lars Vilhuber"
 categories: [data citation, FAQ, website, URL, OECD, Census Bureau]
+aliases:
+  - "FAQ.html#data-citation-toplevel-link"
 ---
 Many databases with an online interface make it hard to find an easy-to-cite URL. Nevertheless, a few clicks can often show a referenceable URL. Here's an example: 
 
