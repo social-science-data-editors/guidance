@@ -3,6 +3,8 @@ title: "Do I need to release my entire code history?"
 author: 
   - "Lars Vilhuber"
 categories: [code, FAQ, github, zenodo, release, DOI]
+aliases:
+  - "FAQ.html#do-i-need-to-release-code-history"
 ---
 
 > We work on github already. Is there anyway to make just a "release" public in github without making public the entire code history and issue tickets?

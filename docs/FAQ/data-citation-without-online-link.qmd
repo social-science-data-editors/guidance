@@ -3,6 +3,8 @@ title: "Data Citation without Online Link"
 author: 
   - "Lars Vilhuber"
 categories: [data citation, FAQ, proprietary data, no URL, offline, unpublished]
+aliases:
+  - "FAQ.html#data-citation-without-online-link"
 ---
 
 > Do you have any examples of data citation for proprietary data that does not have an online link? All the examples are much more formal than the random spreadsheets [agency 1]  sent over! [agency 2] has a more formal naming system, but again, there's no persistent indicator for the datasets because they are not accessible.

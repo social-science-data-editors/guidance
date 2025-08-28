@@ -3,6 +3,8 @@ title: "How can I ensure that the confidential data is preserved?"
 author: 
   - "Lars Vilhuber"
 categories: [confidential, data preservation, FAQ]
+aliases:
+  - "FAQ.html#ensure-confidential-preservation"
 ---
 The ideal promise that has the highest credibility is a commitment from the provider of the confidential data to maintain the data for a number of years.
 
