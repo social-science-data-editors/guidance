@@ -4,7 +4,7 @@ author:
   - "Lars Vilhuber"
 categories: [data, FAQ, preservation, URL, repositories, Internet archive]
 aliases:
-  - "FAQ.html#url-robustness"
+  - "/FAQ.html#url-robustness"
 ---
 
 This may happen for both data files and documents by non-standard publishers. We explain what this means, and various ways to deal with it.

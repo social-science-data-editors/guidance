@@ -4,7 +4,7 @@ author:
   - "Lars Vilhuber"
 categories: [PSID, data, FAQ, preservation, code, repository]
 aliases:
-  - "FAQ.html#psid-data"
+  - "/FAQ.html#psid-data"
 ---
 Per the [PSID website](https://psidonline.isr.umich.edu/Guide/FAQ.aspx?Type=8), authors are not allowed to post extracts of their data online. The reason is that any user needs to agree to the PSID terms of use before being given access to the data. However, the PSID has provided authors with the ability to deposit their data extracts and/or [their derived data in a repository](https://www.openicpsr.org/openicpsr/psid), precisely for the purpose of allowing for sharing in compliance with their [Terms of use](http://simba.isr.umich.edu/U/CondUse.aspx). 
 
