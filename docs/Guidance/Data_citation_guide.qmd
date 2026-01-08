@@ -2,6 +2,7 @@
 title: "Guidance on Data Citation"
 aliases:
   - /Data_citation_guide.html
+  - /Data_citation_guidance.html
 categories: [citations, data citation, data]
 
 ---
