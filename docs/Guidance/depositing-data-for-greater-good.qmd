@@ -3,7 +3,8 @@ title: Depositing Data for the Greater Good
 author: Lars Vilhuber
 description: "Sometimes, it is worthwhile to separately deposit the data that is created as part of a broader research project, rather than include it in a single replication package. This document walks you through that."
 categories: [deposits, preservation, DOI, data, big data]
-
+aliases: 
+  - /sample-depositing-data-for-greater-good.html
 ---
 
 Sometimes, it is worthwhile to not convolute a particular useful dataset within a replication package. Pulling it out, depositing it in its own right, is easy, and yields much greater findability through search engines such as ICPSR or [Google Dataset Search](https://toolbox.google.com/datasetsearch).
