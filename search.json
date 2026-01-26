@@ -510,7 +510,7 @@
     "href": "FAQ/wrds-data-description.html#citing-wrds-data",
     "title": "Data Citation and Reproducibility on WRDS",
     "section": "Citing WRDS data",
-    "text": "Citing WRDS data\nResearchers can cite the individual dataset or query used to access data via a unique and extensible URL. Each section of the URL represents a further step in the chain of access.\nExample Citation:\n\nStandard and Poors. . “Compustat North American Fundamentals Annual Data”. Provided by Wharton Research Data Services (WRDS).\nAvailable at: https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/, last accessed on ."
+    "text": "Citing WRDS data\nResearchers can cite the individual dataset or query used to access data via a unique and extensible URL. Each section of the URL represents a further step in the chain of access.\nExample Citation:\n\nStandard and Poors. (year). “Compustat North American Fundamentals Annual Data”. Provided by Wharton Research Data Services (WRDS).\nAvailable at: https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/, last accessed on (date)."
   },
   {
     "objectID": "FAQ/wrds-data-description.html#documenting-web-queries",
