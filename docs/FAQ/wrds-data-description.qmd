@@ -27,7 +27,7 @@ Researchers can demonstrate exactly what variables were accessed, row counts, an
 
 Every web query generates a unique output page upon submission. 
 
-![Unique web query output page](./images/wrds_web_query_1.png)
+![Unique web query output page](/images/wrds_web_query_1.png)
 
 - **Toggle Input Parameters:** Clicking this displays the exact input parameters of the query.
 - **Log Files:** 
@@ -44,13 +44,13 @@ While the  `Rerun` button is currently for individual use and cannot be shared, 
 
 After opting in and running a query, you can view your saved history on the data page.
 
-![Viewing Saved Queries](./images/wrds_web_query_2.png)
+![Viewing Saved Queries](/images/wrds_web_query_2.png)
 
 **Step 2: Edit for Public Access**
 
 By clicking **Edit**, you can set the query access to **"Everyone"**.
 
-![Setting query access to Everyone](./images/wrds_web_query_3.png)
+![Setting query access to Everyone](/images/wrds_web_query_3.png)
 
 **Step 3: Share the Link**
 
