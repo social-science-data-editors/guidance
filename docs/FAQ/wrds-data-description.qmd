@@ -14,8 +14,8 @@ Researchers can cite the individual dataset or query used to access data via a u
 
 **Example Citation:**
 
-> Standard and Poors. <year>. "Compustat North American Fundamentals Annual Data". Provided by Wharton Research Data Services (WRDS).   
-> Available at: <https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/>, last accessed on <date>.
+> Standard and Poors. (year). "Compustat North American Fundamentals Annual Data". Provided by Wharton Research Data Services (WRDS).   
+> Available at: <https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/>, last accessed on (date).
 
 ---
 
