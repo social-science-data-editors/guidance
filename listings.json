@@ -15,6 +15,7 @@
       "/Guidance/index.html",
       "/Guidance/Requested_information_hosting.html",
       "/Verification/Verification_guidance.html",
+      "/FAQ/wrds-data-description.html",
       "/FAQ/data-citation-toplevel-link.html",
       "/FAQ/data-citation-without-online-link.html",
       "/FAQ/do-i-need-to-release-code-history.html",
@@ -38,6 +39,7 @@
   {
     "listing": "/FAQ/index.html",
     "items": [
+      "/FAQ/wrds-data-description.html",
       "/FAQ/data-citation-toplevel-link.html",
       "/FAQ/data-citation-without-online-link.html",
       "/FAQ/do-i-need-to-release-code-history.html",

@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Various">
-<meta name="description" content="Various code snippets to generate descriptive statistics of a dataset, especially when data cannot be included for licensing or confidentiality reasons.">
+<meta name="author" content="Lars Vilhuber">
 
-<title>Sample code to generate descriptive statistics – Social Science Data Editors Guidance</title>
+<title>Data Citation and Reproducibility on WRDS – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -67,8 +31,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Samples/sample-python-configuration.html" rel="next">
-<link href="../Samples/sample_radc_statement2.html" rel="prev">
 <link href="../ssde-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -178,7 +140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../Samples/sample-codebooks-for-data.html">Sample code to generate descriptive statistics</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Data Citation and Reproducibility on WRDS</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -283,11 +245,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../Samples/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Samples</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Samples/DCAS_Commercial_data.html" class="sidebar-item-text sidebar-link">
@@ -314,7 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Samples/sample-codebooks-for-data.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Samples/sample-codebooks-for-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sample code to generate descriptive statistics</span></a>
   </div>
 </li>
@@ -430,34 +392,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#generating-codebooks" id="toc-generating-codebooks" class="nav-link active" data-scroll-target="#generating-codebooks">Generating codebooks</a>
+  <li><a href="#citing-wrds-data" id="toc-citing-wrds-data" class="nav-link active" data-scroll-target="#citing-wrds-data">Citing WRDS data</a></li>
+  <li><a href="#documenting-web-queries" id="toc-documenting-web-queries" class="nav-link" data-scroll-target="#documenting-web-queries">Documenting Web Queries</a>
   <ul>
-  <li><a href="#stata" id="toc-stata" class="nav-link" data-scroll-target="#stata">Stata</a></li>
-  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
-  <li><a href="#sas" id="toc-sas" class="nav-link" data-scroll-target="#sas">SAS</a></li>
+  <li><a href="#output-pages-and-logs" id="toc-output-pages-and-logs" class="nav-link" data-scroll-target="#output-pages-and-logs">Output Pages and Logs</a></li>
+  <li><a href="#sharing-via-saved-queries" id="toc-sharing-via-saved-queries" class="nav-link" data-scroll-target="#sharing-via-saved-queries">Sharing via Saved Queries</a></li>
   </ul></li>
-  <li><a href="#creationg-zero-obs-datasets" id="toc-creationg-zero-obs-datasets" class="nav-link" data-scroll-target="#creationg-zero-obs-datasets">Creationg “zero-obs” datasets</a>
-  <ul>
-  <li><a href="#stata-1" id="toc-stata-1" class="nav-link" data-scroll-target="#stata-1">Stata</a></li>
-  <li><a href="#r-1" id="toc-r-1" class="nav-link" data-scroll-target="#r-1">R</a></li>
-  <li><a href="#sas-1" id="toc-sas-1" class="nav-link" data-scroll-target="#sas-1">SAS</a></li>
-  </ul></li>
+  <li><a href="#programmatic-and-server-access" id="toc-programmatic-and-server-access" class="nav-link" data-scroll-target="#programmatic-and-server-access">Programmatic and Server Access</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/sample-codebooks-for-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/FAQ/wrds-data-description.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Samples/index.html">Samples</a></li><li class="breadcrumb-item"><a href="../Samples/sample-codebooks-for-data.html">Sample code to generate descriptive statistics</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sample code to generate descriptive statistics</h1>
-</div>
-
-<div>
-  <div class="description">
-    Various code snippets to generate descriptive statistics of a dataset, especially when data cannot be included for licensing or confidentiality reasons.
+<h1 class="title">Data Citation and Reproducibility on WRDS</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">WRDS</div>
+    <div class="quarto-category">restricted data</div>
+    <div class="quarto-category">interactive queries</div>
+    <div class="quarto-category">extracts</div>
   </div>
-</div>
+  </div>
+
 
 
 <div class="quarto-title-meta">
@@ -465,7 +423,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Various </p>
+             <p>Lars Vilhuber </p>
           </div>
   </div>
     
@@ -478,106 +436,79 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="generating-codebooks" class="level2">
-<h2 class="anchored" data-anchor-id="generating-codebooks">Generating codebooks</h2>
-<section id="stata" class="level3">
-<h3 class="anchored" data-anchor-id="stata">Stata</h3>
-<p>In Stata,the native ‘codebook’ command can generate such information:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Stata</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> my_input_data</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">describe</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">codebook</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>See <a href="../Samples/code/01_codebook_fancy.html">code/01_codebook_fancy.md</a> for a fancier example, and <a href="../Samples/code/02_codebook_plaintext.html">code/02_codebook_plaintext.md</a> for the code and output from the simpler example.</p>
+<blockquote class="blockquote">
+<p>This content was based on a contribution by Matthew Pierson at the Wharton Research Data Services (WRDS), and adapted for our purposes. All errors are mine.</p>
+</blockquote>
+<section id="citing-wrds-data" class="level2">
+<h2 class="anchored" data-anchor-id="citing-wrds-data">Citing WRDS data</h2>
+<p>Researchers can cite the individual dataset or query used to access data via a unique and extensible URL. Each section of the URL represents a further step in the chain of access.</p>
+<p><strong>Example Citation:</strong></p>
+<blockquote class="blockquote">
+<p>Standard and Poors. <year>. “Compustat North American Fundamentals Annual Data”. Provided by Wharton Research Data Services (WRDS).<br>
+Available at: <a href="https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/" class="uri">https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/</a>, last accessed on <date>.</date></year></p>
+</blockquote>
+<hr>
 </section>
-<section id="r" class="level3">
-<h3 class="anchored" data-anchor-id="r">R</h3>
-<p>In R, the <a href="https://cran.r-project.org/web/packages/dataMaid/index.html">dataMaid</a> [<a href="http://sandsynligvis.dk/2017/08/21/datamaid-your-personal-assistant-for-cleaning-up-the-data-cleaning-process/">1</a>], [<a href="http://sandsynligvis.dk/articles/18/codebook.html">2</a>] can accomplish a similar task:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use the    dataMaid   package</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dataMaid)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">makeCodebook</span>(my_input_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>See <a href="../Samples/code/03_codebook_dataMaid.html">code/03_codebook_dataMaid</a> for an example.</p>
+<section id="documenting-web-queries" class="level2">
+<h2 class="anchored" data-anchor-id="documenting-web-queries">Documenting Web Queries</h2>
+<p>Researchers can demonstrate exactly what variables were accessed, row counts, and date ranges using the following methods:</p>
+<section id="output-pages-and-logs" class="level3">
+<h3 class="anchored" data-anchor-id="output-pages-and-logs">Output Pages and Logs</h3>
+<p>Every web query generates a unique output page upon submission.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wrds_web_query_1.png" class="img-fluid figure-img"></p>
+<figcaption>Unique web query output page</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Toggle Input Parameters:</strong> Clicking this displays the exact input parameters of the query.</li>
+<li><strong>Log Files:</strong>
+<ul>
+<li><code>_sas.log</code> (or <code>_sql.log</code>): Displays the code that generated the query.</li>
+<li><code>_grid.log</code>: Demonstrates the server-side log file of the job.</li>
+</ul></li>
+<li><strong>Tracking:</strong> These logs trace the exact output file name, allowing them to be matched against the import function of a researcher’s code.</li>
+<li><strong>Retention:</strong> Log files are only kept for <strong>2 days</strong>. Users should save these with their output to submit as part of their <strong>Data and Code package</strong>.</li>
+</ul>
 </section>
-<section id="sas" class="level3">
-<h3 class="anchored" data-anchor-id="sas">SAS</h3>
-<p>In SAS, PROC CONTENTS and PROC MEANS may very well provide all that is needed:</p>
-<pre class="sas"><code>proc contents;
-proc means;
-run;</code></pre>
-<p>See <a href="../Samples/code/04_codebook_SAS.html">code/04_codebook_SAS</a> for an example.</p>
+<section id="sharing-via-saved-queries" class="level3">
+<h3 class="anchored" data-anchor-id="sharing-via-saved-queries">Sharing via Saved Queries</h3>
+<p>While the <code>Rerun</code> button is currently for individual use and cannot be shared, researchers can share query parameters using the <strong>Saved Queries</strong> feature.</p>
+<p><strong>Step 1: Save the Query</strong></p>
+<p>After opting in and running a query, you can view your saved history on the data page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wrds_web_query_2.png" class="img-fluid figure-img"></p>
+<figcaption>Viewing Saved Queries</figcaption>
+</figure>
+</div>
+<p><strong>Step 2: Edit for Public Access</strong></p>
+<p>By clicking <strong>Edit</strong>, you can set the query access to <strong>“Everyone”</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/wrds_web_query_3.png" class="img-fluid figure-img"></p>
+<figcaption>Setting query access to Everyone</figcaption>
+</figure>
+</div>
+<p><strong>Step 3: Share the Link</strong></p>
+<p>This generates a link that allows any <strong>authenticated</strong> WRDS user to rerun the query with the exact same settings, date ranges, and variables.</p>
+<blockquote class="blockquote">
+<p><strong>Example Shared Link:</strong> <a href="https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/quarterly-update/index-version-2/daily-index-and-portfolios-on-sp-500/?saved_query=6824671" class="uri">https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/quarterly-update/index-version-2/daily-index-and-portfolios-on-sp-500/?saved_query=6824671</a></p>
+</blockquote>
+<hr>
 </section>
 </section>
-<section id="creationg-zero-obs-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="creationg-zero-obs-datasets">Creationg “zero-obs” datasets</h2>
-<p>Alternatively, you can just provide an empty file that replicates the structure (schema) of your data. Often, this can be achieved by simply setting the number of observations to zero.</p>
-<section id="stata-1" class="level3">
-<h3 class="anchored" data-anchor-id="stata-1">Stata</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Stata</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> my_input_data</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">keep</span> <span class="kw">if</span> 0</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">save</span> zero_input_data, <span class="kw">replace</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>. <span class="kw">sysuse</span> auto</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>(1978 automobile <span class="kw">data</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>. <span class="kw">keep</span> <span class="kw">if</span> 0</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>(74 observations deleted)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>. <span class="kw">desc</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>Contains <span class="kw">data</span> from /usr/<span class="kw">local</span>/stata/ado/base/a/auto.dta</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a> Observations:             0                  1978 automobile <span class="kw">data</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    Variables:            12                  13 Apr 2024 17:45</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>                                              (<span class="dt">_dta</span> has <span class="kw">notes</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>Variable      Storage   Display    Value</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="bn">name</span>         <span class="dv">type</span>    <span class="kw">format</span>    <span class="kw">label</span>      Variable <span class="kw">label</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>make            str18   %-18s                 Make and <span class="kw">model</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>price           <span class="kw">int</span>     %8.0gc                Price</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>mpg             <span class="kw">int</span>     %8.0g                 Mileage (mpg)</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>rep78           <span class="kw">int</span>     %8.0g                 Repair record 1978</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>headroom        <span class="kw">float</span>   %6.1f                 Headroom (<span class="kw">in</span>.)</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>trunk           <span class="kw">int</span>     %8.0g                 Trunk space (cu. ft.)</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="kw">weight</span>          <span class="kw">int</span>     %8.0gc                Weight (lbs.)</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>          <span class="kw">int</span>     %8.0g                 Length (<span class="kw">in</span>.)</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>turn            <span class="kw">int</span>     %8.0g                 Turn <span class="bn">circle</span> (ft.)</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>displacement    <span class="kw">int</span>     %8.0g                 Displacement (cu. <span class="kw">in</span>.)</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>gear_ratio      <span class="kw">float</span>   %6.2f                 Gear <span class="kw">ratio</span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>foreign         <span class="kw">byte</span>    %8.0g      origin     Car origin</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>Sorted <span class="kw">by</span>: foreign</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>     Note: Dataset has changed since <span class="fu">last</span> saved.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="r-1" class="level3">
-<h3 class="anchored" data-anchor-id="r-1">R</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the RDS file into an R object</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"path/to/my_input_data.rds"</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new, empty data frame with the same structure</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>zero_obs_df <span class="ot">&lt;-</span> my_data[<span class="cn">FALSE</span>, ]</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># To verify, check the dimensions</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(zero_obs_df)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] 0 X</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the empty data frame to a new RDS file</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(zero_obs_df, <span class="st">"path/to/zero_input_data.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Alternatively, using the <code>dplyr</code> package:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"path/to/my_input_data.rds"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>zero_obs_df <span class="ot">&lt;-</span> <span class="fu">slice</span>(my_data, <span class="dv">0</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(zero_obs_df, <span class="st">"path/to/zero_input_data.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="sas-1" class="level3">
-<h3 class="anchored" data-anchor-id="sas-1">SAS</h3>
-<pre class="sas"><code>data zero_input_data;
-    set my_input_data (obs=0)
-run;</code></pre>
-<p>or</p>
-<pre class="sas"><code>
-proc sql;
-  create table zero_input_table like my_input_table;
-quit;</code></pre>
+<section id="programmatic-and-server-access" class="level2">
+<h2 class="anchored" data-anchor-id="programmatic-and-server-access">Programmatic and Server Access</h2>
+<p>For access via server or other non-GUI methods, researchers should submit their <strong>log files</strong> as part of their replication packages.</p>
+<ul>
+<li><strong>Library &amp; Dataset Identification:</strong> Logs provide indications of the library and dataset accessed (e.g., CRSP Daily Securities data is identified as <code>crsp.dsf</code>).</li>
+<li><strong>Data Dictionary:</strong> Individual dataset names can be translated using the <a href="https://wrds-www.wharton.upenn.edu/data-dictionary/data-dictionary/">WRDS Data Dictionary</a>.</li>
+<li><strong>Verification:</strong> Log files indicate variables used and the date accessed by the nature of most statistical programs.</li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -981,18 +912,6 @@ quit;</code></pre>
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../Samples/sample_radc_statement2.html" class="pagination-link" aria-label="Sample Statement for Restricted Access Data 2">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sample Statement for Restricted Access Data 2</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../Samples/sample-python-configuration.html" class="pagination-link" aria-label="The Python Way">
-        <span class="nav-page-text">The Python Way</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1022,7 +941,7 @@ quit;</code></pre>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Samples/sample-codebooks-for-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/FAQ/wrds-data-description.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
