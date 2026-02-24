@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Requested Information for Code – Social Science Data Editors Guidance</title>
+<title>Data Legality Guidance – Social Science Data Editors Guidance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Guidance/Requested_information_data.html" rel="next">
-<link href="../Guidance/Licensing_guidance.html" rel="prev">
+<link href="../Guidance/Licensing_guidance.html" rel="next">
+<link href="../Guidance/guidance-reproducible-gis-analysis.html" rel="prev">
 <link href="../ssde-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -176,7 +141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Guidance/index.html">Start here if you are an author</a></li><li class="breadcrumb-item"><a href="../Guidance/Requested_information_code.html">Requested Information for Code</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Guidance/index.html">Start here if you are an author</a></li><li class="breadcrumb-item"><a href="../Guidance/legality_guidance.html">Data Legality Guidance</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -235,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/legality_guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../Guidance/legality_guidance.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Data Legality Guidance</span></a>
   </div>
 </li>
@@ -247,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Guidance/Requested_information_code.html" class="sidebar-item-text sidebar-link active">
+  <a href="../Guidance/Requested_information_code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Requested Information for Code</span></a>
   </div>
 </li>
@@ -434,33 +399,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#readings" id="toc-readings" class="nav-link active" data-scroll-target="#readings">Readings</a></li>
-  <li><a href="#readme-and-master-script" id="toc-readme-and-master-script" class="nav-link" data-scroll-target="#readme-and-master-script">README and master script</a></li>
-  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
-  <li><a href="#things-not-to-do" id="toc-things-not-to-do" class="nav-link" data-scroll-target="#things-not-to-do">Things not to do</a></li>
-  <li><a href="#things-to-do" id="toc-things-to-do" class="nav-link" data-scroll-target="#things-to-do">Things to do</a>
+  <li><a href="#are-there-legal-restrictions-to-my-use-of-data" id="toc-are-there-legal-restrictions-to-my-use-of-data" class="nav-link active" data-scroll-target="#are-there-legal-restrictions-to-my-use-of-data">Are there Legal Restrictions to my use of Data?</a></li>
+  <li><a href="#how-could-i-use-data-illegally" id="toc-how-could-i-use-data-illegally" class="nav-link" data-scroll-target="#how-could-i-use-data-illegally">How Could I use data <em>Illegally</em>?</a></li>
+  <li><a href="#scraping-data-from-websites" id="toc-scraping-data-from-websites" class="nav-link" data-scroll-target="#scraping-data-from-websites">Scraping Data from Websites</a>
   <ul>
-  <li><a href="#versioning-of-packages" id="toc-versioning-of-packages" class="nav-link" data-scroll-target="#versioning-of-packages">Versioning of packages</a></li>
+  <li><a href="#legal-precedent-under-us-law" id="toc-legal-precedent-under-us-law" class="nav-link" data-scroll-target="#legal-precedent-under-us-law">Legal Precedent under US Law</a></li>
+  <li><a href="#eu-law" id="toc-eu-law" class="nav-link" data-scroll-target="#eu-law">EU Law</a></li>
   </ul></li>
-  <li><a href="#some-facts" id="toc-some-facts" class="nav-link" data-scroll-target="#some-facts">Some facts</a></li>
+  <li><a href="#legal-advice" id="toc-legal-advice" class="nav-link" data-scroll-target="#legal-advice">Legal Advice</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Guidance/Requested_information_code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Guidance/legality_guidance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Guidance/index.html">Start here if you are an author</a></li><li class="breadcrumb-item"><a href="../Guidance/Requested_information_code.html">Requested Information for Code</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Guidance/index.html">Start here if you are an author</a></li><li class="breadcrumb-item"><a href="../Guidance/legality_guidance.html">Data Legality Guidance</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Requested Information for Code</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">code</div>
-    <div class="quarto-category">software</div>
-    <div class="quarto-category">good practices</div>
-    <div class="quarto-category">versioning</div>
-    <div class="quarto-category">packages</div>
-    <div class="quarto-category">libraries</div>
-  </div>
-  </div>
+<h1 class="title">Data Legality Guidance</h1>
+<p class="subtitle lead">Am I allowed to use Web-scraped data?</p>
+</div>
 
 
 
@@ -476,99 +433,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="readings" class="level3">
-<h3 class="anchored" data-anchor-id="readings">Readings</h3>
-<p>Some scientists, including economists, have put together excellent guidance and tutorials. See</p>
-<ul>
-<li><a href="https://reifjulian.github.io/guide/">Reif’s Stata coding guide</a> and a <a href="https://github.com/reifjulian/my-project">sample project setup</a> that supports reproducibility</li>
-<li><a href="https://github.com/gslab-econ/ra-manual/wiki/Getting-Started">Gentzkow-Shapiro Lab’s RA Manual</a>, in particular <a href="https://github.com/gslab-econ/ra-manual/wiki/Stata">Stata Style</a></li>
-<li><a href="https://www.practicereproducibleresearch.org/core-chapters/3-basic.html">Basics of Reproducible Workflow</a></li>
-<li><a href="https://doi.org/10.1371/journal.pcbi.1005510" title="Good enough practices in scientific computing.">Good enough practices in scientific computing</a>. Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, et al.&nbsp;(2017) Good enough practices in scientific computing. PLOS Computational Biology 13(6): e1005510. <a href="https://doi.org/10.1371/journal.pcbi.1005510">https://doi.org/10.1371/journal.pcbi.1005510</a></li>
-</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>We don’t provide legal counselling
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This site does not provide legal guidance. The information below is provided for discussion and as a suggestion only. Authors should consult with a qualified party, such as a university counsel or a lawyer, as appropriate.</p>
+</div>
+</div>
+<section id="are-there-legal-restrictions-to-my-use-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-legal-restrictions-to-my-use-of-data">Are there Legal Restrictions to my use of Data?</h2>
+<p>In short, yes. You as the author are <em>personally</em> responsible for any use or misuse of data in your research. There are cases where a dataset was acquired illegally by a researcher (e.g.&nbsp;via a data leak like the <a href="https://en.wikipedia.org/wiki/Panama_Papers">Panama Papers</a>), and where journals may refuse to publish the derived results. Some journals have a dedicated policy, setting out the terms under which exceptions to the legality requirement would be made. One example is the <a href="https://www.aeaweb.org/journals/data/data-legality-policy">AEA Data Legality policy</a>, which lays out conditions under which an article may be published even if data was not obtained legally.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
-<section id="readme-and-master-script" class="level3">
-<h3 class="anchored" data-anchor-id="readme-and-master-script">README and master script</h3>
-<p>All replication archives should have a README (in PDF, text, or a simple formatting language such as Markdown, like this document). The README should provide a sufficient description to understand the structure of the replication archive (directory structure, what is acquired from third parties, what is generated by scripts, how much output to expect). It should document each file or class of files that are included.</p>
-<p>We strongly encourage the provision of a master script. The master script should run all programs necessary to provide the outputs, in the right sequence, robustly.</p>
-<p>In some cases, the master script might also serve as a README (for instance, “README.bash”, “README.py”, “README.Rmd”), as long as it satisfies all conditions of the README as well (i.e., ample comments).</p>
-</section>
-<section id="configuration" class="level3">
-<h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
-<ul>
-<li><p>We strongly encourage the use of a single configuration file, containing all path names.</p></li>
-<li><p>We strongly encourage the use of relative paths for including programs, data, and outputs in the main program</p></li>
-<li><p>We strongly encourage listing ALL dependencies and packages needed to run.</p>
-<ul>
-<li>including them in the project</li>
-<li>or listing them out in a “setup” program</li>
-</ul></li>
-<li><p>We strongly encourage setting any seeds for random number generators</p></li>
-<li><p><a href="../Samples/sample-stata-configuration.md">Sample configuration for Stata</a></p></li>
-<li><p><a href="../Samples/sample-R-configuration.md">Sample configuration for R</a></p></li>
-<li><p><a href="../Samples/sample-python-configuration.md">Python way</a></p></li>
-</ul>
-</section>
-<section id="things-not-to-do" class="level3">
-<h3 class="anchored" data-anchor-id="things-not-to-do">Things not to do</h3>
-<ul>
-<li>We strongly discourage writing comments like</li>
-</ul>
-<pre><code>Run this a first time, generating column 1 of Table 3.
-Then comment out line 55, then run a second time, which should
-give you column 3 of Table 3.
-Then uncomment line 55, change the parameter in line 67 to "5",
-and run again to get column 2 of Table 3.</code></pre>
-<p>(this is only slightly paraphrased from an actual example). - Avoid ambiguous or imprecise instructions like</p>
-<pre><code>Have superDynare available</code></pre>
-<p>or</p>
-<pre><code>Use the outreg55 package</code></pre>
-<p>(no URL or installation command provided)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://imgs.xkcd.com/comics/data_pipeline.png" class="img-fluid figure-img"></p>
-<figcaption>xkcd-data-pipeline</figcaption>
-</figure>
+<section id="how-could-i-use-data-illegally" class="level2">
+<h2 class="anchored" data-anchor-id="how-could-i-use-data-illegally">How Could I use data <em>Illegally</em>?</h2>
+<p>Quite simply put, if a data provider distributes data under certain conditions specified in license agreement, as pointed out in our dedicated section on <a href="../Guidance/Licensing_guidance.html">Licensing</a>, and an author violates those conditions, then use of the data is illegal. Therefore, in cases where an explicit license exists, checking whether data usage is legally sound is often straightforward. Most offical or public data providers (U. Michigan’s <code>PSID</code> or U. Minnesota’s <code>IPUMS</code> etc) publish data under some kind of license that explicitly allows researchers to use the data in certain ways. The researcher usually cannot access the data without agreeing to the license.</p>
+<p>The more complicated cases arise if an entity’s primary purpose is not that of a providing data for research purposes as in the case of the above mentioned institutions, but where the distribution of data is a side product of some other activity. Online marketplaces like LinkedIn, ebay or Airbnb come to mind as one example, where the actual business case may be the enabling of transactions, but where along the way data is produced, which may be accessible on the web for rearchers.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>“No license” does not mean “no conditions”
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The absence of an explicit license on a website does not imply that all forms of usage of collected data are allowed. In fact, copyright law usually applies, meaning “All rights reserved”.</p>
+</div>
 </div>
 </section>
-<section id="things-to-do" class="level3">
-<h3 class="anchored" data-anchor-id="things-to-do">Things to do</h3>
-<ul>
-<li>Explain briefly how to RUN your code - do not assume that everybody now or in the future knows how to run <code>make</code>, Matlab+Dynare, or even Stata.</li>
-<li>Write code that can be run without human intervention, ideally without using a graphical interface.</li>
-<li>Use functions/programs/loops/etc. to iterate through variations of an otherwise identical procedure (but ensure that the purpose of the loop is well described)</li>
-<li>Identify all requirements to allow somebody to successfully run the code who has NOT been experimenting with the software and code for the past 5 years on the same laptop. This means</li>
-<li>what packages need to be installed, from where, which versions</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install outreg55, from(https:<span class="co">//myurl/to/o) // accurate as of 2018-10-03</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>or <code>r   # Known to work with dplyr 0.7.6   install.packages(c("dplyr","devtools"))   library(dplyr)   library(devtools)   install_github("myrepo/superols")</code> - Write out all tables to files (do not simply display on-screen) - Stata: <code>regsave</code>, <code>outest</code>, <code>texsave</code>, etc. are sample packages - Matlab: <a href="https://www.mathworks.com/help/matlab/ref/writetable.html">writetable</a> - R: any number of packages, for instance <a href="https://www.rdocumentation.org/packages/knitr/versions/1.28/topics/kable"><code>kable</code></a> or <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html"><code>kableExtra</code></a> - Write out all figures to files (do not simply display on-screen) - Stata: <code>graph export</code> (use pdf or eps) - Matlab: <a href="https://www.mathworks.com/help/matlab/ref/saveas.html"><code>saveas</code></a> - R: <a href="https://www.dummies.com/programming/r/how-to-save-graphics-to-an-image-file-in-r/">various native commands</a>, such as <code>png()</code>, <code>pdf()</code></p>
-<section id="versioning-of-packages" class="level4">
-<h4 class="anchored" data-anchor-id="versioning-of-packages">Versioning of packages</h4>
-<p>You should be precise about the relevant packages. Ideally specify a specific version to install, or provide the package. At a minimum, specify the version of a package that you produced <strong>your</strong> results with.</p>
-<ul>
-<li>Stata:
-<ul>
-<li>making a distinction between Stata Journal and SSC versions can sometimes help. If the package license permits, distributing the package with the core code is also possible.</li>
-<li>Redirect the <code>adopath</code> to a project-specific directory.</li>
-</ul></li>
-<li>R:
-<ul>
-<li>you could fix things by installing specific versions, see <a href="https://support.rstudio.com/hc/en-us/articles/219949047-Installing-older-versions-of-packages">Installing older versions of packages</a>.</li>
-<li><strike>use of <a href="https://mran.microsoft.com/documents/rro/reproducibility">MRAN snapshot</a></strike> (now defunct as of 2023-07-01)</li>
-<li>use of <a href="https://packagemanager.posit.co/">Posit Package Manager</a> (free for public use, for now still active…)</li>
-<li>use of <code>packrat</code> packages (much local storage)</li>
-</ul></li>
-</ul>
+<section id="scraping-data-from-websites" class="level2">
+<h2 class="anchored" data-anchor-id="scraping-data-from-websites">Scraping Data from Websites</h2>
+<p>Unfortunately, the legal situation surrounding the legality of collecting data from websites is complex. There is variation across jurisdictions as to which kind - if any - of webscraping activity is considered legal. What is more, it is not even straightforward to establish which country’s law to apply in cross-border web scraping activity.</p>
+<section id="legal-precedent-under-us-law" class="level3">
+<h3 class="anchored" data-anchor-id="legal-precedent-under-us-law">Legal Precedent under US Law</h3>
+<p>According to <a href="https://en.wikipedia.org/wiki/Web_scraping">wikipedia</a>, Webscraping can in principle conflict with three ways with US law:</p>
+<ol type="1">
+<li>Copyright infringement: it may not be allowed to copy the information displayed on the website.</li>
+<li>Violation of the “Computer Fraud and Abuse Act”, which prohibits access to a list of so-called <em>protected computers</em>, e.g.&nbsp;governmental systems of banking system computers.</li>
+<li>“Trespass to Chattel”: Basically the disturbing of private property in the sense that webscraping would use valuable resources on a webserver.</li>
+</ol>
+<p>This being said, the legal precedent in the US (as of 2023) is that webscraping of websites whose terms and conditions do not explicitly rule out the activity is considered legal.</p>
+</section>
+<section id="eu-law" class="level3">
+<h3 class="anchored" data-anchor-id="eu-law">EU Law</h3>
+<p>The situation in the EU is evolving as well. Precedent in some countries allows web scraping (Denmark 2006), while in others (<a href="https://www.cnil.fr/fr/la-reutilisation-des-donnees-publiquement-accessibles-en-ligne-des-fins-de-demarchage-commercial">CNIL France 2020</a>) the ownership of data which is publicly accessible on the web belongs still with to the individual which generated the data. Hence, not all potential uses of this data may be allowed.</p>
 </section>
 </section>
-<section id="some-facts" class="level3">
-<h3 class="anchored" data-anchor-id="some-facts">Some facts</h3>
-<p>Most economists in the late 2000s (through 2018) use either Stata or Matlab. Assume that replicators have not (yet) learned your preferred software if you are using something else, and provide some guidance how to use it.</p>
-<p><img src="https://raw.githubusercontent.com/pbaylis/econ-program-usage-data/master/aer_programs_by_year.png" class="img-fluid" alt="software usage AER"> Figure: Software usage in the AER, 2000-2018 (Source: <a href="http://doi.org/10.5281/zenodo.1453556">Baylis and Schrimpf, 2018</a>)</p>
+<section id="legal-advice" class="level2">
+<h2 class="anchored" data-anchor-id="legal-advice">Legal Advice</h2>
+<p>We <strong>strongly</strong> recommend authors to obtain legal advice from their institution or legal experts in their country of residence.</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note that there is no blanket approval, and all such exceptions must be discussed with a journal editor, who will balance benefits to society with the risk associated with illegal usage.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -971,13 +902,13 @@ and run again to get column 2 of Table 3.</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Guidance/Licensing_guidance.html" class="pagination-link" aria-label="Licensing Guidance">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Licensing Guidance</span>
+      <a href="../Guidance/guidance-reproducible-gis-analysis.html" class="pagination-link" aria-label="Some (incomplete) guidance to creating reproducible maps with GIS software">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Some (incomplete) guidance to creating reproducible maps with GIS software</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Guidance/Requested_information_data.html" class="pagination-link" aria-label="Requested Information for Data">
-        <span class="nav-page-text">Requested Information for Data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Guidance/Licensing_guidance.html" class="pagination-link" aria-label="Licensing Guidance">
+        <span class="nav-page-text">Licensing Guidance</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1010,7 +941,7 @@ and run again to get column 2 of Table 3.</code></pre>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Guidance/Requested_information_code.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/social-science-data-editors/guidance/edit/main/docs/Guidance/legality_guidance.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/social-science-data-editors/guidance/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
