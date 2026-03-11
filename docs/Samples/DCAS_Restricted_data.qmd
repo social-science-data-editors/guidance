@@ -8,6 +8,8 @@ On this page, we list a few commonly used *lightly* or *heavily* restricted data
 
 This page uses a few examples, and suggested descriptions of data access for these examples. If you have an example to suggest for this page, send an email to dataeditor@aeaweb.org or [create a pull request](https://github.com/social-science-data-editors/guidance/pulls/new).
 
+We maintain a database of different Terms Of Use accessible at [this link](https://social-science-data-editors.github.io/reference/TermsOfUse.html).
+
 ### IPUMS
 
 IPUMS data are subject to varying usage restrictions. You can find a comprehensive overview of the distribution restrictions at [https://ipums.org/about/terms](https://ipums.org/about/terms), please consult with IPUMS directly  (at [ipums@umn.edu](mailto:ipums@umn.edu)) should you have any doubts.
