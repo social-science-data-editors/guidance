@@ -11,7 +11,7 @@ categories: [DCAS, data availability, code availability, data, code, citations, 
 Data and Code Availability Statements (DCAS) can take on many forms. The examples below are taken from economics articles. For examples from other domains, see
 
 - [Springer](https://www.springernature.com/gp/authors/research-data-policy/data-availability-statements/12330880)
-- [Hindawi](https://www.hindawi.com/research.data/#statement.templates)
+- [Wiley](https://authors.wiley.com/author-resources/Journal-Authors/open-access/data-sharing-citation/data-sharing-policy.html)
 
 DCAS expand on and complement [data citations](../Guidance/Data_citation_guide.qmd).
 
