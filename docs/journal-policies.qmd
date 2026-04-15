@@ -14,6 +14,11 @@ In alphabetical order:
 
 - [Policy](https://www.economics.ca/cpages/cje-journal-policies)
 
+## Journal of Political Economy
+
+- [Policy](https://www.journals.uchicago.edu/journals/jpe/datapolicy)
+- [Guidance](https://jpedataeditor.github.io/)
+
 ## Management Science
 
 - [Policy](https://pubsonline.informs.org/page/mnsc/datapolicy)
