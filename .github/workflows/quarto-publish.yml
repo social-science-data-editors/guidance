@@ -3,8 +3,8 @@ name: Render and Publish
 on:
   push:
     branches:
-      - main
-      - master
+      - '**'
+  pull_request:
 
   workflow_dispatch:
 
@@ -47,9 +47,22 @@ jobs:
 
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
 
+    - name: Render (without publishing)
+      if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/master'
+      uses: quarto-dev/quarto-actions/render@v2
+      with:
+         path: docs
+
+    - name: Upload rendered site as artifact
+      if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/master'
+      uses: actions/upload-artifact@v4
+      with:
+        name: rendered-site
+        path: docs/_site
 
       # NOTE: If Publishing to GitHub Pages, set the permissions correctly (see top of this yaml)
     - name: Publish to GitHub Pages (and render) 
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
       uses: quarto-dev/quarto-actions/publish@v2
       with:
          target: gh-pages
