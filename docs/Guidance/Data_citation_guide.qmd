@@ -101,7 +101,7 @@ Some data providers ask you to cite a related paper. If the dataset also has its
 Describe all datasets in the README as well as the Manuscript, listing them in the References Section, and cite them wherever you need to refer to them in the rest of the document. The best approach to avoid duplication is the same as the one you use when citing an article or book in your paper:
 
 - Place a **reference entry** — with all the elements — in the **References Section**, one per dataset.
-- Use **in-text citation**, that is, a short pointer, usually author and year, e.g. (BEA, 2016), linking to that reference entry.
+- Use an **in-text citation**, that is, a short pointer, usually author and year, e.g. (BEA, 2016), linking to that reference entry, elsewhere in the document.
 
 Publishers usually have specific requirements about each element's format (while they are usually enforced for the published manuscript, you may have some more flexibility in the README).
 
