@@ -77,6 +77,14 @@ Authors frequently ask about the ability or not to redistribute IPUMS data. Lice
 
 In all cases, IPUMS requires citation.
 
+### Example for primary data, fully included in archive:
+
+"The data used in this paper were collected by the authors via [an online survey / a laboratory experiment / field interviews] conducted in [YEAR]. The dataset is included in the replication archive in the folder data/raw/. Documentation of the survey instrument and sampling procedure is provided in data/raw/codebook.pdf [and below]. The data are made available under a Creative Commons Attribution 4.0 International (CC BY 4.0) license."
+
+### Example for primary data, restricted due to confidentiality
+
+“The data used in this paper were collected by the authors via [an online survey / a laboratory experiment / field interviews] conducted in [YEAR] under participant consent and ethics restrictions. Public release of record-level data is not permitted. A de-identified synthetic dataset, codebook, and full replication code are available at https://doi.org/10.XXXX/XXXX; qualified researchers may request secure access to the original data via [application link/contact].”
+
 ## Additional examples
 
 Further examples can be found
