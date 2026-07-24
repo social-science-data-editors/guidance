@@ -4,8 +4,7 @@ ssde_web_root/
 │   └── citation-block.html
 │   └── citation-generator.html
 ├── Guidance/
-│   └── addtl-data-citation-guidance.qmd
-│   └── Data_citation_guidance.qmd
+│   └── Data_citation_guide.qmd
 │   └── docker-guidelines.qmd
 │   └── guidance-reproducible-gis-analysis.qmd
 │   └── journal-policies.qmd

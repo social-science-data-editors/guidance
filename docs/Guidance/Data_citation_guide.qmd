@@ -1,171 +1,479 @@
 ---
+layout: withtoc
 title: "Guidance on Data Citation"
 aliases:
-  - /Data_citation_guide.html
+  - /Data_citation_comprehensive_guide.html
+  - /Data_citation_quick_guide.html
   - /Data_citation_guidance.html
-categories: [citations, data citation, data]
-
+  - /addtl-data-citation-guidance.html
+categories: [citations, data citation, data, confidential, big data]
 ---
 
-Journals offer guidance on citation, you may want to check there first. The guidance provided here is in addition, and may be the basis for future official guidance.
+## Why cite data? []{#why-data-citations}
 
-### Data Citations
+It is established practice in scientific literature to cite results, but not the data. That makes the actual data harder to find, verify, and credit. We are trying to change this practice.
 
-Properly referencing data goes beyond just reproducibility - it is also proper scientific writing style. In the same way that authors use bibliographic references to "printed" resources, they should also be using such references for data resources, to give and receive credit where credit is due. Not referencing an article or book is at best an oversight, and at worst plagiarism - and the same should apply to data objects. Numerous guides and tutorials exist, some of which provide a variety of examples.
+:::: {#why-cite-explanation .callout-note collapse="true" appearance="minimal"}
+## A short explanation
+
+Data citations are not a formatting exercise. They serve three practical purposes.
+
+- They tell a replicator exactly what data you used.
+- They give credit to the people or institutions that created and distributed the data.
+- They make the data easier to find, verify, and reuse (the goal of the [FAIR principles](https://www.go-fair.org/fair-principles/)), including through data search interfaces such as [openICPSR](https://www.openicpsr.org/openicpsr/search/aea/studies) and [Google Dataset Search](https://datasetsearch.research.google.com/).
+
+The same logic already governs the literature: we cite a book directly, not the book *review*, when we want to reference what the author said. Data deserve the same treatment. The [Joint Declaration of Data Citation Principles](https://doi.org/10.25490/a97f-egyk) puts it plainly: data are "legitimate, citable products of research."
+
+The short rule is simple:
+
+> If you use a paper, cite the paper. If you use the data, cite the data. Often you should cite both, and do not forget to do both in the manuscript and the README.
+::::
+
+## What a good data citation usually includes
+
+If a repository provides a suggested citation, use it. Otherwise, at a minimum, most data citations should make the following clear ([ICPSR](https://www.icpsr.umich.edu/web/pages/datamanagement/citations.html) lists much the same elements):
+
+- who created the data (author, often an organization)
+- what the dataset is called (title)
+- who distributes or publishes it
+- what version or year you used
+- where it can be found: DOI preferred, otherwise a stable URL or a clear access path
+- when you accessed it, if there is no DOI or stable archived version
+
+Do not cite only a paper, appendix, or website when the dataset itself is separately identifiable.
+
+:::: {#what-is-a-data-citation .callout-note collapse="true" appearance="minimal"}
+## What is and is not a data citation: a bad example and a better one []{#what-is-not-a-data-citation}[]{#what-not-to-cite}
+
+**Not enough:** citing only one paper while multiple datasets are actually being used. Here three datasets are used (NHL, Ethnologue, and Tremblay et al.), but only one is cited.
+
+::: {.citation .badcite}
+We use data acquired from the NHL, dates of power outages collected by Tremblay et al. (2018), augmented with information on the language and grammar skills of hockey players provided by the Ethnologue database.
+:::
+
+**Better:** cite each dataset, and also cite the paper if it matters for your argument or methods.
+
+::: {.citation .goodcite}
+We use data acquired from the NHL (NHL, 2018), dates of power outages collected by Tremblay et al. (2018, 2019), augmented with information on the language and grammar skills of hockey players provided by the Ethnologue database (Eberhard et al., 2019).
+:::
+
+with the corresponding entries in the reference list:
+
+::: {.citation .goodcite}
+Eberhard, David M., Gary F. Simons, and Charles D. Fennig (eds.). 2019. *Ethnologue: Languages of the World.* Twenty-second edition. Dallas, Texas: SIL International. Online version: http://www.ethnologue.com.
+:::
+
+::: {.citation .goodcite}
+National Hockey League. 2018. *NHL Game Database 1917-2018*. National Hockey League Hall of Fame, Toronto, ON. Accessed February 29, 2019.
+:::
+
+::: {.citation .goodcite}
+Tremblay, Réjean, Ken Dryden, and José Theodore. 2018. "The impact of power outages on goal-keeping in the NHL", *Journal of National Hockey Leagues*, vol 32, iss. 1.
+:::
+
+::: {.citation .goodcite}
+Tremblay, Réjean, Ken Dryden, and José Theodore. 2019. "Power outages during NHL games (updated)", *Canadian Hockey Dataverse*, doi:10.1234/nhl.lnh.haha
+:::
+::::
+
+## How to do it []{#how-to-cite}
+
+### Step 1: Identify the data object and identify the best locator.
+
+Do not cite only the article that describes the data if the dataset itself is separately identifiable. Look for a dataset title, repository record, release, or Document Object Identifier (DOI). Use the best locator
+
+- Best: DOI
+- Good: stable repository URL or release URL
+- Acceptable: a precise download page or access mechanism
+
+If you only have a general website, give enough information so a reader can locate the exact file or database you used.
+
+### Step 2: Match the citation to the access model
+
+Different data sources need slightly different citation forms. The examples in the section below cover the most common cases. You may want to check your journal's citation style guide for any specific format requirements.
+
+### Step 3: If needed, cite both the paper and the data
+
+Some data providers ask you to cite a related paper. If the dataset also has its own title, record, or DOI, cite the dataset as well. The article citation does not replace the data citation.
+
+### Step 4: Put the citation in the right places []{#where-to-cite}
+
+Describe all datasets in the README as well as the Manuscript, listing them in the References Section, and cite them wherever you need to refer to them in the rest of the document. The best approach to avoid duplication is the same as the one you use when citing an article or book in your paper:
+
+- Place a **reference entry** — with all the elements — in the **References Section**, one per dataset.
+- Use an **in-text citation**, that is, a short pointer, usually author and year, e.g. (BEA, 2016), linking to that reference entry, elsewhere in the document.
+
+Publishers usually have specific requirements about each element's format (while they are usually enforced for the published manuscript, you may have some more flexibility in the README).
+
+Practical details about **how to obtain the data** that don't belong in a formal reference — the exact table to select, a download path, a registration step, the access date for a specific extract, etc... — go in the text of the README .e.g. the Data Availability Statement, following the **in-text citation**, not crammed into the reference entry. Similarly, if you include in the README a list or table of datasets/data files, reference the corresponding dataset using the **in-text citation**.
+
+### Step 5: Practical checks and considerations before you submit
+:::: {#check-url-doi-license .callout-note collapse="true" appearance="minimal"}
+## URL, DOI, access date, and license
+
+- If you cite a website download, use the precise file, series, table, or query URL, not just the homepage.
+- If both a DOI and a URL exist, use the DOI. A DOI is stable; a URL may not be. A URL starting with `https://doi.org` is a DOI and does not need an access date.
+- If there is no DOI, include an access date.
+- Click the URL and confirm it actually lands on the data or on the page that clearly identifies the data.
+- Check whether the provider's terms of use or license require a specific citation.
+- If redistribution is restricted, explain the access conditions in the README or data availability statement.
+::::
+
+:::: {#check-published-timing .callout-note collapse="true" appearance="minimal"}
+## Is the dataset published yet? Reserving and timing a DOI []{#data-are-published}[]{#data-are-not-published}
+
+**If the data are already published**, the DOI is public and the repository will provide a suggested citation. You can also generate one from the DOI with [doi2bib](https://www.doi2bib.org/) or [Crosscite](https://citation.crosscite.org/) (see [More resources](#more-resources)).
+
+**If the data are not yet published**, it is trickier: the dataset may not have a title tied to your paper. Some repositories let you reserve a DOI (Zenodo) or delay publication. For some, the DOI can be derived from information already available (for example openICPSR; something similar may be possible at Dataverse). You can often delay the dataset's release and coordinate it with the publication of the article.
+::::
+
+:::: {#check-provider-terms .callout-note collapse="true" appearance="minimal"}
+## Provider terms: required citations, licenses, and software packages
+
+- Check for a license or data use agreement. Data being visible does not mean it can be redistributed; by default it cannot (copyright). Put the license or agreement URL in the README, and ideally include a copy of the agreement as it stood when you downloaded the data.
+- Some data use agreements require specific citations (of papers or of code). Make sure you comply with all such requirements.
+- Software packages can carry citation requirements too. In R it is standard practice to cite packages, and R makes that easy. In Stata, some packages require citation: check the author's website or the `.ado` file (for example, [reghdfe](https://github.com/sergiocorreia/reghdfe#citation)).
+::::
+
+## Examples by scenario
+
+:::: {#ex-doi-penn-world-table .callout-note collapse="true" appearance="minimal"}
+## 1. Public dataset with a DOI: Penn World Table []{#citing-the-paper-or-the-data}
+
+Use the DOI-based citation supplied by the repository whenever possible.
+
+::: {.citation .goodcite}
+Robert C. Feenstra, Robert Inklaar and Marcel P. Timmer. 2016. "Penn World Table 9.0." Groningen Growth and Development Centre. https://doi.org/10.15141/S5J01T.
+:::
+
+The Penn World Table also illustrates Step 3. The provider asks you to cite the article that introduced this version. That article is in the *American Economic Review*, but later versions of the table (each with its own DOI) were created afterwards and are not in the AER. So cite **both**: the requested article *and* the data.
+
+::: {.citation}
+Feenstra, Robert C., Robert Inklaar, and Marcel P. Timmer. 2015. "The next generation of the Penn World Table." *American Economic Review*, 105(10): 3150-82.
+:::
+
+Use this when:
+
+- the dataset has its own repository record
+- the record has a DOI
+- the data provider gives a preferred citation, possibly of an article you must also cite
+::::
+
+:::: {#ex-website-no-doi-bls .callout-note collapse="true" appearance="minimal"}
+## 2. Data downloaded from a website, no DOI: BLS series []{#websites}
+
+If there is no DOI, cite the organization, the dataset name, the source website, and the access date.
+
+::: {.citation .goodcite}
+Bureau of Labor Statistics. 2000-2010. "Current Employment Statistics: Colorado, Total Nonfarm, Seasonally adjusted - SMS08000000000000001." United States Department of Labor. Accessed February 9, 2011. http://data.bls.gov/cgi-bin/surveymost?sm+08.
+:::
+
+The generic website citation style applies here, but **not** when the data have a permanent URL, a DOI, or a suggested citation; in those cases use the DOI-based form instead.
+
+Use this when:
+
+- the data come from an agency or website
+- no DOI is provided
+- the exact series, table, or file can still be identified
+::::
+
+:::: {#ex-github-release-zenodo .callout-note collapse="true" appearance="minimal"}
+## 3. GitHub repository, release, or Zenodo archive []{#github}
+
+An online repository (GitHub, GitLab, Bitbucket) can be deleted by its owner at any time, so by default it is cited like a website. There are three increasingly robust rungs.
+
+**Plain repository** (least stable, treat like a website):
+
+::: {.citation .mediumcite}
+Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, and Morrow, Peter. 2020. "A template README for social science replication packages." *Github*. https://github.com/social-science-data-editors/template_README/. Accessed 2021-07-01.
+:::
+
+**A tagged release** pins a version and is more robust:
+
+::: {.citation .goodcite}
+Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, and Morrow, Peter. 2020. "A template README for social science replication packages." Github. Release v1.0.0. https://github.com/social-science-data-editors/template_README/releases/tag/v1.0.0. Accessed 2021-07-01.
+:::
+
+**A Zenodo-preserved release** has a DOI and is no longer subject to arbitrary deletion; cite it like any archived object. GitHub integrates with Zenodo automatically, but any release can also be preserved on Zenodo manually.
+
+::: {.citation .goodcite}
+Vilhuber, Lars, Connolly, Marie, Koren, Miklós, Llull, Joan, and Morrow, Peter. 2020. *A template README for social science replication packages* (Version v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.4319999.
+:::
+
+Use this when:
+
+- data or code live in GitHub, GitLab, or Bitbucket
+- a release page exists and is more stable than the repository homepage
+- a Zenodo DOI exists for a preserved release
+::::
+
+:::: {#ex-distributor-compustat-wrds .callout-note collapse="true" appearance="minimal"}
+## 4. Database through a distributor: Compustat via WRDS []{#distributor}[]{#producer}
+
+Sometimes the creator and the distributor are not the same. The distributor then takes on the role of a publisher, so name both when it matters.
+
+::: {.citation .goodcite}
+Standard and Poor's (S&P). 2017. *Compustat-Capital IQ*. Wharton Research Data Services. https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/sp-global-market-intelligence/
+:::
+
+The same data may be available from more than one distributor, in which case the distributor is what changes. For example, the S&P 500 index can be reached through different providers:
+
+::: {.citation .goodcite}
+S&P Dow Jones Indices LLC, *S&P 500 [SP500]*, retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/SP500, January 24, 2020.
+:::
+
+::: {.citation .goodcite}
+S&P Dow Jones Indices LLC, *S&P 500*, provided via Haver Analytics Data Subscription, February 24, 2018.
+:::
+
+Such data is often subject to copyright and redistribution restrictions, so record the access conditions in the README.
+
+Use this when:
+
+- a commercial or licensed database is accessed through WRDS, FRED, Haver, ICPSR, or a similar distributor
+- the distributor is the practical access point for replicators
+::::
+
+:::: {#ex-many-dois-acs-pums .callout-note collapse="true" appearance="minimal"}
+## 5. Many related datasets or many DOIs: ACS PUMS 1997-2009 []{#many-related-datasets}
+
+If one logical dataset spans many years or versions with multiple DOIs, use a composite citation and list the detailed DOIs in an appendix or data availability statement.
+
+::: {.citation .mediumcite}
+Bureau Of The Census. 2009. "American Community Survey (ACS): Public Use Microdata Sample (PUMS), 1997-2009." United States Department Of Commerce [publisher]. ICPSR - Interuniversity Consortium for Political and Social Research [distributor]. DOIs listed in data appendix.
+:::
+
+Use this when:
+
+- you combined multiple annual releases or extracts
+- each year has its own DOI but readers need one human-readable citation
+- you can supply the exact DOI list elsewhere
+::::
+
+:::: {#ex-supplementary-romer .callout-note collapse="true" appearance="minimal"}
+## 6. Supplementary or replication data attached to a paper: Romer and Romer []{#data-distributed-as-supplementary-data}
+
+If a dataset is archived separately from the article, cite the dataset as a dataset, not only the article. In many cases you should cite both the article and the data.
+
+The data:
+
+::: {.citation .goodcite}
+Romer, Christina D., and David H. Romer. 2010. "Replication data for: The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks." American Economic Association [publisher], Inter-university Consortium for Political and Social Research [distributor]. https://doi.org/10.3886/E112357V1.
+:::
+
+The article:
+
+::: {.citation}
+Romer, Christina D., and David H. Romer. 2010. "The Macroeconomic Effects of Tax Changes: Estimates Based on a New Measure of Fiscal Shocks." *American Economic Review* no. 3 (June 2010): 763-801. https://doi.org/10.1257/aer.100.3.763.
+:::
+
+Citing only the article's landing page (as older guidance once suggested) is no longer recommended, because it blurs the article and the data.
+
+Use this when:
+
+- the data are a replication package or supplement
+- the archive record has its own DOI or landing page
+- the article and the data are separate scholarly objects
+::::
+
+:::: {#ex-confidential-irs-registers .callout-note collapse="true" appearance="minimal"}
+## 7. Restricted or confidential data: IRS or government registers []{#confidential-databases}[]{#confidential-data-with-doi}
+
+Restricted data should still be cited. The citation should identify the dataset and the access mechanism, even if the data cannot be redistributed. Name the distributor that actually provided access.
+
+::: {.citation .goodcite}
+Internal Revenue Service. YEAR. *Corporate Income Tax Returns [database]*. Federal Research Data Centers [distributor]. Last accessed YYYY-MM-DD.
+:::
+
+If a DOI exists for the confidential dataset, use the DOI-based citation instead:
+
+::: {.citation .goodcite}
+Forschungsdatenzentrum der Bundesagentur für Arbeit. 2020. "Betriebs-Historik-Panel (BHP) – Version 7518 v1." *Institut für Arbeitsmarkt- und Berufsforschung (IAB)*. https://doi.org/10.5164/IAB.BHP7518.DE.EN.V1.
+:::
+
+If you combine several databases held within the same secure enclave, cite them separately when researchers could plausibly combine the extracts in different ways (for example, the IRS 1040 file merged with death records versus with information returns).
+
+Use this when:
+
+- the data are confidential
+- access is through a secure enclave, contract, or research data center
+- there is no public DOI for the exact extract you used
+
+In your README or data availability statement, also explain how another qualified researcher could request access.
+::::
+
+:::: {#ex-unpublished-anonymous .callout-note collapse="true" appearance="minimal"}
+## 8. Unpublished or anonymous-source data: no formal access mechanism []{#no-formal-access-mechanism}[]{#data-provider-cannot-be-named}
+
+Even if the data were obtained informally, or the provider cannot be named, the reference list should still identify the source as precisely as possible. The Chicago Manual of Style allows citing unpublished data without a reference-list entry, but we ask that you **do** include it, using "Unpublished data" as the locator (similar to a persistent identifier).
+
+::: {.citation .goodcite}
+Møller, A. P. n.d. "Data on Crocodile Sightings in Manhattan." Unpublished data. Accessed February 29, 2019.
+:::
+
+When the provider (often a firm) must remain anonymous, cite it the same way:
+
+::: {.citation .goodcite}
+Anonymous Firm. 1999. "Personnel records of windowshield installers." Unpublished data. Accessed February 29, 2000.
+:::
+
+Use this when:
+
+- the data were shared privately rather than through a repository
+- the provider cannot be named directly
+- the best available locator is an access date and a clear description
+::::
+
+:::: {#ex-online-database-no-date .callout-note collapse="true" appearance="minimal"}
+## 9. Online database or no clear publication date: NASA/IPAC or Compustat n.d. []{#online-databases}[]{#dates}
+
+Some databases are cited as databases, and some datasets do not have a clear publication date. In that case, identify the database clearly and use an access date or *n.d.* when appropriate.
+
+::: {.citation .goodcite}
+NASA/IPAC Extragalactic Database (object name IRAS F00400+4059; accessed April 6, 2016). http://ned.ipac.caltech.edu/.
+:::
+
+::: {.citation .mediumcite}
+Standard and Poor's (S&P). n.d. *Compustat-Capital IQ (1982-2017)*. Wharton Research Data Services. Accessed April 6, 2018. https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/sp-global-market-intelligence/
+:::
+::::
+
+:::: {#ex-offline-archive-register .callout-note collapse="true" appearance="minimal"}
+## 10. Offline or archive-style access: secure center, archive, or register []{#offline-access-mechanism}[]{#government-registers}
+
+Some data are not downloaded from a website at all. This is much like a traditional offline archive (for instance a manuscript collection). Cite the archive, secure center, register, or institution that provided access.
+
+::: {.citation .goodcite}
+Bloom, Nick. 2019. *Confidential survey data on Cameroon business processes*. Stanford Secure Access Center (file "cameroon-bloom.zip"). Stanford University.
+:::
+
+The same pattern follows the Chicago Manual of Style treatment of archival collections:
+
+::: {.citation .goodcite}
+Merriam, Charles E. *Papers*. Special Collections Research Center, box 26, folder 17. University of Chicago Library.
+:::
+
+It is also the right pattern for named government registers when no DOI exists. Many statistical agencies publish lists of their registers (for example, [Statistics Denmark](https://www.dst.dk/extranet/forskningvariabellister/Oversigt%20over%20registre.html)), which you can use to construct the citation and point to the codebook in the README:
+
+::: {.citation .goodcite}
+Statistics Denmark. 2020. "Døde i Danmark (DOD, Deaths in Denmark), 1970-2019 [database]." Danmarks Statistiks Forskningsservice. Accessed YYYY-MM-DD.
+:::
+
+Note the version: the register may now extend further than the extract you actually used, so adjust the years accordingly.
+::::
+
+:::: {#ex-citation-formatter .callout-note collapse="true" appearance="minimal"}
+## 11. Unsure? Try our citation formatter []{#try-it-out}
+
+If you already have a DOI or a core set of citation details, try the formatter below.
+
+{{< include ../_includes/citation-generator.html >}}
+::::
+
+## Common mistakes
+
+- **Citing only a paper when the data are separately available.** This is the most common problem. A paper describing a dataset is not a substitute for citing the dataset itself.
+- **Giving only a top-level URL.** Do not stop at a homepage if the reader needs a specific file, table, series, or application page.
+- **Leaving out the distributor or access path.** This matters when the same data can be obtained from multiple sources or when access is restricted.
+- **Skipping the access date when there is no DOI.** If the object is not archived with a persistent identifier, the access date helps identify what you used.
+
+## Fast checklist for authors
+
+Before you submit, check that you can answer yes to each of these.
+
+- Does every dataset used in the paper appear in the references?
+- Does each citation identify the dataset, not just a related article?
+- Does each citation include a DOI, stable URL, or clear access path?
+- If the data are restricted, does the README explain how access works?
+- If the provider gives a preferred citation, did you use it?
+
+## More resources {#more-resources}
+
+:::: {#more-deposit-data .callout-note collapse="true" appearance="minimal"}
+### Are you using primary data you collected or generated?
+
+Read our [Depositing Data for the Greater Good](depositing-data-for-greater-good.qmd) guide.
+::::
+
+:::: {#more-citation-guides .callout-note collapse="true" appearance="minimal"}
+### Other citation guides
 
 - DataONE [Tutorial on Data Citation](http://www.dataone.org/sites/all/documents/L09_DataCitation.pptx) and [generic guidance](https://www.dataone.org/citing-dataone)
 - [ICPSR](https://www.icpsr.umich.edu/web/pages/datamanagement/citations.html)
--  Force11's [Joint Declaration of Data Citation Principals](https://doi.org/10.25490/a97f-egyk)
-- the AEA's  [Sample References](https://www.aeaweb.org/journals/policies/sample-references)
+- Force11's [Joint Declaration of Data Citation Principles](https://doi.org/10.25490/a97f-egyk)
+- The AEA's [Sample References](https://www.aeaweb.org/journals/policies/sample-references)
 - [Michigan State University](http://libguides.lib.msu.edu/c.php?g=96245&p=626239)
 - [UC Santa Cruz](https://guides.library.ucsc.edu/citedata)
 - [OSF](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)
+- Sample (unofficial) citations for Census Bureau datasets in the FSRDC, on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [GitHub](https://github.com/ncrncornell/cms-to-bib)
+::::
 
+:::: {#more-tools .callout-note collapse="true" appearance="minimal"}
+### Tools []{#tools}[]{#tools-when-the-object-has-a-doi}[]{#when-the-object-does-not-have-a-doi}
 
-### What to cite
+No tool is perfect, but you will likely find one that fits your workflow.
 
-In a nutshell, every dataset is to be cited. This is true for the main article as well as online appendices. In the past, use of data or code has been acknowledged in footnotes, and only rarely through bibliographic references. However,  if the dataset is used, it should appear in the bibliography. The same is true for code reused from previous papers, or provided by authors.
+- **If the object has a DOI:** the [DOI Citation Formatter](https://citation.crosscite.org/) (Crosscite) produces a citation in many styles, and [doi2bib](https://www.doi2bib.org/) produces a BibTeX entry.
+- **If the object has no DOI:** [Citation Machine](http://www.citationmachine.net/chicago-17-author-date/cite-a-digital/manual) (choose `Source type` = `Digital file`, and put the URL and access date in the `Annotation` field).
+- **Ready-made bibliography files:** [BibTeX](../../citations/guidance_data_citations.pdf) and [BibLaTeX](../../citations/guidance_data_citations_biblatex.pdf) examples.
+- Note that Chicago style, Zotero, and Mendeley still support data entries unevenly, even though the underlying [Citation Style Language](https://citationstyles.org/) has had a "dataset" type for years.
+::::
 
-### What not to cite
+```{=html}
+<script>
+// Quarto has no native option to expand a collapsed callout when it is the
+// target of a deep link. On load and on hash change, open the collapsed
+// container (callout or accordion panel) that contains the targeted id.
+(function () {
+  function openCollapseBody(body) {
+    if (!body || body.classList.contains("show")) return;
+    if (window.bootstrap && window.bootstrap.Collapse) {
+      window.bootstrap.Collapse.getOrCreateInstance(body, { toggle: false }).show();
+    } else {
+      body.classList.add("show");
+    }
+  }
 
-It has been long-standing convention in economics to cite a paper describing the data, but not the data themselves. This is inconsistent with other citation practices, in addition to not being compliant with the Data Citation Principles. In principle, it is simple:
+  function openTargetFor(hash) {
+    if (!hash) return;
+    var el = document.getElementById(decodeURIComponent(hash.slice(1)));
+    if (!el || !el.closest) return;
 
-> If you use the data, you cite the data. If you reference the document, you cite the document. But you don't cite the document when using the data.
+    // 1) Accordion support (if target is inside an accordion item)
+    var accordionBody = null;
+    if (el.classList && el.classList.contains("accordion-collapse")) {
+      accordionBody = el;
+    } else {
+      accordionBody = el.closest(".accordion-collapse");
+      if (!accordionBody) {
+        var accordionItem = el.closest(".accordion-item");
+        if (accordionItem) accordionBody = accordionItem.querySelector(".accordion-collapse");
+      }
+    }
 
-It is worthwhile to point out that we don't cite the book **review** when wanting to reference what an author said in a **book**. We cite the book directly. This is the literature analog to data citations.
+    if (accordionBody) {
+      openCollapseBody(accordionBody);
+      setTimeout(function () {
+        el.scrollIntoView({ block: "start" });
+      }, 0);
+      return;
+    }
 
-#### Data are published
-
-The DOI is thus public, and all repositories will provide a suggested citation. One can also use [https://www.doi2bib.org/](https://www.doi2bib.org/) or [https://citation.crosscite.org/](https://citation.crosscite.org/) to get a citation (see below for additional tools).
-
-####  Data are not published
-
-This is trickier. The data does not necessarily have a title that is related to the paper. Some repositories allow authors to "reserve" a DOI (Zenodo) or to delay publication. For some repositories, the DOI, while not officially reserved, can be derived from information already available (see this FAQ for openICPSR, something similar may be possible at Dataverse).
-
-In some cases, authors may be able to delay publication, and coordinate it with the publication of the article (openICPSR, possibly Zenodo).
-
-
-### Where to cite
-
-In all cases, data and code should be cited in the main manuscript. They should also be  referenced in the data availability statement (some journals) or the README (other journals). 
-
-### How to cite
-
-Many journals in economics require the Chicago style for citations and bibliographies [1](https://www.aeaweb.org/journals/policies/sample-references). However, the [Chicago Style Manual](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html)  provides few relevant examples for data citations. Applications like [Zotero](https://www.zotero.org/) and [Mendeley Desktop](https://www.mendeley.com/download-desktop/) also do not support data citations robustly, even though the underlying [Citation Style Language](https://citationstyles.org/) has had the concept of a "data" entry for several years.
-
-
-[DataONE](https://www.dataone.org/citing-dataone) suggests content and style that resemble the generic working paper or article citation style (adapted to Chicago style):
-
-> Westbrook JW, Kitajima K, Burleigh JG, Kress WJ, Erickson DL,
->    Wright SJ (2011) *Data from: What makes a leaf tough? Patterns of
->    correlated evolution between leaf toughness traits and demographic
->    rates among 197 shade-tolerant woody species in a neotropical forest.*
->    Dryad Digital Repository. http://dx.doi.org/10.5061/dryad.8525
-
-[ICPSR](https://www.icpsr.umich.edu/icpsrweb/ICPSR/curation/citations.jsp) notes  that a citation should include the following items:
--   Title
--   Author
--   Date
--   Version
--   Persistent identifier (such as the Digital Object Identifier, Uniform Resource Name URN, or Handle System)
-
-and provides a few examples, with some additional modifiers:
-
->    Esther Duflo; Rohini Pande, 2006, ``Dams, Poverty, Public Goods and
->    Malaria Incidence in India'', http://hdl.handle.net/1902.1/IOJHHXOOLZ
->    UNF:5:obNHHq1gtV400a4T+Xrp9g== *Murray Research Archive* [Distributor]
->    V2 [Version]
-
-Finally, the [AEA style guide](https://www.aeaweb.org/journals/policies/sample-references)  suggests
-
->    Leiss, Amelia. 1999. ``Arms Transfers to Developing Countries, 1945--1968.''
->    Inter-University Consortium for Political and Social Research, Ann Arbor, MI.
->    ICPSR05404-v1. doi:10.3886/ICPSR05404 (accessed February 8, 2011).
-
-This may be adjusted. An alternate citation may be
-
->    Leiss, Amelia. 1999. ``Arms Transfers to Developing Countries, 1945--1968.''
->    Inter-University Consortium for Political and Social Research, Ann Arbor, MI.
->    ICPSR05404-v1. https://doi.org/10.3886/ICPSR05404.
-
-Citations to primary data can sometimes be hard to construct. If the data provider has a suggested citation, then you should use it. Alternatively, you can construct as per the above examples, for instance, as noted on the [AEA style guide](https://www.aeaweb.org/journals/policies/sample-references):
-
-> Bureau of Labor Statistics. 2000–2010. “Current Employment Statistics: Colorado, Total Nonfarm, Seasonally adjusted - SMS08000000000000001.” United States Department of Labor. http://data.bls.gov/cgi- bin/surveymost?sm+08 (accessed February 9, 2011).
-
-
-
-### Some additional guidance on tricky citations
-
-- [Additional guidance on Data Citations](addtl-data-citation-guidance.qmd).
--  [Data citation without an online link](https://social-science-data-editors.github.io/guidance/FAQ.html#data-citation-without-online-link)
-- Sample (unofficial) citations for Census Bureau datasets in the FSRDC can be found on [Zotero.org](https://www.zotero.org/groups/2245704/fsrdc/library) and on [Github](https://github.com/ncrncornell/cms-to-bib).
-
-### Some Frequently Asked Questions
-
-1. When providing data citations, please be sure to check that a URL is given. However, there are some subtleties:
-   - If only a single file is downloaded from a website, the data citation should include the precise URL (https://data.com/path/to/file), not just a top-level URL (https://data.com)
-   - If a URL is giving starting with "https://doi.org", then it is a DOI. Those do not need access dates. Otherwise, a website access needs a URL (by most citation styles).
-   - Be sure to provide the DOI when both a DOI and a URL is available. A DOI is stable, a URL may not be.
-   - Always check the URL by clicking on it,         Sometimes, the URL turns out to be generic/top-level, and does not show the file the replicator should be downloading. The replicator should be able to find the file using the URL, or with the instructions in the README.
-2. Check for  a license/data use agreement. 
-   - Just because data is visible does not mean it can be redistributed. By default, it is not (copyright). 
-   - Regardless of redistribution rights, the  URL of the data use agreement should be included in the README/online appendix to fully describe data access conditions. 
-   - Ideally,  a copy of the data use agreement or license should be included in the replication archive. This can be a copy of an email authorizing you to distribute the data, or a copy of the data use agreement on the website when you downloaded the data (which might be different from the current data use agreement!)
-3. Some data use agreements may also require specific citations (of papers, of code). Verify that you are  compliant with all such requirements!
-    - The same actually applies for Stata or R packages that may be downloaded.
-    - It is R practice to cite all packages, and R makes that easy. This should be noted in the report, if not done. Citation in the README should be sufficient.
-    - In Stata, some packages have citation requirements. Check the website of the author, sometimes also the *.ado file the author downloads. For instance, many authors use "reghdfe". See https://github.com/sergiocorreia/reghdfe#citation for a citation requirement.
-
-
-
-### Tools
-
-No tool is perfect, but you will likely find the one that works for your particular workflow. 
-Some examples for specific software:
-- [BibTeX](../../citations/guidance_data_citations.pdf)
-- [BibLaTeX](../../citations/guidance_data_citations_biblatex.pdf)
-- Zotero will have native dataset functionality starting in version 5.1, for now, some guidance for entering it can be found in [forums](https://forums.zotero.org/discussion/63616/new-citation-type-research-data-dataset). Note that support in the citation styles is also still lacking.
-- [Mendeley Desktop](https://www.mendeley.com/download-desktop/).
-
-
-#### Tools when the object has a DOI
-
-There are several websites that will create a (data) citation from any DOI. Give these a try:
-
-**DOI Citation Formatter** at [citation.crosscite.org/](https://citation.crosscite.org/) is supported by the DOI Registration Agencies. For instance, using `10.3886/ICPSR05404` from the above example, it generates (as of 2022-01-16):
-
-- Chicago Author-date (16th edition)
-
-::: {.citation .goodcite}
-Leiss, Amelia. 1984. “Arms Transfers to Developing Countries, 1945-1968.” ICPSR - Interuniversity Consortium for Political and Social Research. doi:10.3886/ICPSR05404. 
-:::
-
-- APA style:
-
-::: {.citation .goodcite}
-Leiss, A. (1984). Arms Transfers to Developing Countries, 1945-1968 [Data set]. ICPSR - Interuniversity Consortium for Political and Social Research. https://doi.org/10.3886/ICPSR05404 
-:::
-
-**doi2bib** at [doi2bib.org/](https://www.doi2bib.org/) will generate a BibTeX entry from a DOI (for instance from [10.3886/ICPSR05404](https://www.doi2bib.org/bib/10.3886/ICPSR05404)):
-
+    // 2) Callout support (existing behavior)
+    var callout = el.closest(".callout");
+    if (!callout) return;
+    var body = callout.querySelector(".callout-collapse");
+    var header = callout.querySelector(".callout-header");
+    if (!body) return;
+    openCollapseBody(body);
+    if (header) {
+      header.classList.remove("collapsed");
+      header.setAttribute("aria-expanded", "true");
+    }
+    el.scrollIntoView({ block: "start" });
+  }
+  window.addEventListener("DOMContentLoaded", function () { openTargetFor(window.location.hash); });
+  window.addEventListener("hashchange", function () { openTargetFor(window.location.hash); });
+})();
+</script>
 ```
-@misc{https://doi.org/10.3886/icpsr05404,
-  doi = {10.3886/ICPSR05404},
-  url = {http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/5404},
-  author = {Leiss,  Amelia},
-  language = {en},
-  title = {Arms Transfers to Developing Countries,  1945-1968},
-  publisher = {ICPSR - Interuniversity Consortium for Political and Social Research},
-  year = {1984}
-}
-```
-
-#### When the object does not have a DOI
-
-When the object does not have a DOI, it isn't really that much more complicated, but little guidance is available. 
-
-- [Citation Machine](http://www.citationmachine.net/chicago-17-author-date/cite-a-digital/manual) - choose `Source type`=`Digital file` and put the URL and access date into the `Annotation` field.
-
-- Try our own tool:
-
-{{< include ../_includes/citation-generator.html >}}
