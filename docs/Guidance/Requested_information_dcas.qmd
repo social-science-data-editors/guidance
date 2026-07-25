@@ -50,17 +50,23 @@ In some cases, governments have a list of their (named) registers. For instance,
 
 #### Example for code during the editorial process
 
+::: {.callout-warning}
+It is rare in economics for code to ONLY be available during the editorial process. This should not in general appear in READMEs submitted to data editors, but may be in reviewer-only documents that some journals may have.
+:::
+
 > Code for data cleaning and analysis is provided as part of the replication package. It is available at https://dropbox.com/link/to/code/XYZ123ABC for review. It will be uploaded to the [JOURNAL REPOSITORY] once the paper has been conditionally accepted.
 
 #### Example for code for publication
 
 > Code for data cleaning and analysis is provided as part of the replication package. It is available at https://doi.org/10.xxxx/path/to/journal/archive.
 
+::: {.callout-note}
 (Note the difference with the temporary Dropbox location during the review process, and the permanent location at publication time.)
+:::
 
 #### Example for code that is already available
 
-> All code for data cleaning and analysis associated with the current submission is available at http://doi.org/10.5281/zenodo.400356. Any updates will also be published on Zenodo, and the final DOI cited in the manuscript.
+> All code for data cleaning and analysis associated with the current submission is available at http://doi.org/10.5281/zenodo.400356. Any updates will also be published on Zenodo, and the final DOI is cited in the manuscript.
 
 ### IPUMS
 
