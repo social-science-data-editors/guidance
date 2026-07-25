@@ -51,7 +51,7 @@ In some cases, governments have a list of their (named) registers. For instance,
 #### Example for code during the editorial process
 
 ::: {.callout-warning}
-It is rare in economics for code to ONLY be available during the editorial process. This should not in general appear in READMEs submitted to data editors, but may be in reviewer-only documents that some journals may have.
+It is rare in economics for code to ONLY be available during the editorial process. This should not in general appear in READMEs submitted to data editors, but may be in reviewer-only documents that some journals may request. Verify with the journal itself. 
 :::
 
 > Code for data cleaning and analysis is provided as part of the replication package. It is available at https://dropbox.com/link/to/code/XYZ123ABC for review. It will be uploaded to the [JOURNAL REPOSITORY] once the paper has been conditionally accepted.
@@ -61,7 +61,9 @@ It is rare in economics for code to ONLY be available during the editorial proce
 > Code for data cleaning and analysis is provided as part of the replication package. It is available at https://doi.org/10.xxxx/path/to/journal/archive.
 
 ::: {.callout-note}
-(Note the difference with the temporary Dropbox location during the review process, and the permanent location at publication time.)
+Note the difference with the temporary Dropbox location during the review process, and the permanent location at publication time.
+
+Also note the present tense: The README that contains such a clause will be a permanent record after publication. The language used should reflect that. The DOI may be inactive during review, but is often discoverable or reserved before the review process is completed.
 :::
 
 #### Example for code that is already available
