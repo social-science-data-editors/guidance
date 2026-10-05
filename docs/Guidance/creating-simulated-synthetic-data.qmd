@@ -1,5 +1,5 @@
 ---
-title: "Simulated Data for Confidential Inputs"
+title: "Creating Simulated or Synthetic Data"
 description: "How to create simulated versions of confidential input data so that a Data Editor can verify that the code is complete, self-contained, and runs end-to-end."
 categories: [synthetic data, fake data, confidential, data, LLM]
 ---

@@ -13,6 +13,8 @@ Some journals require that fake or synthetic data be provided in order to verify
 - one can either create synthetic data that just proves the estimation code works. This is closely related to basic statistics. If you assume your data is normal, generate normal data that has the same mean and variance, or whatever, and then run your algorithm on that. Easy when all you have is a simple OLS, more complex for more complex data.
 - one can use as an input the actual data, and then perturb or otherwise synthesize it. This relates more to data privacy, and can be complex. Combined with sampling, it may be sufficient, but never attempt without checking with your data provider if this is considered sufficient or privacy-preserving.
 
+For a step-by-step procedure, see [Creating Simulated or Synthetic Data](creating-simulated-synthetic-data.qmd).
+
 ## From the Econometric Society Data Editor's FAQ
 
 Extracted from <https://www.econometricsociety.org/publications/es-data-editor-website/FAQs> 
