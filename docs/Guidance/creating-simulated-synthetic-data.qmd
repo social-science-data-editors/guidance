@@ -1,0 +1,41 @@
+---
+title: "Creating Simulated or Synthetic Data"
+description: "How to create simulated versions of confidential input data so that a Data Editor can verify that the code is complete, self-contained, and runs end-to-end."
+categories: [synthetic data, fake data, confidential, data, LLM]
+---
+
+::: {.callout-warning}
+## Placeholder
+
+This page is a placeholder. It will be adapted from the JPE Data Editor's [Procedure for Simulated Confidential Data](https://jpedataeditor.github.io/confidential.html). Until then, please consult that page directly.
+:::
+
+## Overview
+
+<!-- TODO: When authors cannot provide (temporary) access to confidential data, they supply simulated versions of each confidential input file. Verification then checks that the code is complete, self-contained, and logically consistent: given simulated inputs with the right structure, it runs without errors and produces all outputs. -->
+
+## Requirements for simulated datasets
+
+<!-- TODO: same number of variables (fewer rows OK); same variable names, types, units; same file formats; respect value constraints (signs, binary indicators, categorical ranges); ensure coverage of all code branches (regions, periods, treatment groups). -->
+
+## Steps
+
+<!-- TODO: list confidential files in README; write a simulation script per file; fix the random seed; run full pipeline on simulated data; save outputs to a separate folder (e.g., `output-simulated/`); include the script and document it in the README; submit. -->
+
+## Examples
+
+<!-- TODO: Stata, R, and Python examples generating a simulated firm-year panel. -->
+
+## Using LLM coding assistants safely
+
+<!-- TODO: never give an LLM (local or API) access to confidential raw data; restrict file access to code and documentation; pass only sanitized summaries you computed yourself; check DUAs. Mention the Claude Code skill and permission-level denials. -->
+
+## Verification
+
+<!-- TODO: outputs from the simulated run are the reference; the Data Editor must reproduce them exactly, so all stochastic steps need fixed seeds. -->
+
+## See also
+
+- [Guidance on Synthetic and Fake Data](synthetic-fake-data-guidance.qmd)
+- [FAQ: Confidential data](../FAQ/confidential-data.qmd)
+- Source: [JPE Data Editor -- Procedure for Simulated Confidential Data](https://jpedataeditor.github.io/confidential.html)
